@@ -1,0 +1,141 @@
+{"frames": {
+
+"2_1/2_1_00003.png":
+{
+	"frame": {"x":1902,"y":1,"w":133,"h":259},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":78,"y":157,"w":133,"h":259},
+	"sourceSize": {"w":477,"h":439}
+},
+"2_1/2_1_00004.png":
+{
+	"frame": {"x":1761,"y":1,"w":139,"h":295},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":118,"w":139,"h":295},
+	"sourceSize": {"w":477,"h":439}
+},
+"2_3/2_3_00002.png":
+{
+	"frame": {"x":580,"y":1911,"w":122,"h":229},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":47,"y":184,"w":122,"h":229},
+	"sourceSize": {"w":206,"h":444}
+},
+"2_3/2_3_00004.png":
+{
+	"frame": {"x":294,"y":1911,"w":116,"h":284},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":51,"y":124,"w":116,"h":284},
+	"sourceSize": {"w":206,"h":444}
+},
+"2_4/2_4_00003.png":
+{
+	"frame": {"x":1,"y":1911,"w":126,"h":291},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":222,"y":286,"w":126,"h":291},
+	"sourceSize": {"w":422,"h":592}
+},
+"2_4/2_4_00011.png":
+{
+	"frame": {"x":815,"y":1111,"w":99,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":53,"w":99,"h":95},
+	"sourceSize": {"w":422,"h":592}
+},
+"2_5/2_5_00011.png":
+{
+	"frame": {"x":916,"y":1111,"w":99,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":197,"y":57,"w":99,"h":95},
+	"sourceSize": {"w":422,"h":592}
+},
+"2_5/2_5_00013.png":
+{
+	"frame": {"x":1017,"y":1111,"w":86,"h":87},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":236,"y":95,"w":86,"h":87},
+	"sourceSize": {"w":422,"h":592}
+},
+"4_logo/4_logo_00007.png":
+{
+	"frame": {"x":1761,"y":298,"w":278,"h":291},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":541,"y":281,"w":278,"h":291},
+	"sourceSize": {"w":1245,"h":890}
+},
+"4_logo/4_logo_00022.png":
+{
+	"frame": {"x":1,"y":1,"w":1110,"h":812},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":34,"w":1110,"h":812},
+	"sourceSize": {"w":1245,"h":890}
+},
+"4_logo/4_logo_00031.png":
+{
+	"frame": {"x":1,"y":815,"w":1094,"h":812},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":80,"y":34,"w":1094,"h":812},
+	"sourceSize": {"w":1245,"h":890}
+},
+"4_logo/4_logo_00042.png":
+{
+	"frame": {"x":815,"y":1208,"w":1149,"h":801},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":78,"y":40,"w":1149,"h":801},
+	"sourceSize": {"w":1245,"h":890}
+},
+"6_Congrats/6_Congrats_00008.png":
+{
+	"frame": {"x":1113,"y":1,"w":1205,"h":646},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":124,"w":1205,"h":646},
+	"sourceSize": {"w":1208,"h":821}
+},
+"6_Lose/6_Lose_00007.png":
+{
+	"frame": {"x":1761,"y":883,"w":230,"h":287},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":67,"w":230,"h":287},
+	"sourceSize": {"w":352,"h":364}
+},
+"6_Lose/6_Lose_00008.png":
+{
+	"frame": {"x":1761,"y":591,"w":230,"h":290},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":64,"w":230,"h":290},
+	"sourceSize": {"w":352,"h":364}
+},
+"6_Lose/6_Lose_00009.png":
+{
+	"frame": {"x":815,"y":815,"w":230,"h":294},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":60,"w":230,"h":294},
+	"sourceSize": {"w":352,"h":364}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "sprite-animations-10.png",
+	"format": "RGBA8888",
+	"size": {"w":2040,"h":2038},
+	"scale": "1",
+	"related_multi_packs": [ "sprite-animations-0.json", "sprite-animations-1.json", "sprite-animations-2.json", "sprite-animations-3.json", "sprite-animations-4.json", "sprite-animations-5.json", "sprite-animations-6.json", "sprite-animations-7.json", "sprite-animations-8.json", "sprite-animations-9.json", "sprite-animations-11.json", "sprite-animations-12.json", "sprite-animations-13.json", "sprite-animations-14.json", "sprite-animations-15.json", "sprite-animations-16.json", "sprite-animations-17.json", "sprite-animations-18.json", "sprite-animations-19.json", "sprite-animations-20.json", "sprite-animations-21.json", "sprite-animations-22.json", "sprite-animations-23.json", "sprite-animations-24.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:abc62ac9e161e0dca3dbe4b600acf6d5:e3329bc48d4e520ddb3d60ea8f874f89:f837c0dba2e91c02a14cab560337af1f$"
+}
+}

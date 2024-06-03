@@ -1,0 +1,258 @@
+
+ooooh_fuck_imagine_goalkeeper_standing_in_pose_like_on_image_pr_469f7590-4fbc-4ad0-a680-0d5f6030c74c-2 1.png
+size: 1244,396
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 97
+  size: 289, 297
+  orig: 297, 297
+  offset: 8, 0
+  index: -1
+ElbowL
+  rotate: true
+  xy: 1059, 8
+  size: 85, 103
+  orig: 85, 103
+  offset: 0, 0
+  index: -1
+ElbowP
+  rotate: false
+  xy: 926, 273
+  size: 101, 121
+  orig: 101, 121
+  offset: 0, 0
+  index: -1
+FingersL
+  rotate: true
+  xy: 1137, 278
+  size: 116, 105
+  orig: 116, 105
+  offset: 0, 0
+  index: -1
+FingersP
+  rotate: true
+  xy: 1029, 274
+  size: 120, 106
+  orig: 120, 106
+  offset: 0, 0
+  index: -1
+ForArmL
+  rotate: true
+  xy: 1074, 225
+  size: 47, 101
+  orig: 47, 104
+  offset: 0, 0
+  index: -1
+ForArmP
+  rotate: false
+  xy: 1177, 170
+  size: 63, 106
+  orig: 63, 106
+  offset: 0, 0
+  index: -1
+ForearmL
+  rotate: false
+  xy: 463, 3
+  size: 107, 178
+  orig: 107, 178
+  offset: 0, 0
+  index: -1
+ForearmP
+  rotate: false
+  xy: 762, 3
+  size: 149, 189
+  orig: 149, 189
+  offset: 0, 0
+  index: -1
+Hair1
+  rotate: false
+  xy: 2, 6
+  size: 174, 89
+  orig: 174, 89
+  offset: 0, 0
+  index: -1
+Hair3
+  rotate: true
+  xy: 1164, 2
+  size: 104, 29
+  orig: 108, 29
+  offset: 0, 0
+  index: -1
+HandL
+  rotate: false
+  xy: 330, 3
+  size: 131, 164
+  orig: 131, 164
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 376, 183
+  size: 174, 211
+  orig: 174, 211
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: true
+  xy: 1195, 61
+  size: 63, 18
+  orig: 64, 18
+  offset: 0, 0
+  index: -1
+ThighL
+  rotate: true
+  xy: 572, 9
+  size: 176, 188
+  orig: 176, 188
+  offset: 0, 0
+  index: -1
+ThighP
+  rotate: true
+  xy: 633, 194
+  size: 200, 188
+  orig: 200, 188
+  offset: 0, 0
+  index: -1
+ThumbL
+  rotate: true
+  xy: 1023, 216
+  size: 55, 49
+  orig: 55, 49
+  offset: 0, 0
+  index: -1
+ThumbP
+  rotate: false
+  xy: 926, 212
+  size: 56, 59
+  orig: 56, 59
+  offset: 0, 0
+  index: -1
+browL
+  rotate: false
+  xy: 293, 154
+  size: 31, 13
+  orig: 31, 13
+  offset: 0, 0
+  index: -1
+browP
+  rotate: true
+  xy: 293, 99
+  size: 53, 25
+  orig: 53, 25
+  offset: 0, 0
+  index: -1
+calfL
+  rotate: false
+  xy: 293, 169
+  size: 81, 225
+  orig: 81, 225
+  offset: 0, 0
+  index: -1
+calfP
+  rotate: false
+  xy: 552, 187
+  size: 79, 207
+  orig: 79, 207
+  offset: 0, 0
+  index: -1
+e_yeL
+  rotate: true
+  xy: 1177, 126
+  size: 42, 27
+  orig: 45, 32
+  offset: 2, 4
+  index: -1
+e_yeP
+  rotate: true
+  xy: 1206, 126
+  size: 42, 27
+  orig: 45, 32
+  offset: 1, 4
+  index: -1
+eyeL
+  rotate: false
+  xy: 971, 2
+  size: 42, 36
+  orig: 42, 36
+  offset: 0, 0
+  index: -1
+eyeP
+  rotate: false
+  xy: 1015, 2
+  size: 42, 36
+  orig: 42, 36
+  offset: 0, 0
+  index: -1
+feetL
+  rotate: true
+  xy: 178, 6
+  size: 89, 75
+  orig: 89, 75
+  offset: 0, 0
+  index: -1
+feetP
+  rotate: true
+  xy: 255, 7
+  size: 88, 73
+  orig: 108, 73
+  offset: 0, 0
+  index: -1
+forBody
+  rotate: true
+  xy: 823, 209
+  size: 185, 101
+  orig: 185, 124
+  offset: 0, 23
+  index: -1
+hair2
+  rotate: true
+  xy: 1037, 95
+  size: 119, 69
+  orig: 120, 70
+  offset: 0, 0
+  index: -1
+handP
+  rotate: false
+  xy: 913, 40
+  size: 122, 167
+  orig: 122, 167
+  offset: 0, 0
+  index: -1
+instepL
+  rotate: true
+  xy: 984, 213
+  size: 58, 37
+  orig: 58, 38
+  offset: 0, 1
+  index: -1
+instepP
+  rotate: false
+  xy: 913, 2
+  size: 56, 36
+  orig: 56, 36
+  offset: 0, 0
+  index: -1
+shadowHead
+  rotate: true
+  xy: 1108, 108
+  size: 115, 67
+  orig: 115, 67
+  offset: 0, 0
+  index: -1
+zrachokL
+  rotate: false
+  xy: 1037, 78
+  size: 15, 15
+  orig: 16, 15
+  offset: 1, 0
+  index: -1
+zrachokP
+  rotate: true
+  xy: 1037, 62
+  size: 14, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1

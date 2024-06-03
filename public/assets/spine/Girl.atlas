@@ -1,0 +1,258 @@
+
+Girl.png
+size: 713,269
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BilokP
+  rotate: false
+  xy: 554, 70
+  size: 30, 26
+  orig: 30, 26
+  offset: 0, 0
+  index: -1
+Group
+  rotate: false
+  xy: 74, 8
+  size: 80, 82
+  orig: 80, 82
+  offset: 0, 0
+  index: -1
+Hairz
+  rotate: true
+  xy: 320, 128
+  size: 139, 136
+  orig: 147, 140
+  offset: 2, 0
+  index: -1
+LyashkaP
+  rotate: true
+  xy: 587, 220
+  size: 47, 106
+  orig: 47, 106
+  offset: 0, 0
+  index: -1
+bilokL
+  rotate: true
+  xy: 526, 64
+  size: 32, 26
+  orig: 32, 26
+  offset: 0, 0
+  index: -1
+browL
+  rotate: true
+  xy: 271, 65
+  size: 31, 13
+  orig: 31, 13
+  offset: 0, 0
+  index: -1
+chelkaL
+  rotate: true
+  xy: 156, 2
+  size: 94, 113
+  orig: 94, 113
+  offset: 0, 0
+  index: -1
+chelkaP
+  rotate: true
+  xy: 587, 141
+  size: 77, 78
+  orig: 77, 78
+  offset: 0, 0
+  index: -1
+close_eyeL
+  rotate: true
+  xy: 685, 19
+  size: 30, 19
+  orig: 31, 19
+  offset: 0, 0
+  index: -1
+close_eyeP
+  rotate: true
+  xy: 663, 17
+  size: 32, 20
+  orig: 32, 20
+  offset: 0, 0
+  index: -1
+dlya_rukiL
+  rotate: true
+  xy: 618, 37
+  size: 38, 39
+  orig: 38, 39
+  offset: 0, 0
+  index: -1
+golova
+  rotate: false
+  xy: 287, 5
+  size: 96, 108
+  orig: 99, 108
+  offset: 0, 0
+  index: -1
+hair2
+  rotate: true
+  xy: 385, 4
+  size: 122, 79
+  orig: 160, 126
+  offset: 24, 47
+  index: -1
+ikraL
+  rotate: false
+  xy: 179, 105
+  size: 71, 162
+  orig: 71, 162
+  offset: 0, 0
+  index: -1
+ikraP
+  rotate: false
+  xy: 140, 98
+  size: 37, 169
+  orig: 37, 215
+  offset: 0, 0
+  index: -1
+kistL
+  rotate: false
+  xy: 605, 3
+  size: 56, 32
+  orig: 56, 32
+  offset: 0, 0
+  index: -1
+kistP
+  rotate: true
+  xy: 667, 179
+  size: 39, 43
+  orig: 39, 44
+  offset: 0, 1
+  index: -1
+lyashka
+  rotate: false
+  xy: 466, 18
+  size: 58, 122
+  orig: 58, 122
+  offset: 0, 0
+  index: -1
+nosokL
+  rotate: true
+  xy: 554, 8
+  size: 41, 27
+  orig: 41, 27
+  offset: 0, 0
+  index: -1
+nosokP
+  rotate: true
+  xy: 526, 3
+  size: 46, 26
+  orig: 46, 26
+  offset: 0, 0
+  index: -1
+plecheL
+  rotate: true
+  xy: 2, 5
+  size: 85, 70
+  orig: 85, 70
+  offset: 0, 0
+  index: -1
+plecheP
+  rotate: false
+  xy: 587, 77
+  size: 73, 62
+  orig: 73, 62
+  offset: 0, 0
+  index: -1
+rukaL
+  rotate: true
+  xy: 523, 160
+  size: 107, 62
+  orig: 107, 63
+  offset: 0, 1
+  index: -1
+rukaP
+  rotate: true
+  xy: 662, 89
+  size: 45, 49
+  orig: 45, 51
+  offset: 0, 2
+  index: -1
+shiya
+  rotate: true
+  xy: 662, 51
+  size: 36, 46
+  orig: 36, 46
+  offset: 0, 0
+  index: -1
+smile
+  rotate: true
+  xy: 583, 9
+  size: 40, 20
+  orig: 40, 20
+  offset: 0, 0
+  index: -1
+smile2
+  rotate: false
+  xy: 523, 142
+  size: 40, 16
+  orig: 40, 17
+  offset: 0, 1
+  index: -1
+spidnyca
+  rotate: true
+  xy: 458, 142
+  size: 125, 63
+  orig: 125, 63
+  offset: 0, 0
+  index: -1
+strilkiL
+  rotate: false
+  xy: 586, 54
+  size: 30, 21
+  orig: 30, 21
+  offset: 0, 0
+  index: -1
+strilkiP
+  rotate: false
+  xy: 554, 51
+  size: 30, 17
+  orig: 30, 17
+  offset: 0, 0
+  index: -1
+tilo
+  rotate: false
+  xy: 2, 92
+  size: 136, 175
+  orig: 142, 178
+  offset: 6, 0
+  index: -1
+vzuttyaL
+  rotate: false
+  xy: 667, 136
+  size: 42, 41
+  orig: 51, 49
+  offset: 9, 8
+  index: -1
+vzuttyaP
+  rotate: false
+  xy: 526, 98
+  size: 59, 42
+  orig: 71, 46
+  offset: 0, 4
+  index: -1
+xvist
+  rotate: false
+  xy: 252, 115
+  size: 66, 152
+  orig: 66, 152
+  offset: 0, 0
+  index: -1
+zrachokL
+  rotate: false
+  xy: 252, 98
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+zrachokP
+  rotate: false
+  xy: 270, 98
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1

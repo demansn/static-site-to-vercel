@@ -1,0 +1,30 @@
+{"frames": {
+
+"ProgressBackgound.png":
+{
+	"frame": {"x":1,"y":1,"w":494,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":494,"h":45},
+	"sourceSize": {"w":494,"h":45},
+	"anchor": {"x":0,"y":0}
+},
+"ProgressLine.png":
+{
+	"frame": {"x":1,"y":48,"w":472,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":472,"h":22},
+	"sourceSize": {"w":472,"h":22},
+	"anchor": {"x":0,"y":0}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "loading.png",
+	"format": "RGBA8888",
+	"size": {"w":496,"h":71},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a559b9eef79e72e0b9dd7a7f3981c2e9:0874c84421824f60def0b020dbf9f3da:5294b8b30e478db5089d68a09bebcee6$"
+}
+}
