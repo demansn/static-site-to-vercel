@@ -60548,10 +60548,12 @@ ${e2}`);
 
   // src/js/LoseAnimation.js
   var LoseAnimation = class extends Container {
-    constructor(loseAnimationFrames, screenSize) {
+    constructor(loseAnimationFrames, screenSize, bgTexture) {
       super();
-      this.background = new Graphics();
-      this.background.rect(0, 0, screenSize.width, screenSize.height).fill({ color: 0, alpha: 0.5 });
+      this.background = Sprite.from(bgTexture);
+      this.background.anchor.set(0.5);
+      this.background.x = screenSize.width / 2;
+      this.background.y = screenSize.height / 2;
       this.background.alpha = 0;
       this.addChild(this.background);
       this.loseAnimation = AnimatedSprite.fromFrames(loseAnimationFrames);
@@ -60660,10 +60662,12 @@ ${e2}`);
 
   // src/js/WinAnimation.js
   var WinAnimation = class extends Container {
-    constructor(loseAnimationFrames, screenSize) {
+    constructor(loseAnimationFrames, screenSize, bgTexture) {
       super();
-      this.background = new Graphics();
-      this.background.rect(0, 0, screenSize.width, screenSize.height).fill({ color: 0, alpha: 0.5 });
+      this.background = Sprite.from(bgTexture);
+      this.background.anchor.set(0.5);
+      this.background.x = screenSize.width / 2;
+      this.background.y = screenSize.height / 2;
       this.background.alpha = 0;
       this.addChild(this.background);
       this.animation = AnimatedSprite.fromFrames(loseAnimationFrames);
@@ -60864,10 +60868,10 @@ ${e2}`);
       return new GameLoadingProgressBar(bg, line);
     }
     createLoseAnimation(screenSize) {
-      return new LoseAnimation(this.getAnimationFrames("6_Lose/6_Lose"), screenSize);
+      return new LoseAnimation(this.getAnimationFrames("6_Lose/6_Lose"), screenSize, this.getTextureFromSpriteSheet("win-lose-bg.png"));
     }
     createWinAnimation(screenSize) {
-      return new WinAnimation(this.getAnimationFrames("6_Congrats/6_Congrats"), screenSize);
+      return new WinAnimation(this.getAnimationFrames("6_Congrats/6_Congrats"), screenSize, this.getTextureFromSpriteSheet("win-lose-bg.png"));
     }
     createBetsList(bets, currentBetIndex, onChangeBet) {
       return new BetsList(bets, currentBetIndex, onChangeBet, {
