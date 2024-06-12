@@ -3564,249 +3564,6 @@
     }
   });
 
-  // node_modules/pixi.js/lib/index.mjs
-  var lib_exports2 = {};
-  __export(lib_exports2, {
-    ALPHA_MODES: () => ALPHA_MODES,
-    AbstractMultiResource: () => AbstractMultiResource,
-    AccessibilityManager: () => AccessibilityManager,
-    AlphaFilter: () => AlphaFilter,
-    AnimatedSprite: () => AnimatedSprite,
-    Application: () => Application,
-    ArrayResource: () => ArrayResource,
-    Assets: () => Assets,
-    AssetsClass: () => AssetsClass,
-    Attribute: () => Attribute,
-    BLEND_MODES: () => BLEND_MODES,
-    BUFFER_BITS: () => BUFFER_BITS,
-    BUFFER_TYPE: () => BUFFER_TYPE,
-    BackgroundSystem: () => BackgroundSystem,
-    BaseImageResource: () => BaseImageResource,
-    BasePrepare: () => BasePrepare,
-    BaseRenderTexture: () => BaseRenderTexture,
-    BaseTexture: () => BaseTexture,
-    BatchDrawCall: () => BatchDrawCall,
-    BatchGeometry: () => BatchGeometry,
-    BatchRenderer: () => BatchRenderer,
-    BatchShaderGenerator: () => BatchShaderGenerator,
-    BatchSystem: () => BatchSystem,
-    BatchTextureArray: () => BatchTextureArray,
-    BitmapFont: () => BitmapFont,
-    BitmapFontData: () => BitmapFontData,
-    BitmapText: () => BitmapText,
-    BlobResource: () => BlobResource,
-    BlurFilter: () => BlurFilter,
-    BlurFilterPass: () => BlurFilterPass,
-    Bounds: () => Bounds,
-    BrowserAdapter: () => BrowserAdapter,
-    Buffer: () => Buffer2,
-    BufferResource: () => BufferResource,
-    BufferSystem: () => BufferSystem,
-    CLEAR_MODES: () => CLEAR_MODES,
-    COLOR_MASK_BITS: () => COLOR_MASK_BITS,
-    Cache: () => Cache,
-    CanvasResource: () => CanvasResource,
-    Circle: () => Circle,
-    Color: () => Color,
-    ColorMatrixFilter: () => ColorMatrixFilter,
-    CompressedTextureResource: () => CompressedTextureResource,
-    Container: () => Container,
-    ContextSystem: () => ContextSystem,
-    CountLimiter: () => CountLimiter,
-    CubeResource: () => CubeResource,
-    DEG_TO_RAD: () => DEG_TO_RAD,
-    DRAW_MODES: () => DRAW_MODES,
-    DisplacementFilter: () => DisplacementFilter,
-    DisplayObject: () => DisplayObject,
-    ENV: () => ENV,
-    Ellipse: () => Ellipse,
-    EventBoundary: () => EventBoundary,
-    EventSystem: () => EventSystem,
-    ExtensionType: () => ExtensionType,
-    Extract: () => Extract,
-    FORMATS: () => FORMATS,
-    FORMATS_TO_COMPONENTS: () => FORMATS_TO_COMPONENTS,
-    FXAAFilter: () => FXAAFilter,
-    FederatedDisplayObject: () => FederatedDisplayObject,
-    FederatedEvent: () => FederatedEvent,
-    FederatedMouseEvent: () => FederatedMouseEvent,
-    FederatedPointerEvent: () => FederatedPointerEvent,
-    FederatedWheelEvent: () => FederatedWheelEvent,
-    FillStyle: () => FillStyle,
-    Filter: () => Filter,
-    FilterState: () => FilterState,
-    FilterSystem: () => FilterSystem,
-    Framebuffer: () => Framebuffer,
-    FramebufferSystem: () => FramebufferSystem,
-    GC_MODES: () => GC_MODES,
-    GLFramebuffer: () => GLFramebuffer,
-    GLProgram: () => GLProgram,
-    GLTexture: () => GLTexture,
-    GRAPHICS_CURVES: () => GRAPHICS_CURVES,
-    GenerateTextureSystem: () => GenerateTextureSystem,
-    Geometry: () => Geometry,
-    GeometrySystem: () => GeometrySystem,
-    Graphics: () => Graphics,
-    GraphicsData: () => GraphicsData,
-    GraphicsGeometry: () => GraphicsGeometry,
-    HTMLText: () => HTMLText,
-    HTMLTextStyle: () => HTMLTextStyle,
-    IGLUniformData: () => IGLUniformData,
-    INSTALLED: () => INSTALLED,
-    INTERNAL_FORMATS: () => INTERNAL_FORMATS,
-    INTERNAL_FORMAT_TO_BYTES_PER_PIXEL: () => INTERNAL_FORMAT_TO_BYTES_PER_PIXEL,
-    ImageBitmapResource: () => ImageBitmapResource,
-    ImageResource: () => ImageResource,
-    LINE_CAP: () => LINE_CAP,
-    LINE_JOIN: () => LINE_JOIN,
-    LineStyle: () => LineStyle,
-    LoaderParserPriority: () => LoaderParserPriority,
-    MASK_TYPES: () => MASK_TYPES,
-    MIPMAP_MODES: () => MIPMAP_MODES,
-    MSAA_QUALITY: () => MSAA_QUALITY,
-    MaskData: () => MaskData,
-    MaskSystem: () => MaskSystem,
-    Matrix: () => Matrix,
-    Mesh: () => Mesh,
-    MeshBatchUvs: () => MeshBatchUvs,
-    MeshGeometry: () => MeshGeometry,
-    MeshMaterial: () => MeshMaterial,
-    MultisampleSystem: () => MultisampleSystem,
-    NineSlicePlane: () => NineSlicePlane,
-    NoiseFilter: () => NoiseFilter,
-    ObjectRenderer: () => ObjectRenderer,
-    ObjectRendererSystem: () => ObjectRendererSystem,
-    ObservablePoint: () => ObservablePoint,
-    PI_2: () => PI_2,
-    PRECISION: () => PRECISION,
-    ParticleContainer: () => ParticleContainer,
-    ParticleRenderer: () => ParticleRenderer,
-    PlaneGeometry: () => PlaneGeometry,
-    PluginSystem: () => PluginSystem,
-    Point: () => Point,
-    Polygon: () => Polygon,
-    Prepare: () => Prepare,
-    Program: () => Program,
-    ProjectionSystem: () => ProjectionSystem,
-    Quad: () => Quad,
-    QuadUv: () => QuadUv,
-    RAD_TO_DEG: () => RAD_TO_DEG,
-    RENDERER_TYPE: () => RENDERER_TYPE,
-    Rectangle: () => Rectangle,
-    RenderTexture: () => RenderTexture,
-    RenderTexturePool: () => RenderTexturePool,
-    RenderTextureSystem: () => RenderTextureSystem,
-    Renderer: () => Renderer,
-    ResizePlugin: () => ResizePlugin,
-    Resource: () => Resource,
-    RopeGeometry: () => RopeGeometry,
-    RoundedRectangle: () => RoundedRectangle,
-    Runner: () => Runner,
-    SAMPLER_TYPES: () => SAMPLER_TYPES,
-    SCALE_MODES: () => SCALE_MODES,
-    SHAPES: () => SHAPES,
-    SVGResource: () => SVGResource,
-    ScissorSystem: () => ScissorSystem,
-    Shader: () => Shader,
-    ShaderSystem: () => ShaderSystem,
-    SimpleMesh: () => SimpleMesh,
-    SimplePlane: () => SimplePlane,
-    SimpleRope: () => SimpleRope,
-    Sprite: () => Sprite,
-    SpriteMaskFilter: () => SpriteMaskFilter,
-    Spritesheet: () => Spritesheet,
-    StartupSystem: () => StartupSystem,
-    State: () => State,
-    StateSystem: () => StateSystem,
-    StencilSystem: () => StencilSystem,
-    SystemManager: () => SystemManager,
-    TARGETS: () => TARGETS,
-    TEXT_GRADIENT: () => TEXT_GRADIENT,
-    TYPES: () => TYPES,
-    TYPES_TO_BYTES_PER_COMPONENT: () => TYPES_TO_BYTES_PER_COMPONENT,
-    TYPES_TO_BYTES_PER_PIXEL: () => TYPES_TO_BYTES_PER_PIXEL,
-    TemporaryDisplayObject: () => TemporaryDisplayObject,
-    Text: () => Text,
-    TextFormat: () => TextFormat,
-    TextMetrics: () => TextMetrics,
-    TextStyle: () => TextStyle,
-    Texture: () => Texture,
-    TextureGCSystem: () => TextureGCSystem,
-    TextureMatrix: () => TextureMatrix,
-    TextureSystem: () => TextureSystem,
-    TextureUvs: () => TextureUvs,
-    Ticker: () => Ticker,
-    TickerPlugin: () => TickerPlugin,
-    TilingSprite: () => TilingSprite,
-    TilingSpriteRenderer: () => TilingSpriteRenderer,
-    TimeLimiter: () => TimeLimiter,
-    Transform: () => Transform,
-    TransformFeedback: () => TransformFeedback,
-    TransformFeedbackSystem: () => TransformFeedbackSystem,
-    UPDATE_PRIORITY: () => UPDATE_PRIORITY,
-    UniformGroup: () => UniformGroup,
-    VERSION: () => VERSION,
-    VideoResource: () => VideoResource,
-    ViewSystem: () => ViewSystem,
-    ViewableBuffer: () => ViewableBuffer,
-    WRAP_MODES: () => WRAP_MODES,
-    XMLFormat: () => XMLFormat,
-    XMLStringFormat: () => XMLStringFormat,
-    accessibleTarget: () => accessibleTarget,
-    autoDetectFormat: () => autoDetectFormat,
-    autoDetectRenderer: () => autoDetectRenderer,
-    autoDetectResource: () => autoDetectResource,
-    cacheTextureArray: () => cacheTextureArray,
-    checkDataUrl: () => checkDataUrl,
-    checkExtension: () => checkExtension,
-    checkMaxIfStatementsInShader: () => checkMaxIfStatementsInShader,
-    convertToList: () => convertToList,
-    copySearchParams: () => copySearchParams,
-    createStringVariations: () => createStringVariations,
-    createTexture: () => createTexture,
-    createUBOElements: () => createUBOElements,
-    curves: () => curves,
-    defaultFilterVertex: () => defaultFilterVertex,
-    defaultVertex: () => defaultVertex4,
-    detectAvif: () => detectAvif,
-    detectCompressedTextures: () => detectCompressedTextures,
-    detectDefaults: () => detectDefaults,
-    detectMp4: () => detectMp4,
-    detectOgv: () => detectOgv,
-    detectWebm: () => detectWebm,
-    detectWebp: () => detectWebp,
-    extensions: () => extensions,
-    filters: () => filters,
-    generateProgram: () => generateProgram,
-    generateUniformBufferSync: () => generateUniformBufferSync,
-    getFontFamilyName: () => getFontFamilyName,
-    getTestContext: () => getTestContext,
-    getUBOData: () => getUBOData,
-    graphicsUtils: () => graphicsUtils,
-    groupD8: () => groupD8,
-    isMobile: () => isMobile2,
-    isSingleItem: () => isSingleItem,
-    loadBitmapFont: () => loadBitmapFont,
-    loadDDS: () => loadDDS,
-    loadImageBitmap: () => loadImageBitmap,
-    loadJson: () => loadJson,
-    loadKTX: () => loadKTX,
-    loadSVG: () => loadSVG,
-    loadTextures: () => loadTextures,
-    loadTxt: () => loadTxt,
-    loadVideo: () => loadVideo,
-    loadWebFont: () => loadWebFont,
-    parseDDS: () => parseDDS,
-    parseKTX: () => parseKTX,
-    resolveCompressedTextureUrl: () => resolveCompressedTextureUrl,
-    resolveTextureUrl: () => resolveTextureUrl,
-    settings: () => settings,
-    spritesheetAsset: () => spritesheetAsset,
-    uniformParsers: () => uniformParsers,
-    unsafeEvalSupported: () => unsafeEvalSupported,
-    utils: () => lib_exports
-  });
-
   // node_modules/@pixi/constants/lib/index.mjs
   var ENV = /* @__PURE__ */ ((ENV2) => (ENV2[ENV2.WEBGL_LEGACY = 0] = "WEBGL_LEGACY", ENV2[ENV2.WEBGL = 1] = "WEBGL", ENV2[ENV2.WEBGL2 = 2] = "WEBGL2", ENV2))(ENV || {});
   var RENDERER_TYPE = /* @__PURE__ */ ((RENDERER_TYPE2) => (RENDERER_TYPE2[RENDERER_TYPE2.UNKNOWN = 0] = "UNKNOWN", RENDERER_TYPE2[RENDERER_TYPE2.WEBGL = 1] = "WEBGL", RENDERER_TYPE2[RENDERER_TYPE2.CANVAS = 2] = "CANVAS", RENDERER_TYPE2))(RENDERER_TYPE || {});
@@ -3825,7 +3582,6 @@
   var GC_MODES = /* @__PURE__ */ ((GC_MODES2) => (GC_MODES2[GC_MODES2.AUTO = 0] = "AUTO", GC_MODES2[GC_MODES2.MANUAL = 1] = "MANUAL", GC_MODES2))(GC_MODES || {});
   var PRECISION = /* @__PURE__ */ ((PRECISION2) => (PRECISION2.LOW = "lowp", PRECISION2.MEDIUM = "mediump", PRECISION2.HIGH = "highp", PRECISION2))(PRECISION || {});
   var MASK_TYPES = /* @__PURE__ */ ((MASK_TYPES2) => (MASK_TYPES2[MASK_TYPES2.NONE = 0] = "NONE", MASK_TYPES2[MASK_TYPES2.SCISSOR = 1] = "SCISSOR", MASK_TYPES2[MASK_TYPES2.STENCIL = 2] = "STENCIL", MASK_TYPES2[MASK_TYPES2.SPRITE = 3] = "SPRITE", MASK_TYPES2[MASK_TYPES2.COLOR = 4] = "COLOR", MASK_TYPES2))(MASK_TYPES || {});
-  var COLOR_MASK_BITS = /* @__PURE__ */ ((COLOR_MASK_BITS2) => (COLOR_MASK_BITS2[COLOR_MASK_BITS2.RED = 1] = "RED", COLOR_MASK_BITS2[COLOR_MASK_BITS2.GREEN = 2] = "GREEN", COLOR_MASK_BITS2[COLOR_MASK_BITS2.BLUE = 4] = "BLUE", COLOR_MASK_BITS2[COLOR_MASK_BITS2.ALPHA = 8] = "ALPHA", COLOR_MASK_BITS2))(COLOR_MASK_BITS || {});
   var MSAA_QUALITY = /* @__PURE__ */ ((MSAA_QUALITY2) => (MSAA_QUALITY2[MSAA_QUALITY2.NONE = 0] = "NONE", MSAA_QUALITY2[MSAA_QUALITY2.LOW = 2] = "LOW", MSAA_QUALITY2[MSAA_QUALITY2.MEDIUM = 4] = "MEDIUM", MSAA_QUALITY2[MSAA_QUALITY2.HIGH = 8] = "HIGH", MSAA_QUALITY2))(MSAA_QUALITY || {});
   var BUFFER_TYPE = /* @__PURE__ */ ((BUFFER_TYPE2) => (BUFFER_TYPE2[BUFFER_TYPE2.ELEMENT_ARRAY_BUFFER = 34963] = "ELEMENT_ARRAY_BUFFER", BUFFER_TYPE2[BUFFER_TYPE2.ARRAY_BUFFER = 34962] = "ARRAY_BUFFER", BUFFER_TYPE2[BUFFER_TYPE2.UNIFORM_BUFFER = 35345] = "UNIFORM_BUFFER", BUFFER_TYPE2))(BUFFER_TYPE || {});
 
@@ -11212,8 +10968,6 @@ void main(void)
   extensions.add(RenderTextureSystem);
 
   // node_modules/@pixi/core/lib/shader/GLProgram.mjs
-  var IGLUniformData = class {
-  };
   var GLProgram = class {
     /**
      * Makes a new Pixi program.
@@ -14181,28 +13935,6 @@ void main(void)
     CubeResource,
     ArrayResource
   );
-
-  // node_modules/@pixi/core/lib/transformFeedback/TransformFeedback.mjs
-  var TransformFeedback = class {
-    constructor() {
-      this._glTransformFeedbacks = {}, this.buffers = [], this.disposeRunner = new Runner("disposeTransformFeedback");
-    }
-    /**
-     * Bind buffer to TransformFeedback
-     * @param index - index to bind
-     * @param buffer - buffer to bind
-     */
-    bindBuffer(index, buffer) {
-      this.buffers[index] = buffer;
-    }
-    /** Destroy WebGL resources that are connected to this TransformFeedback. */
-    destroy() {
-      this.disposeRunner.emit(this, false);
-    }
-  };
-
-  // node_modules/@pixi/core/lib/index.mjs
-  var VERSION = "7.4.2";
 
   // node_modules/@pixi/display/lib/Bounds.mjs
   var Bounds = class {
@@ -21322,7 +21054,6 @@ Please use Assets.add({ alias, src, data, format, loadParser }) instead.`), asse
       return result < this.minSegments ? result = this.minSegments : result > this.maxSegments && (result = this.maxSegments), result;
     }
   };
-  var GRAPHICS_CURVES = curves;
 
   // node_modules/@pixi/graphics/lib/utils/ArcUtils.mjs
   var ArcUtils = class {
@@ -22738,22 +22469,6 @@ Please use Assets.add({ alias, src, data, format, loadParser }) instead.`), asse
   _Graphics._TEMP_POINT = new Point();
   var Graphics = _Graphics;
 
-  // node_modules/@pixi/graphics/lib/index.mjs
-  var graphicsUtils = {
-    buildPoly,
-    buildCircle,
-    buildRectangle,
-    buildRoundedRectangle,
-    buildLine,
-    ArcUtils,
-    BezierUtils,
-    QuadraticUtils,
-    BatchPart,
-    FILL_COMMANDS,
-    BATCH_POOL,
-    DRAW_CALL_POOL
-  };
-
   // node_modules/@pixi/mesh/lib/MeshBatchUvs.mjs
   var MeshBatchUvs = class {
     /**
@@ -23112,84 +22827,6 @@ void main(void)
     }
   };
 
-  // node_modules/@pixi/mesh-extras/lib/geometry/RopeGeometry.mjs
-  var RopeGeometry = class extends MeshGeometry {
-    /**
-     * @param width - The width (i.e., thickness) of the rope.
-     * @param points - An array of {@link PIXI.Point} objects to construct this rope.
-     * @param textureScale - By default the rope texture will be stretched to match
-     *     rope length. If textureScale is positive this value will be treated as a scaling
-     *     factor and the texture will preserve its aspect ratio instead. To create a tiling rope
-     *     set baseTexture.wrapMode to {@link PIXI.WRAP_MODES.REPEAT} and use a power of two texture,
-     *     then set textureScale=1 to keep the original texture pixel size.
-     *     In order to reduce alpha channel artifacts provide a larger texture and downsample -
-     *     i.e. set textureScale=0.5 to scale it down twice.
-     */
-    constructor(width = 200, points, textureScale = 0) {
-      super(
-        new Float32Array(points.length * 4),
-        new Float32Array(points.length * 4),
-        new Uint16Array((points.length - 1) * 6)
-      ), this.points = points, this._width = width, this.textureScale = textureScale, this.build();
-    }
-    /**
-     * The width (i.e., thickness) of the rope.
-     * @readonly
-     */
-    get width() {
-      return this._width;
-    }
-    /** Refreshes Rope indices and uvs */
-    build() {
-      const points = this.points;
-      if (!points)
-        return;
-      const vertexBuffer = this.getBuffer("aVertexPosition"), uvBuffer = this.getBuffer("aTextureCoord"), indexBuffer = this.getIndex();
-      if (points.length < 1)
-        return;
-      vertexBuffer.data.length / 4 !== points.length && (vertexBuffer.data = new Float32Array(points.length * 4), uvBuffer.data = new Float32Array(points.length * 4), indexBuffer.data = new Uint16Array((points.length - 1) * 6));
-      const uvs = uvBuffer.data, indices2 = indexBuffer.data;
-      uvs[0] = 0, uvs[1] = 0, uvs[2] = 0, uvs[3] = 1;
-      let amount = 0, prev = points[0];
-      const textureWidth = this._width * this.textureScale, total = points.length;
-      for (let i2 = 0; i2 < total; i2++) {
-        const index = i2 * 4;
-        if (this.textureScale > 0) {
-          const dx = prev.x - points[i2].x, dy = prev.y - points[i2].y, distance = Math.sqrt(dx * dx + dy * dy);
-          prev = points[i2], amount += distance / textureWidth;
-        } else
-          amount = i2 / (total - 1);
-        uvs[index] = amount, uvs[index + 1] = 0, uvs[index + 2] = amount, uvs[index + 3] = 1;
-      }
-      let indexCount = 0;
-      for (let i2 = 0; i2 < total - 1; i2++) {
-        const index = i2 * 2;
-        indices2[indexCount++] = index, indices2[indexCount++] = index + 1, indices2[indexCount++] = index + 2, indices2[indexCount++] = index + 2, indices2[indexCount++] = index + 1, indices2[indexCount++] = index + 3;
-      }
-      uvBuffer.update(), indexBuffer.update(), this.updateVertices();
-    }
-    /** refreshes vertices of Rope mesh */
-    updateVertices() {
-      const points = this.points;
-      if (points.length < 1)
-        return;
-      let lastPoint = points[0], nextPoint, perpX = 0, perpY = 0;
-      const vertices = this.buffers[0].data, total = points.length, halfWidth = this.textureScale > 0 ? this.textureScale * this._width / 2 : this._width / 2;
-      for (let i2 = 0; i2 < total; i2++) {
-        const point = points[i2], index = i2 * 4;
-        i2 < points.length - 1 ? nextPoint = points[i2 + 1] : nextPoint = point, perpY = -(nextPoint.x - lastPoint.x), perpX = nextPoint.y - lastPoint.y;
-        let ratio = (1 - i2 / (total - 1)) * 10;
-        ratio > 1 && (ratio = 1);
-        const perpLength = Math.sqrt(perpX * perpX + perpY * perpY);
-        perpLength < 1e-6 ? (perpX = 0, perpY = 0) : (perpX /= perpLength, perpY /= perpLength, perpX *= halfWidth, perpY *= halfWidth), vertices[index] = point.x + perpX, vertices[index + 1] = point.y + perpY, vertices[index + 2] = point.x - perpX, vertices[index + 3] = point.y - perpY, lastPoint = point;
-      }
-      this.buffers[0].update();
-    }
-    update() {
-      this.textureScale > 0 ? this.build() : this.updateVertices();
-    }
-  };
-
   // node_modules/@pixi/mesh-extras/lib/SimplePlane.mjs
   var SimplePlane = class extends Mesh {
     /**
@@ -23342,109 +22979,6 @@ void main(void)
     }
     _render(renderer) {
       this.autoUpdate && this.geometry.getBuffer("aVertexPosition").update(), super._render(renderer);
-    }
-  };
-
-  // node_modules/@pixi/mesh-extras/lib/SimpleRope.mjs
-  var SimpleRope = class extends Mesh {
-    /**
-     * Note: The wrap mode of the texture is set to REPEAT if `textureScale` is positive.
-     * @param texture - The texture to use on the rope.
-     * @param points - An array of {@link PIXI.Point} objects to construct this rope.
-     * @param {number} textureScale - Optional. Positive values scale rope texture
-     * keeping its aspect ratio. You can reduce alpha channel artifacts by providing a larger texture
-     * and downsampling here. If set to zero, texture will be stretched instead.
-     */
-    constructor(texture, points, textureScale = 0) {
-      const ropeGeometry = new RopeGeometry(texture.height, points, textureScale), meshMaterial = new MeshMaterial(texture);
-      textureScale > 0 && (texture.baseTexture.wrapMode = WRAP_MODES.REPEAT), super(ropeGeometry, meshMaterial), this.autoUpdate = true;
-    }
-    _render(renderer) {
-      const geometry = this.geometry;
-      (this.autoUpdate || geometry._width !== this.shader.texture.height) && (geometry._width = this.shader.texture.height, geometry.update()), super._render(renderer);
-    }
-  };
-
-  // node_modules/@pixi/particle-container/lib/ParticleContainer.mjs
-  var ParticleContainer = class extends Container {
-    /**
-     * @param maxSize - The maximum number of particles that can be rendered by the container.
-     *  Affects size of allocated buffers.
-     * @param properties - The properties of children that should be uploaded to the gpu and applied.
-     * @param {boolean} [properties.vertices=false] - When true, vertices be uploaded and applied.
-     *                  if sprite's ` scale/anchor/trim/frame/orig` is dynamic, please set `true`.
-     * @param {boolean} [properties.position=true] - When true, position be uploaded and applied.
-     * @param {boolean} [properties.rotation=false] - When true, rotation be uploaded and applied.
-     * @param {boolean} [properties.uvs=false] - When true, uvs be uploaded and applied.
-     * @param {boolean} [properties.tint=false] - When true, alpha and tint be uploaded and applied.
-     * @param {number} [batchSize=16384] - Number of particles per batch. If less than maxSize, it uses maxSize instead.
-     * @param {boolean} [autoResize=false] - If true, container allocates more batches in case
-     *  there are more than `maxSize` particles.
-     */
-    constructor(maxSize = 1500, properties, batchSize = 16384, autoResize = false) {
-      super();
-      const maxBatchSize = 16384;
-      batchSize > maxBatchSize && (batchSize = maxBatchSize), this._properties = [false, true, false, false, false], this._maxSize = maxSize, this._batchSize = batchSize, this._buffers = null, this._bufferUpdateIDs = [], this._updateID = 0, this.interactiveChildren = false, this.blendMode = BLEND_MODES.NORMAL, this.autoResize = autoResize, this.roundPixels = true, this.baseTexture = null, this.setProperties(properties), this._tintColor = new Color(0), this.tintRgb = new Float32Array(3), this.tint = 16777215;
-    }
-    /**
-     * Sets the private properties array to dynamic / static based on the passed properties object
-     * @param properties - The properties to be uploaded
-     */
-    setProperties(properties) {
-      properties && (this._properties[0] = "vertices" in properties || "scale" in properties ? !!properties.vertices || !!properties.scale : this._properties[0], this._properties[1] = "position" in properties ? !!properties.position : this._properties[1], this._properties[2] = "rotation" in properties ? !!properties.rotation : this._properties[2], this._properties[3] = "uvs" in properties ? !!properties.uvs : this._properties[3], this._properties[4] = "tint" in properties || "alpha" in properties ? !!properties.tint || !!properties.alpha : this._properties[4]);
-    }
-    updateTransform() {
-      this.displayObjectUpdateTransform();
-    }
-    /**
-     * The tint applied to the container. This is a hex value.
-     * A value of 0xFFFFFF will remove any tint effect.
-     * IMPORTANT: This is a WebGL only feature and will be ignored by the canvas renderer.
-     * @default 0xFFFFFF
-     */
-    get tint() {
-      return this._tintColor.value;
-    }
-    set tint(value) {
-      this._tintColor.setValue(value), this._tintColor.toRgbArray(this.tintRgb);
-    }
-    /**
-     * Renders the container using the WebGL renderer.
-     * @param renderer - The WebGL renderer.
-     */
-    render(renderer) {
-      !this.visible || this.worldAlpha <= 0 || !this.children.length || !this.renderable || (this.baseTexture || (this.baseTexture = this.children[0]._texture.baseTexture, this.baseTexture.valid || this.baseTexture.once("update", () => this.onChildrenChange(0))), renderer.batch.setObjectRenderer(renderer.plugins.particle), renderer.plugins.particle.render(this));
-    }
-    /**
-     * Set the flag that static data should be updated to true
-     * @param smallestChildIndex - The smallest child index.
-     */
-    onChildrenChange(smallestChildIndex) {
-      const bufferIndex = Math.floor(smallestChildIndex / this._batchSize);
-      for (; this._bufferUpdateIDs.length < bufferIndex; )
-        this._bufferUpdateIDs.push(0);
-      this._bufferUpdateIDs[bufferIndex] = ++this._updateID;
-    }
-    dispose() {
-      if (this._buffers) {
-        for (let i2 = 0; i2 < this._buffers.length; ++i2)
-          this._buffers[i2].destroy();
-        this._buffers = null;
-      }
-    }
-    /**
-     * Destroys the container
-     * @param options - Options parameter. A boolean will act as if all options
-     *  have been set to that value
-     * @param {boolean} [options.children=false] - if set to true, all the children will have their
-     *  destroy method called as well. 'options' will be passed on to those calls.
-     * @param {boolean} [options.texture=false] - Only used for child Sprites if options.children is set to true
-     *  Should it destroy the texture of the child sprite
-     * @param {boolean} [options.baseTexture=false] - Only used for child Sprites if options.children is set to true
-     *  Should it destroy the base texture of the child sprite
-     */
-    destroy(options) {
-      super.destroy(options), this.dispose(), this._properties = null, this._buffers = null, this._bufferUpdateIDs = null;
     }
   };
 
@@ -25127,25 +24661,6 @@ void main(void){
   };
   extensions.add(Prepare);
 
-  // node_modules/@pixi/prepare/lib/TimeLimiter.mjs
-  var TimeLimiter = class {
-    /** @param maxMilliseconds - The maximum milliseconds that can be spent preparing items each frame. */
-    constructor(maxMilliseconds) {
-      this.maxMilliseconds = maxMilliseconds, this.frameStart = 0;
-    }
-    /** Resets any counting properties to start fresh on a new frame. */
-    beginFrame() {
-      this.frameStart = Date.now();
-    }
-    /**
-     * Checks to see if another item can be uploaded. This should only be called once per item.
-     * @returns - If the item is allowed to be uploaded.
-     */
-    allowedToUpload() {
-      return Date.now() - this.frameStart < this.maxMilliseconds;
-    }
-  };
-
   // node_modules/@pixi/sprite-animated/lib/AnimatedSprite.mjs
   var AnimatedSprite = class _AnimatedSprite extends Sprite {
     /**
@@ -25289,130 +24804,6 @@ void main(void){
 
   // node_modules/@pixi/sprite-tiling/lib/TilingSprite.mjs
   var tempPoint3 = new Point();
-  var TilingSprite = class _TilingSprite extends Sprite {
-    /**
-     * Note: The wrap mode of the texture is forced to REPEAT on render if the size of the texture
-     * is a power of two, the texture's wrap mode is CLAMP, and the texture hasn't been bound yet.
-     * @param texture - The texture of the tiling sprite.
-     * @param width - The width of the tiling sprite.
-     * @param height - The height of the tiling sprite.
-     */
-    constructor(texture, width = 100, height = 100) {
-      super(texture), this.tileTransform = new Transform(), this._width = width, this._height = height, this.uvMatrix = this.texture.uvMatrix || new TextureMatrix(texture), this.pluginName = "tilingSprite", this.uvRespectAnchor = false;
-    }
-    /**
-     * Changes frame clamping in corresponding textureTransform, shortcut
-     * Change to -0.5 to add a pixel to the edge, recommended for transparent trimmed textures in atlas
-     * @default 0.5
-     * @member {number}
-     */
-    get clampMargin() {
-      return this.uvMatrix.clampMargin;
-    }
-    set clampMargin(value) {
-      this.uvMatrix.clampMargin = value, this.uvMatrix.update(true);
-    }
-    /** The scaling of the image that is being tiled. */
-    get tileScale() {
-      return this.tileTransform.scale;
-    }
-    set tileScale(value) {
-      this.tileTransform.scale.copyFrom(value);
-    }
-    /** The offset of the image that is being tiled. */
-    get tilePosition() {
-      return this.tileTransform.position;
-    }
-    set tilePosition(value) {
-      this.tileTransform.position.copyFrom(value);
-    }
-    /**
-     * @protected
-     */
-    _onTextureUpdate() {
-      this.uvMatrix && (this.uvMatrix.texture = this._texture), this._cachedTint = 16777215;
-    }
-    /**
-     * Renders the object using the WebGL renderer
-     * @param renderer - The renderer
-     */
-    _render(renderer) {
-      const texture = this._texture;
-      !texture || !texture.valid || (this.tileTransform.updateLocalTransform(), this.uvMatrix.update(), renderer.batch.setObjectRenderer(renderer.plugins[this.pluginName]), renderer.plugins[this.pluginName].render(this));
-    }
-    /** Updates the bounds of the tiling sprite. */
-    _calculateBounds() {
-      const minX = this._width * -this._anchor._x, minY = this._height * -this._anchor._y, maxX = this._width * (1 - this._anchor._x), maxY = this._height * (1 - this._anchor._y);
-      this._bounds.addFrame(this.transform, minX, minY, maxX, maxY);
-    }
-    /**
-     * Gets the local bounds of the sprite object.
-     * @param rect - Optional output rectangle.
-     * @returns The bounds.
-     */
-    getLocalBounds(rect) {
-      return this.children.length === 0 ? (this._bounds.minX = this._width * -this._anchor._x, this._bounds.minY = this._height * -this._anchor._y, this._bounds.maxX = this._width * (1 - this._anchor._x), this._bounds.maxY = this._height * (1 - this._anchor._y), rect || (this._localBoundsRect || (this._localBoundsRect = new Rectangle()), rect = this._localBoundsRect), this._bounds.getRectangle(rect)) : super.getLocalBounds.call(this, rect);
-    }
-    /**
-     * Checks if a point is inside this tiling sprite.
-     * @param point - The point to check.
-     * @returns Whether or not the sprite contains the point.
-     */
-    containsPoint(point) {
-      this.worldTransform.applyInverse(point, tempPoint3);
-      const width = this._width, height = this._height, x1 = -width * this.anchor._x;
-      if (tempPoint3.x >= x1 && tempPoint3.x < x1 + width) {
-        const y1 = -height * this.anchor._y;
-        if (tempPoint3.y >= y1 && tempPoint3.y < y1 + height)
-          return true;
-      }
-      return false;
-    }
-    /**
-     * Destroys this sprite and optionally its texture and children
-     * @param {object|boolean} [options] - Options parameter. A boolean will act as if all options
-     *  have been set to that value
-     * @param {boolean} [options.children=false] - if set to true, all the children will have their destroy
-     *      method called as well. 'options' will be passed on to those calls.
-     * @param {boolean} [options.texture=false] - Should it destroy the current texture of the sprite as well
-     * @param {boolean} [options.baseTexture=false] - Should it destroy the base texture of the sprite as well
-     */
-    destroy(options) {
-      super.destroy(options), this.tileTransform = null, this.uvMatrix = null;
-    }
-    /**
-     * Helper function that creates a new tiling sprite based on the source you provide.
-     * The source can be - frame id, image url, video url, canvas element, video element, base texture
-     * @static
-     * @param {string|PIXI.Texture|HTMLCanvasElement|HTMLVideoElement} source - Source to create texture from
-     * @param {object} options - See {@link PIXI.BaseTexture}'s constructor for options.
-     * @param {number} options.width - required width of the tiling sprite
-     * @param {number} options.height - required height of the tiling sprite
-     * @returns {PIXI.TilingSprite} The newly created texture
-     */
-    static from(source, options) {
-      const texture = source instanceof Texture ? source : Texture.from(source, options);
-      return new _TilingSprite(
-        texture,
-        options.width,
-        options.height
-      );
-    }
-    /** The width of the sprite, setting this will actually modify the scale to achieve the value set. */
-    get width() {
-      return this._width;
-    }
-    set width(value) {
-      this._width = value;
-    }
-    /** The height of the TilingSprite, setting this will actually modify the scale to achieve the value set. */
-    get height() {
-      return this._height;
-    }
-    set height(value) {
-      this._height = value;
-    }
-  };
 
   // node_modules/@pixi/sprite-tiling/lib/sprite-tiling.frag.mjs
   var gl2FragmentSrc = `#version 300 es
@@ -26672,7 +26063,6 @@ void main(void)\r
     maxWidth: 0,
     letterSpacing: 0
   };
-  var BitmapText = _BitmapText;
 
   // node_modules/@pixi/text-bitmap/lib/loadBitmapFont.mjs
   var validExtensions = [".xml", ".fnt"];
@@ -27181,530 +26571,68 @@ void main(void)\r
   _HTMLText.defaultMaxWidth = 2024, /** Default maxHeight, set at construction */
   _HTMLText.defaultMaxHeight = 2024, /** Default autoResolution for all HTMLText objects */
   _HTMLText.defaultAutoResolution = true;
-  var HTMLText = _HTMLText;
 
-  // src/js/FMS.js
-  var FMS = class {
-    constructor(game) {
-      this.game = game;
-      this.states = {};
-      this.currentState = null;
-    }
-    addStates(states) {
-      for (const name in states) {
-        this.addState(name, states[name]);
-      }
-    }
-    addState(name, stateConstructor) {
-      this.states[name] = new stateConstructor(name, this.game);
-    }
-    async changeState(newState) {
-      if (this.currentState) {
-        await this.states[this.currentState].onExit();
-      }
-      this.currentState = newState;
-      if (this.currentState) {
-        await this.states[this.currentState].onEnter();
-      }
-    }
-    goTo(state) {
-      this.changeState(state);
-    }
-  };
-
-  // src/js/configs/textStyles.js
-  var BottomPanelTextStyle = new TextStyle({
-    fontFamily: "Arial",
-    fontSize: 14,
-    fill: "#ffffff",
-    align: "center",
-    smooth: true
+  // node_modules/@pixi-spine/runtime-3.8/lib/index.mjs
+  var lib_exports2 = {};
+  __export(lib_exports2, {
+    Animation: () => Animation,
+    AnimationState: () => AnimationState,
+    AnimationStateAdapter: () => AnimationStateAdapter,
+    AnimationStateData: () => AnimationStateData,
+    AtlasAttachmentLoader: () => AtlasAttachmentLoader,
+    Attachment: () => Attachment,
+    AttachmentTimeline: () => AttachmentTimeline,
+    Bone: () => Bone,
+    BoneData: () => BoneData,
+    BoundingBoxAttachment: () => BoundingBoxAttachment,
+    ClippingAttachment: () => ClippingAttachment,
+    ColorTimeline: () => ColorTimeline,
+    ConstraintData: () => ConstraintData,
+    CurveTimeline: () => CurveTimeline,
+    DeformTimeline: () => DeformTimeline,
+    DrawOrderTimeline: () => DrawOrderTimeline,
+    Event: () => Event2,
+    EventData: () => EventData,
+    EventQueue: () => EventQueue,
+    EventTimeline: () => EventTimeline,
+    EventType: () => EventType,
+    IkConstraint: () => IkConstraint,
+    IkConstraintData: () => IkConstraintData,
+    IkConstraintTimeline: () => IkConstraintTimeline,
+    JitterEffect: () => JitterEffect,
+    MeshAttachment: () => MeshAttachment,
+    PathAttachment: () => PathAttachment,
+    PathConstraint: () => PathConstraint,
+    PathConstraintData: () => PathConstraintData,
+    PathConstraintMixTimeline: () => PathConstraintMixTimeline,
+    PathConstraintPositionTimeline: () => PathConstraintPositionTimeline,
+    PathConstraintSpacingTimeline: () => PathConstraintSpacingTimeline,
+    PointAttachment: () => PointAttachment,
+    RegionAttachment: () => RegionAttachment,
+    RotateTimeline: () => RotateTimeline,
+    ScaleTimeline: () => ScaleTimeline,
+    ShearTimeline: () => ShearTimeline,
+    Skeleton: () => Skeleton,
+    SkeletonBinary: () => SkeletonBinary,
+    SkeletonBounds: () => SkeletonBounds,
+    SkeletonData: () => SkeletonData,
+    SkeletonJson: () => SkeletonJson,
+    Skin: () => Skin,
+    SkinEntry: () => SkinEntry,
+    Slot: () => Slot,
+    SlotData: () => SlotData,
+    SpacingMode: () => SpacingMode,
+    Spine: () => Spine,
+    SwirlEffect: () => SwirlEffect,
+    TimelineType: () => TimelineType,
+    TrackEntry: () => TrackEntry,
+    TransformConstraint: () => TransformConstraint,
+    TransformConstraintData: () => TransformConstraintData,
+    TransformConstraintTimeline: () => TransformConstraintTimeline,
+    TranslateTimeline: () => TranslateTimeline,
+    TwoColorTimeline: () => TwoColorTimeline,
+    VertexAttachment: () => VertexAttachment
   });
-  var LoadingTextStyle = new TextStyle({
-    fontFamily: "Arial",
-    fill: "#ffffff",
-    align: "center",
-    smooth: true
-  });
-  var ClockTextStyle = new TextStyle({
-    fontFamily: "Arial",
-    fontSize: 18,
-    fill: "#ffffff"
-  });
-  var TargetTextStyle = new TextStyle({
-    "align": "center",
-    fontFamily: "Arial",
-    "dropShadowAngle": "",
-    "dropShadowColor": "#fe0303",
-    "dropShadowDistance": "",
-    "fill": "#fafc02",
-    "fontSize": 35,
-    "lineJoin": "round",
-    "stroke": "#fe0303",
-    "strokeThickness": 5
-  });
-  var BetsListLabelTextStyle = new TextStyle({
-    fontFamily: "Arial",
-    fontSize: 26,
-    fill: "#ffffff",
-    fontWeight: "bold"
-  });
-  var InfoLabelTextStyle = new TextStyle({
-    fontFamily: "Arial",
-    fontSize: 25,
-    fill: 16777215,
-    align: "center",
-    fontWeight: "bold"
-  });
-  var GameProgressPointTextStyle = new TextStyle({
-    fontFamily: "Arial",
-    fontSize: 18,
-    fill: 16777215,
-    align: "center"
-  });
-  var WinTextStyle = new TextStyle({
-    "align": "center",
-    "fontFamily": "Arial",
-    "dropShadowAngle": "",
-    "dropShadowColor": "#fe0303",
-    "dropShadowDistance": "",
-    "fill": "#fafc02",
-    "fontSize": 46,
-    "lineJoin": "round",
-    "stroke": "#fe0303",
-    "strokeThickness": 5,
-    "fontWeight": "bold"
-  });
-  var ButtonTextStyle = new TextStyle({
-    fontFamily: "Arial",
-    fontSize: 24,
-    fill: "#ffffff"
-  });
-
-  // src/js/Button.js
-  var Button = class extends Container {
-    constructor(textures, onClick, text = "") {
-      super();
-      this.textures = textures;
-      this.enabled = true;
-      this.sprite = new Sprite(textures.default);
-      this.addChild(this.sprite);
-      if (text) {
-        this.text = ObjectFactory.createText(text, ButtonTextStyle);
-        this.text.anchor.set(0.5);
-        this.text.x = this.sprite.width / 2;
-        this.text.y = this.sprite.height / 2;
-        this.addChild(this.text);
-      }
-      this.sprite.interactive = true;
-      this.sprite.buttonMode = true;
-      this.sprite.on("pointerover", this.onHover.bind(this));
-      this.sprite.on("pointerout", this.onOut.bind(this));
-      this.sprite.on("pointerdown", this.onDown.bind(this));
-      this.sprite.on("pointerup", this.onUp.bind(this));
-      this.sprite.on("pointerupoutside", this.onUp.bind(this));
-      this.setOnClick(onClick);
-    }
-    onHover() {
-      if (this.enabled) {
-        this.sprite.texture = this.textures.hover;
-      }
-    }
-    onOut() {
-      if (this.enabled) {
-        this.sprite.texture = this.textures.default;
-      }
-    }
-    onDown() {
-      if (this.enabled) {
-        this.sprite.texture = this.textures.pressed;
-      }
-    }
-    onUp() {
-      if (this.enabled) {
-        this.sprite.texture = this.textures.hover;
-      }
-    }
-    setOnClick(onClick) {
-      this.sprite.off("pointertap");
-      if (onClick && typeof onClick === "function") {
-        this.sprite.on("pointertap", onClick);
-      }
-    }
-    enable() {
-      this.enabled = true;
-      this.sprite.texture = this.textures.default;
-      this.sprite.interactive = true;
-      this.sprite.buttonMode = true;
-    }
-    disable() {
-      this.enabled = false;
-      this.sprite.texture = this.textures.disabled;
-      this.sprite.interactive = false;
-      this.sprite.buttonMode = false;
-    }
-  };
-
-  // src/js/Timer.js
-  var Timer = class {
-    static wait(ms) {
-      return new Promise((resolve2) => setTimeout(resolve2, ms));
-    }
-  };
-
-  // src/js/BallButton.js
-  var BallButton = class extends Button {
-    constructor(textures, onClick, text, animationFrames) {
-      super(textures, onClick, text);
-      this.animation = AnimatedSprite.fromFrames(animationFrames);
-      this.animation.anchor.set(0.5);
-      this.animation.x = this.sprite.width / 2;
-      this.animation.y = this.sprite.height / 2;
-      this.animation.visible = false;
-      this.animation.animationSpeed = 0.5;
-      this.animation.loop = true;
-      this.addChild(this.animation);
-      this.startAnimation();
-      this.sprite.on("pointertap", this.stopAnimation.bind(this));
-    }
-    startAnimation() {
-      this.animation.visible = true;
-      this.animation.play();
-      this.startToggleAnimation();
-    }
-    stopAnimation() {
-      this.animation.stop();
-      this.animation.visible = false;
-      this.clearToggleAnimation();
-    }
-    enable() {
-      super.enable();
-      this.startAnimation();
-    }
-    disable() {
-      super.disable();
-      this.stopAnimation();
-    }
-    startToggleAnimation() {
-      this.clearToggleAnimation();
-      this.interval = window.setInterval(() => {
-        if (!this.enabled) {
-          return;
-        }
-        this.toggleAnimation();
-      }, 5e3);
-    }
-    clearToggleAnimation() {
-      window.clearInterval(this.interval);
-    }
-    toggleAnimation() {
-      if (!this.enabled) {
-        this.animation.visible = false;
-        return;
-      }
-      this.animation.visible = !this.animation.visible;
-    }
-  };
-
-  // src/js/ProgressLine.js
-  var ProgressLine = class extends Container {
-    constructor(spriteTexture) {
-      super();
-      this.lineSprite = new Sprite(spriteTexture);
-      this.progressWidth = this.lineSprite.width;
-      this.progressHeight = this.lineSprite.height;
-      this.addChild(this.lineSprite);
-      this.mask = new Graphics();
-      this.mask.beginFill("0xffffff").drawRoundedRect(0, 0, this.progressWidth, this.progressHeight, this.height / 2).endFill();
-      this.addChild(this.mask);
-      this.lineSprite.mask = this.mask;
-      this._progress = 0;
-      this.setProgress(0);
-    }
-    setProgress(progress) {
-      if (progress < 0) progress = 0;
-      if (progress > 100) progress = 100;
-      this._progress = progress;
-      const maskWidth = this.progressWidth * progress / 100;
-      this.mask.clear().beginFill("0xffffff").drawRoundedRect(0, 0, maskWidth, this.progressHeight, this.height / 2).endFill();
-    }
-    set progress(value) {
-      this.setProgress(value);
-    }
-    get progress() {
-      return this._progress;
-    }
-  };
-
-  // src/js/GameLoadingProgressBar.js
-  var GameLoadingProgressBar = class extends Container {
-    constructor(backgroundTexture, lineTexture) {
-      super();
-      this.loadingText = ObjectFactory.createText("Loading...", LoadingTextStyle);
-      this.loadingText.anchor.set(0.5);
-      this.loadingText.x = backgroundTexture.width / 2;
-      this.loadingText.y = -12;
-      this.loadingText.resolution = 2;
-      this.addChild(this.loadingText);
-      this.background = new Sprite(backgroundTexture);
-      this.addChild(this.background);
-      this.progressLine = new ProgressLine(lineTexture);
-      this.addChild(this.progressLine);
-      this.progressLine.x = (this.background.width - this.progressLine.progressWidth) / 2 - 1;
-      this.progressLine.y = (this.background.height - this.progressLine.progressHeight) / 2 - 2;
-    }
-    setProgress(progress) {
-      this.progressLine.setProgress(progress);
-    }
-  };
-
-  // src/js/ValueTween.js
-  var ValueTween = class _ValueTween {
-    static easingFunctions = {
-      linear: (t2) => t2,
-      easeInQuad: (t2) => t2 * t2,
-      easeOutQuad: (t2) => t2 * (2 - t2),
-      easeInOutQuad: (t2) => t2 < 0.5 ? 2 * t2 * t2 : -1 + (4 - 2 * t2) * t2,
-      easeInCubic: (t2) => t2 * t2 * t2,
-      easeOutCubic: (t2) => --t2 * t2 * t2 + 1,
-      easeInOutCubic: (t2) => t2 < 0.5 ? 4 * t2 * t2 * t2 : (t2 - 1) * (2 * t2 - 2) * (2 * t2 - 2) + 1,
-      elasticIn: (t2) => t2 === 0 ? 0 : t2 === 1 ? 1 : -Math.pow(2, 10 * (t2 - 1)) * Math.sin((t2 - 1.1) * 5 * Math.PI),
-      elasticOut: (t2) => t2 === 0 ? 0 : t2 === 1 ? 1 : Math.pow(2, -10 * t2) * Math.sin((t2 - 0.1) * 5 * Math.PI) + 1,
-      elasticInOut: (t2) => t2 === 0 ? 0 : t2 === 1 ? 1 : t2 < 0.5 ? -(Math.pow(2, 10 * (2 * t2 - 1)) * Math.sin((2 * t2 - 1.1) * 5 * Math.PI)) / 2 : Math.pow(2, -10 * (2 * t2 - 1)) * Math.sin((2 * t2 - 1.1) * 5 * Math.PI) / 2 + 1
-    };
-    static async to(object, { key, to, from, setter, delay = 0 }, time, easing = "linear") {
-      if (delay > 0) {
-        await Timer.wait(delay);
-      }
-      await new Promise((resolve2) => {
-        const startValue = from !== void 0 ? from : object[key];
-        const change = to - startValue;
-        const startTime = performance.now();
-        const easingFunction = _ValueTween.easingFunctions[easing];
-        function update() {
-          const currentTime = performance.now();
-          const elapsedTime = currentTime - startTime;
-          const progress = Math.min(elapsedTime / time, 1);
-          const easedProgress = easingFunction(progress);
-          const value = startValue + change * easedProgress;
-          if (setter) {
-            setter(value);
-          } else {
-            object[key] = value;
-          }
-          if (progress < 1) {
-            requestAnimationFrame(update);
-          } else {
-            resolve2();
-          }
-        }
-        requestAnimationFrame(update);
-      });
-    }
-  };
-  var ValueTween_default = ValueTween;
-
-  // src/js/LoseAnimation.js
-  var LoseAnimation = class extends Container {
-    constructor(loseAnimationFrames, screenSize, bgTexture) {
-      super();
-      this.background = Sprite.from(bgTexture);
-      this.background.anchor.set(0.5);
-      this.background.x = screenSize.width / 2;
-      this.background.y = screenSize.height / 2;
-      this.background.alpha = 0;
-      this.addChild(this.background);
-      this.loseAnimation = AnimatedSprite.fromFrames(loseAnimationFrames);
-      this.loseAnimation.anchor.set(0.5);
-      this.loseAnimation.x = screenSize.width / 2;
-      this.loseAnimation.y = screenSize.height / 2;
-      this.loseAnimation.visible = false;
-      this.loseAnimation.loop = false;
-      this.addChild(this.loseAnimation);
-    }
-    async play() {
-      await ValueTween.to(this.background, { key: "alpha", to: 1 }, 250);
-      this.loseAnimation.visible = true;
-      this.loseAnimation.currentFrame = 0;
-      this.loseAnimation.play();
-      await new Promise((resolve2) => this.loseAnimation.onComplete = resolve2);
-      await Timer.wait(500);
-      await ValueTween.to(this, { key: "alpha", to: 0 }, 500);
-      this.loseAnimation.stop();
-      this.alpha = 1;
-      this.loseAnimation.visible = false;
-      this.background.alpha = 0;
-    }
-  };
-
-  // src/js/BetsList.js
-  var BetsList = class extends Container {
-    constructor(bets, currentBetIndex, onChangeBet, textures) {
-      super();
-      this.bets = bets;
-      this.currentIndex = currentBetIndex;
-      this.onChangeBet = onChangeBet;
-      this.currentBetText = ObjectFactory.createText(this.bets[this.currentIndex], BetsListLabelTextStyle);
-      this.currentBetText.anchor.set(0.5);
-      this.addChild(this.currentBetText);
-      this.background = new Sprite(textures.background);
-      this.background.anchor.set(0.5);
-      this.addChildAt(this.background, 0);
-      this.leftButton = new Button(textures.leftButton, this.decreaseBet.bind(this));
-      this.leftButton.x = -(this.background.width / 2) + this.leftButton.width / 2;
-      this.leftButton.y = -(this.background.height / 2) + this.leftButton.height / 2;
-      this.addChild(this.leftButton);
-      this.rightButton = new Button(textures.rightButton, this.increaseBet.bind(this));
-      this.rightButton.x = this.background.width / 2 - 15;
-      this.rightButton.y = -(this.background.height / 2) + this.rightButton.height / 2;
-      this.rightButton.scale.x = -1;
-      this.addChild(this.rightButton);
-      this.label = ObjectFactory.createText("Bet", BottomPanelTextStyle);
-      this.label.anchor.set(0.5);
-      this.label.y = -36;
-      this.addChild(this.label);
-      this.updateUI();
-    }
-    decreaseBet() {
-      if (this.currentIndex > 0) {
-        this.currentIndex--;
-        this.updateUI();
-      }
-    }
-    increaseBet() {
-      if (this.currentIndex < this.bets.length - 1) {
-        this.currentIndex++;
-        this.updateUI();
-      }
-    }
-    setBetIndex(index) {
-      if (index >= 0 && index < this.bets.length) {
-        this.currentIndex = index;
-        this.updateUI();
-      }
-    }
-    getCurrentBet() {
-      return this.bets[this.currentIndex];
-    }
-    updateUI() {
-      this.currentBetText.text = this.bets[this.currentIndex];
-      if (this.onChangeBet) {
-        this.onChangeBet(this.currentIndex);
-      }
-    }
-    disable() {
-      this.leftButton.disable();
-      this.rightButton.disable();
-    }
-    enable() {
-      this.leftButton.enable();
-      this.rightButton.enable();
-    }
-  };
-
-  // src/js/utils.js
-  function getRandomNumber() {
-    return Math.floor(Math.random() * 4);
-  }
-  function roundToTwo(num) {
-    return Number(num.toFixed(2));
-  }
-  function formatCurrency(num) {
-    return `$${roundToTwo(num)}`;
-  }
-
-  // src/js/WinAnimation.js
-  var WinAnimation = class extends Container {
-    constructor(loseAnimationFrames, screenSize, bgTexture) {
-      super();
-      this.background = Sprite.from(bgTexture);
-      this.background.anchor.set(0.5);
-      this.background.x = screenSize.width / 2;
-      this.background.y = screenSize.height / 2;
-      this.background.alpha = 0;
-      this.addChild(this.background);
-      this.animation = AnimatedSprite.fromFrames(loseAnimationFrames);
-      this.animation.anchor.set(0.5);
-      this.animation.x = screenSize.width / 2;
-      this.animation.y = screenSize.height / 2;
-      this.animation.visible = false;
-      this.animation.loop = false;
-      this.animation.animationSpeed = 0.5;
-      this.addChild(this.animation);
-      this.text = ObjectFactory.createText("WIN", WinTextStyle);
-      this.text.anchor.set(0.5);
-      this.text.scale.set(0);
-      this.text.x = screenSize.width / 2;
-      this.text.y = screenSize.height / 2;
-      this.addChild(this.text);
-    }
-    async play(winValue) {
-      this.text.scale.set(0);
-      this.text.text = formatCurrency(winValue);
-      await ValueTween.to(this.background, { key: "alpha", to: 1 }, 250);
-      this.animation.visible = true;
-      this.animation.currentFrame = 0;
-      this.animation.play();
-      ValueTween.to(this.text, { key: "scale", to: 1, from: 0, setter: (value) => this.text.scale.set(value), delay: 500 }, 1e3, "elasticOut");
-      await new Promise((resolve2) => this.animation.onComplete = resolve2);
-      await Timer.wait(500);
-      await ValueTween.to(this, { key: "alpha", to: 0 }, 500);
-      this.animation.stop();
-      this.alpha = 1;
-      this.animation.visible = false;
-      this.background.alpha = 0;
-      this.text.scale.set(0);
-    }
-  };
-
-  // src/LightsAnimations.js
-  var LightAnimation = class extends Container {
-    constructor(animationFrames) {
-      super();
-      this.animations = [];
-      this.animationFrames = animationFrames;
-      this.createAnimations();
-      this.startRandomAnimations();
-    }
-    createAnimations() {
-      const postions = [
-        { x: -43, y: 173 },
-        { x: 176, y: 194 },
-        { x: 422, y: 188 },
-        { x: 642, y: 185 },
-        { x: 888, y: 193 },
-        { x: 1105, y: 173 }
-      ];
-      for (let i2 = 0; i2 < postions.length; i2++) {
-        const animation = AnimatedSprite.fromFrames(this.animationFrames);
-        animation.animationSpeed = 0.5;
-        animation.loop = false;
-        animation.alpha = 0;
-        animation.x = postions[i2].x;
-        animation.y = postions[i2].y;
-        this.addChild(animation);
-        this.animations.push(animation);
-      }
-    }
-    startRandomAnimations() {
-      this.animations.forEach((animation) => {
-        this.scheduleAnimation(animation);
-      });
-    }
-    scheduleAnimation(animation) {
-      const delayTime = Math.random() * 3e3 + 2e3;
-      setTimeout(async () => {
-        await this.animate(animation);
-        this.scheduleAnimation(animation);
-      }, delayTime);
-    }
-    async animate(animation) {
-      await ValueTween_default.to(animation, { key: "alpha", to: 1 }, 500, "easeInQuad");
-      animation.gotoAndPlay(0);
-      await new Promise((resolve2) => animation.onComplete = resolve2);
-      await ValueTween_default.to(animation, { key: "alpha", to: 0 }, 500, "easeOutQuad");
-    }
-  };
 
   // node_modules/@pixi-spine/base/lib/core/AttachmentType.mjs
   var AttachmentType = /* @__PURE__ */ ((AttachmentType2) => {
@@ -29398,240 +28326,6 @@ void main(void)\r
         }
       }
     }
-  });
-
-  // node_modules/@pixi-spine/loader-base/lib/atlasLoader.mjs
-  var spineTextureAtlasLoader = {
-    extension: ExtensionType.Asset,
-    // cache: {
-    //     test: (asset: RawAtlas | TextureAtlas) => asset instanceof TextureAtlas,
-    //     getCacheableAssets: (keys: string[], asset: RawAtlas | TextureAtlas) => getCacheableAssets(keys, asset),
-    // },
-    loader: {
-      extension: {
-        type: ExtensionType.LoadParser,
-        priority: LoaderParserPriority.Normal
-      },
-      test(url2) {
-        return checkExtension(url2, ".atlas");
-      },
-      async load(url2) {
-        const response = await settings.ADAPTER.fetch(url2);
-        const txt = await response.text();
-        return txt;
-      },
-      testParse(asset, options) {
-        const isExtensionRight = checkExtension(options.src, ".atlas");
-        const isString = typeof asset === "string";
-        return Promise.resolve(isExtensionRight && isString);
-      },
-      async parse(asset, options, loader) {
-        const metadata = options.data;
-        let basePath = lib_exports.path.dirname(options.src);
-        if (basePath && basePath.lastIndexOf("/") !== basePath.length - 1) {
-          basePath += "/";
-        }
-        let resolve2 = null;
-        let reject = null;
-        const retPromise = new Promise((res, rej) => {
-          resolve2 = res;
-          reject = rej;
-        });
-        let retval;
-        const resolveCallback = (newAtlas) => {
-          if (!newAtlas) {
-            reject("Something went terribly wrong loading a spine .atlas file\nMost likely your texture failed to load.");
-          }
-          resolve2(retval);
-        };
-        if (metadata.image || metadata.images) {
-          const pages = Object.assign(metadata.image ? { default: metadata.image } : {}, metadata.images);
-          retval = new TextureAtlas(
-            asset,
-            (line, callback) => {
-              const page = pages[line] || pages.default;
-              if (page && page.baseTexture)
-                callback(page.baseTexture);
-              else
-                callback(page);
-            },
-            resolveCallback
-          );
-        } else {
-          retval = new TextureAtlas(asset, makeSpineTextureAtlasLoaderFunctionFromPixiLoaderObject(loader, basePath, metadata.imageMetadata), resolveCallback);
-        }
-        return await retPromise;
-      },
-      unload(atlas) {
-        atlas.dispose();
-      }
-    }
-  };
-  var makeSpineTextureAtlasLoaderFunctionFromPixiLoaderObject = (loader, atlasBasePath, imageMetadata) => {
-    return async (pageName, textureLoadedCallback) => {
-      const url2 = lib_exports.path.normalize([...atlasBasePath.split(lib_exports.path.sep), pageName].join(lib_exports.path.sep));
-      const texture = await loader.load({ src: url2, data: imageMetadata });
-      textureLoadedCallback(texture.baseTexture);
-    };
-  };
-  extensions.add(spineTextureAtlasLoader);
-
-  // node_modules/@pixi-spine/loader-base/lib/SpineLoaderAbstract.mjs
-  function isJson(resource) {
-    return resource.hasOwnProperty("bones");
-  }
-  function isBuffer(resource) {
-    return resource instanceof ArrayBuffer;
-  }
-  var SpineLoaderAbstract = class {
-    constructor() {
-    }
-    installLoader() {
-      const spineAdapter = this;
-      const spineLoaderExtension = {
-        extension: ExtensionType.Asset,
-        loader: {
-          extension: {
-            type: ExtensionType.LoadParser,
-            priority: LoaderParserPriority.Normal
-          },
-          // #region Downloading skel buffer data
-          test(url2) {
-            return checkExtension(url2, ".skel");
-          },
-          async load(url2) {
-            const response = await settings.ADAPTER.fetch(url2);
-            const buffer = await response.arrayBuffer();
-            return buffer;
-          },
-          // #endregion
-          // #region Parsing spine data
-          testParse(asset, options) {
-            const isJsonSpineModel = checkExtension(options.src, ".json") && isJson(asset);
-            const isBinarySpineModel = checkExtension(options.src, ".skel") && isBuffer(asset);
-            const isMetadataAngry = options.data?.spineAtlas === false;
-            return Promise.resolve(isJsonSpineModel && !isMetadataAngry || isBinarySpineModel);
-          },
-          async parse(asset, loadAsset, loader) {
-            const fileExt = lib_exports.path.extname(loadAsset.src).toLowerCase();
-            const fileName = lib_exports.path.basename(loadAsset.src, fileExt);
-            let basePath = lib_exports.path.dirname(loadAsset.src);
-            if (basePath && basePath.lastIndexOf("/") !== basePath.length - 1) {
-              basePath += "/";
-            }
-            const isJsonSpineModel = checkExtension(loadAsset.src, ".json") && isJson(asset);
-            let parser = null;
-            let dataToParse = asset;
-            if (isJsonSpineModel) {
-              parser = spineAdapter.createJsonParser();
-            } else {
-              parser = spineAdapter.createBinaryParser();
-              dataToParse = new Uint8Array(asset);
-            }
-            const metadata = loadAsset.data || {};
-            const metadataSkeletonScale = metadata?.spineSkeletonScale ?? null;
-            if (metadataSkeletonScale) {
-              parser.scale = metadataSkeletonScale;
-            }
-            const metadataAtlas = metadata.spineAtlas;
-            if (metadataAtlas && metadataAtlas.pages) {
-              return spineAdapter.parseData(parser, metadataAtlas, dataToParse);
-            }
-            const textAtlas = metadata.atlasRawData;
-            if (textAtlas) {
-              let auxResolve = null;
-              let auxReject = null;
-              const atlasPromise = new Promise((resolve2, reject) => {
-                auxResolve = resolve2;
-                auxReject = reject;
-              });
-              const atlas = new TextureAtlas(textAtlas, makeSpineTextureAtlasLoaderFunctionFromPixiLoaderObject(loader, basePath, metadata.imageMetadata), (newAtlas) => {
-                if (!newAtlas) {
-                  auxReject("Something went terribly wrong loading a spine .atlas file\nMost likely your texture failed to load.");
-                }
-                auxResolve(atlas);
-              });
-              const textureAtlas2 = await atlasPromise;
-              return spineAdapter.parseData(parser, textureAtlas2, dataToParse);
-            }
-            let atlasPath = metadata.spineAtlasFile;
-            if (!atlasPath) {
-              atlasPath = `${basePath + fileName}.atlas`;
-            }
-            const textureAtlas = await loader.load({ src: atlasPath, data: metadata, alias: metadata.spineAtlasAlias });
-            return spineAdapter.parseData(parser, textureAtlas, dataToParse);
-          }
-          // #endregion
-          // unload(asset: ISpineResource<SKD>, loadAsset, loader) {
-          // 	???
-          // },
-        }
-      };
-      extensions.add(spineLoaderExtension);
-      return spineLoaderExtension;
-    }
-  };
-
-  // node_modules/@pixi-spine/runtime-3.8/lib/index.mjs
-  var lib_exports3 = {};
-  __export(lib_exports3, {
-    Animation: () => Animation,
-    AnimationState: () => AnimationState,
-    AnimationStateAdapter: () => AnimationStateAdapter,
-    AnimationStateData: () => AnimationStateData,
-    AtlasAttachmentLoader: () => AtlasAttachmentLoader,
-    Attachment: () => Attachment,
-    AttachmentTimeline: () => AttachmentTimeline,
-    Bone: () => Bone,
-    BoneData: () => BoneData,
-    BoundingBoxAttachment: () => BoundingBoxAttachment,
-    ClippingAttachment: () => ClippingAttachment,
-    ColorTimeline: () => ColorTimeline,
-    ConstraintData: () => ConstraintData,
-    CurveTimeline: () => CurveTimeline,
-    DeformTimeline: () => DeformTimeline,
-    DrawOrderTimeline: () => DrawOrderTimeline,
-    Event: () => Event2,
-    EventData: () => EventData,
-    EventQueue: () => EventQueue,
-    EventTimeline: () => EventTimeline,
-    EventType: () => EventType,
-    IkConstraint: () => IkConstraint,
-    IkConstraintData: () => IkConstraintData,
-    IkConstraintTimeline: () => IkConstraintTimeline,
-    JitterEffect: () => JitterEffect,
-    MeshAttachment: () => MeshAttachment,
-    PathAttachment: () => PathAttachment,
-    PathConstraint: () => PathConstraint,
-    PathConstraintData: () => PathConstraintData,
-    PathConstraintMixTimeline: () => PathConstraintMixTimeline,
-    PathConstraintPositionTimeline: () => PathConstraintPositionTimeline,
-    PathConstraintSpacingTimeline: () => PathConstraintSpacingTimeline,
-    PointAttachment: () => PointAttachment,
-    RegionAttachment: () => RegionAttachment,
-    RotateTimeline: () => RotateTimeline,
-    ScaleTimeline: () => ScaleTimeline,
-    ShearTimeline: () => ShearTimeline,
-    Skeleton: () => Skeleton,
-    SkeletonBinary: () => SkeletonBinary,
-    SkeletonBounds: () => SkeletonBounds,
-    SkeletonData: () => SkeletonData,
-    SkeletonJson: () => SkeletonJson,
-    Skin: () => Skin,
-    SkinEntry: () => SkinEntry,
-    Slot: () => Slot,
-    SlotData: () => SlotData,
-    SpacingMode: () => SpacingMode,
-    Spine: () => Spine,
-    SwirlEffect: () => SwirlEffect,
-    TimelineType: () => TimelineType,
-    TrackEntry: () => TrackEntry,
-    TransformConstraint: () => TransformConstraint,
-    TransformConstraintData: () => TransformConstraintData,
-    TransformConstraintTimeline: () => TransformConstraintTimeline,
-    TranslateTimeline: () => TranslateTimeline,
-    TwoColorTimeline: () => TwoColorTimeline,
-    VertexAttachment: () => VertexAttachment
   });
 
   // node_modules/@pixi-spine/runtime-3.8/lib/core/attachments/Attachment.mjs
@@ -36204,9 +34898,691 @@ void main(void)\r
     }
   };
 
+  // src/js/GameState.js
+  var GameState = class {
+    constructor(name, game2) {
+      this.name = name;
+      this.game = game2;
+      this.container = new Container();
+    }
+    async onEnter() {
+      console.log(`Entering ${this.name} state`);
+    }
+    async onExit() {
+      console.log(`Exiting ${this.name} state`);
+    }
+  };
+
+  // src/js/objects/ProgressLine.js
+  var ProgressLine = class extends Container {
+    constructor(spriteTexture) {
+      super();
+      this.lineSprite = new Sprite(spriteTexture);
+      this.progressWidth = this.lineSprite.width;
+      this.progressHeight = this.lineSprite.height;
+      this.addChild(this.lineSprite);
+      this.mask = new Graphics();
+      this.mask.beginFill("0xffffff").drawRoundedRect(0, 0, this.progressWidth, this.progressHeight, this.height / 2).endFill();
+      this.addChild(this.mask);
+      this.lineSprite.mask = this.mask;
+      this._progress = 0;
+      this.setProgress(0);
+    }
+    setProgress(progress) {
+      if (progress < 0) progress = 0;
+      if (progress > 100) progress = 100;
+      this._progress = progress;
+      const maskWidth = this.progressWidth * progress / 100;
+      this.mask.clear().beginFill("0xffffff").drawRoundedRect(0, 0, maskWidth, this.progressHeight, this.height / 2).endFill();
+    }
+    set progress(value) {
+      this.setProgress(value);
+    }
+    get progress() {
+      return this._progress;
+    }
+  };
+
+  // src/js/Timer.js
+  var Timer = class {
+    static wait(ms) {
+      return new Promise((resolve2) => setTimeout(resolve2, ms));
+    }
+  };
+
+  // src/js/ValueTween.js
+  var ValueTween = class _ValueTween {
+    static timeScale = 1;
+    static easingFunctions = {
+      linear: (t2) => t2,
+      easeInQuad: (t2) => t2 * t2,
+      easeOutQuad: (t2) => t2 * (2 - t2),
+      easeInOutQuad: (t2) => t2 < 0.5 ? 2 * t2 * t2 : -1 + (4 - 2 * t2) * t2,
+      easeInCubic: (t2) => t2 * t2 * t2,
+      easeOutCubic: (t2) => --t2 * t2 * t2 + 1,
+      easeInOutCubic: (t2) => t2 < 0.5 ? 4 * t2 * t2 * t2 : (t2 - 1) * (2 * t2 - 2) * (2 * t2 - 2) + 1,
+      elasticIn: (t2) => t2 === 0 ? 0 : t2 === 1 ? 1 : -Math.pow(2, 10 * (t2 - 1)) * Math.sin((t2 - 1.1) * 5 * Math.PI),
+      elasticOut: (t2) => t2 === 0 ? 0 : t2 === 1 ? 1 : Math.pow(2, -10 * t2) * Math.sin((t2 - 0.1) * 5 * Math.PI) + 1,
+      elasticInOut: (t2) => t2 === 0 ? 0 : t2 === 1 ? 1 : t2 < 0.5 ? -(Math.pow(2, 10 * (2 * t2 - 1)) * Math.sin((2 * t2 - 1.1) * 5 * Math.PI)) / 2 : Math.pow(2, -10 * (2 * t2 - 1)) * Math.sin((2 * t2 - 1.1) * 5 * Math.PI) / 2 + 1
+    };
+    static async to(object, { key, to, from, setter, delay = 0 }, time, easing = "linear") {
+      if (delay > 0) {
+        await Timer.wait(delay);
+      }
+      await new Promise((resolve2) => {
+        const startValue = from !== void 0 ? from : object[key];
+        const change = to - startValue;
+        const startTime = performance.now();
+        const easingFunction = _ValueTween.easingFunctions[easing];
+        function update() {
+          const currentTime = performance.now();
+          const elapsedTime = currentTime - startTime;
+          const progress = Math.min(elapsedTime / time, 1);
+          const easedProgress = easingFunction(progress);
+          const value = startValue + change * easedProgress;
+          if (setter) {
+            setter(value);
+          } else {
+            object[key] = value;
+          }
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          } else {
+            resolve2();
+          }
+        }
+        requestAnimationFrame(update);
+      });
+    }
+  };
+  var ValueTween_default = ValueTween;
+
+  // src/js/objects/Button.js
+  var Button = class extends Container {
+    constructor({ textures, onClick, text = "", bgScale = 1, textStyle = ButtonTextStyle }) {
+      super();
+      this.textures = textures;
+      this.enabled = true;
+      this.sprite = new Sprite(this.getDefaultTexture());
+      this.sprite.scale.set(bgScale);
+      this.addChild(this.sprite);
+      if (text) {
+        this.text = ObjectFactory.createText(text, textStyle);
+        this.text.anchor.set(0.5);
+        this.text.x = this.sprite.width / 2;
+        this.text.y = this.sprite.height / 2;
+        this.addChild(this.text);
+      }
+      this.sprite.interactive = true;
+      this.sprite.buttonMode = true;
+      this.sprite.cursor = "pointer";
+      this.sprite.on("pointerover", this.onHover.bind(this));
+      this.sprite.on("pointerout", this.onOut.bind(this));
+      this.sprite.on("pointerdown", this.onDown.bind(this));
+      this.sprite.on("pointerup", this.onUp.bind(this));
+      this.sprite.on("pointerupoutside", this.onUp.bind(this));
+      this.setOnClick(onClick);
+      this.isSelected = false;
+      this.isEnabledInteractive = true;
+    }
+    onHover() {
+      if (this.enabled) {
+        this.sprite.texture = this.isSelected ? this.textures.selected : this.textures.hover;
+      }
+    }
+    onOut() {
+      if (this.enabled) {
+        this.sprite.texture = this.getDefaultTexture();
+      }
+    }
+    onDown() {
+      if (this.enabled) {
+        this.sprite.texture = this.isSelected ? this.textures.selected : this.textures.pressed;
+      }
+    }
+    onUp() {
+      if (this.enabled) {
+        this.sprite.texture = this.isSelected ? this.textures.selected : this.textures.hover;
+      }
+    }
+    setOnClick(onClick) {
+      this.sprite.off("pointertap");
+      if (onClick && typeof onClick === "function") {
+        this.sprite.on("pointertap", onClick);
+      }
+    }
+    enable() {
+      this.enabled = true;
+      this.sprite.texture = this.getDefaultTexture();
+      this.sprite.interactive = true;
+      this.sprite.buttonMode = true;
+      if (!this.isEnabledInteractive) {
+        this.disableInteractive();
+      }
+    }
+    disable() {
+      this.enabled = false;
+      this.sprite.texture = this.textures.disabled;
+      this.sprite.interactive = false;
+      this.sprite.buttonMode = false;
+      if (!this.isEnabledInteractive) {
+        this.disableInteractive();
+      }
+    }
+    getDefaultTexture() {
+      return this.isSelected ? this.textures.selected : this.textures.default;
+    }
+    setSelect(value) {
+      this.isSelected = value;
+      this.sprite.texture = this.getDefaultTexture();
+    }
+    disableInteractive() {
+      this.sprite.interactive = false;
+      this.sprite.buttonMode = false;
+      this.isEnabledInteractive = false;
+    }
+    enableInteractive() {
+      this.sprite.interactive = true;
+      this.sprite.buttonMode = true;
+      this.isEnabledInteractive = true;
+    }
+    async click() {
+      this.onHover();
+      await Timer.wait(150);
+      this.onOut();
+      await Timer.wait(100);
+    }
+  };
+
+  // src/js/objects/BallButton.js
+  var BallButton = class extends Button {
+    constructor(textures, onClick, text, animationFrames) {
+      super({ textures, onClick, text });
+      this.animation = AnimatedSprite.fromFrames(animationFrames);
+      this.animation.anchor.set(0.5);
+      this.animation.x = this.sprite.width / 2;
+      this.animation.y = this.sprite.height / 2;
+      this.animation.visible = false;
+      this.animation.animationSpeed = 0.5;
+      this.animation.loop = true;
+      this.addChild(this.animation);
+      this.startAnimation();
+      this.sprite.on("pointertap", this.stopAnimation.bind(this));
+    }
+    startAnimation() {
+      this.animation.visible = true;
+      this.animation.play();
+      this.startToggleAnimation();
+    }
+    stopAnimation() {
+      this.animation.stop();
+      this.animation.visible = false;
+      this.clearToggleAnimation();
+    }
+    enable() {
+      super.enable();
+      this.startAnimation();
+    }
+    disable() {
+      super.disable();
+      this.stopAnimation();
+    }
+    startToggleAnimation() {
+      this.clearToggleAnimation();
+      this.interval = window.setInterval(() => {
+        if (!this.enabled) {
+          return;
+        }
+        this.toggleAnimation();
+      }, 5e3);
+    }
+    clearToggleAnimation() {
+      window.clearInterval(this.interval);
+    }
+    toggleAnimation() {
+      if (!this.enabled) {
+        this.animation.visible = false;
+        return;
+      }
+      this.animation.visible = !this.animation.visible;
+    }
+  };
+
+  // src/js/objects/GameLoadingProgressBar.js
+  var GameLoadingProgressBar = class extends Container {
+    constructor(backgroundTexture, lineTexture) {
+      super();
+      this.loadingText = ObjectFactory.createText("Loading...", LoadingTextStyle);
+      this.loadingText.anchor.set(0.5);
+      this.loadingText.x = backgroundTexture.width / 2;
+      this.loadingText.y = -12;
+      this.loadingText.resolution = 2;
+      this.addChild(this.loadingText);
+      this.background = new Sprite(backgroundTexture);
+      this.addChild(this.background);
+      this.progressLine = new ProgressLine(lineTexture);
+      this.addChild(this.progressLine);
+      this.progressLine.x = (this.background.width - this.progressLine.progressWidth) / 2 - 1;
+      this.progressLine.y = (this.background.height - this.progressLine.progressHeight) / 2 - 2;
+    }
+    setProgress(progress) {
+      this.progressLine.setProgress(progress);
+    }
+  };
+
+  // src/js/objects/LoseAnimation.js
+  var LoseAnimation = class extends Container {
+    constructor(loseAnimationFrames, screenSize, bgTexture) {
+      super();
+      this.background = Sprite.from(bgTexture);
+      this.background.anchor.set(0.5);
+      this.background.x = screenSize.width / 2;
+      this.background.y = screenSize.height / 2;
+      this.background.alpha = 0;
+      this.addChild(this.background);
+      this.animation = AnimatedSprite.fromFrames(loseAnimationFrames);
+      this.animation.anchor.set(0.5);
+      this.animation.x = screenSize.width / 2;
+      this.animation.y = screenSize.height / 2;
+      this.animation.visible = false;
+      this.animation.loop = false;
+      this.addChild(this.animation);
+      this.timeScale = 1;
+    }
+    async play() {
+      await ValueTween.to(this.background, { key: "alpha", to: 1 }, 250 / this.timeScale);
+      this.animation.visible = true;
+      this.animation.currentFrame = 0;
+      this.animation.play();
+      await new Promise((resolve2) => this.animation.onComplete = resolve2);
+      await Timer.wait(500 / this.timeScale);
+      await ValueTween.to(this, { key: "alpha", to: 0 }, 500 / this.timeScale);
+      this.animation.stop();
+      this.alpha = 1;
+      this.animation.visible = false;
+      this.background.alpha = 0;
+    }
+    set animationSpeed(value) {
+      this.animation.animationSpeed = value;
+      this.timeScale = value;
+    }
+  };
+
+  // src/js/objects/List.js
+  var List = class extends Container {
+    constructor({ values, currentIndex, textures, label, labelTextStyle = BottomPanelTextStyle, valueTextStyle = ListLabelTextStyle, btnDx = 0 }) {
+      super();
+      this.values = values;
+      this.currentIndex = currentIndex;
+      this.currentValueText = ObjectFactory.createText(this.values[this.currentIndex], valueTextStyle);
+      this.currentValueText.anchor.set(0.5);
+      this.addChild(this.currentValueText);
+      this.background = new Sprite(textures.background);
+      this.background.anchor.set(0.5);
+      this.addChildAt(this.background, 0);
+      this.leftButton = new Button({ textures: textures.leftButton, onClick: this.decrease.bind(this) });
+      this.leftButton.x = -(this.background.width / 2) + this.leftButton.width / 2;
+      this.leftButton.y = -(this.leftButton.height / 2);
+      this.addChild(this.leftButton);
+      this.rightButton = new Button({ textures: textures.rightButton, onClick: this.increase.bind(this) });
+      this.rightButton.x = this.background.width / 2 - this.leftButton.width / 2;
+      this.rightButton.y = -(this.rightButton.height / 2);
+      this.rightButton.scale.x = -1;
+      this.addChild(this.rightButton);
+      this.label = ObjectFactory.createText(label, labelTextStyle);
+      this.label.anchor.set(0.5);
+      this.label.y = -36;
+      this.addChild(this.label);
+      this.updateUI();
+    }
+    decrease() {
+      if (this.currentIndex > 0) {
+        this.currentIndex--;
+        this.updateUI();
+      }
+    }
+    increase() {
+      if (this.currentIndex < this.values.length - 1) {
+        this.currentIndex++;
+        this.updateUI();
+      }
+    }
+    setIndex(index) {
+      if (index >= 0 && index < this.values.length) {
+        this.currentIndex = index;
+        this.updateUI();
+      }
+    }
+    setValues(values, index) {
+      this.values = values;
+      this.currentIndex = index;
+      this.updateUI();
+    }
+    getCurrent() {
+      return this.values[this.currentIndex];
+    }
+    updateUI() {
+      this.currentValueText.text = this.values[this.currentIndex];
+      this.emit("changedValue", this.currentIndex);
+    }
+    disable() {
+      this.leftButton.disable();
+      this.rightButton.disable();
+    }
+    enable() {
+      this.leftButton.enable();
+      this.rightButton.enable();
+    }
+    disableInteractive() {
+      this.leftButton.disableInteractive();
+      this.rightButton.disableInteractive();
+    }
+    enableInteractive() {
+      this.leftButton.enableInteractive();
+      this.rightButton.enableInteractive();
+    }
+  };
+
+  // src/js/utils.js
+  function getRandomNumber() {
+    return Math.floor(Math.random() * 4);
+  }
+  function roundToTwo(num) {
+    return Number(num.toFixed(2));
+  }
+  function formatCurrency(num) {
+    return `$${roundToTwo(num)}`;
+  }
+  function findClosestValue(array, value) {
+    let closest = -1;
+    let closestDifference = Math.abs(value - array[0]);
+    for (let i2 = 1; i2 < array.length; i2++) {
+      const difference = Math.abs(value - array[i2]);
+      if (difference < closestDifference) {
+        closest = i2;
+        closestDifference = difference;
+      }
+    }
+    return closest;
+  }
+  function multiplyAndFindClosest(array, currentValue, multiplier) {
+    const targetValue = currentValue * multiplier;
+    return findClosestValue(array, targetValue);
+  }
+
+  // src/js/objects/WinAnimation.js
+  var WinAnimation = class extends Container {
+    constructor(loseAnimationFrames, screenSize, bgTexture) {
+      super();
+      this.background = Sprite.from(bgTexture);
+      this.background.anchor.set(0.5);
+      this.background.x = screenSize.width / 2;
+      this.background.y = screenSize.height / 2;
+      this.background.alpha = 0;
+      this.addChild(this.background);
+      this.animation = AnimatedSprite.fromFrames(loseAnimationFrames);
+      this.animation.anchor.set(0.5);
+      this.animation.x = screenSize.width / 2;
+      this.animation.y = screenSize.height / 2;
+      this.animation.visible = false;
+      this.animation.loop = false;
+      this.animation.animationSpeed = 0.5;
+      this.addChild(this.animation);
+      this.text = ObjectFactory.createText("WIN", WinTextStyle);
+      this.text.anchor.set(0.5);
+      this.text.scale.set(0);
+      this.text.x = screenSize.width / 2;
+      this.text.y = screenSize.height / 2;
+      this.addChild(this.text);
+      this.timeScale = 1;
+    }
+    async play(winValue) {
+      this.text.scale.set(0);
+      this.text.text = formatCurrency(winValue);
+      await ValueTween.to(this.background, { key: "alpha", to: 1 }, 250 / this.timeScale);
+      this.animation.visible = true;
+      this.animation.currentFrame = 0;
+      this.animation.play();
+      ValueTween.to(this.text, { key: "scale", to: 1, from: 0, setter: (value) => this.text.scale.set(value), delay: 500 / this.timeScale }, 1e3 / this.timeScale, "elasticOut");
+      await new Promise((resolve2) => this.animation.onComplete = resolve2);
+      await Timer.wait(500 / this.timeScale);
+      await ValueTween.to(this, { key: "alpha", to: 0 }, 500 / this.timeScale);
+      this.animation.stop();
+      this.alpha = 1;
+      this.animation.visible = false;
+      this.background.alpha = 0;
+      this.text.scale.set(0);
+    }
+    set animationSpeed(value) {
+      this.animation.animationSpeed = value;
+      this.timeScale = value;
+    }
+  };
+
+  // src/js/objects/LightsAnimations.js
+  var LightAnimation = class extends Container {
+    constructor(animationFrames) {
+      super();
+      this.animations = [];
+      this.animationFrames = animationFrames;
+      this.createAnimations();
+      this.startRandomAnimations();
+    }
+    createAnimations() {
+      const postions = [
+        { x: -43, y: 173 },
+        { x: 176, y: 194 },
+        { x: 422, y: 188 },
+        { x: 642, y: 185 },
+        { x: 888, y: 193 },
+        { x: 1105, y: 173 }
+      ];
+      for (let i2 = 0; i2 < postions.length; i2++) {
+        const animation = AnimatedSprite.fromFrames(this.animationFrames);
+        animation.animationSpeed = 0.5;
+        animation.loop = false;
+        animation.alpha = 0;
+        animation.x = postions[i2].x;
+        animation.y = postions[i2].y;
+        this.addChild(animation);
+        this.animations.push(animation);
+      }
+    }
+    startRandomAnimations() {
+      this.animations.forEach((animation) => {
+        this.scheduleAnimation(animation);
+      });
+    }
+    scheduleAnimation(animation) {
+      const delayTime = Math.random() * 3e3 + 2e3;
+      setTimeout(async () => {
+        await this.animate(animation);
+        this.scheduleAnimation(animation);
+      }, delayTime);
+    }
+    async animate(animation) {
+      await ValueTween_default.to(animation, { key: "alpha", to: 1 }, 500, "easeInQuad");
+      animation.gotoAndPlay(0);
+      await new Promise((resolve2) => animation.onComplete = resolve2);
+      await ValueTween_default.to(animation, { key: "alpha", to: 0 }, 500, "easeOutQuad");
+    }
+  };
+
+  // node_modules/@pixi-spine/loader-base/lib/atlasLoader.mjs
+  var spineTextureAtlasLoader = {
+    extension: ExtensionType.Asset,
+    // cache: {
+    //     test: (asset: RawAtlas | TextureAtlas) => asset instanceof TextureAtlas,
+    //     getCacheableAssets: (keys: string[], asset: RawAtlas | TextureAtlas) => getCacheableAssets(keys, asset),
+    // },
+    loader: {
+      extension: {
+        type: ExtensionType.LoadParser,
+        priority: LoaderParserPriority.Normal
+      },
+      test(url2) {
+        return checkExtension(url2, ".atlas");
+      },
+      async load(url2) {
+        const response = await settings.ADAPTER.fetch(url2);
+        const txt = await response.text();
+        return txt;
+      },
+      testParse(asset, options) {
+        const isExtensionRight = checkExtension(options.src, ".atlas");
+        const isString = typeof asset === "string";
+        return Promise.resolve(isExtensionRight && isString);
+      },
+      async parse(asset, options, loader) {
+        const metadata = options.data;
+        let basePath = lib_exports.path.dirname(options.src);
+        if (basePath && basePath.lastIndexOf("/") !== basePath.length - 1) {
+          basePath += "/";
+        }
+        let resolve2 = null;
+        let reject = null;
+        const retPromise = new Promise((res, rej) => {
+          resolve2 = res;
+          reject = rej;
+        });
+        let retval;
+        const resolveCallback = (newAtlas) => {
+          if (!newAtlas) {
+            reject("Something went terribly wrong loading a spine .atlas file\nMost likely your texture failed to load.");
+          }
+          resolve2(retval);
+        };
+        if (metadata.image || metadata.images) {
+          const pages = Object.assign(metadata.image ? { default: metadata.image } : {}, metadata.images);
+          retval = new TextureAtlas(
+            asset,
+            (line, callback) => {
+              const page = pages[line] || pages.default;
+              if (page && page.baseTexture)
+                callback(page.baseTexture);
+              else
+                callback(page);
+            },
+            resolveCallback
+          );
+        } else {
+          retval = new TextureAtlas(asset, makeSpineTextureAtlasLoaderFunctionFromPixiLoaderObject(loader, basePath, metadata.imageMetadata), resolveCallback);
+        }
+        return await retPromise;
+      },
+      unload(atlas) {
+        atlas.dispose();
+      }
+    }
+  };
+  var makeSpineTextureAtlasLoaderFunctionFromPixiLoaderObject = (loader, atlasBasePath, imageMetadata) => {
+    return async (pageName, textureLoadedCallback) => {
+      const url2 = lib_exports.path.normalize([...atlasBasePath.split(lib_exports.path.sep), pageName].join(lib_exports.path.sep));
+      const texture = await loader.load({ src: url2, data: imageMetadata });
+      textureLoadedCallback(texture.baseTexture);
+    };
+  };
+  extensions.add(spineTextureAtlasLoader);
+
+  // node_modules/@pixi-spine/loader-base/lib/SpineLoaderAbstract.mjs
+  function isJson(resource) {
+    return resource.hasOwnProperty("bones");
+  }
+  function isBuffer(resource) {
+    return resource instanceof ArrayBuffer;
+  }
+  var SpineLoaderAbstract = class {
+    constructor() {
+    }
+    installLoader() {
+      const spineAdapter = this;
+      const spineLoaderExtension = {
+        extension: ExtensionType.Asset,
+        loader: {
+          extension: {
+            type: ExtensionType.LoadParser,
+            priority: LoaderParserPriority.Normal
+          },
+          // #region Downloading skel buffer data
+          test(url2) {
+            return checkExtension(url2, ".skel");
+          },
+          async load(url2) {
+            const response = await settings.ADAPTER.fetch(url2);
+            const buffer = await response.arrayBuffer();
+            return buffer;
+          },
+          // #endregion
+          // #region Parsing spine data
+          testParse(asset, options) {
+            const isJsonSpineModel = checkExtension(options.src, ".json") && isJson(asset);
+            const isBinarySpineModel = checkExtension(options.src, ".skel") && isBuffer(asset);
+            const isMetadataAngry = options.data?.spineAtlas === false;
+            return Promise.resolve(isJsonSpineModel && !isMetadataAngry || isBinarySpineModel);
+          },
+          async parse(asset, loadAsset, loader) {
+            const fileExt = lib_exports.path.extname(loadAsset.src).toLowerCase();
+            const fileName = lib_exports.path.basename(loadAsset.src, fileExt);
+            let basePath = lib_exports.path.dirname(loadAsset.src);
+            if (basePath && basePath.lastIndexOf("/") !== basePath.length - 1) {
+              basePath += "/";
+            }
+            const isJsonSpineModel = checkExtension(loadAsset.src, ".json") && isJson(asset);
+            let parser = null;
+            let dataToParse = asset;
+            if (isJsonSpineModel) {
+              parser = spineAdapter.createJsonParser();
+            } else {
+              parser = spineAdapter.createBinaryParser();
+              dataToParse = new Uint8Array(asset);
+            }
+            const metadata = loadAsset.data || {};
+            const metadataSkeletonScale = metadata?.spineSkeletonScale ?? null;
+            if (metadataSkeletonScale) {
+              parser.scale = metadataSkeletonScale;
+            }
+            const metadataAtlas = metadata.spineAtlas;
+            if (metadataAtlas && metadataAtlas.pages) {
+              return spineAdapter.parseData(parser, metadataAtlas, dataToParse);
+            }
+            const textAtlas = metadata.atlasRawData;
+            if (textAtlas) {
+              let auxResolve = null;
+              let auxReject = null;
+              const atlasPromise = new Promise((resolve2, reject) => {
+                auxResolve = resolve2;
+                auxReject = reject;
+              });
+              const atlas = new TextureAtlas(textAtlas, makeSpineTextureAtlasLoaderFunctionFromPixiLoaderObject(loader, basePath, metadata.imageMetadata), (newAtlas) => {
+                if (!newAtlas) {
+                  auxReject("Something went terribly wrong loading a spine .atlas file\nMost likely your texture failed to load.");
+                }
+                auxResolve(atlas);
+              });
+              const textureAtlas2 = await atlasPromise;
+              return spineAdapter.parseData(parser, textureAtlas2, dataToParse);
+            }
+            let atlasPath = metadata.spineAtlasFile;
+            if (!atlasPath) {
+              atlasPath = `${basePath + fileName}.atlas`;
+            }
+            const textureAtlas = await loader.load({ src: atlasPath, data: metadata, alias: metadata.spineAtlasAlias });
+            return spineAdapter.parseData(parser, textureAtlas, dataToParse);
+          }
+          // #endregion
+          // unload(asset: ISpineResource<SKD>, loadAsset, loader) {
+          // 	???
+          // },
+        }
+      };
+      extensions.add(spineLoaderExtension);
+      return spineLoaderExtension;
+    }
+  };
+
   // node_modules/@pixi-spine/runtime-3.7/lib/index.mjs
-  var lib_exports4 = {};
-  __export(lib_exports4, {
+  var lib_exports3 = {};
+  __export(lib_exports3, {
     Animation: () => Animation2,
     AnimationState: () => AnimationState2,
     AnimationStateAdapter2: () => AnimationStateAdapter2,
@@ -41572,8 +40948,8 @@ void main(void)\r
   };
 
   // node_modules/@pixi-spine/runtime-4.1/lib/index.mjs
-  var lib_exports5 = {};
-  __export(lib_exports5, {
+  var lib_exports4 = {};
+  __export(lib_exports4, {
     AlphaTimeline: () => AlphaTimeline,
     Animation: () => Animation3,
     AnimationState: () => AnimationState3,
@@ -50621,13 +49997,13 @@ void main(void)\r
       const ver = detectSpineVersion(spineData.version);
       let spine = null;
       if (ver === SPINE_VERSION.VER37) {
-        spine = lib_exports4;
-      }
-      if (ver === SPINE_VERSION.VER38) {
         spine = lib_exports3;
       }
+      if (ver === SPINE_VERSION.VER38) {
+        spine = lib_exports2;
+      }
       if (ver === SPINE_VERSION.VER40 || ver === SPINE_VERSION.VER41) {
-        spine = lib_exports5;
+        spine = lib_exports4;
       }
       if (!spine) {
         const error = `Cant detect version of spine model ${spineData.version}`;
@@ -50643,9 +50019,246 @@ void main(void)\r
   // node_modules/@pixi-spine/loader-uni/lib/index.mjs
   new SpineLoader().installLoader();
 
+  // src/js/objects/Slider.js
+  var Slider = class extends Container {
+    constructor(lineTexture, knobTexture, bgTexture) {
+      super();
+      this.background = Sprite.from(bgTexture);
+      this.background.anchor.y = 0.5;
+      this.addChild(this.background);
+      this.progressLine = new ProgressLine(lineTexture);
+      this.addChild(this.progressLine);
+      this.background.x = this.progressLine.width / 2 - 2;
+      this.background.y = this.progressLine.height / 2;
+      this.knob = new Sprite(knobTexture);
+      this.knob.anchor.set(0.5);
+      this.knob.y = this.progressLine.height / 2;
+      this.knob.interactive = true;
+      this.knob.buttonMode = true;
+      this.knob.cursor = "pointer";
+      this.addChild(this.knob);
+      this.knob.on("pointerdown", this.onDragStart.bind(this));
+      this.on("pointerup", this.onDragEnd.bind(this));
+      this.on("pointerupoutside", this.onDragEnd.bind(this));
+      this.on("pointermove", this.onDragMove.bind(this));
+      this.interactive = true;
+      this.setProgress(0);
+    }
+    setProgress(progress) {
+      this.progressLine.progress = progress;
+      this.updateKnobPosition();
+    }
+    updateKnobPosition() {
+      this.knob.x = this.progressLine.progressWidth * this.progressLine.progress / 100;
+    }
+    onDragStart(event) {
+      this.dragging = true;
+      this.data = event.data;
+    }
+    onDragEnd() {
+      this.dragging = false;
+      this.data = null;
+    }
+    onDragMove() {
+      if (this.dragging) {
+        const newPosition = this.data.getLocalPosition(this.progressLine);
+        let progress = Math.round(newPosition.x / this.progressLine.progressWidth * 100);
+        if (progress < 0) {
+          progress = 0;
+        } else if (progress > 100) {
+          progress = 100;
+        }
+        this.setProgress(progress);
+        this.emit("change", progress);
+      }
+    }
+  };
+
+  // src/js/objects/Carousel.js
+  var Carousel = class extends Container {
+    constructor(elements, buttonTextures, elementWidth, elementHeight) {
+      super();
+      this.elements = elements;
+      this.elementWidth = elementWidth || elements[0].width;
+      this.elementHeight = elementHeight || elements[0].height;
+      this.currentIndex = 0;
+      this.isAnimating = false;
+      this.elements.forEach((element) => {
+        this.addChild(element);
+      });
+      this.createButtons(buttonTextures);
+      this.updateElements();
+    }
+    createButtons(buttonTextures) {
+      this.leftButton = new Button({ textures: buttonTextures, onClick: this.moveLeft.bind(this) });
+      const midIndex = Math.floor(this.elements.length / 2);
+      this.leftButton.x = -(this.elementWidth * midIndex + this.elementWidth);
+      this.leftButton.y = -this.leftButton.height / 2;
+      this.addChild(this.leftButton);
+      this.rightButton = new Button({ textures: buttonTextures, onClick: this.moveRight.bind(this) });
+      this.rightButton.x = this.elementWidth * midIndex + this.elementWidth;
+      this.rightButton.y = -this.rightButton.height / 2;
+      this.rightButton.scale.x = -1;
+      this.addChild(this.rightButton);
+    }
+    updateElements() {
+      const midIndex = Math.floor(this.elements.length / 2);
+      for (let i2 = 0; i2 < this.elements.length; i2++) {
+        const element = this.elements[i2];
+        const positionIndex = (i2 - this.currentIndex + this.elements.length) % this.elements.length;
+        const offset = positionIndex - midIndex;
+        element.x = offset * this.elementWidth;
+      }
+    }
+    moveLeft() {
+      if (!this.isAnimating) {
+        this.currentIndex = (this.currentIndex - 1 + this.elements.length) % this.elements.length;
+        this.emit("selected", this.getMiddleIndex());
+        this.animateElements(-1);
+      }
+    }
+    getMiddleIndex() {
+      const midIndex = Math.floor(this.elements.length / 2);
+      return (this.currentIndex + midIndex) % this.elements.length;
+    }
+    moveRight() {
+      if (!this.isAnimating) {
+        this.currentIndex = (this.currentIndex + 1) % this.elements.length;
+        const midIndex = Math.floor(this.elements.length / 2);
+        this.emit("selected", this.getMiddleIndex());
+        this.animateElements(1);
+      }
+    }
+    animateElements(direction) {
+      this.isAnimating = true;
+      const midIndex = Math.floor(this.elements.length / 2);
+      const time = 200;
+      let animationsCompleted = 0;
+      const checkAnimationComplete = () => {
+        animationsCompleted++;
+        if (animationsCompleted === this.elements.length) {
+          this.isAnimating = false;
+          this.updateElements();
+        }
+      };
+      for (let i2 = 0; i2 < this.elements.length; i2++) {
+        const element = this.elements[i2];
+        const positionIndex = (i2 - this.currentIndex + this.elements.length) % this.elements.length;
+        const offset = positionIndex - midIndex;
+        const targetX = offset * this.elementWidth;
+        const targetAlpha = Math.abs(offset) === midIndex ? 0 : 1;
+        if (Math.abs(offset) === midIndex && (direction === 1 ? offset > 0 : offset < 0)) {
+          this.addChildAt(element, 0);
+          ValueTween_default.to(element, {
+            key: "alpha",
+            to: 0.5,
+            easing: "easeInOutQuad",
+            setter: (v2) => {
+              element.scale.set(v2);
+              element.alpha = v2;
+            }
+          }, time / 2).then(() => {
+            ValueTween_default.to(element, {
+              key: "alpha",
+              to: 1,
+              easing: "easeInOutQuad",
+              setter: (v2) => {
+                element.scale.set(v2);
+                element.alpha = v2;
+              }
+            }, time / 2);
+          });
+        }
+        ValueTween_default.to(element, {
+          key: "x",
+          to: targetX,
+          easing: "easeInOutQuad"
+        }, time).then(() => {
+          this.addChildAt(element, this.children.length - 1);
+          checkAnimationComplete();
+        });
+      }
+    }
+  };
+
+  // src/js/objects/SliceButton.js
+  var SliceButton = class extends Container {
+    constructor({ textures, onClick, text = "", bgScale = 1, textStyle = ButtonTextStyle, nineSlicePlaneParameters, width }) {
+      super();
+      this.textures = textures;
+      this.enabled = true;
+      this.sprite = new NineSlicePlane(this.getDefaultTexture(), nineSlicePlaneParameters.left, nineSlicePlaneParameters.top, nineSlicePlaneParameters.right, nineSlicePlaneParameters.bottom);
+      this.sprite.scale.set(bgScale);
+      this.addChild(this.sprite);
+      if (text) {
+        this.text = ObjectFactory.createText(text, textStyle);
+        this.text.anchor.set(0.5);
+        this.sprite.width = width || nineSlicePlaneParameters.left + this.text.width + nineSlicePlaneParameters.right;
+        this.text.x = this.sprite.width / 2;
+        this.text.y = this.sprite.height / 2;
+        this.addChild(this.text);
+      }
+      this.sprite.interactive = true;
+      this.sprite.buttonMode = true;
+      this.sprite.cursor = "pointer";
+      this.sprite.on("pointerover", this.onHover.bind(this));
+      this.sprite.on("pointerout", this.onOut.bind(this));
+      this.sprite.on("pointerdown", this.onDown.bind(this));
+      this.sprite.on("pointerup", this.onUp.bind(this));
+      this.sprite.on("pointerupoutside", this.onUp.bind(this));
+      this.setOnClick(onClick);
+      this.isSelected = false;
+    }
+    onHover() {
+      if (this.enabled) {
+        this.sprite.texture = this.isSelected ? this.textures.selected : this.textures.hover;
+      }
+    }
+    onOut() {
+      if (this.enabled) {
+        this.sprite.texture = this.getDefaultTexture();
+      }
+    }
+    onDown() {
+      if (this.enabled) {
+        this.sprite.texture = this.isSelected ? this.textures.selected : this.textures.pressed;
+      }
+    }
+    onUp() {
+      if (this.enabled) {
+        this.sprite.texture = this.isSelected ? this.textures.selected : this.textures.hover;
+      }
+    }
+    setOnClick(onClick) {
+      this.sprite.off("pointertap");
+      if (onClick && typeof onClick === "function") {
+        this.sprite.on("pointertap", onClick);
+      }
+    }
+    enable() {
+      this.enabled = true;
+      this.sprite.texture = this.getDefaultTexture();
+      this.sprite.interactive = true;
+      this.sprite.buttonMode = true;
+    }
+    disable() {
+      this.enabled = false;
+      this.sprite.texture = this.textures.disabled;
+      this.sprite.interactive = false;
+      this.sprite.buttonMode = false;
+    }
+    getDefaultTexture() {
+      return this.isSelected ? this.textures.selected : this.textures.default;
+    }
+    setSelect(value) {
+      this.isSelected = value;
+      this.sprite.texture = this.getDefaultTexture();
+    }
+  };
+
   // src/js/ObjectFactory.js
-  var allSheetName = "assets/all.json";
-  var ObjectFactory = class {
+  var allSheetName = "assets/all-0.json";
+  var ObjectFactory = class _ObjectFactory {
     constructor() {
       this.cache = Assets.cache;
     }
@@ -50678,6 +50291,17 @@ void main(void)\r
       }
       return texture;
     }
+    static getTextureFromSpriteSheet(name) {
+      const sheet = Assets.cache;
+      if (!sheet) {
+        throw new Error(`Spritesheet not found: ${allSheetName}`);
+      }
+      const texture = sheet.get(name);
+      if (!texture) {
+        throw new Error(`Texture not found: ${name}`);
+      }
+      return texture;
+    }
     createSpriteFromSheet(name, sheetName = allSheetName) {
       const sheet = this.cache.get(sheetName);
       if (!sheet) {
@@ -50696,7 +50320,7 @@ void main(void)\r
       }
       return new Sprite(texture);
     }
-    createButton(texturesNames, onClick, text = "") {
+    createButton(texturesNames, onClick, text = "", bgScale = 1) {
       const sheet = this.cache.get(allSheetName);
       const textures = {
         default: this.cache.get(texturesNames.default),
@@ -50704,7 +50328,27 @@ void main(void)\r
         pressed: this.cache.get(texturesNames.pressed),
         disabled: this.cache.get(texturesNames.disabled)
       };
-      return new Button(textures, onClick, text);
+      return new Button({ textures, onClick, text, bgScale });
+    }
+    static createButton({ texturesNames, onClick, text = "", bgScale = 1, textStyle }) {
+      const sheet = Assets.cache;
+      const textures = {
+        default: sheet.get(texturesNames.default),
+        hover: sheet.get(texturesNames.hover),
+        pressed: sheet.get(texturesNames.pressed),
+        disabled: sheet.get(texturesNames.disabled)
+      };
+      return new Button({ textures, onClick, text, bgScale, textStyle });
+    }
+    static createSliceButton({ texturesNames, onClick, text = "", bgScale = 1, textStyle, nineSlicePlaneParameters = {}, width }) {
+      const sheet = Assets.cache;
+      const textures = {
+        default: sheet.get(texturesNames.default),
+        hover: sheet.get(texturesNames.hover),
+        pressed: sheet.get(texturesNames.pressed),
+        disabled: sheet.get(texturesNames.disabled)
+      };
+      return new SliceButton({ textures, onClick, text, bgScale, textStyle, nineSlicePlaneParameters, width });
     }
     createBallButton(texturesNames, animationName, onClick, text = "") {
       const sheet = this.cache.get(allSheetName);
@@ -50743,25 +50387,44 @@ void main(void)\r
       return new GameLoadingProgressBar(bg, line);
     }
     createLoseAnimation(screenSize) {
-      return new LoseAnimation(this.getAnimationFrames("6_Lose/6_Lose"), screenSize, this.getTextureFromSpriteSheet("win-lose-bg.png"));
+      return new LoseAnimation(this.getAnimationFrames("lose/lose"), screenSize, this.getTextureFromSpriteSheet("win-lose-bg.png"));
     }
     createWinAnimation(screenSize) {
       return new WinAnimation(this.getAnimationFrames("6_Congrats/6_Congrats"), screenSize, this.getTextureFromSpriteSheet("win-lose-bg.png"));
     }
-    createBetsList(bets, currentBetIndex, onChangeBet) {
-      return new BetsList(bets, currentBetIndex, onChangeBet, {
-        background: this.getTextureFromSpriteSheet("InfoLableBackground.png"),
-        leftButton: {
-          default: this.getTextureFromSpriteSheet("ArrowButtonDefault.png"),
-          hover: this.getTextureFromSpriteSheet("ArrowButtonHover.png"),
-          pressed: this.getTextureFromSpriteSheet("ArrowButtonPressed.png"),
-          disabled: this.getTextureFromSpriteSheet("ArrowButtonDisabled.png")
-        },
-        rightButton: {
-          default: this.getTextureFromSpriteSheet("ArrowButtonDefault.png"),
-          hover: this.getTextureFromSpriteSheet("ArrowButtonHover.png"),
-          pressed: this.getTextureFromSpriteSheet("ArrowButtonPressed.png"),
-          disabled: this.getTextureFromSpriteSheet("ArrowButtonDisabled.png")
+    static createList(values, currentIndex, label, bg = "InfoLableBackground.png") {
+      const arrowButtonTextures = {
+        default: this.getTextureFromSpriteSheet("ArrowButtonDefault.png"),
+        hover: this.getTextureFromSpriteSheet("ArrowButtonHover.png"),
+        pressed: this.getTextureFromSpriteSheet("ArrowButtonPressed.png"),
+        disabled: this.getTextureFromSpriteSheet("ArrowButtonDisabled.png")
+      };
+      return new List({
+        values,
+        currentIndex,
+        label,
+        textures: {
+          leftButton: arrowButtonTextures,
+          rightButton: arrowButtonTextures,
+          background: this.getTextureFromSpriteSheet(bg)
+        }
+      });
+    }
+    static createListForAutoplaySettings(values, currentIndex, label) {
+      const arrowButtonTextures = {
+        default: _ObjectFactory.getTextureFromSpriteSheet("ArrowButtonDefault.png"),
+        hover: _ObjectFactory.getTextureFromSpriteSheet("ArrowButtonHover.png"),
+        pressed: _ObjectFactory.getTextureFromSpriteSheet("ArrowButtonPressed.png"),
+        disabled: _ObjectFactory.getTextureFromSpriteSheet("ArrowButtonDisabled.png")
+      };
+      return new List({
+        values,
+        currentIndex,
+        label,
+        textures: {
+          leftButton: arrowButtonTextures,
+          rightButton: arrowButtonTextures,
+          background: _ObjectFactory.getTextureFromSpriteSheet("AutoplayValueBG.png")
         }
       });
     }
@@ -50793,6 +50456,14 @@ void main(void)\r
       }
       return new Sprite(texture);
     }
+    static createSpriteFromSheet(name, sheetName = allSheetName) {
+      const cache = Assets.cache;
+      const texture = cache.get(name);
+      if (!texture) {
+        throw new Error(`Texture not found: ${name}`);
+      }
+      return new Sprite(texture);
+    }
     static createSpineAnimation(name) {
       const cache = Assets.cache;
       const spine = cache.get(name);
@@ -50801,54 +50472,191 @@ void main(void)\r
       }
       return new Spine4(spine.spineData);
     }
+    static createArrowButton(onClick) {
+      const cache = Assets.cache;
+      const textures = {
+        default: cache.get("ArrowButtonDefault.png"),
+        hover: cache.get("ArrowButtonHover.png"),
+        pressed: cache.get("ArrowButtonPressed.png"),
+        disabled: cache.get("ArrowButtonDisabled.png")
+      };
+      return new Button({ textures, onClick });
+    }
+    static createCheckBox(text, initialChecked = false) {
+      const cache = Assets.cache;
+      const textures = {
+        checked: cache.get("CheckboxCheked.png"),
+        unchecked: cache.get("CheckboxUncheked.png")
+      };
+      return new CheckBox_default(textures, text, initialChecked);
+    }
+    static createSlider() {
+      const cache = Assets.cache;
+      const textures = {
+        lineTexture: cache.get("SliderLine.png"),
+        knobTexture: cache.get("knob.png"),
+        bgTexture: cache.get("SliderBackgroud.png")
+      };
+      return new Slider(textures.lineTexture, textures.knobTexture, textures.bgTexture);
+    }
+    static createCarousel({ elements, width, height }) {
+      return new Carousel(
+        elements,
+        {
+          default: _ObjectFactory.getTextureFromSpriteSheet("ArrowButtonDefault.png"),
+          hover: _ObjectFactory.getTextureFromSpriteSheet("ArrowButtonHover.png"),
+          pressed: _ObjectFactory.getTextureFromSpriteSheet("ArrowButtonPressed.png"),
+          disabled: _ObjectFactory.getTextureFromSpriteSheet("ArrowButtonDisabled.png")
+        },
+        width,
+        height
+      );
+    }
   };
 
-  // src/js/GameState.js
-  var GameState = class {
-    constructor(name, game) {
-      this.name = name;
-      this.game = game;
-      this.container = new Container();
+  // src/js/objects/CheckBox.js
+  var CheckBox = class extends Container {
+    constructor(textures, text = "", initialState = false) {
+      super();
+      this.textures = textures;
+      this.state = initialState;
+      this.sprite = new Sprite(this.state ? textures.checked : textures.unchecked);
+      this.addChild(this.sprite);
+      if (text) {
+        this.text = ObjectFactory.createText(text, CheckBoxTextStyle);
+        this.text.anchor.set(0.5, 0.5);
+        this.text.x = this.sprite.width + 10 + this.text.width / 2;
+        this.text.y = this.sprite.height / 2;
+        this.addChild(this.text);
+      }
+      this.sprite.interactive = true;
+      this.sprite.buttonMode = true;
+      this.sprite.cursor = "pointer";
+      this.sprite.on("pointerdown", this.toggle.bind(this));
     }
-    async onEnter() {
-      console.log(`Entering ${this.name} state`);
+    toggle() {
+      this.state = !this.state;
+      this.sprite.texture = this.state ? this.textures.checked : this.textures.unchecked;
+      this.emit("change", this.state);
     }
-    async onExit() {
-      console.log(`Exiting ${this.name} state`);
+    setChecked(state) {
+      this.state = state;
+      this.sprite.texture = this.state ? this.textures.checked : this.textures.unchecked;
     }
-  };
-
-  // src/js/states/GamePlay.js
-  var GamePlay = class extends GameState {
-    async onEnter() {
-      this.game.gamePlayScene.reset();
-      this.game.gamePlayScene.placeBetButton.enable();
-      this.game.gamePlayScene.betsLis.enable();
-      this.game.gamePlayScene.placeBetButton.visible = true;
-      this.game.gamePlayScene.kickButton.visible = false;
-      this.game.gamePlayScene.collectButton.disable();
-      this.game.gamePlayScene.placeBetButtonHandler = this.onPlaceBet.bind(this);
-      this.game.gamePlayScene.targets.playAllTargetsAnimation();
-      this.game.gamePlayScene.targets.disable();
-    }
-    onPlaceBet() {
-      this.game.fms.goTo("playRound");
-    }
-    async onExit() {
-      this.game.gamePlayScene.placeBetButton.disable();
-      this.game.gamePlayScene.collectButton.disable();
-      this.game.gamePlayScene.betsLis.disable();
-      await this.game.gamePlayScene.gameProgressBar.first();
+    isChecked() {
+      return this.state;
     }
   };
+  var CheckBox_default = CheckBox;
 
-  // src/js/GameProgressBar.js
+  // src/js/configs/textStyles.js
+  var BottomPanelTextStyle = new TextStyle({
+    fontFamily: "Arial",
+    fontSize: 14,
+    fill: "#ffffff",
+    align: "center",
+    smooth: true
+  });
+  var LoadingTextStyle = new TextStyle({
+    fontFamily: "Arial",
+    fill: "#ffffff",
+    align: "center",
+    smooth: true
+  });
+  var ClockTextStyle = new TextStyle({
+    fontFamily: "Arial",
+    fontSize: 18,
+    fill: "#ffffff"
+  });
+  var TargetTextStyle = new TextStyle({
+    "align": "center",
+    fontFamily: "Arial",
+    "dropShadowAngle": "",
+    "dropShadowColor": "#fe0303",
+    "dropShadowDistance": "",
+    "fill": "#fafc02",
+    "fontSize": 35,
+    "lineJoin": "round",
+    "stroke": "#fe0303",
+    "strokeThickness": 5
+  });
+  var ListLabelTextStyle = new TextStyle({
+    fontFamily: "Arial",
+    fontSize: 26,
+    fill: "#ffffff",
+    fontWeight: "bold"
+  });
+  var InfoLabelTextStyle = new TextStyle({
+    fontFamily: "Arial",
+    fontSize: 25,
+    fill: 16777215,
+    align: "center",
+    fontWeight: "bold"
+  });
+  var GameProgressPointTextStyle = new TextStyle({
+    fontFamily: "Arial",
+    fontSize: 18,
+    fill: 16777215,
+    align: "center"
+  });
+  var WinTextStyle = new TextStyle({
+    "align": "center",
+    "fontFamily": "Arial",
+    "dropShadowAngle": "",
+    "dropShadowColor": "#fe0303",
+    "dropShadowDistance": "",
+    "fill": "#fafc02",
+    "fontSize": 46,
+    "lineJoin": "round",
+    "stroke": "#fe0303",
+    "strokeThickness": 5,
+    "fontWeight": "bold"
+  });
+  var ButtonTextStyle = new TextStyle({
+    fontFamily: "Arial",
+    fontSize: 24,
+    fill: "#ffffff"
+  });
+  var SettingsLabelTextStyle = new TextStyle({
+    fontFamily: "Arial",
+    fontSize: 16,
+    fill: "#ffffff",
+    align: "center"
+  });
+  var CheckBoxTextStyle = new TextStyle({
+    fontFamily: "Arial",
+    fontSize: 14,
+    fill: "#ffffff"
+  });
+  var ProgressTextStyle = new TextStyle({
+    fontFamily: "Arial",
+    fontSize: 14,
+    fill: "#FAFC02",
+    align: "center"
+  });
+  var SegmentedSelectTextStyle = new TextStyle({
+    fontFamily: "Arial",
+    fontSize: 16,
+    fill: "#ffffff",
+    align: "center",
+    fontWeight: "bold"
+  });
+  var SegmentedSelectTextStyleActive = new TextStyle({
+    fontFamily: "Arial",
+    fontSize: 16,
+    fill: "#FAFC02",
+    align: "center",
+    fontWeight: "bold"
+  });
+
+  // src/js/objects/GameProgressBar.js
   var GameProgressBar = class extends Container {
     constructor() {
       super();
       this.progress = 0;
       this.maxProgress = 5;
-      this.background = Sprite.from(Assets.cache.get("assets/all.json").textures["gameProgressLine.png"]);
+      this.timeScale = 1;
+      this.background = Sprite.from(Assets.cache.get("assets/all-0.json").textures["gameProgressLine.png"]);
       this.background.anchor.set(0, 0.5);
       this.addChild(this.background);
       const progressLinesPositons = [
@@ -50858,7 +50666,7 @@ void main(void)\r
         { x: 562, y: 0 }
       ];
       this.progressLines = progressLinesPositons.map((position) => {
-        const container = new ProgressLine(Assets.cache.get("assets/all.json").textures["GameProgressBarLine.png"]);
+        const container = new ProgressLine(Assets.cache.get("assets/all-0.json").textures["GameProgressBarLine.png"]);
         container.x = position.x;
         container.y = -6;
         container.setProgress(0);
@@ -50892,7 +50700,7 @@ void main(void)\r
       if (this.progress >= this.maxProgress) {
         return;
       }
-      await ValueTween.to(this.progressLines[this.progress - 1], { key: "progress", to: 100 }, 500);
+      await ValueTween.to(this.progressLines[this.progress - 1], { key: "progress", to: 100 }, 500 / this.timeScale);
       await this.progressPoints[this.progress].showBoll();
     }
     reset() {
@@ -50913,7 +50721,7 @@ void main(void)\r
   var GameProgressPoint = class extends Container {
     constructor() {
       super();
-      this.bg = Sprite.from(Assets.cache.get("assets/all.json").textures["GameProgressPointBackgorund.png"]);
+      this.bg = Sprite.from(Assets.cache.get("assets/all-0.json").textures["GameProgressPointBackgorund.png"]);
       this.bg.anchor.set(0.5);
       this.addChild(this.bg);
       this.pointAnimation = AnimatedSprite.fromFrames(Assets.cache.get("assets/sprite-animations-0.json").data.animations["3_2/3_2"]);
@@ -50953,13 +50761,17 @@ void main(void)\r
         };
       });
     }
+    set animationSpeed(value) {
+      this.pointAnimation.animationSpeed = value;
+      this.timeScale = value;
+    }
   };
 
-  // src/js/InfoLabel.js
+  // src/js/objects/InfoLabel.js
   var InfoLabel = class extends Container {
     constructor(text, value) {
       super();
-      this.bg = Sprite.from(Assets.cache.get("assets/all.json").textures["InfoLableBackground.png"]);
+      this.bg = Sprite.from(Assets.cache.get("assets/all-0.json").textures["InfoLableBackground.png"]);
       this.bg.anchor.set(0.5);
       this.addChild(this.bg);
       this.text = ObjectFactory.createText(text, { ...BottomPanelTextStyle, maxWidth: this.bg.width - 10 });
@@ -50979,7 +50791,7 @@ void main(void)\r
     }
   };
 
-  // src/js/Target.js
+  // src/js/objects/Target.js
   var Target = class extends Container {
     constructor(id) {
       super();
@@ -50999,16 +50811,23 @@ void main(void)\r
       this.text.y = this.animation.height / 2;
       this.text.visible = false;
       this.addChild(this.text);
+      this.isEnabledInteractive = true;
     }
     enable() {
       this.interactive = true;
       this.buttonMode = true;
       this.cursor = "pointer";
+      if (!this.isEnabledInteractive) {
+        this.disableInteractive();
+      }
     }
     disable() {
       this.interactive = false;
       this.buttonMode = false;
       this.cursor = "default";
+      if (!this.isEnabledInteractive) {
+        this.disableInteractive();
+      }
     }
     async showWin(text) {
       this.text.text = text;
@@ -51023,12 +50842,26 @@ void main(void)\r
       this.animation.gotoAndPlay(0);
       await new Promise((resolve2) => this.animation.onComplete = resolve2);
     }
+    set animationSpeed(value) {
+      this.animation.animationSpeed = value;
+    }
+    disableInteractive() {
+      this.interactive = false;
+      this.buttonMode = false;
+      this.isEnabledInteractive = false;
+    }
+    enableInteractive() {
+      this.interactive = true;
+      this.buttonMode = true;
+      this.isEnabledInteractive = true;
+    }
   };
 
-  // src/js/GateTargets.js
+  // src/js/objects/GateTargets.js
   var GateTargets = class extends Container {
     constructor(targetHandler) {
       super();
+      this.timeScale = 1;
       this.targets = [];
       this.targetsPositions = [
         { x: 337, y: 531 },
@@ -51099,11 +50932,11 @@ void main(void)\r
     async winToPosition(targetNumber, multiplier, position) {
       const target = this.targets[targetNumber];
       await Promise.all([
-        ValueTween_default.to(target, { key: "x", to: position.x - target.width * 0.5 / 2 }, 500),
-        ValueTween_default.to(target, { key: "y", to: position.y }, 500),
+        ValueTween_default.to(target, { key: "x", to: position.x - target.width * 0.5 / 2 }, 500 / this.timeScale),
+        ValueTween_default.to(target, { key: "y", to: position.y }, 500 / this.timeScale),
         ValueTween_default.to(target, { key: "scale", to: 0.5, from: 1, setter: (value) => {
           target.scale.set(value);
-        } }, 500)
+        } }, 500 / this.timeScale)
       ]).then(() => {
         target.visible = false;
         target.x = this.targetsPositions[targetNumber].x;
@@ -51111,9 +50944,19 @@ void main(void)\r
         target.scale.set(1);
       });
     }
+    set animationSpeed(value) {
+      this.timeScale = value;
+      this.targets.forEach((target) => target.animationSpeed = value);
+    }
+    disableInteractive() {
+      this.targets.forEach((t2) => t2.disableInteractive());
+    }
+    enableInteractive() {
+      this.targets.forEach((t2) => t2.enableInteractive());
+    }
   };
 
-  // src/js/Clock.js
+  // src/js/objects/Clock.js
   var Clock = class extends Container {
     constructor() {
       super();
@@ -51135,7 +50978,7 @@ void main(void)\r
     }
   };
 
-  // src/js/Goalkeeper.js
+  // src/js/objects/Goalkeeper.js
   var Goalkeeper = class extends Container {
     constructor() {
       super();
@@ -51165,13 +51008,94 @@ void main(void)\r
         }
       }));
     }
+    set animationSpeed(value) {
+      this.spineAnimation.state.timeScale = value;
+    }
   };
 
-  // src/js/GamePlayScene.js
-  var GamePlayScene = class extends Container {
-    constructor(game) {
+  // src/js/objects/AutoplayButton.js
+  var AutoplayButton = class extends Container {
+    constructor() {
       super();
-      this.game = game;
+      this.button = ObjectFactory.createButton({
+        texturesNames: {
+          default: "CircleButtonDefault.png",
+          pressed: "CircleButtonPressed.png",
+          hover: "CircleButtonHover.png",
+          disabled: "CircleButtonDisabled.png"
+        },
+        onClick: this.onClick.bind(this)
+      });
+      this.button.width = this.button.height = 72;
+      this.addChild(this.button);
+      this.startIcon = ObjectFactory.createSpriteFromSheet("AutoplayStartButtonIcon.png");
+      this.startIcon.anchor.set(0.5);
+      this.startIcon.x = this.button.width / 2;
+      this.startIcon.y = this.button.height / 2;
+      this.addChild(this.startIcon);
+      this.stopIcon = ObjectFactory.createSpriteFromSheet("AutoplayStopButtonIcon.png");
+      this.stopIcon.anchor.set(0.5);
+      this.stopIcon.x = this.button.width / 2;
+      this.stopIcon.y = this.button.height / 2 - 12;
+      this.addChild(this.stopIcon);
+      this.counterLabel = ObjectFactory.createText(99, {
+        fontSize: 14,
+        fill: "#FAFC02",
+        align: "center"
+      });
+      this.counterLabel.anchor.set(0.5);
+      this.counterLabel.x = this.button.width / 2;
+      this.counterLabel.y = this.button.height / 2 + 12;
+      this.addChild(this.counterLabel);
+      this.state = "start";
+      this.toStartButton();
+    }
+    disable() {
+      this.button.disable();
+      this.startIcon.tint = "#3b3b3b";
+      this.startIcon.alpha = 0.5;
+    }
+    enable() {
+      this.button.enable();
+      this.startIcon.tint = "#FFFFFF";
+      this.startIcon.alpha = 1;
+    }
+    onClick() {
+      if (this.state === "start") {
+        this.onStart();
+      } else {
+        this.onStop();
+      }
+    }
+    onStart() {
+      this.emit("onClickStart");
+    }
+    onStop() {
+      this.emit("onClickStop");
+    }
+    toStopButton() {
+      this.state = "stop";
+      this.stopIcon.visible = true;
+      this.counterLabel.visible = true;
+      this.startIcon.visible = false;
+    }
+    toStartButton() {
+      this.state = "start";
+      this.stopIcon.visible = false;
+      this.counterLabel.visible = false;
+      this.startIcon.visible = true;
+    }
+    setCounter(value) {
+      this.counterLabel.text = value;
+    }
+  };
+
+  // src/js/scenes/GamePlay.js
+  var GamePlay = class extends Container {
+    constructor(game2) {
+      super();
+      this.game = game2;
+      this.animationSpeed = 1;
       const bg = this.game.objectFactory.createSpriteFromSheet("bg.png");
       this.addChild(bg);
       this.lights = this.game.objectFactory.createLightAnimation();
@@ -51181,6 +51105,11 @@ void main(void)\r
       this.clock.x = 48;
       this.clock.y = 42;
       this.addChild(this.clock);
+      this.flag = ObjectFactory.createSpriteFromSheet(`${this.game.settings.country}.png`);
+      this.flag.x = this.game.screen.width / 2;
+      this.flag.y = 80;
+      this.flag.anchor.set(0.5);
+      this.addChild(this.flag);
       this.gameProgressBar = new GameProgressBar();
       this.gameProgressBar.x = 223;
       this.gameProgressBar.y = 185;
@@ -51202,11 +51131,11 @@ void main(void)\r
         },
         () => this.placeBetButtonHandler()
       );
-      this.placeBetButton.x = this.game.app.screen.width / 2 - this.placeBetButton.width / 2;
+      this.placeBetButton.x = this.game.screen.width / 2 - this.placeBetButton.width / 2;
       this.placeBetButton.y = 612;
       this.addChild(this.placeBetButton);
       this.infoText = ObjectFactory.createText(`Tap the ball to auto-kick`, BottomPanelTextStyle);
-      this.infoText.x = this.game.app.screen.width / 2;
+      this.infoText.x = this.game.screen.width / 2;
       this.infoText.y = 780;
       this.infoText.alpha = 0.5;
       this.infoText.anchor.set(0.5);
@@ -51218,11 +51147,10 @@ void main(void)\r
           pressed: "SettingsButtonPressed.png",
           disabled: "SettingsButtonDisabled.png"
         },
-        () => this.collectButtonHandler()
+        () => this.game.fms.goTo("settingGameSettings")
       );
       this.settingsButton.x = 1138;
       this.settingsButton.y = 42;
-      this.settingsButton.disable();
       this.addChild(this.settingsButton);
       this.soundButton = this.game.objectFactory.createButton(
         {
@@ -51244,11 +51172,10 @@ void main(void)\r
           pressed: "InfoButtonPressed.png",
           disabled: "InfoButtonDisabled.png"
         },
-        () => this.collectButtonHandler()
+        () => this.game.fms.goTo("showInfo")
       );
       this.infoButton.x = 1138;
       this.infoButton.y = 137;
-      this.infoButton.disable();
       this.addChild(this.infoButton);
       const collectButtonContainer = new Container();
       collectButtonContainer.x = 712;
@@ -51281,21 +51208,21 @@ void main(void)\r
           pressed: "BetButtonPressed.png",
           disabled: "BetButtonDisabled.png"
         },
-        () => this.collectButtonHandler()
+        () => this.game.fms.goTo("selectBet")
       );
-      this.betButton.disable();
       betButtonContainer.addChild(this.betButton);
       const betText = ObjectFactory.createText("Bet", BottomPanelTextStyle);
       betText.x = this.betButton.width / 2;
       betText.y = this.betButton.height + 9;
       betText.anchor.set(0.5);
       betButtonContainer.addChild(betText);
-      this.betsLis = this.game.objectFactory.createBetsList(this.game.server.betsList, this.game.server.currentBetIndex, this.onChangeBet.bind(this));
+      this.betsLis = ObjectFactory.createList(this.game.server.betsList, this.game.server.currentBetIndex, "Bet");
       this.betsLis.x = 331;
       this.betsLis.y = 683;
+      this.betsLis.on("changedValue", this.onChangeBet.bind(this));
       this.addChild(this.betsLis);
       this.goalkeeper = new Goalkeeper();
-      this.goalkeeper.x = this.game.app.screen.width / 2;
+      this.goalkeeper.x = this.game.screen.width / 2;
       this.goalkeeper.y = 606;
       this.addChild(this.goalkeeper);
       this.kickButton = this.game.objectFactory.createBallButton(
@@ -51312,15 +51239,31 @@ void main(void)\r
       this.kickButton.y = 619;
       this.kickButton.visible = false;
       this.addChild(this.kickButton);
+      this.autoplayButton = new AutoplayButton();
+      this.autoplayButton.x = 1038;
+      this.autoplayButton.y = 512;
+      this.autoplayButton.on("onClickStart", () => this.game.fms.goTo("autoplaySettings"));
+      this.autoplayButton.on("onClickStop", () => {
+        this.autoplayButton.disable();
+        this.stopAutoplay();
+      });
+      this.addChild(this.autoplayButton);
       this.targets = new GateTargets((targetNumber) => this.targetHandler(targetNumber));
       this.addChild(this.targets);
-      this.loseAnimation = this.game.objectFactory.createLoseAnimation(this.game.app.screen);
+      this.loseAnimation = this.game.objectFactory.createLoseAnimation(this.game.screen);
       this.addChild(this.loseAnimation);
-      this.winAnimation = this.game.objectFactory.createWinAnimation(this.game.app.screen);
+      this.winAnimation = this.game.objectFactory.createWinAnimation(this.game.screen);
       this.addChild(this.winAnimation);
     }
+    stopAutoplay() {
+      this.autoplayButton.toStartButton();
+      this.game.settings.autoBet = false;
+      this.game.server.betsList = this.game.server.defaultBetsList;
+      this.game.server.setBetIndex(0);
+      this.betsLis.setValues(this.game.server.betsList, 0);
+      this.setUserBetMode();
+    }
     onChangeBet(betIndex) {
-      console.log(`onChangeBet ${betIndex}`);
       this.game.server.setBetIndex(betIndex);
     }
     placeBetButtonHandler() {
@@ -51330,24 +51273,24 @@ void main(void)\r
     targetHandler(targetNumber) {
     }
     async kickBallToTarget(targetNumber, isWin, currentMultiplier) {
+      if (!this.game.settings.kickAnimation) {
+        return this.showTargetsResultNumber(targetNumber, isWin, currentMultiplier);
+      }
       this.ballAnimations = this.game.objectFactory.createBallAnimation(targetNumber);
       this.ballAnimations.currentFrame = 0;
       this.ballAnimations.loop = false;
       this.ballAnimations.visible = false;
+      this.ballAnimations.animationSpeed = this.animationSpeed;
       this.addChild(this.ballAnimations);
       return Promise.all([
-        Timer.wait(250).then(() => {
+        Timer.wait(250 / this.animationSpeed).then(() => {
           this.ballAnimations.visible = true;
           this.ballAnimations.play();
         }),
         new Promise((resolve2) => {
           this.ballAnimations.onComplete = () => {
             this.ballAnimations.destroy();
-            if (isWin) {
-              this.targets.showWin(targetNumber, currentMultiplier);
-            } else {
-              this.targets.hideAll();
-            }
+            this.showTargetsResultNumber(targetNumber, isWin, currentMultiplier);
             resolve2();
           };
         }),
@@ -51359,6 +51302,13 @@ void main(void)\r
           }
         })()
       ]);
+    }
+    async showTargetsResultNumber(targetNumber, isWin, currentMultiplier) {
+      if (isWin) {
+        await this.targets.showWin(targetNumber, currentMultiplier);
+      } else {
+        await this.targets.hideAll();
+      }
     }
     async goToNextLevel(target, currentMultiplier) {
       await this.targets.winToPosition(target, currentMultiplier, this.gameProgressBar.getCurrentPointPosition());
@@ -51393,6 +51343,34 @@ void main(void)\r
     async updateBalance(balance) {
       this.balance.setValue(balance);
     }
+    showBlur() {
+      this.filters = [new BlurFilter()];
+    }
+    hideBlur() {
+      this.filters = [];
+    }
+    setAnimationSpeed(speed) {
+      this.animationSpeed = speed;
+      this.targets.animationSpeed = speed;
+      this.goalkeeper.animationSpeed = speed;
+      this.gameProgressBar.animationSpeed = speed;
+    }
+    setAutoBetMode() {
+      this.betButton.disableInteractive();
+      this.kickButton.disableInteractive();
+      this.targets.disableInteractive();
+      this.collectButton.disableInteractive();
+      this.betsLis.disableInteractive();
+      this.placeBetButton.disableInteractive();
+    }
+    setUserBetMode() {
+      this.betButton.enableInteractive();
+      this.kickButton.enableInteractive();
+      this.targets.enableInteractive();
+      this.collectButton.enableInteractive();
+      this.betsLis.enableInteractive();
+      this.placeBetButton.enableInteractive();
+    }
   };
 
   // src/js/configs/assets-manifest.js
@@ -51420,11 +51398,15 @@ void main(void)\r
           },
           {
             alias: "all-json",
-            src: "assets/all.json"
+            src: "assets/all-0.json"
           },
           {
             alias: "girlAtlas",
             src: "assets/spine/Girl.atlas"
+          },
+          {
+            alias: "girlSkeleton",
+            src: "assets/spine/Girl.json"
           },
           {
             alias: "goalkeeperAtlas",
@@ -51474,49 +51456,1112 @@ void main(void)\r
     }
   };
 
-  // src/js/states/Loading.js
-  var Loading = class extends GameState {
-    async onEnter() {
-      await Assets.init({ manifest });
-      await Assets.loadBundle(["load-screen"]);
-      this.loadingScene = new Container();
-      this.game.app.stage.addChild(this.loadingScene);
-      this.logo = this.game.objectFactory.createSpriteFromSheet("CryptoGaming.png", "assets/loading.json");
-      this.logo.anchor.set(0.5);
-      this.logo.x = this.game.app.screen.width / 2;
-      this.logo.y = 300;
-      this.loadingScene.addChild(this.logo);
-      this.progressBar = this.game.objectFactory.createGameLoadingProgressBar();
-      this.progressBar.setProgress(0);
-      this.progressBar.x = this.game.app.screen.width / 2 - this.progressBar.width / 2;
-      this.progressBar.y = 700;
-      this.loadingScene.addChild(this.progressBar);
-      this.smoothingProgress = new SmoothingProgress(this.progressHandler.bind(this), this.onCompleteLoading.bind(this));
-      Assets.loadBundle(["game-screen"], (progress) => {
-        this.smoothingProgress.increase(progress * 100);
+  // src/js/objects/Girl.js
+  var Girl = class extends Container {
+    constructor() {
+      super();
+      this.animationsByTarget = ["Top6", "onlyGirl", "only_Ball"];
+      this.spineAnimation = ObjectFactory.createSpineAnimation("girlSkeleton");
+      this.addChild(this.spineAnimation);
+      this.ballAnimation = ObjectFactory.createAnimation("girl_ball/girl_ball");
+      this.ballAnimation.visible = false;
+      this.ballAnimation.x = -172;
+      this.ballAnimation.y = -279;
+      this.ballAnimation.loop = false;
+      this.addChild(this.ballAnimation);
+    }
+    async playAnimation(animation, loop = false) {
+      this.spineAnimation.state.setAnimation(0, animation, loop);
+      return new Promise((resolve2) => this.spineAnimation.state.addListener({
+        complete: () => {
+          resolve2();
+        }
+      }));
+    }
+    set animationSpeed(value) {
+      this.spineAnimation.state.timeScale = value;
+    }
+    async play() {
+      const animation = this.animationsByTarget[0];
+      return this.playAnimation(animation);
+    }
+    async playIdle() {
+      this.play();
+      Timer.wait(3050).then(() => this.ballAnimation.visible = true);
+      await Timer.wait(3200);
+      await this.playBall();
+      await Timer.wait(3e3);
+      this.playIdle();
+    }
+    async playBall() {
+      this.ballAnimation.currentFrame = 0;
+      this.ballAnimation.play();
+      return new Promise((resolve2) => {
+        this.ballAnimation.onComplete = () => {
+          this.ballAnimation.currentFrame = 0;
+          this.ballAnimation.visible = false;
+          resolve2();
+        };
       });
     }
-    async onCompleteLoading() {
-      this.loadingScene.destroy();
-      const anim = this.game.objectFactory.createAnimation("4_logo/4_logo");
-      anim.anchor.set(0.5);
-      anim.x = this.game.app.screen.width / 2;
-      anim.y = this.game.app.screen.height / 2;
-      anim.animationSpeed = 0.5;
-      anim.loop = false;
-      anim.onComplete = () => {
-        anim.destroy();
-        this.game.fms.goTo("gamePlay");
+  };
+
+  // src/js/objects/CountrySlider.js
+  var CountrySlider = class extends Container {
+    constructor(countries) {
+      super();
+      this.label = ObjectFactory.createText("Select a country", { fill: 16777215, fontSize: 20, fontWeight: "bold" });
+      this.label.anchor.set(0.5);
+      this.addChild(this.label);
+      this.carousel = ObjectFactory.createCarousel({
+        elements: countries.map((name) => new Country(name))
+      });
+      this.carousel.on("selected", this.onSelect.bind(this));
+      this.addChild(this.carousel);
+      this.bg = this.carousel.addChildAt(ObjectFactory.createSprite("CountrySelected.png"), 0);
+      this.bg.anchor.set(0.5);
+      this.label.y = -(this.carousel.height / 2 + 20);
+    }
+    getCurrentIndex() {
+      return this.carousel.getMiddleIndex();
+    }
+    onSelect(index) {
+      this.emit("selected", index);
+    }
+  };
+  var Country = class extends Container {
+    constructor(name) {
+      super();
+      this.flag = ObjectFactory.createSpriteFromSheet(`${name}.png`);
+      this.flag.anchor.set(0.5, 0.5);
+      this.flag.y = -12;
+      this.addChild(this.flag);
+      this.label = ObjectFactory.createText(name, { fill: 16777215, fontSize: 16 });
+      this.label.anchor.set(0.5);
+      this.label.y = this.flag.height * 0.3;
+      this.addChild(this.label);
+    }
+  };
+
+  // src/js/objects/LevelSlider.js
+  var LevelCarousel = class extends Container {
+    constructor(cups) {
+      super();
+      this.label = ObjectFactory.createText("Level", { fill: 16777215, fontSize: 20, fontWeight: "bold" });
+      this.label.anchor.set(0.5);
+      this.addChild(this.label);
+      this.carousel = ObjectFactory.createCarousel({
+        elements: cups.map((cup) => new Level(cup)),
+        width: 200
+      });
+      this.carousel.on("selected", this.onSelect.bind(this));
+      this.addChild(this.carousel);
+      this.bg = this.carousel.addChildAt(ObjectFactory.createSprite("LevelSelected.png"), 0);
+      this.bg.anchor.set(0.5);
+      this.label.y = -(this.carousel.height / 2 + 20);
+    }
+    getCurrentIndex() {
+      return this.carousel.getMiddleIndex();
+    }
+    onSelect(index, element) {
+      this.emit("selectLevel", index);
+    }
+  };
+  var Level = class extends Container {
+    constructor({ texture, label, multiplier, locked = false }) {
+      super();
+      this.lockedTexture = ObjectFactory.getTextureFromSpriteSheet(`${texture}Locked.png`);
+      this.level = ObjectFactory.createSpriteFromSheet(`${texture}.png`);
+      this.level.anchor.set(0.5, 0.5);
+      this.level.y = -14;
+      this.addChild(this.level);
+      this.levelName = ObjectFactory.createText(label, { fill: 16777215, fontSize: 14 });
+      this.levelName.anchor.set(0.5);
+      this.levelName.y = this.level.height * 0.5;
+      this.addChild(this.levelName);
+      this.levelMultiplier = ObjectFactory.createText(`Multiplier X${multiplier}`, { fill: 16777215, fontSize: 14, fontWeight: "bold" });
+      this.levelMultiplier.anchor.set(0.5);
+      this.levelMultiplier.y = this.levelName.y + this.levelName.height / 2 + 8;
+      this.addChild(this.levelMultiplier);
+      if (locked) {
+        this.lock();
+      }
+    }
+    lock() {
+      this.level.texture = this.lockedTexture;
+      this.levelName.alpha = 0.5;
+      this.levelMultiplier.alpha = 0.5;
+      this.isLocked = true;
+    }
+    unlock() {
+      this.level.alpha = 1;
+      this.levelName.alpha = 1;
+      this.levelMultiplier.alpha = 1;
+      this.isLocked = false;
+    }
+  };
+
+  // src/js/scenes/Lobby.js
+  var Lobby = class extends Container {
+    constructor(game2) {
+      super();
+      this.game = game2;
+      this.currentLevel = -1;
+      this.girl = new Girl();
+      this.addChild(this.girl);
+      this.girl.playIdle();
+      this.girl.scale.set(0.8);
+      this.girl.x = 200;
+      this.girl.y = this.game.screen.height;
+      this.letsPlayButton = this.addChild(ObjectFactory.createButton({
+        texturesNames: {
+          default: "ButtonNormal.png",
+          hover: "ButtonHover.png",
+          pressed: "ButtonSelected.png",
+          disabled: "ButtonDisabled.png"
+        },
+        text: "Lets play",
+        onClick: this.letsPlay.bind(this)
+      }));
+      this.letsPlayButton.x = this.game.screen.width / 2 - this.letsPlayButton.width / 2;
+      this.letsPlayButton.y = 520;
+      this.counties = this.addChild(new CountrySlider(this.game.config.counties));
+      this.counties.x = this.game.screen.width / 2;
+      this.counties.y = 100;
+      this.counties.scale.set(0.8);
+      this.counties.on("selected", this.selectCountry.bind(this));
+      this.levels = this.addChild(new LevelCarousel(this.game.config.cups));
+      this.levels.x = this.game.screen.width / 2;
+      this.levels.y = 300;
+      this.levels.scale.set(0.8);
+      this.levels.on("selectLevel", this.selectLevel.bind(this));
+      this.lock = this.addChild(new Container());
+      this.lockIcon = this.lock.addChild(ObjectFactory.createSpriteFromSheet("LockIcon.png"));
+      this.lockIcon.anchor.set(0.5);
+      this.locakedLabel = this.lock.addChild(ObjectFactory.createText("Level Locked!", { fill: 16777215, fontSize: 18, fontWeight: "bold" }));
+      this.locakedLabel.anchor.set(0.5);
+      this.locakedLabel.y = this.lockIcon.height / 2 + 12;
+      this.locakedLabelB = this.lock.addChild(ObjectFactory.createText("You need to play more games at the previous level", { fill: 16777215, fontSize: 18 }));
+      this.locakedLabelB.anchor.set(0.5);
+      this.locakedLabelB.y = this.locakedLabel.y + 20;
+      this.locakedLabelB.alpha = 0.6;
+      this.lock.x = this.letsPlayButton.x + this.letsPlayButton.width / 2;
+      this.lock.y = this.letsPlayButton.y;
+      this.selectLevel(this.levels.getCurrentIndex());
+      this.selectCountry(this.counties.getCurrentIndex());
+    }
+    selectCountry(index) {
+      this.game.settings.country = this.game.config.counties[index];
+    }
+    selectLevel(levelIndex) {
+      this.lock.visible = this.game.config.cups[levelIndex].locked;
+      this.letsPlayButton.visible = !this.game.config.cups[levelIndex].locked;
+      this.currentLevel = levelIndex;
+    }
+    letsPlay() {
+      this.game.fms.goTo("waitingForBet");
+      this.game.settings.level = this.currentLevel;
+    }
+  };
+
+  // src/js/states/Loading.js
+  loadTextures.config = {
+    preferWorkers: true,
+    preferCreateImageBitmap: true,
+    rossOrigin: "anonymous"
+  };
+  var Loading = class extends GameState {
+    async onEnter() {
+      await Assets.init({ manifest, texturePreference: { resolution: 4 } });
+      await Assets.loadBundle(["load-screen"]);
+      this.game.scene = this.game.scenes.showScene("loading");
+      Assets.loadBundle(["game-screen"], (progress) => {
+        this.game.scene.setLoadingProgress(progress);
+      });
+    }
+    async onExit() {
+      this.game.popupManager.createPopups();
+    }
+  };
+
+  // src/js/states/BollKick.js
+  var BollKick = class extends GameState {
+    async onEnter() {
+      console.log("Ball Kick");
+      const bet = 10;
+      console.log(`Bet: ${bet}`);
+      const result = await this.game.server.placeBet({ bet: 10 });
+      console.log("Result:");
+      console.log(`Balance: ${result.balance}`);
+      console.log(`Win: ${result.winnings}`);
+      console.log(`Multiplier: ${result.multiplier}`);
+      this.game.fms.goTo("waitingForBet");
+    }
+    async onExit() {
+    }
+  };
+
+  // src/js/states/PlayRound.js
+  var PlayRound = class extends GameState {
+    async onEnter() {
+      await this.game.scene.gameProgressBar.first();
+      this.game.scene.placeBetButton.visible = false;
+      if (this.game.server.isFirstRound()) {
+        await this.game.server.placeBet();
+        await this.game.scene.updateBalance(this.game.server.getBalanceText());
+      }
+      this.game.fms.goTo("waitKick");
+    }
+  };
+
+  // src/js/states/WinRound.js
+  var WinRound = class extends GameState {
+    async onEnter() {
+      await this.game.scene.goToNextLevel(this.game.server.roundTarget, `x${this.game.server.currentMultiplier}`);
+      this.game.scene.setWin(this.game.server.roundResult.winnings);
+      if (this.game.server.isLastRound()) {
+        this.game.fms.goTo("winAllRounds");
+        return;
+      }
+      this.game.fms.goTo("waitKick");
+    }
+    async onExit() {
+    }
+  };
+
+  // src/js/states/LoseRound.js
+  var LoseRound = class extends GameState {
+    async onEnter() {
+      if (this.game.settings.winAnimation) {
+        await this.game.scene.playLoseAnimation();
+      }
+      this.game.scene.setWin("");
+      this.game.scene.reset();
+      this.game.fms.goTo("waitingForBet");
+    }
+    async onExit() {
+    }
+  };
+
+  // src/js/states/WinAllRounds.js
+  var WinAllRounds = class extends GameState {
+    async onEnter() {
+      this.game.fms.goTo("collectWinning");
+    }
+    async onExit() {
+    }
+  };
+
+  // src/js/states/WaitKick.js
+  var WaitKick = class extends GameState {
+    async onEnter() {
+      this.game.scene.kickButton.visible = true;
+      this.game.scene.targets.visible = true;
+      this.game.scene.showTargets();
+      if (!this.game.server.isFirstRound()) {
+        this.game.scene.targets.playAllTargetsAnimation();
+      }
+      this.game.scene.goalkeeper.onTheSpot();
+      if (!this.game.server.isFirstRound()) {
+        this.game.scene.collectButton.enable();
+      }
+      this.game.scene.kickButtonHandler = this.selectRandomTarget.bind(this);
+      this.game.scene.targetHandler = this.selectTarget.bind(this);
+      this.game.scene.collectButtonHandler = this.collectWinning.bind(this);
+      this.game.scene.kickButton.enable();
+      if (this.game.settings.autoBet) {
+        this.autoPlay();
+      }
+    }
+    async autoPlay() {
+      await Timer.wait(2e3);
+      const { cashOut, multiplier } = this.game.settings.autoplay;
+      if (cashOut) {
+        if (this.game.server.getCurrentMultiplier() >= multiplier) {
+          await this.game.scene.collectButton.click();
+          this.collectWinning();
+          return;
+        }
+      }
+      await this.selectRandomTarget();
+    }
+    async onExit() {
+      this.game.scene.kickButton.disable();
+      this.game.scene.collectButton.disable();
+    }
+    async selectRandomTarget() {
+      await this.selectTarget(getRandomNumber());
+    }
+    async selectTarget(target) {
+      await this.game.scene.selectTarget(target);
+      this.game.scene.kickButton.visible = false;
+      this.game.scene.collectButton.disable();
+      await this.game.server.playRound(target);
+      await this.game.scene.kickBallToTarget(target, this.game.server.roundResult.win, this.game.server.currentMultiplier);
+      this.game.fms.goTo("waitKickResult");
+    }
+    async collectWinning() {
+      this.game.fms.goTo("collectWinning");
+    }
+  };
+
+  // src/js/states/WaitKickResult.js
+  var WaitKickResult = class extends GameState {
+    async onEnter() {
+      const result = this.game.server.roundResult;
+      if (result.win) {
+        this.game.fms.goTo("winRound");
+      } else {
+        this.game.fms.goTo("loseRound");
+      }
+    }
+    async onExit() {
+      this.game.scene.kickButton.disable();
+    }
+  };
+
+  // src/js/states/CollectWinning.js
+  var CollectWinning = class extends GameState {
+    async onEnter() {
+      this.game.scene.kickButton.disable();
+      this.game.scene.collectButton.disable();
+      this.game.scene.betsLis.disable();
+      await this.game.server.collectWinnings();
+      if (this.game.settings.winAnimation) {
+        await this.game.scene.playWinAnimation();
+      }
+      this.game.scene.setBalance(this.game.server.getBalanceText());
+      this.game.fms.goTo("waitingForBet");
+    }
+    async onExit() {
+    }
+  };
+
+  // src/js/states/SelectBet.js
+  var SelectBet = class extends GameState {
+    async onEnter() {
+      this.game.popupManager.showPopup("Bets");
+      this.game.scene.showBlur();
+    }
+    async onExit() {
+      this.game.scene.betsLis.setIndex(this.game.server.currentBetIndex);
+      this.game.scene.hideBlur();
+    }
+  };
+
+  // src/js/poups/BasePopup.js
+  var BasePopup = class extends Container {
+    constructor(game2, name, onClose = () => {
+    }) {
+      super();
+      this.game = game2;
+      this.name = name;
+      this.onClose = onClose;
+      this.bg = this.game.objectFactory.createSpriteFromSheet("popupbg.png");
+      this.bg.x = this.game.screen.width / 2 - this.bg.width / 2;
+      this.bg.y = this.game.screen.height / 2 - this.bg.height / 2;
+      this.addChild(this.bg);
+      this.label = ObjectFactory.createText(this.name, {
+        fontFamily: "Arial",
+        fontSize: 34,
+        fill: 16777215,
+        align: "center",
+        fontWeight: "bold"
+      });
+      this.label.x = this.bg.x + this.bg.width / 2;
+      this.label.y = this.bg.y + 60;
+      this.label.anchor.set(0.5);
+      this.addChild(this.label);
+      this.closeButton = this.game.objectFactory.createButton({
+        default: "ExitButtonDefault.png",
+        hover: "ExitButtonHover.png",
+        pressed: "ExitButtonPressed.png",
+        disabled: "ExitButtonDisabled.png"
+      }, () => this.close());
+      this.closeButton.x = this.bg.x + this.bg.width - this.closeButton.width - 20;
+      this.closeButton.y = this.bg.y + 20;
+      this.addChild(this.closeButton);
+    }
+    show() {
+      this.visible = true;
+    }
+    hide() {
+      this.visible = false;
+    }
+    open() {
+    }
+    close() {
+      this.hide();
+      this.onClose();
+    }
+  };
+
+  // src/js/objects/PageListSelector.js
+  var PageListSelector = class extends Container {
+    constructor(numberOfPages, onChange) {
+      super();
+      const gap = 10;
+      this.numberOfPages = numberOfPages;
+      this.onChange = onChange;
+      this.leftbutton = ObjectFactory.createArrowButton(this.decreasePage.bind(this));
+      this.leftbutton.x = 0;
+      this.leftbutton.y = -this.leftbutton.height / 2;
+      this.addChild(this.leftbutton);
+      this.currentPage = 0;
+      this.indicators = [];
+      for (let i2 = 0; i2 < this.numberOfPages; i2++) {
+        const indicator = new PageListIndicator();
+        indicator.x = this.leftbutton.x + this.leftbutton.width + gap + i2 * (indicator.width + gap);
+        indicator.y = -indicator.height / 2;
+        this.indicators.push(indicator);
+        this.addChild(indicator);
+      }
+      this.rightbutton = ObjectFactory.createArrowButton(this.increasePage.bind(this));
+      this.rightbutton.x = (this.indicators.length + 1) * (this.indicators[0].width + gap) + this.leftbutton.width + gap * 2;
+      this.rightbutton.y = -this.rightbutton.height / 2;
+      this.rightbutton.scale.x = -1;
+      this.addChild(this.rightbutton);
+      this.activateIndicator(this.currentPage);
+    }
+    decreasePage() {
+      if (this.currentPage > 0) {
+        this.currentPage--;
+        this.activateIndicator(this.currentPage);
+        this.onChange(this.currentPage);
+      }
+    }
+    increasePage() {
+      if (this.currentPage < this.numberOfPages - 1) {
+        this.currentPage++;
+        this.activateIndicator(this.currentPage);
+        this.onChange(this.currentPage);
+      }
+    }
+    activateIndicator(index) {
+      for (let i2 = 0; i2 < this.indicators.length; i2++) {
+        this.indicators[i2].active = i2 === index;
+      }
+    }
+  };
+  var PageListIndicator = class extends Container {
+    constructor() {
+      super();
+      this.normalTexture = ObjectFactory.createSpriteFromSheet("listPoint.png").texture;
+      this.activeTexture = ObjectFactory.createSpriteFromSheet("ListPointCheked.png").texture;
+      this.srite = new Sprite(this.normalTexture);
+      this.addChild(this.srite);
+    }
+    set active(value) {
+      this.srite.texture = value ? this.activeTexture : this.normalTexture;
+    }
+    get active() {
+      return this.srite.texture === this.activeTexture;
+    }
+  };
+
+  // src/js/poups/Info.js
+  var Info = class extends BasePopup {
+    constructor(game2, name, onClose = () => {
+    }) {
+      super(game2, name, onClose);
+      const pages = 5;
+      this.pages = [];
+      this.bg.visible = false;
+      this.pageContainer = new Container();
+      this.addChildAt(this.pageContainer, 0);
+      for (let i2 = 0; i2 < pages; i2++) {
+        const page = ObjectFactory.createSpriteFromSheet(`InfoPage${i2 + 1}.png`);
+        page.visible = false;
+        page.x = game2.screen.width / 2 - page.width / 2;
+        page.y = game2.screen.height / 2 - page.height / 2;
+        this.pages.push(page);
+        this.pageContainer.addChild(page);
+      }
+      this.showPage(0);
+      this.pageListSelector = new PageListSelector(pages, this.showPage.bind(this));
+      this.pageListSelector.x = game2.screen.width / 2 - this.pageListSelector.width / 2;
+      this.pageListSelector.y = this.pages[0].y + this.pages[0].height + 20;
+      this.addChild(this.pageListSelector);
+    }
+    showPage(index) {
+      for (let i2 = 0; i2 < this.pages.length; i2++) {
+        this.pages[i2].visible = i2 === index;
+      }
+    }
+    get currentPage() {
+      for (let i2 = 0; i2 < this.pages.length; i2++) {
+        if (this.pages[i2].visible) {
+          return i2;
+        }
+      }
+    }
+    close() {
+      super.close();
+      this.game.fms.goTo("waitingForBet");
+    }
+  };
+
+  // src/js/poups/Bets.js
+  var Bets = class extends BasePopup {
+    constructor(game2, name, onClose = () => {
+    }) {
+      super(game2, name, onClose);
+      this.currentBetIndex = this.game.server.currentBetIndex;
+      this.betsList = this.addChild(new BetsListButtons(this.game.server.betsList, this.game.server.currentBetIndex, this.changeBetIndex.bind(this)));
+      this.betsList.x = this.bg.x + this.bg.width / 2 - this.betsList.width / 2;
+      this.betsList.y = this.bg.y + this.bg.height / 2 - this.betsList.height / 2;
+      this.confirmButton = this.game.objectFactory.createButton({
+        default: "ButtonNormal.png",
+        hover: "ButtonHover.png",
+        pressed: "ButtonSelected.png",
+        disabled: "ButtonDisabled.png"
+      }, () => this.confirm(), "Confirm", 0.6);
+      this.confirmButton.x = this.bg.x + this.bg.width / 2 - this.confirmButton.width / 2;
+      this.confirmButton.y = this.betsList.y + this.betsList.height + 30;
+      this.addChild(this.confirmButton);
+    }
+    changeBetIndex(index) {
+      this.currentBetIndex = index;
+    }
+    confirm() {
+      this.game.server.setBetIndex(this.currentBetIndex);
+      this.close();
+    }
+    open() {
+      super.open();
+      this.currentBetIndex = this.game.server.currentBetIndex;
+      this.betsList.selectBet(this.currentBetIndex);
+    }
+    close() {
+      super.close();
+      this.game.fms.goTo("waitingForBet");
+    }
+  };
+  var BetsListButtons = class extends Container {
+    constructor(bets, currentBetIndex, onChangeBet) {
+      super();
+      const spacing = 10;
+      for (let i2 = 0; i2 < 3; i2++) {
+        for (let j2 = 0; j2 < 4; j2++) {
+          const index = i2 * 4 + j2;
+          if (index < bets.length) {
+            const bet = bets[index];
+            const button = new BetButton(bet);
+            button.x = j2 * (button.width + spacing);
+            button.y = i2 * (button.height + spacing);
+            button.on("pointerdown", () => {
+              this.selectBet(index);
+              onChangeBet(index);
+            });
+            this.addChild(button);
+          }
+        }
+      }
+      this.selectBet(currentBetIndex);
+    }
+    selectBet(index) {
+      this.children.forEach((child, i2) => {
+        child.setSelect(i2 === index);
+      });
+    }
+  };
+  var BetTextStyle = {
+    fontFamily: "Arial",
+    fontSize: 20,
+    fill: 16777215,
+    align: "center"
+  };
+  var BetButton = class extends Container {
+    constructor(bet) {
+      super();
+      this.bet = bet;
+      this.bg = ObjectFactory.createSpriteFromSheet("BetBgDefault.png");
+      this.addChild(this.bg);
+      this.text = ObjectFactory.createText(bet, BetTextStyle);
+      this.text.x = this.bg.width / 2;
+      this.text.y = this.bg.height / 2;
+      this.text.anchor.set(0.5);
+      this.addChild(this.text);
+      this.interactive = true;
+      this.buttonMode = true;
+      this.on("pointerdown", this.selected.bind(this));
+      this.on("pointerup", this.hover.bind(this));
+      this.on("pointerupoutside", this.normal.bind(this));
+      this.on("pointerover", this.hover.bind(this));
+      this.on("pointerout", this.normal.bind(this));
+      this.isSelected = false;
+    }
+    selected() {
+      this.bg.texture = ObjectFactory.getTextureFromSpriteSheet("BetBgSelected.png");
+    }
+    hover() {
+      this.bg.texture = ObjectFactory.getTextureFromSpriteSheet(this.isSelected ? "BetBgSelected.png" : "BetBgHover.png");
+    }
+    normal() {
+      this.bg.texture = ObjectFactory.getTextureFromSpriteSheet(this.isSelected ? "BetBgSelected.png" : "BetBgDefault.png");
+    }
+    setSelect(value) {
+      this.isSelected = value;
+      this.bg.texture = ObjectFactory.getTextureFromSpriteSheet(value ? "BetBgSelected.png" : "BetBgDefault.png");
+    }
+  };
+
+  // src/js/states/WaitingForBet.js
+  var WaitingForBet = class extends GameState {
+    async onEnter() {
+      this.game.scene.reset();
+      this.game.scene.placeBetButton.enable();
+      this.game.scene.betsLis.enable();
+      this.game.scene.placeBetButton.visible = true;
+      this.game.scene.kickButton.visible = false;
+      this.game.scene.collectButton.disable();
+      this.game.scene.placeBetButtonHandler = this.onPlaceBet.bind(this);
+      this.game.scene.targets.playAllTargetsAnimation();
+      this.game.scene.targets.disable();
+      this.game.scene.betButton.enable();
+      this.game.scene.settingsButton.enable();
+      this.game.scene.autoplayButton.enable();
+      this.game.scene.infoButton.enable();
+      if (this.game.settings.autoBet) {
+        this.autoBet();
+      }
+    }
+    async autoBet() {
+      if (this.game.settings.autoplay) {
+        if (this.game.settings.autoplay.rounds > 0) {
+          this.game.settings.autoplay.rounds -= 1;
+          this.game.scene.autoplayButton.setCounter(this.game.settings.autoplay.rounds);
+          await Timer.wait(2e3);
+          await this.game.scene.placeBetButton.click();
+          this.game.fms.goTo("playRound");
+        } else {
+          this.game.settings.autoBet = false;
+          this.game.scene.stopAutoplay();
+          this.game.scene.autoplayButton.enable();
+        }
+      } else {
+        this.game.settings.autoBet = false;
+        this.game.scene.stopAutoplay();
+        this.game.scene.autoplayButton.enable();
+      }
+    }
+    onPlaceBet() {
+      this.game.fms.goTo("playRound");
+    }
+    async onExit() {
+      this.game.scene.placeBetButton.disable();
+      this.game.scene.collectButton.disable();
+      this.game.scene.betsLis.disable();
+      this.game.scene.betButton.disable();
+      this.game.scene.settingsButton.disable();
+      this.game.scene.autoplayButton.disable();
+      this.game.scene.infoButton.disable();
+      if (this.game.settings.autoBet) {
+        this.game.scene.autoplayButton.enable();
+      }
+    }
+  };
+
+  // src/js/states/SettingGameSettings.js
+  var SettingGameSettings = class extends GameState {
+    async onEnter() {
+      this.game.popupManager.showPopup("Settings");
+      this.game.scene.showBlur();
+    }
+    async onExit() {
+      this.game.scene.hideBlur();
+    }
+  };
+
+  // src/js/objects/RadioGroup.js
+  var RadioGroup = class extends Container {
+    constructor({ buttonTextures, numberOfButtons, onSelect = () => {
+    }, buttonTextStyle }) {
+      super();
+      this.buttons = [];
+      this.selectedButton = null;
+      this.onSelect = onSelect;
+      this.createButtons(buttonTextures, numberOfButtons, buttonTextStyle);
+    }
+    createButtons(textures, numberOfButtons = 0, textStyle) {
+      for (let index = 0; index < numberOfButtons; index += 1) {
+        const button = new Button(
+          {
+            textures,
+            onClick: () => this.selectButton(index),
+            text: `Button ${index + 1}`,
+            textStyle
+          }
+        );
+        button.y = index * button.height;
+        this.addChild(button);
+        this.buttons.push(button);
+      }
+    }
+    forEachButton(callback) {
+      this.buttons.forEach(callback);
+    }
+    selectButton(index) {
+      if (this.selectedButton !== null) {
+        this.buttons[this.selectedButton].setSelect(false);
+      }
+      this.selectedButton = index;
+      this.buttons[index].setSelect(true);
+      this.onSelect(index);
+    }
+    getSelectedButton() {
+      return this.selectedButton;
+    }
+    disableButton(index) {
+      if (index >= 0 && index < this.buttons.length) {
+        this.buttons[index].disable();
+      }
+    }
+    enableButton(index) {
+      if (index >= 0 && index < this.buttons.length) {
+        this.buttons[index].enable();
+      }
+    }
+  };
+
+  // src/js/objects/SegmentedSelect.js
+  var SegmentedSelect = class extends RadioGroup {
+    constructor({ currentValue = 0, onSelect = () => {
+    } } = {}) {
+      const radioGroupOptions = {
+        buttonTextures: {
+          default: ObjectFactory.getTextureFromSpriteSheet("SegmentedControllButtonDefault.png"),
+          hover: ObjectFactory.getTextureFromSpriteSheet("SegmentedControllButtonHover.png"),
+          pressed: ObjectFactory.getTextureFromSpriteSheet("SegmentedControllButtonSelected.png"),
+          disabled: ObjectFactory.getTextureFromSpriteSheet("SegmentedControllButtonDefault.png"),
+          selected: ObjectFactory.getTextureFromSpriteSheet("SegmentedControllButtonSelected.png")
+        },
+        numberOfButtons: 3,
+        onSelect,
+        buttonTextStyle: SegmentedSelectTextStyle
       };
-      anim.play();
-      this.game.app.stage.addChild(anim);
+      super(radioGroupOptions);
+      this.addChildAt(ObjectFactory.createSpriteFromSheet("SegmentedControllBackground.png"), 0);
+      const buttonsText = ["Low", "Medium", "High"];
+      this.buttons.forEach((button, index) => {
+        button.x = 8 + index * button.width;
+        button.y = 8;
+        button.text.text = buttonsText[index];
+        button.text.style = SegmentedSelectTextStyle;
+      });
+      this.selectedButton = currentValue;
+      this.buttons[currentValue].setSelect(true);
+    }
+    selectButton(index) {
+      super.selectButton(index);
+      this.buttons.forEach((button, i2) => button.text.style = SegmentedSelectTextStyle);
+      this.buttons[index].text.style = SegmentedSelectTextStyleActive;
+    }
+  };
+
+  // src/js/poups/Settings.js
+  var AnimationSpeedByIndex = [0.8, 1, 2];
+  var Settings = class extends BasePopup {
+    constructor(game2, onClose = () => {
+    }) {
+      super(game2, onClose);
+      this.currentAnimationSpeed = this.game.settings.gamePlayAnimationSpeed;
+      this.animationSpeedLabel = this.addChild(ObjectFactory.createText("Animation speed", SettingsLabelTextStyle));
+      this.animationSpeedRadioGroup = this.addChild(new SegmentedSelect({ currentValue: this.getIndexByAnimationSpeed(), onSelect: this.changeAnimationSpeed.bind(this) }));
+      this.animationSpeedRadioGroup.scale.set(0.8);
+      this.animationSpeedLabel.x = this.bg.x + 50;
+      this.animationSpeedLabel.y = this.bg.y + 200;
+      this.animationSpeedRadioGroup.x = this.animationSpeedLabel.x;
+      this.animationSpeedRadioGroup.y = this.animationSpeedLabel.y + this.animationSpeedLabel.height + 10;
+      this.animationsText = this.addChild(ObjectFactory.createText("Animations", SettingsLabelTextStyle));
+      this.animationsText.x = 642;
+      this.animationsText.y = this.animationSpeedLabel.y;
+      this.kickAnimationCheckBox = this.addChild(ObjectFactory.createCheckBox("Kick", this.game.settings.kickAnimation));
+      this.kickAnimationCheckBox.x = this.animationsText.x - 6;
+      this.kickAnimationCheckBox.y = this.animationSpeedRadioGroup.y;
+      this.winAnimationCheckBox = this.addChild(ObjectFactory.createCheckBox("Win", this.game.settings.winAnimation));
+      this.winAnimationCheckBox.x = this.kickAnimationCheckBox.x + this.kickAnimationCheckBox.width + 20;
+      this.winAnimationCheckBox.y = this.kickAnimationCheckBox.y;
+      this.musicSlider = this.addChild(new SliderGroup("Music volume", 0, () => {
+      }));
+      this.musicSlider.x = this.bg.x + 60;
+      this.musicSlider.y = this.bg.y + 100;
+      this.soundSlider = this.addChild(new SliderGroup("Sound volume", 0, () => {
+      }));
+      this.soundSlider.x = this.animationsText.x;
+      this.soundSlider.y = this.bg.y + 100;
+      this.kickAnimationCheckBox.on("change", this.changeKickAnimation.bind(this));
+      this.winAnimationCheckBox.on("change", this.changeWinAnimation.bind(this));
+    }
+    changeKickAnimation(state) {
+      this.game.settings.kickAnimation = state;
+    }
+    changeWinAnimation(state) {
+      this.game.settings.winAnimation = state;
+    }
+    changeAnimationSpeed(index) {
+      this.currentAnimationSpeed = AnimationSpeedByIndex[index];
+      this.game.settings.gamePlayAnimationSpeed = this.currentAnimationSpeed;
+      ;
+      this.game.scene.setAnimationSpeed(this.currentAnimationSpeed);
+    }
+    getIndexByAnimationSpeed() {
+      return AnimationSpeedByIndex.indexOf(this.currentAnimationSpeed);
+    }
+    open() {
+      super.open();
+    }
+    close() {
+      super.close();
+      this.game.fms.goTo("waitingForBet");
+    }
+  };
+  var SliderGroup = class extends Container {
+    constructor(label, value, onChange = () => {
+    }) {
+      super();
+      this.label = ObjectFactory.createText(label, SettingsLabelTextStyle);
+      this.addChild(this.label);
+      this.progressText = ObjectFactory.createText(`${value}%`, ProgressTextStyle);
+      this.addChild(this.progressText);
+      this.slider = ObjectFactory.createSlider();
+      this.slider.setProgress(value);
+      this.slider.on("change", this.onChange.bind(this));
+      this.slider.on("change", onChange);
+      this.addChild(this.slider);
+      this.label.x = 0;
+      this.label.y = 0;
+      this.slider.x = 0;
+      this.slider.y = this.label.y + this.label.height + 20;
+      this.progressText.anchor.x = 1;
+      this.progressText.x = this.slider.x + this.slider.width - 16;
+      this.progressText.y = this.label.y + 4;
+    }
+    onChange(value) {
+      this.progressText.text = `${value}%`;
+    }
+  };
+
+  // src/js/scenes/Loading.js
+  var LoadingScene = class extends Container {
+    constructor(game2) {
+      super();
+      this.game = game2;
+      this.content = this.addChild(new Container());
+      this.logo = this.game.objectFactory.createSpriteFromSheet("CryptoGaming.png", "assets/loading.json");
+      this.logo.anchor.set(0.5);
+      this.logo.x = this.game.screen.width / 2;
+      this.logo.y = this.game.screen.height / 2 - this.logo.height / 2;
+      this.content.addChild(this.logo);
+      this.progressBar = this.game.objectFactory.createGameLoadingProgressBar();
+      this.progressBar.setProgress(0);
+      this.progressBar.x = this.game.screen.width / 2 - this.progressBar.width / 2;
+      this.progressBar.y = 600;
+      this.content.addChild(this.progressBar);
+      this.smoothingProgress = new SmoothingProgress(this.progressHandler.bind(this), this.onCompleteLoading.bind(this));
+    }
+    setLoadingProgress(progress) {
+      this.smoothingProgress.increase(progress * 100);
     }
     progressHandler(progress) {
       this.progressBar.setProgress(progress);
     }
+    async onCompleteLoading() {
+      this.content.destroy();
+      await this.playLogo();
+      this.game.fms.goTo("selectLevel");
+    }
+    async playLogo() {
+      const anim = this.game.objectFactory.createAnimation("4_logo/4_logo");
+      anim.anchor.set(0.5);
+      anim.x = this.game.screen.width / 2;
+      anim.y = this.game.screen.height / 2;
+      anim.animationSpeed = 0.5;
+      anim.loop = false;
+      anim.play();
+      this.addChild(anim);
+      return new Promise((resolve2) => {
+        anim.onComplete = () => {
+          anim.destroy();
+          resolve2();
+        };
+      });
+    }
+  };
+
+  // src/js/states/SelectLevel.js
+  var SelectLevel = class extends GameState {
+    async onEnter() {
+      super.onEnter();
+      this.game.scene = this.game.scenes.showScene("lobby");
+    }
     async onExit() {
-      this.game.gamePlayScene = new GamePlayScene(this.game);
-      this.game.app.stage.addChild(this.game.gamePlayScene);
+      super.onExit();
+      this.game.scene = this.game.scenes.showScene("gamePlay");
+    }
+  };
+
+  // src/js/poups/Autoplay.js
+  var Autoplay = class extends BasePopup {
+    constructor(...props) {
+      super(...props);
+      this.multiplesBet = ["Min", 2, 10, 25, "Max"];
+      this.bets = [];
+      this.rounds = [5, 10, 20, 50, 100, "\u221E"];
+      this.cashoutValues = [];
+      const autoplayConfig = this.game.config.autoplay;
+      let bet = autoplayConfig.minBet;
+      this.bets.push(bet);
+      while (bet < autoplayConfig.maxBet) {
+        bet += autoplayConfig.step;
+        this.bets.push(bet);
+      }
+      let value = 1;
+      this.cashoutValues.push(value);
+      while (value <= 1e3) {
+        value += 0.25;
+        this.cashoutValues.push(value);
+      }
+      this.betsList = ObjectFactory.createListForAutoplaySettings(this.bets, 0, "Bet");
+      this.betsList.x = 437;
+      this.betsList.y = 356;
+      this.betsList.leftButton.x -= 6;
+      this.betsList.rightButton.x += 6;
+      this.addChild(this.betsList);
+      this.multiplesBetsButtons = this.addChild(new Container());
+      let buttonWidth = 53;
+      this.multiplesBet.forEach((v2, index) => {
+        const label = typeof v2 === "string" ? v2 : `X${v2}`;
+        const btn = this.createVariantButton(index, label, this.onClickMultiplierBet.bind(this), buttonWidth);
+        btn.x = (buttonWidth + 2) * this.multiplesBetsButtons.children.length;
+        this.multiplesBetsButtons.addChild(btn);
+      });
+      this.multiplesBetsButtons.x = this.betsList.x - this.multiplesBetsButtons.width / 2;
+      this.multiplesBetsButtons.y = this.betsList.y + 25;
+      buttonWidth = 40;
+      this.roundsList = ObjectFactory.createListForAutoplaySettings(this.rounds, 0, "Rounds");
+      this.roundsList.x = 760;
+      this.roundsList.y = 356;
+      this.roundsList.leftButton.x -= 6;
+      this.roundsList.rightButton.x += 6;
+      this.addChild(this.roundsList);
+      this.roundsButtons = this.addChild(new Container());
+      this.rounds.forEach((v2, index) => {
+        const btn = this.createVariantButton(index, v2, this.onClickRound.bind(this), buttonWidth);
+        btn.x = (buttonWidth + 2) * this.roundsButtons.children.length;
+        this.roundsButtons.addChild(btn);
+      });
+      this.roundsButtons.x = this.roundsList.x - this.roundsButtons.width / 2;
+      this.roundsButtons.y = this.roundsList.y + 25;
+      const row = new Container();
+      row.x = 292;
+      row.y = 483;
+      this.cashCheckBox = ObjectFactory.createCheckBox("Cash Out", false);
+      this.cashCheckBox.on("change", this.onChangeCashOut.bind(this));
+      row.addChild(this.cashCheckBox);
+      this.mutiplierList = ObjectFactory.createList(this.cashoutValues, 0, void 0, "AutoplayCashValueBG.png");
+      this.mutiplierList.x = this.cashCheckBox.width + 10 + this.mutiplierList.width / 2;
+      this.mutiplierList.y = this.cashCheckBox.height / 2;
+      this.mutiplierList.disable();
+      this.mutiplierList.leftButton.x -= 6;
+      this.mutiplierList.rightButton.x += 6;
+      row.addChild(this.mutiplierList);
+      this.addChild(row);
+      this.startButton = this.addChild(ObjectFactory.createSliceButton({
+        texturesNames: {
+          default: "ButtonNormal.png",
+          hover: "ButtonHover.png",
+          pressed: "ButtonSelected.png",
+          disabled: "ButtonDisabled.png"
+        },
+        onClick: this.onClickStart.bind(this),
+        bgScale: 0.75
+      }));
+      this.startButton.y = 483;
+      this.startButton.x = this.game.screen.width / 2 + 8;
+      const icon = ObjectFactory.createSpriteFromSheet("AutoplayStart.png");
+      icon.anchor.set(0.5);
+      icon.position.set(this.startButton.width / 2, this.startButton.height / 2);
+      this.startButton.addChild(icon);
+      this.addChild(this.startButton);
+    }
+    onClickStart() {
+      this.game.settings.autoBet = true;
+      this.game.settings.autoplay = {
+        rounds: this.roundsList.getCurrent(),
+        bet: this.betsList.getCurrent(),
+        cashOut: this.cashCheckBox.isChecked(),
+        multiplier: this.mutiplierList.getCurrent()
+      };
+      this.game.server.betsList = [this.game.settings.autoplay.bet];
+      this.game.server.setBetIndex(0);
+      this.game.scene.setAutoBetMode();
+      this.close();
+    }
+    onChangeCashOut(value) {
+      value ? this.mutiplierList.enable() : this.mutiplierList.disable();
+    }
+    createVariantButton(index, text, onClick, buttonWidth) {
+      return ObjectFactory.createSliceButton({
+        texturesNames: {
+          default: "SmallButtonDefault.png",
+          hover: "SmallButtonHover.png",
+          disabled: "SmallButtonDisabled.png",
+          pressed: "SmallButtonPressed.png"
+        },
+        text,
+        onClick: () => onClick(index),
+        nineSlicePlaneParameters: { top: 16, left: 16, right: 16, bottom: 16 },
+        textStyle: { fill: "#FAFC02", fontSize: 16 },
+        width: buttonWidth
+      });
+    }
+    onClickMultiplierBet(index) {
+      if (index === 0) {
+        this.betsList.setIndex(0);
+      } else if (index === this.multiplesBet.length - 1) {
+        this.betsList.setIndex(this.bets.length - 1);
+      } else {
+        const nextIndex = multiplyAndFindClosest(this.bets, this.betsList.getCurrent(), this.multiplesBet[index]);
+        this.betsList.setIndex(nextIndex);
+      }
+    }
+    onClickRound(index) {
+      this.roundsList.setIndex(index);
+    }
+    close() {
+      super.close();
+      this.game.fms.goTo("waitingForBet");
+    }
+  };
+
+  // src/js/states/AutoplaySettings.js
+  var AutoplaySettings = class extends GameState {
+    async onEnter() {
+      super.onEnter();
+      this.game.popupManager.showPopup("Autoplay");
+      this.game.scene.showBlur();
+    }
+    async onExit() {
+      super.onExit();
+      this.game.scene.hideBlur();
+      this.game.popupManager.hidePopup("Autoplay");
+      if (this.game.settings.autoBet) {
+        this.game.scene.autoplayButton.enable();
+        this.game.scene.autoplayButton.toStopButton();
+        this.game.scene.betsLis.setValues([this.game.settings.autoplay.bet], 0);
+      }
+    }
+  };
+
+  // src/js/states/ShowInfo.js
+  var ShowInfo = class extends GameState {
+    async onEnter() {
+      this.game.popupManager.showPopup("Info");
+      this.game.scene.showBlur();
+    }
+    async onExit() {
+      this.game.scene.hideBlur();
     }
   };
 
@@ -51525,6 +52570,84 @@ void main(void)\r
     screenSize: {
       width: 1220,
       height: 820
+    },
+    default: {
+      betsLis: [0.05, 0.25, 0.5, 1, 2, 5, 7.5, 10, 25, 50, 100],
+      balance: 1e3
+    },
+    autoplay: {
+      minBet: 0.5,
+      maxBet: 100,
+      step: 0.5
+    },
+    states: {
+      "load-screen": Loading,
+      "waitingForBet": WaitingForBet,
+      "bollKick": BollKick,
+      "playRound": PlayRound,
+      "winRound": WinRound,
+      "loseRound": LoseRound,
+      "winAllRounds": WinAllRounds,
+      "waitKick": WaitKick,
+      "waitKickResult": WaitKickResult,
+      "collectWinning": CollectWinning,
+      "selectBet": SelectBet,
+      "settingGameSettings": SettingGameSettings,
+      "selectLevel": SelectLevel,
+      "autoplaySettings": AutoplaySettings,
+      "showInfo": ShowInfo
+    },
+    scenes: {
+      "gamePlay": GamePlay,
+      "loading": LoadingScene,
+      "lobby": Lobby
+    },
+    popups: {
+      "Info": Info,
+      "Bets": Bets,
+      "Settings": Settings,
+      "Autoplay": Autoplay
+    },
+    cups: [
+      {
+        texture: "Cup2",
+        label: "World Cup",
+        multiplier: 8,
+        locked: true
+      },
+      {
+        texture: "Cup4",
+        label: "Nation League",
+        multiplier: 4,
+        locked: false
+      },
+      {
+        texture: "Cup3",
+        label: "European Cup",
+        multiplier: 2,
+        locked: true
+      }
+    ],
+    counties: ["France", "Brazil", "Germany", "Sweden", "Spain", "Ukraine", "Argentina"]
+  };
+
+  // src/js/URLParser.js
+  var UrlParser = class {
+    constructor() {
+      this.params = new URLSearchParams(window.location.search);
+    }
+    get(key) {
+      return this.params.get(key);
+    }
+    getAll() {
+      let params = {};
+      for (const [key, value] of this.params.entries()) {
+        params[key] = value;
+      }
+      return params;
+    }
+    has(key) {
+      return this.params.has(key);
     }
   };
 
@@ -51578,7 +52701,8 @@ void main(void)\r
       this.roundTarget = -1;
       this.bet = 0;
       this.roundResult = null;
-      this.betsList = [0.05, 0.25, 0.5, 1, 2, 2.5, 5, 7.5, 10, 25, 50, 100];
+      this.defaultBetsList = [0.05, 0.25, 0.5, 1, 2, 2.5, 5, 7.5, 10, 25, 50, 100];
+      this.betsList = this.defaultBetsList;
       this.currentBetIndex = 0;
     }
     setBetIndex(index) {
@@ -51606,6 +52730,9 @@ void main(void)\r
     }
     isLastRound() {
       return this.winStreak === 5;
+    }
+    setBet(bet) {
+      this.bet = bet;
     }
     async placeBet() {
       const betAmount = this.getBet();
@@ -51662,26 +52789,6 @@ void main(void)\r
     }
   };
 
-  // src/js/URLParser.js
-  var UrlParser = class {
-    constructor() {
-      this.params = new URLSearchParams(window.location.search);
-    }
-    get(key) {
-      return this.params.get(key);
-    }
-    getAll() {
-      let params = {};
-      for (const [key, value] of this.params.entries()) {
-        params[key] = value;
-      }
-      return params;
-    }
-    has(key) {
-      return this.params.has(key);
-    }
-  };
-
   // src/js/OnlineMode.js
   var OnlineMode = class extends Connection {
     constructor() {
@@ -51690,181 +52797,145 @@ void main(void)\r
     }
   };
 
-  // src/js/states/BollKick.js
-  var BollKick = class extends GameState {
-    async onEnter() {
-      console.log("Ball Kick");
-      const bet = 10;
-      console.log(`Bet: ${bet}`);
-      const result = await this.game.server.placeBet({ bet: 10 });
-      console.log("Result:");
-      console.log(`Balance: ${result.balance}`);
-      console.log(`Win: ${result.winnings}`);
-      console.log(`Multiplier: ${result.multiplier}`);
-      this.game.fms.goTo("gamePlay");
+  // src/js/FMS.js
+  var FMS = class {
+    constructor(game2, states) {
+      this.game = game2;
+      this.states = {};
+      this.currentState = null;
+      this.addStates(states);
     }
-    async onExit() {
-    }
-  };
-
-  // src/js/states/PlayRound.js
-  var PlayRound = class extends GameState {
-    async onEnter() {
-      this.game.gamePlayScene.placeBetButton.visible = false;
-      if (this.game.server.isFirstRound()) {
-        await this.game.server.placeBet();
-        await this.game.gamePlayScene.updateBalance(this.game.server.getBalanceText());
+    addStates(states) {
+      for (const name in states) {
+        this.addState(name, states[name]);
       }
-      this.game.fms.goTo("waitKick");
+    }
+    addState(name, stateConstructor) {
+      this.states[name] = new stateConstructor(name, this.game);
+    }
+    async changeState(newState) {
+      if (this.currentState) {
+        await this.states[this.currentState].onExit();
+      }
+      this.currentState = newState;
+      if (this.currentState) {
+        await this.states[this.currentState].onEnter();
+      }
+    }
+    goTo(state) {
+      this.changeState(state);
     }
   };
 
-  // src/js/states/WinRound.js
-  var WinRound = class extends GameState {
-    async onEnter() {
-      await this.game.gamePlayScene.goToNextLevel(this.game.server.roundTarget, `x${this.game.server.currentMultiplier}`);
-      this.game.gamePlayScene.setWin(this.game.server.roundResult.winnings);
-      if (this.game.server.isLastRound()) {
-        this.game.fms.goTo("winAllRounds");
+  // src/js/GameSceneManager.js
+  var GameSceneManager = class extends Container {
+    constructor(game2, scenes) {
+      super();
+      this.game = game2;
+      this.scenesConfig = scenes;
+      this.scenes = {};
+      this.currentScene = null;
+    }
+    showScene(name) {
+      if (this.currentScene) {
+        this.currentScene.visible = false;
+      }
+      if (!this.scenes[name] && this.scenesConfig[name]) {
+        this.scenes[name] = new this.scenesConfig[name](game);
+        this.scenes[name].visible = false;
+        this.addChild(this.scenes[name]);
+      }
+      const newScene = this.scenes[name];
+      if (newScene) {
+        newScene.visible = true;
+        this.currentScene = newScene;
+      } else {
+        console.warn(`Scene with name "${name}" does not exist.`);
+      }
+      return this.currentScene;
+    }
+  };
+
+  // src/js/PopupManager.js
+  var PopupManager = class extends Container {
+    constructor(popups, game2) {
+      super();
+      this.popupsConfig = popups;
+      this.game = game2;
+      this.popups = {};
+      this.currentPopup = null;
+    }
+    createPopups() {
+      for (let name in this.popupsConfig) {
+        this.popups[name] = new this.popupsConfig[name](this.game, name);
+        this.popups[name].visible = false;
+        this.addChild(this.popups[name]);
+      }
+    }
+    showPopup(name) {
+      if (this.currentPopup) {
+        this.currentPopup.visible = false;
+      }
+      if (!this.popups[name]) {
+        console.warn(`Popup with name "${name}" does not exist.`);
         return;
       }
-      this.game.fms.goTo("waitKick");
+      const newPopup = this.popups[name];
+      newPopup.visible = true;
+      newPopup.open();
+      this.currentPopup = newPopup;
     }
-    async onExit() {
-    }
-  };
-
-  // src/js/states/LoseRound.js
-  var LoseRound = class extends GameState {
-    async onEnter() {
-      await this.game.gamePlayScene.playLoseAnimation();
-      this.game.gamePlayScene.setWin("");
-      this.game.gamePlayScene.reset();
-      this.game.fms.goTo("gamePlay");
-    }
-    async onExit() {
-    }
-  };
-
-  // src/js/states/WinAllRounds.js
-  var WinAllRounds = class extends GameState {
-    async onEnter() {
-      console.log("Win All Rounds");
-      this.game.fms.goTo("collectWinning");
-    }
-    async onExit() {
-    }
-  };
-
-  // src/js/states/CollectWinning.js
-  var CollectWinning = class extends GameState {
-    async onEnter() {
-      this.game.gamePlayScene.kickButton.disable();
-      this.game.gamePlayScene.collectButton.disable();
-      this.game.gamePlayScene.betsLis.disable();
-      await this.game.server.collectWinnings();
-      await this.game.gamePlayScene.playWinAnimation();
-      this.game.gamePlayScene.setBalance(this.game.server.getBalanceText());
-      this.game.fms.goTo("gamePlay");
-    }
-    async onExit() {
-    }
-  };
-
-  // src/js/states/WaitKick.js
-  var WaitKick = class extends GameState {
-    async onEnter() {
-      this.game.gamePlayScene.kickButton.visible = true;
-      this.game.gamePlayScene.targets.visible = true;
-      this.game.gamePlayScene.showTargets();
-      if (!this.game.server.isFirstRound()) {
-        this.game.gamePlayScene.targets.playAllTargetsAnimation();
-      }
-      this.game.gamePlayScene.goalkeeper.onTheSpot();
-      if (!this.game.server.isFirstRound()) {
-        this.game.gamePlayScene.collectButton.enable();
-      }
-      this.game.gamePlayScene.kickButtonHandler = this.selectRandomTarget.bind(this);
-      this.game.gamePlayScene.targetHandler = this.selectTarget.bind(this);
-      this.game.gamePlayScene.collectButtonHandler = this.collectWinning.bind(this);
-      this.game.gamePlayScene.kickButton.enable();
-    }
-    async onExit() {
-      this.game.gamePlayScene.kickButton.disable();
-      this.game.gamePlayScene.collectButton.disable();
-    }
-    async selectRandomTarget() {
-      await this.selectTarget(getRandomNumber());
-    }
-    async selectTarget(target) {
-      await this.game.gamePlayScene.selectTarget(target);
-      this.game.gamePlayScene.kickButton.visible = false;
-      this.game.gamePlayScene.collectButton.disable();
-      await this.game.server.playRound(target);
-      await this.game.gamePlayScene.kickBallToTarget(target, this.game.server.roundResult.win, this.game.server.currentMultiplier);
-      this.game.fms.goTo("waitKickResult");
-    }
-    async collectWinning() {
-      this.game.fms.goTo("collectWinning");
-    }
-  };
-
-  // src/js/states/WaitKickResult.js
-  var WaitKickResult = class extends GameState {
-    async onEnter() {
-      const result = this.game.server.roundResult;
-      if (result.win) {
-        this.game.fms.goTo("winRound");
-      } else {
-        this.game.fms.goTo("loseRound");
+    hidePopup(name) {
+      if (this.popups[name]) {
+        this.popups[name].visible = false;
       }
     }
-    async onExit() {
-      this.game.gamePlayScene.kickButton.disable();
+  };
+
+  // src/js/GameApplication.js
+  var GameApplication = class extends Application {
+    constructor(options, gameOptions) {
+      super(options);
+      this.objectFactory = new ObjectFactory();
+      this.scenes = new GameSceneManager(this, gameOptions.scenes);
+      this.server = gameOptions.offline ? new OfflineMode({ balance: gameOptions.balance, bets: gameOptions.bets }) : new OnlineMode();
+      this.fms = new FMS(this, gameOptions.states);
+      this.popupManager = new PopupManager(gameOptions.popups, this);
+      this.config = gameOptions;
+      this.stage.addChild(this.scenes, this.popupManager);
+      this.settings = {
+        gamePlayAnimationSpeed: 1,
+        kickAnimation: true,
+        winAnimation: true,
+        autoBet: false
+      };
+    }
+    init() {
+      const gameContainer = document.getElementById("game-container");
+      gameContainer.appendChild(this.view);
+      this.fms.goTo("load-screen");
     }
   };
 
   // src/js/main.js
   var urlParser = new UrlParser();
-  var server = urlParser.has("offline") ? new OfflineMode({
-    balance: urlParser.has("balance") ? Number(urlParser.get("balance")) : 1e3,
-    bets: [0.05, 0.25, 0.5, 1, 2, 5, 7.5, 10, 25, 50, 100]
-  }) : new OnlineMode();
-  var app = new Application({
+  var app = new GameApplication({
     width: gameConfig.screenSize.width,
     height: gameConfig.screenSize.height,
     backgroundAlpha: 0,
-    antialias: true,
     transparent: true,
-    resolution: 1,
-    roundPixels: true
+    resolution: 2
+  }, {
+    offline: urlParser.has("offline"),
+    balance: urlParser.has("balance") ? Number(urlParser.get("balance")) : gameConfig.default.balance,
+    bets: gameConfig.default.betsList,
+    ...gameConfig
   });
-  async function init2() {
-    const gameContainer = document.getElementById("game-container");
-    const objectFactory = new ObjectFactory();
-    const game = { app, objectFactory, server };
-    game.fms = new FMS(game);
-    window.game = game;
-    gameContainer.appendChild(app.view);
-    game.fms.addStates({
-      "load-screen": Loading,
-      "gamePlay": GamePlay,
-      "bollKick": BollKick,
-      "playRound": PlayRound,
-      "winRound": WinRound,
-      "loseRound": LoseRound,
-      "winAllRounds": WinAllRounds,
-      "waitKick": WaitKick,
-      "waitKickResult": WaitKickResult,
-      "collectWinning": CollectWinning
-    });
-    game.fms.goTo("load-screen");
-  }
-  init2();
-  window.__PIXI_DEVTOOLS__ = {
-    pixi: lib_exports2,
-    app
-  };
+  app.init();
+  window.game = app;
+  window.__PIXI_APP__ = app;
+  window.__PIXI_STAGE__ = app.stage;
+  window.__PIXI_RENDERER__ = app.renderer;
 })();
 /*! Bundled license information:
 

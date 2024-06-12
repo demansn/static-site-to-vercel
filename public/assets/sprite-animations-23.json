@@ -1,75 +1,43 @@
 {"frames": {
 
-"4_logo/4_logo_00008.png":
+"6_Congrats/6_Congrats_00045.png":
 {
-	"frame": {"x":530,"y":923,"w":577,"h":427},
+	"frame": {"x":1,"y":585,"w":1185,"h":582},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":380,"y":230,"w":577,"h":427},
-	"sourceSize": {"w":1245,"h":890}
-},
-"4_logo/4_logo_00048.png":
-{
-	"frame": {"x":1,"y":1239,"w":719,"h":527},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":298,"y":180,"w":719,"h":527},
-	"sourceSize": {"w":1245,"h":890}
-},
-"4_logo/4_logo_00049.png":
-{
-	"frame": {"x":530,"y":1352,"w":535,"h":395},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":392,"y":247,"w":535,"h":395},
-	"sourceSize": {"w":1245,"h":890}
-},
-"6_Congrats/6_Congrats_00002.png":
-{
-	"frame": {"x":1,"y":1,"w":1150,"h":441},
-	"rotated": false,
-	"trimmed": true,
-	"spriteSourceSize": {"x":39,"y":254,"w":1150,"h":441},
+	"spriteSourceSize": {"x":20,"y":5,"w":1185,"h":582},
 	"sourceSize": {"w":1208,"h":821}
 },
-"6_Congrats/6_Congrats_00003.png":
+"6_Congrats/6_Congrats_00050.png":
 {
-	"frame": {"x":1,"y":444,"w":1127,"h":477},
-	"rotated": false,
+	"frame": {"x":1188,"y":585,"w":1176,"h":582},
+	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":78,"y":233,"w":1127,"h":477},
+	"spriteSourceSize": {"x":29,"y":5,"w":1176,"h":582},
 	"sourceSize": {"w":1208,"h":821}
 },
-"6_Congrats/6_Congrats_00058.png":
+"6_Congrats/6_Congrats_00055.png":
 {
-	"frame": {"x":1153,"y":1,"w":649,"h":625},
+	"frame": {"x":1,"y":1169,"w":1179,"h":582},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":376,"y":5,"w":649,"h":625},
+	"spriteSourceSize": {"x":26,"y":5,"w":1179,"h":582},
 	"sourceSize": {"w":1208,"h":821}
 },
 "6_Congrats/6_Congrats_00059.png":
 {
-	"frame": {"x":1130,"y":628,"w":609,"h":624},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":386,"y":6,"w":609,"h":624},
-	"sourceSize": {"w":1208,"h":821}
-},
-"6_Congrats/6_Congrats_00063.png":
-{
-	"frame": {"x":927,"y":1352,"w":436,"h":462},
+	"frame": {"x":1,"y":1,"w":1063,"h":581},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":386,"y":168,"w":436,"h":462},
+	"spriteSourceSize": {"x":139,"y":5,"w":1063,"h":581},
 	"sourceSize": {"w":1208,"h":821}
 },
-"6_Congrats/6_Congrats_00064.png":
+"6_Congrats/6_Congrats_00061.png":
 {
-	"frame": {"x":1365,"y":1239,"w":436,"h":462},
+	"frame": {"x":1066,"y":1,"w":716,"h":582},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":386,"y":168,"w":436,"h":462},
+	"spriteSourceSize": {"x":488,"y":5,"w":716,"h":582},
 	"sourceSize": {"w":1208,"h":821}
 }},
 "meta": {
@@ -77,9 +45,9 @@
 	"version": "1.1",
 	"image": "sprite-animations-23.png",
 	"format": "RGBA8888",
-	"size": {"w":1803,"h":1959},
+	"size": {"w":1783,"h":1762},
 	"scale": "1",
-	"related_multi_packs": [ "sprite-animations-0.json", "sprite-animations-1.json", "sprite-animations-2.json", "sprite-animations-3.json", "sprite-animations-4.json", "sprite-animations-5.json", "sprite-animations-6.json", "sprite-animations-7.json", "sprite-animations-8.json", "sprite-animations-9.json", "sprite-animations-10.json", "sprite-animations-11.json", "sprite-animations-12.json", "sprite-animations-13.json", "sprite-animations-14.json", "sprite-animations-15.json", "sprite-animations-16.json", "sprite-animations-17.json", "sprite-animations-18.json", "sprite-animations-19.json", "sprite-animations-20.json", "sprite-animations-21.json", "sprite-animations-22.json", "sprite-animations-24.json" ],
-	"smartupdate": "$TexturePacker:SmartUpdate:abc62ac9e161e0dca3dbe4b600acf6d5:e3329bc48d4e520ddb3d60ea8f874f89:f837c0dba2e91c02a14cab560337af1f$"
+	"related_multi_packs": [ "sprite-animations-0.json", "sprite-animations-1.json", "sprite-animations-2.json", "sprite-animations-3.json", "sprite-animations-4.json", "sprite-animations-5.json", "sprite-animations-6.json", "sprite-animations-7.json", "sprite-animations-8.json", "sprite-animations-9.json", "sprite-animations-10.json", "sprite-animations-11.json", "sprite-animations-12.json", "sprite-animations-13.json", "sprite-animations-14.json", "sprite-animations-15.json", "sprite-animations-16.json", "sprite-animations-17.json", "sprite-animations-18.json", "sprite-animations-19.json", "sprite-animations-20.json", "sprite-animations-21.json", "sprite-animations-22.json", "sprite-animations-24.json", "sprite-animations-25.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:502cd4de42ddb7146f6694dec9ebccf8:bedb313b249475b02d102ec23ee61dde:508a086c549977889f9a645fbb8584e7$"
 }
 }

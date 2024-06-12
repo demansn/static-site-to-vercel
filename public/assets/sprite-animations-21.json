@@ -1,43 +1,43 @@
 {"frames": {
 
-"6_Congrats/6_Congrats_00005.png":
+"6_Congrats/6_Congrats_00043.png":
 {
-	"frame": {"x":1,"y":628,"w":1202,"h":559},
+	"frame": {"x":1,"y":1,"w":1202,"h":627},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":5,"w":1202,"h":627},
+	"sourceSize": {"w":1208,"h":821}
+},
+"6_Congrats/6_Congrats_00046.png":
+{
+	"frame": {"x":1205,"y":1,"w":1204,"h":582},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":3,"y":175,"w":1202,"h":559},
+	"spriteSourceSize": {"x":1,"y":5,"w":1204,"h":582},
 	"sourceSize": {"w":1208,"h":821}
 },
-"6_Congrats/6_Congrats_00041.png":
+"6_Congrats/6_Congrats_00048.png":
 {
-	"frame": {"x":1,"y":1,"w":1202,"h":625},
-	"rotated": false,
-	"trimmed": true,
-	"spriteSourceSize": {"x":3,"y":5,"w":1202,"h":625},
-	"sourceSize": {"w":1208,"h":821}
-},
-"6_Congrats/6_Congrats_00049.png":
-{
-	"frame": {"x":562,"y":1255,"w":1185,"h":625},
-	"rotated": false,
-	"trimmed": true,
-	"spriteSourceSize": {"x":20,"y":5,"w":1185,"h":625},
-	"sourceSize": {"w":1208,"h":821}
-},
-"6_Congrats/6_Congrats_00050.png":
-{
-	"frame": {"x":562,"y":628,"w":1199,"h":625},
-	"rotated": false,
-	"trimmed": true,
-	"spriteSourceSize": {"x":6,"y":5,"w":1199,"h":625},
-	"sourceSize": {"w":1208,"h":821}
-},
-"6_Congrats/6_Congrats_00062.png":
-{
-	"frame": {"x":1205,"y":1,"w":436,"h":462},
+	"frame": {"x":1,"y":630,"w":1203,"h":582},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":386,"y":168,"w":436,"h":462},
+	"spriteSourceSize": {"x":0,"y":5,"w":1203,"h":582},
+	"sourceSize": {"w":1208,"h":821}
+},
+"6_Congrats/6_Congrats_00057.png":
+{
+	"frame": {"x":585,"y":630,"w":1119,"h":611},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":68,"y":5,"w":1119,"h":611},
+	"sourceSize": {"w":1208,"h":821}
+},
+"6_Congrats/6_Congrats_00065.png":
+{
+	"frame": {"x":1198,"y":1207,"w":718,"h":582},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":487,"y":5,"w":718,"h":582},
 	"sourceSize": {"w":1208,"h":821}
 }},
 "meta": {
@@ -45,9 +45,9 @@
 	"version": "1.1",
 	"image": "sprite-animations-21.png",
 	"format": "RGBA8888",
-	"size": {"w":1762,"h":1881},
+	"size": {"w":1788,"h":1926},
 	"scale": "1",
-	"related_multi_packs": [ "sprite-animations-0.json", "sprite-animations-1.json", "sprite-animations-2.json", "sprite-animations-3.json", "sprite-animations-4.json", "sprite-animations-5.json", "sprite-animations-6.json", "sprite-animations-7.json", "sprite-animations-8.json", "sprite-animations-9.json", "sprite-animations-10.json", "sprite-animations-11.json", "sprite-animations-12.json", "sprite-animations-13.json", "sprite-animations-14.json", "sprite-animations-15.json", "sprite-animations-16.json", "sprite-animations-17.json", "sprite-animations-18.json", "sprite-animations-19.json", "sprite-animations-20.json", "sprite-animations-22.json", "sprite-animations-23.json", "sprite-animations-24.json" ],
-	"smartupdate": "$TexturePacker:SmartUpdate:abc62ac9e161e0dca3dbe4b600acf6d5:e3329bc48d4e520ddb3d60ea8f874f89:f837c0dba2e91c02a14cab560337af1f$"
+	"related_multi_packs": [ "sprite-animations-0.json", "sprite-animations-1.json", "sprite-animations-2.json", "sprite-animations-3.json", "sprite-animations-4.json", "sprite-animations-5.json", "sprite-animations-6.json", "sprite-animations-7.json", "sprite-animations-8.json", "sprite-animations-9.json", "sprite-animations-10.json", "sprite-animations-11.json", "sprite-animations-12.json", "sprite-animations-13.json", "sprite-animations-14.json", "sprite-animations-15.json", "sprite-animations-16.json", "sprite-animations-17.json", "sprite-animations-18.json", "sprite-animations-19.json", "sprite-animations-20.json", "sprite-animations-22.json", "sprite-animations-23.json", "sprite-animations-24.json", "sprite-animations-25.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:502cd4de42ddb7146f6694dec9ebccf8:bedb313b249475b02d102ec23ee61dde:508a086c549977889f9a645fbb8584e7$"
 }
 }
