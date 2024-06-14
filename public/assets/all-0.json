@@ -74,7 +74,7 @@
 },
 "AutoplayStopButtonIcon.png":
 {
-	"frame": {"x":1579,"y":1809,"w":24,"h":24},
+	"frame": {"x":1579,"y":1806,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -198,9 +198,18 @@
 	"sourceSize": {"w":40,"h":40},
 	"anchor": {"x":0,"y":0}
 },
-"CheckboxUncheked.png":
+"CheckboxHover.png":
 {
 	"frame": {"x":1172,"y":1174,"w":38,"h":38},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":38,"h":38},
+	"sourceSize": {"w":40,"h":40},
+	"anchor": {"x":0,"y":0}
+},
+"CheckboxUncheked.png":
+{
+	"frame": {"x":1992,"y":1913,"w":38,"h":38},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":1,"y":1,"w":38,"h":38},
@@ -223,24 +232,6 @@
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":134,"h":135},
 	"sourceSize": {"w":134,"h":135},
-	"anchor": {"x":0,"y":0}
-},
-"ExitButtonDefault.png":
-{
-	"frame": {"x":1992,"y":1913,"w":34,"h":34},
-	"rotated": false,
-	"trimmed": true,
-	"spriteSourceSize": {"x":3,"y":3,"w":34,"h":34},
-	"sourceSize": {"w":40,"h":40},
-	"anchor": {"x":0,"y":0}
-},
-"ExitButtonPressed.png":
-{
-	"frame": {"x":1992,"y":1913,"w":34,"h":34},
-	"rotated": false,
-	"trimmed": true,
-	"spriteSourceSize": {"x":3,"y":3,"w":34,"h":34},
-	"sourceSize": {"w":40,"h":40},
 	"anchor": {"x":0,"y":0}
 },
 "France.png":
@@ -308,37 +299,37 @@
 },
 "InfoButtonDefault.png":
 {
-	"frame": {"x":1579,"y":1707,"w":20,"h":32},
+	"frame": {"x":1579,"y":1707,"w":20,"h":31},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":6,"y":1,"w":20,"h":32},
+	"spriteSourceSize": {"x":6,"y":1,"w":20,"h":31},
 	"sourceSize": {"w":32,"h":33},
 	"anchor": {"x":0,"y":0}
 },
 "InfoButtonDisabled.png":
 {
-	"frame": {"x":1579,"y":1741,"w":20,"h":32},
+	"frame": {"x":1579,"y":1740,"w":20,"h":31},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":6,"y":1,"w":20,"h":32},
+	"spriteSourceSize": {"x":6,"y":1,"w":20,"h":31},
 	"sourceSize": {"w":32,"h":33},
 	"anchor": {"x":0,"y":0}
 },
 "InfoButtonHover.png":
 {
-	"frame": {"x":1579,"y":1775,"w":20,"h":32},
+	"frame": {"x":1579,"y":1773,"w":20,"h":31},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":6,"y":1,"w":20,"h":32},
+	"spriteSourceSize": {"x":6,"y":1,"w":20,"h":31},
 	"sourceSize": {"w":32,"h":33},
 	"anchor": {"x":0,"y":0}
 },
 "InfoButtonPressed.png":
 {
-	"frame": {"x":1579,"y":1707,"w":20,"h":32},
+	"frame": {"x":1579,"y":1707,"w":20,"h":31},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":6,"y":1,"w":20,"h":32},
+	"spriteSourceSize": {"x":6,"y":1,"w":20,"h":31},
 	"sourceSize": {"w":32,"h":33},
 	"anchor": {"x":0,"y":0}
 },
@@ -560,37 +551,37 @@
 },
 "SoundButtonDefault.png":
 {
-	"frame": {"x":1579,"y":1605,"w":32,"h":27},
+	"frame": {"x":1579,"y":1605,"w":32,"h":24},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":0,"y":3,"w":32,"h":27},
+	"spriteSourceSize": {"x":0,"y":4,"w":32,"h":24},
 	"sourceSize": {"w":32,"h":32},
 	"anchor": {"x":0,"y":0}
 },
 "SoundButtonDisabled.png":
 {
-	"frame": {"x":1579,"y":1639,"w":32,"h":27},
+	"frame": {"x":1579,"y":1639,"w":32,"h":24},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":0,"y":3,"w":32,"h":27},
+	"spriteSourceSize": {"x":0,"y":4,"w":32,"h":24},
 	"sourceSize": {"w":32,"h":32},
 	"anchor": {"x":0,"y":0}
 },
 "SoundButtonHover.png":
 {
-	"frame": {"x":1579,"y":1673,"w":32,"h":27},
+	"frame": {"x":1579,"y":1673,"w":32,"h":24},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":0,"y":3,"w":32,"h":27},
+	"spriteSourceSize": {"x":0,"y":4,"w":32,"h":24},
 	"sourceSize": {"w":32,"h":32},
 	"anchor": {"x":0,"y":0}
 },
 "SoundButtonPressed.png":
 {
-	"frame": {"x":1579,"y":1605,"w":32,"h":27},
+	"frame": {"x":1579,"y":1605,"w":32,"h":24},
 	"rotated": true,
 	"trimmed": true,
-	"spriteSourceSize": {"x":0,"y":3,"w":32,"h":27},
+	"spriteSourceSize": {"x":0,"y":4,"w":32,"h":24},
 	"sourceSize": {"w":32,"h":32},
 	"anchor": {"x":0,"y":0}
 },
@@ -633,6 +624,6 @@
 	"size": {"w":2044,"h":2046},
 	"scale": "1",
 	"related_multi_packs": [ "all-1.json" ],
-	"smartupdate": "$TexturePacker:SmartUpdate:e7b27254d24db26c75bb8723d32f7b5c:56a52aef2f785f7cb629a8c91be776cd:a9f576a175b1495603861082bf88b0e2$"
+	"smartupdate": "$TexturePacker:SmartUpdate:47991766712c9948400218ba8fa7489d:3c2de6b1d9435e17834b0a435d589950:a9f576a175b1495603861082bf88b0e2$"
 }
 }
