@@ -50339,13 +50339,13 @@ void main(void)\r
           this.addChildAt(element, 0);
           ValueTween_default.to(element, {
             key: "alpha",
-            to: 0.5,
+            to: 0,
             easing: "easeInOutQuad",
             setter: (v2) => {
               element.scale.set(v2);
               element.alpha = v2;
             }
-          }, time / 2).then(() => {
+          }, 1).then(() => Timer.wait(time * 0.8)).then(() => {
             ValueTween_default.to(element, {
               key: "alpha",
               to: 1,
@@ -50354,7 +50354,7 @@ void main(void)\r
                 element.scale.set(v2);
                 element.alpha = v2;
               }
-            }, time / 2);
+            }, 1);
           });
         }
         ValueTween_default.to(element, {
@@ -51709,8 +51709,8 @@ void main(void)\r
       this.girl = new Girl();
       this.addChild(this.girl);
       this.girl.playIdle();
-      this.girl.scale.set(0.5);
-      this.girl.x = 200;
+      this.girl.scale.set(0.8);
+      this.girl.x = 150;
       this.girl.y = this.game.config.screenSize.height;
       this.letsPlayButton = this.addChild(ObjectFactory.createButton({
         texturesNames: {
@@ -51859,6 +51859,11 @@ void main(void)\r
       this.game.scene.kickButton.visible = true;
       this.game.scene.targets.visible = true;
       this.game.scene.showTargets();
+      this.game.scene.targets.enable();
+      if (!this.game.settings.autoBet) {
+        this.game.scene.infoButton.enable();
+        this.game.scene.settingsButton.enable();
+      }
       if (!this.game.server.isFirstRound()) {
         this.game.scene.targets.playAllTargetsAnimation();
       }
@@ -51889,6 +51894,9 @@ void main(void)\r
     async onExit() {
       this.game.scene.kickButton.disable();
       this.game.scene.collectButton.disable();
+      this.game.scene.infoButton.disable();
+      this.game.scene.settingsButton.disable();
+      this.game.scene.targets.disable();
     }
     async selectRandomTarget() {
       await this.selectTarget(getRandomNumber());
@@ -52093,7 +52101,7 @@ void main(void)\r
     }
     close() {
       super.close();
-      this.game.fms.goTo("waitingForBet");
+      this.game.fms.goToPrevious();
     }
   };
 
@@ -52403,7 +52411,7 @@ void main(void)\r
     }
     close() {
       super.close();
-      this.game.fms.goTo("waitingForBet");
+      this.game.fms.goToPrevious();
     }
   };
   var SliderGroup = class extends Container {
@@ -52909,6 +52917,7 @@ void main(void)\r
       this.game = game2;
       this.states = {};
       this.currentState = null;
+      this.previousState = null;
       this.addStates(states);
     }
     addStates(states) {
@@ -52923,6 +52932,7 @@ void main(void)\r
       if (this.currentState) {
         await this.states[this.currentState].onExit();
       }
+      this.previousState = this.currentState;
       this.currentState = newState;
       if (this.currentState) {
         await this.states[this.currentState].onEnter();
@@ -52930,6 +52940,9 @@ void main(void)\r
     }
     goTo(state) {
       this.changeState(state);
+    }
+    goToPrevious() {
+      this.changeState(this.previousState);
     }
   };
 
