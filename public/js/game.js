@@ -51158,7 +51158,7 @@ void main(void)\r
       this.clock.y = 42;
       this.addChild(this.clock);
       this.flag = ObjectFactory.createSpriteFromSheet(`${this.game.settings.country}.png`);
-      this.flag.x = this.game.screen.width / 2;
+      this.flag.x = this.game.config.screenSize.width / 2;
       this.flag.y = 80;
       this.flag.anchor.set(0.5);
       this.addChild(this.flag);
@@ -51187,11 +51187,11 @@ void main(void)\r
         },
         () => this.placeBetButtonHandler()
       );
-      this.placeBetButton.x = this.game.screen.width / 2 - this.placeBetButton.width / 2;
+      this.placeBetButton.x = this.game.config.screenSize.width / 2 - this.placeBetButton.width / 2;
       this.placeBetButton.y = 612;
       this.addChild(this.placeBetButton);
       this.infoText = ObjectFactory.createText(`Tap the ball to auto-kick`, BottomPanelTextStyle);
-      this.infoText.x = this.game.screen.width / 2;
+      this.infoText.x = this.game.config.screenSize.width / 2;
       this.infoText.y = 780;
       this.infoText.alpha = 0.5;
       this.infoText.anchor.set(0.5);
@@ -51281,7 +51281,7 @@ void main(void)\r
       this.betsLis.on("changedValue", this.onChangeBet.bind(this));
       this.addChild(this.betsLis);
       this.goalkeeper = new Goalkeeper();
-      this.goalkeeper.x = this.game.screen.width / 2;
+      this.goalkeeper.x = this.game.config.screenSize.width / 2;
       this.goalkeeper.y = 606;
       this.addChild(this.goalkeeper);
       this.kickButton = this.game.objectFactory.createBallButton(
@@ -51309,9 +51309,9 @@ void main(void)\r
       this.addChild(this.autoplayButton);
       this.targets = new GateTargets((targetNumber) => this.targetHandler(targetNumber));
       this.addChild(this.targets);
-      this.loseAnimation = this.game.objectFactory.createLoseAnimation(this.game.screen);
+      this.loseAnimation = this.game.objectFactory.createLoseAnimation(this.game.config.screenSize);
       this.addChild(this.loseAnimation);
-      this.winAnimation = this.game.objectFactory.createWinAnimation(this.game.screen);
+      this.winAnimation = this.game.objectFactory.createWinAnimation(this.game.config.screenSize);
       this.addChild(this.winAnimation);
     }
     stopAutoplay() {
@@ -51433,11 +51433,11 @@ void main(void)\r
     }
     async ballFlightFromTarget(targetNumber) {
       const TargetPositionsBytTargetNumber = {
-        0: { x: -100, y: this.game.screen.height * 0.5 },
+        0: { x: -100, y: this.game.config.screenSize.height * 0.5 },
         1: { x: -200, y: -200 },
-        2: { x: this.game.screen.width / 2, y: -200 },
-        3: { x: this.game.screen.width + 200, y: -200 },
-        4: { x: this.game.screen.width + 100, y: this.game.screen.height * 0.5 }
+        2: { x: this.game.config.screenSize.width / 2, y: -200 },
+        3: { x: this.game.config.screenSize.width + 200, y: -200 },
+        4: { x: this.game.config.screenSize.width + 100, y: this.game.config.screenSize.height * 0.5 }
       };
       const time2 = 300;
       const to = TargetPositionsBytTargetNumber[targetNumber];
@@ -51702,9 +51702,9 @@ void main(void)\r
       this.girl = new Girl();
       this.addChild(this.girl);
       this.girl.playIdle();
-      this.girl.scale.set(0.8);
+      this.girl.scale.set(0.5);
       this.girl.x = 200;
-      this.girl.y = this.game.screen.height;
+      this.girl.y = this.game.config.screenSize.height;
       this.letsPlayButton = this.addChild(ObjectFactory.createButton({
         texturesNames: {
           default: "ButtonNormal.png",
@@ -51715,18 +51715,20 @@ void main(void)\r
         text: "Lets play",
         onClick: this.letsPlay.bind(this)
       }));
-      this.letsPlayButton.x = this.game.screen.width / 2 - this.letsPlayButton.width / 2;
-      this.letsPlayButton.y = 520;
-      this.counties = this.addChild(new CountrySlider(this.game.config.counties));
-      this.counties.x = this.game.screen.width / 2;
-      this.counties.y = 100;
-      this.counties.scale.set(0.8);
-      this.counties.on("selected", this.selectCountry.bind(this));
+      const gap = 200;
       this.levels = this.addChild(new LevelCarousel(this.game.config.cups));
-      this.levels.x = this.game.screen.width / 2;
-      this.levels.y = 300;
+      this.levels.x = this.game.config.screenSize.width / 2;
+      this.levels.y = this.game.config.screenSize.height / 2;
       this.levels.scale.set(0.8);
       this.levels.on("selectLevel", this.selectLevel.bind(this));
+      this.letsPlayButton.scale.set(0.7);
+      this.letsPlayButton.x = this.game.config.screenSize.width / 2 - this.letsPlayButton.width / 2;
+      this.letsPlayButton.y = this.game.config.screenSize.height / 2 + 150;
+      this.counties = this.addChild(new CountrySlider(this.game.config.counties));
+      this.counties.x = this.game.config.screenSize.width / 2;
+      this.counties.y = this.game.config.screenSize.height / 2 - gap;
+      this.counties.scale.set(0.8);
+      this.counties.on("selected", this.selectCountry.bind(this));
       this.lock = this.addChild(new Container());
       this.lockIcon = this.lock.addChild(ObjectFactory.createSpriteFromSheet("LockIcon.png"));
       this.lockIcon.anchor.set(0.5);
@@ -51950,8 +51952,8 @@ void main(void)\r
       this.name = name;
       this.onClose = onClose;
       this.bg = this.game.objectFactory.createSpriteFromSheet("popupbg.png");
-      this.bg.x = this.game.screen.width / 2 - this.bg.width / 2;
-      this.bg.y = this.game.screen.height / 2 - this.bg.height / 2;
+      this.bg.x = this.game.config.screenSize.width / 2 - this.bg.width / 2;
+      this.bg.y = this.game.config.screenSize.height / 2 - this.bg.height / 2;
       this.addChild(this.bg);
       this.label = ObjectFactory.createText(this.name, PopupNameTextStyle);
       this.label.x = this.bg.x + this.bg.width / 2;
@@ -52058,15 +52060,15 @@ void main(void)\r
       for (let i2 = 0; i2 < pages; i2++) {
         const page = ObjectFactory.createSpriteFromSheet(`InfoPage${i2 + 1}.png`);
         page.visible = false;
-        page.x = game2.screen.width / 2 - page.width / 2;
-        page.y = game2.screen.height / 2 - page.height / 2;
+        page.x = game2.config.screenSize.width / 2 - page.width / 2;
+        page.y = game2.config.screenSize.height / 2 - page.height / 2;
         this.pages.push(page);
         this.pageContainer.addChild(page);
       }
       this.label.text = "";
       this.showPage(0);
       this.pageListSelector = new PageListSelector(pages, this.showPage.bind(this));
-      this.pageListSelector.x = game2.screen.width / 2 - this.pageListSelector.width / 2;
+      this.pageListSelector.x = game2.config.screenSize.width / 2 - this.pageListSelector.width / 2;
       this.pageListSelector.y = this.pages[0].y + this.pages[0].height + 20;
       this.addChild(this.pageListSelector);
     }
@@ -52431,12 +52433,12 @@ void main(void)\r
       this.content = this.addChild(new Container());
       this.logo = this.game.objectFactory.createSpriteFromSheet("CryptoGaming.png", "assets/loading.json");
       this.logo.anchor.set(0.5);
-      this.logo.x = this.game.screen.width / 2;
-      this.logo.y = this.game.screen.height / 2 - this.logo.height / 2;
+      this.logo.x = this.game.config.screenSize.width / 2;
+      this.logo.y = this.game.config.screenSize.height / 2 - this.logo.height / 2;
       this.content.addChild(this.logo);
       this.progressBar = this.game.objectFactory.createGameLoadingProgressBar();
       this.progressBar.setProgress(0);
-      this.progressBar.x = this.game.screen.width / 2 - this.progressBar.width / 2;
+      this.progressBar.x = this.game.config.screenSize.width / 2 - this.progressBar.width / 2;
       this.progressBar.y = 600;
       this.content.addChild(this.progressBar);
       this.smoothingProgress = new SmoothingProgress(this.progressHandler.bind(this), this.onCompleteLoading.bind(this));
@@ -52455,8 +52457,8 @@ void main(void)\r
     async playLogo() {
       const anim = this.game.objectFactory.createAnimation("4_logo/4_logo");
       anim.anchor.set(0.5);
-      anim.x = this.game.screen.width / 2;
-      anim.y = this.game.screen.height / 2;
+      anim.x = this.game.config.screenSize.width / 2;
+      anim.y = this.game.config.screenSize.height / 2;
       anim.animationSpeed = 0.5;
       anim.loop = false;
       anim.play();
@@ -52474,10 +52476,16 @@ void main(void)\r
   var SelectLevel = class extends GameState {
     async onEnter() {
       super.onEnter();
+      this.game.setResizeType("cover");
       this.game.scene = this.game.scenes.showScene("lobby");
     }
     async onExit() {
       super.onExit();
+      if (lib_exports.isMobile.any) {
+        this.game.setResizeType("contain");
+      } else {
+        this.game.setResizeType("");
+      }
       this.game.scene = this.game.scenes.showScene("gamePlay");
     }
   };
@@ -52567,7 +52575,7 @@ void main(void)\r
         bgScale: 0.75
       }));
       this.startButton.y = 483;
-      this.startButton.x = this.game.screen.width / 2 + 8;
+      this.startButton.x = this.game.config.screenSize.width / 2 + 8;
       const icon = ObjectFactory.createSpriteFromSheet("AutoplayStart.png");
       icon.anchor.set(0.5);
       icon.position.set(this.startButton.width / 2, this.startButton.height / 2);
@@ -53008,21 +53016,15 @@ void main(void)\r
       this.gameContainer.appendChild(this.view);
       this.fms.goTo("load-screen");
       if (lib_exports.isMobile.any) {
-        window.addEventListener("resize", this.resizeWindow.bind(this));
-        this.resizeWindow();
+        this.setResizeType("contain");
+      } else {
+        this.setResizeType("");
       }
+      window.addEventListener("resize", this.resizeByType.bind(this));
+      this.resizeByType();
     }
-    resizeWindow() {
+    containResize() {
       this.resizeToTarget(window.innerWidth, window.innerHeight);
-    }
-    setScreenSize(width, height) {
-      const standardWidth = WIDTH;
-      const standardHeight = HEIGHT;
-      const aspectRatio = standardWidth / standardHeight;
-      const givenWidth = 900;
-      const calculatedHeight = this.calculateHeight(width, aspectRatio);
-      this.renderer.resize(width, calculatedHeight);
-      this.resizeToTarget(width, height);
     }
     resizeToTarget(targetWidth, targetHeight) {
       let newWidth = targetWidth;
@@ -53038,14 +53040,51 @@ void main(void)\r
       this.gameContainer.style.width = width + "px";
       this.gameContainer.style.height = height + "px";
     }
-    /**
-     * Функция для расчета высоты на основе заданной ширины и соотношения сторон.
-     * @param {number} width - Ширина.
-     * @returns {number} - Рассчитанная высота.
-     */
-    calculateHeight(width) {
+    coverScreen() {
+      const containerWidth = window.innerWidth;
+      const containerHeight = window.innerHeight;
       const aspectRatio = WIDTH / HEIGHT;
-      return width / aspectRatio;
+      let newWidth, newHeight;
+      if (containerWidth / containerHeight >= aspectRatio) {
+        newHeight = containerHeight;
+        newWidth = newHeight * aspectRatio;
+      } else {
+        newWidth = containerWidth;
+        newHeight = newWidth / aspectRatio;
+      }
+      this.setSizeContainer(containerWidth, containerHeight);
+      this.renderer.resize(containerWidth, containerHeight);
+      const scale = Math.min(containerWidth / WIDTH, containerHeight / HEIGHT);
+      this.stage.scale.set(scale);
+      this.stage.x = containerWidth / 2 - WIDTH * scale / 2;
+      this.stage.y = containerHeight / 2 - HEIGHT * scale / 2;
+    }
+    inCenter() {
+      this.setSizeContainer(WIDTH, HEIGHT);
+      this.renderer.resize(WIDTH, HEIGHT);
+      this.stage.scale.set(1);
+      this.stage.x = 0;
+      this.stage.y = 0;
+    }
+    setResizeType(type) {
+      this.resizeType = type;
+      this.renderer.resize(WIDTH, HEIGHT);
+      this.stage.scale.set(1);
+      this.stage.x = 0;
+      this.stage.y = 0;
+      this.resizeByType();
+    }
+    resizeByType() {
+      switch (this.resizeType) {
+        case "cover":
+          this.coverScreen();
+          break;
+        case "contain":
+          this.containResize();
+          break;
+        default:
+          this.inCenter();
+      }
     }
   };
 
