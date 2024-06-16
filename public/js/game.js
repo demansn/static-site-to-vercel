@@ -52211,7 +52211,7 @@ void main(void)\r
       if (this.game.settings.autoplay) {
         if (this.game.settings.autoplay.rounds > 0) {
           this.game.settings.autoplay.rounds -= 1;
-          this.game.scene.autoplayButton.setCounter(this.game.settings.autoplay.rounds);
+          this.game.scene.autoplayButton.setCounter(this.game.settings.autoplay.rounds === Infinity ? "\u221E" : this.game.settings.autoplay.rounds);
           await Timer.wait(this.game.config.autoplayClickTime);
           await this.game.scene.placeBetButton.click();
           this.game.fms.goTo("playRound");
@@ -52490,6 +52490,7 @@ void main(void)\r
       this.bets = [];
       this.rounds = [5, 10, 20, 50, 100, "\u221E"];
       this.multipliersValues = [];
+      this.roundsValues = [];
       const autoplayConfig = this.game.config.autoplay;
       let bet = autoplayConfig.minBet;
       this.bets.push(bet);
@@ -52503,6 +52504,13 @@ void main(void)\r
         value += 0.25;
         this.multipliersValues.push(value);
       }
+      value = 1;
+      this.roundsValues.push(value);
+      while (value <= 1e3) {
+        value += 1;
+        this.roundsValues.push(value);
+      }
+      this.roundsValues.push("\u221E");
       this.betsList = ObjectFactory.createListForAutoplaySettings(this.bets, 0, "Bet");
       this.betsList.x = 437;
       this.betsList.y = 356;
@@ -52520,7 +52528,7 @@ void main(void)\r
       this.multiplesBetsButtons.x = this.betsList.x - this.multiplesBetsButtons.width / 2;
       this.multiplesBetsButtons.y = this.betsList.y + 25;
       buttonWidth = 40;
-      this.roundsList = ObjectFactory.createListForAutoplaySettings(this.rounds, 0, "Rounds");
+      this.roundsList = ObjectFactory.createListForAutoplaySettings(this.roundsValues, 0, "Rounds");
       this.roundsList.x = 760;
       this.roundsList.y = 356;
       this.roundsList.leftButton.x -= 6;
@@ -52569,7 +52577,7 @@ void main(void)\r
     onClickStart() {
       this.game.settings.autoBet = true;
       this.game.settings.autoplay = {
-        rounds: this.roundsList.getCurrent(),
+        rounds: this.roundsList.getCurrent() === "\u221E" ? Infinity : this.roundsList.getCurrent(),
         bet: this.betsList.getCurrent(),
         cashOut: this.cashCheckBox.isChecked(),
         multiplier: this.multipliersValues[this.mutiplierList.getCurrentIndex()]
@@ -52608,7 +52616,8 @@ void main(void)\r
       }
     }
     onClickRound(index) {
-      this.roundsList.setIndex(index);
+      const targetIndex = this.roundsValues.indexOf(this.rounds[index]);
+      this.roundsList.setIndex(targetIndex);
     }
     close() {
       super.close();
