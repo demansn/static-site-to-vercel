@@ -35005,6 +35005,20 @@ void main(void)\r
     align: "center",
     fontWeight: "bold"
   });
+  var ListTextStyle = new TextStyle({
+    fontFamily: "Nunito",
+    fontSize: 14,
+    fill: "#ffffff",
+    align: "center",
+    fontWeight: "bold"
+  });
+  var AutoplayListTextStyle = new TextStyle({
+    fontFamily: "Nunito",
+    fontSize: 13.8,
+    fill: "#ffffff",
+    align: "center",
+    fontWeight: "bold"
+  });
   var LoadingTextStyle = new TextStyle({
     fontFamily: "Nunito",
     fill: "#ffffff",
@@ -35338,12 +35352,13 @@ void main(void)\r
 
   // src/js/objects/List.js
   var List = class extends Container {
-    constructor({ values, currentIndex, textures, label, labelTextStyle = BottomPanelTextStyle, valueTextStyle = ListLabelTextStyle, btnDx = 0 }) {
+    constructor({ values, currentIndex, textures, label, labelTextStyle = ListTextStyle, valueTextStyle = ListLabelTextStyle, btnDx = 0 }) {
       super();
       this.values = values;
       this.currentIndex = currentIndex;
       this.currentValueText = ObjectFactory.createText(this.values[this.currentIndex], valueTextStyle);
       this.currentValueText.anchor.set(0.5);
+      this.currentValueText.y -= 2;
       this.addChild(this.currentValueText);
       this.background = new Sprite(textures.background);
       this.background.anchor.set(0.5);
@@ -35388,6 +35403,9 @@ void main(void)\r
     }
     getCurrent() {
       return this.values[this.currentIndex];
+    }
+    getCurrentIndex() {
+      return this.currentIndex;
     }
     updateUI() {
       this.currentValueText.text = this.values[this.currentIndex];
@@ -50555,7 +50573,7 @@ void main(void)\r
     createWinAnimation(screenSize) {
       return new WinAnimation(this.getAnimationFrames("6_Congrats/6_Congrats"), screenSize, this.getTextureFromSpriteSheet("win-lose-bg.png"));
     }
-    static createList(values, currentIndex, label, bg = "InfoLableBackground.png") {
+    static createList(values, currentIndex, label, bg = "InfoLableBackground.png", valueTextStyle = ListTextStyle) {
       const arrowButtonTextures = {
         default: this.getTextureFromSpriteSheet("ArrowButtonDefault.png"),
         hover: this.getTextureFromSpriteSheet("ArrowButtonHover.png"),
@@ -50566,6 +50584,7 @@ void main(void)\r
         values,
         currentIndex,
         label,
+        valueTextStyle,
         textures: {
           leftButton: arrowButtonTextures,
           rightButton: arrowButtonTextures,
@@ -50584,6 +50603,7 @@ void main(void)\r
         values,
         currentIndex,
         label,
+        valueTextStyle: AutoplayListTextStyle,
         textures: {
           leftButton: arrowButtonTextures,
           rightButton: arrowButtonTextures,
@@ -50983,6 +51003,13 @@ void main(void)\r
     enableInteractive() {
       this.targets.forEach((t2) => t2.enableInteractive());
     }
+    getTargetGlobalPosition(targetNumber) {
+      const globalPost = this.targets[targetNumber].getGlobalPosition();
+      return {
+        x: globalPost.x + this.targets[targetNumber].width / 2,
+        y: globalPost.y + this.targets[targetNumber].height / 2
+      };
+    }
   };
 
   // src/js/objects/Clock.js
@@ -51323,6 +51350,7 @@ void main(void)\r
           this.ballAnimations.onComplete = () => {
             this.ballAnimations.destroy();
             this.showTargetsResultNumber(targetNumber, isWin, currentMultiplier);
+            !isWin && this.ballFlightFromTarget(targetNumber);
             resolve2();
           };
         }),
@@ -51402,6 +51430,36 @@ void main(void)\r
       this.collectButton.enableInteractive();
       this.betsLis.enableInteractive();
       this.placeBetButton.enableInteractive();
+    }
+    async ballFlightFromTarget(targetNumber) {
+      const TargetPositionsBytTargetNumber = {
+        0: { x: -100, y: this.game.screen.height * 0.5 },
+        1: { x: -200, y: -200 },
+        2: { x: this.game.screen.width / 2, y: -200 },
+        3: { x: this.game.screen.width + 200, y: -200 },
+        4: { x: this.game.screen.width + 100, y: this.game.screen.height * 0.5 }
+      };
+      const time2 = 300;
+      const to = TargetPositionsBytTargetNumber[targetNumber];
+      const ball = ObjectFactory.createSpriteFromSheet("ball.png");
+      ball.x = this.targets.getTargetGlobalPosition(targetNumber).x;
+      ball.y = this.targets.getTargetGlobalPosition(targetNumber).y;
+      ball.anchor.set(0.5);
+      ball.scale.set(0.5);
+      ball.visible = false;
+      this.addChild(ball);
+      return new Promise((resolve2) => {
+        ball.visible = true;
+        Promise.all([
+          ValueTween_default.to(ball, { key: "x", to: to.x }, time2),
+          ValueTween_default.to(ball, { key: "y", to: to.y }, time2),
+          ValueTween_default.to(ball, { key: "alpha", to: 0 }, time2),
+          ValueTween_default.to(ball, { key: "scale", to: 1.5, from: 0.5, setter: (value) => ball.scale.set(value) }, time2)
+        ]).then(() => {
+          ball.destroy();
+          resolve2();
+        });
+      });
     }
   };
 
@@ -52431,7 +52489,7 @@ void main(void)\r
       this.multiplesBet = ["Min", 2, 10, 25, "Max"];
       this.bets = [];
       this.rounds = [5, 10, 20, 50, 100, "\u221E"];
-      this.cashoutValues = [];
+      this.multipliersValues = [];
       const autoplayConfig = this.game.config.autoplay;
       let bet = autoplayConfig.minBet;
       this.bets.push(bet);
@@ -52440,10 +52498,10 @@ void main(void)\r
         this.bets.push(bet);
       }
       let value = 1;
-      this.cashoutValues.push(value);
+      this.multipliersValues.push(value);
       while (value <= 1e3) {
         value += 0.25;
-        this.cashoutValues.push(value);
+        this.multipliersValues.push(value);
       }
       this.betsList = ObjectFactory.createListForAutoplaySettings(this.bets, 0, "Bet");
       this.betsList.x = 437;
@@ -52482,7 +52540,7 @@ void main(void)\r
       this.cashCheckBox = ObjectFactory.createCheckBox("Cash Out", false);
       this.cashCheckBox.on("change", this.onChangeCashOut.bind(this));
       row.addChild(this.cashCheckBox);
-      this.mutiplierList = ObjectFactory.createList(this.cashoutValues, 0, void 0, "AutoplayCashValueBG.png");
+      this.mutiplierList = ObjectFactory.createList(this.multipliersValues.map((v2) => `x${v2}`), 0, void 0, "AutoplayCashValueBG.png", AutoplayListTextStyle);
       this.mutiplierList.x = this.cashCheckBox.width + 10 + this.mutiplierList.width / 2;
       this.mutiplierList.y = this.cashCheckBox.height / 2;
       this.mutiplierList.disable();
@@ -52514,7 +52572,7 @@ void main(void)\r
         rounds: this.roundsList.getCurrent(),
         bet: this.betsList.getCurrent(),
         cashOut: this.cashCheckBox.isChecked(),
-        multiplier: this.mutiplierList.getCurrent()
+        multiplier: this.multipliersValues[this.mutiplierList.getCurrentIndex()]
       };
       this.game.server.betsList = [this.game.settings.autoplay.bet];
       this.game.server.setBetIndex(0);
@@ -52776,7 +52834,7 @@ void main(void)\r
       if (this.gameMath.isWin()) {
         this.winStreak += 1;
         const multiplierIncrease = this.gameMath.generateMultiplierIncrease();
-        this.currentMultiplier += multiplierIncrease;
+        this.currentMultiplier = roundToTwo(this.currentMultiplier + multiplierIncrease);
         this.roundTarget = targetNumber;
         this.roundResult = {
           win: true,
@@ -52946,15 +53004,39 @@ void main(void)\r
       }
     }
     resizeWindow() {
-      let newWidth = window.innerWidth;
-      let newHeight = window.innerHeight;
-      if (window.innerHeight < window.innerWidth) {
-        newWidth = window.innerHeight / HEIGHT * WIDTH;
+      this.resizeToTarget(window.innerWidth, window.innerHeight);
+    }
+    setScreenSize(width, height) {
+      const standardWidth = WIDTH;
+      const standardHeight = HEIGHT;
+      const aspectRatio = standardWidth / standardHeight;
+      const givenWidth = 900;
+      const calculatedHeight = this.calculateHeight(width, aspectRatio);
+      this.renderer.resize(width, calculatedHeight);
+      this.resizeToTarget(width, height);
+    }
+    resizeToTarget(targetWidth, targetHeight) {
+      let newWidth = targetWidth;
+      let newHeight = targetHeight;
+      if (targetHeight < targetWidth) {
+        newWidth = targetHeight / HEIGHT * WIDTH;
       } else {
-        newHeight = window.innerWidth / WIDTH * HEIGHT;
+        newHeight = targetWidth / WIDTH * HEIGHT;
       }
-      this.gameContainer.style.width = newWidth + "px";
-      this.gameContainer.style.height = newHeight + "px";
+      this.setSizeContainer(newWidth, newHeight);
+    }
+    setSizeContainer(width, height) {
+      this.gameContainer.style.width = width + "px";
+      this.gameContainer.style.height = height + "px";
+    }
+    /**
+     * Функция для расчета высоты на основе заданной ширины и соотношения сторон.
+     * @param {number} width - Ширина.
+     * @returns {number} - Рассчитанная высота.
+     */
+    calculateHeight(width) {
+      const aspectRatio = WIDTH / HEIGHT;
+      return width / aspectRatio;
     }
   };
 
