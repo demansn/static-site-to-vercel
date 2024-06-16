@@ -35019,6 +35019,13 @@ void main(void)\r
     align: "center",
     fontWeight: "bold"
   });
+  var BetsListTextStyle = new TextStyle({
+    fontFamily: "Nunito",
+    fontSize: 25,
+    fill: "#ffffff",
+    align: "center",
+    fontWeight: "bold"
+  });
   var LoadingTextStyle = new TextStyle({
     fontFamily: "Nunito",
     fill: "#ffffff",
@@ -51273,7 +51280,7 @@ void main(void)\r
       betText.anchor.set(0.5);
       betText.alpha = 0.6;
       betButtonContainer.addChild(betText);
-      this.betsLis = ObjectFactory.createList(this.game.server.betsList, this.game.server.currentBetIndex, "Bet");
+      this.betsLis = ObjectFactory.createList(this.game.server.betsList, this.game.server.currentBetIndex, "Bet", void 0, BetsListTextStyle);
       this.betsLis.x = 331;
       this.betsLis.y = 683;
       this.betsLis.currentValueText.alpha = 0.6;
