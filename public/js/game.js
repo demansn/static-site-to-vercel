@@ -50262,113 +50262,6 @@ void main(void)\r
     }
   };
 
-  // src/js/objects/Carousel.js
-  var time = 500;
-  var Carousel = class extends Container {
-    constructor(elements, buttonTextures, elementWidth, elementHeight) {
-      super();
-      this.elements = elements;
-      this.elementWidth = elementWidth || elements[0].width;
-      this.elementHeight = elementHeight || elements[0].height;
-      this.currentIndex = 0;
-      this.isAnimating = false;
-      this.elements.forEach((element) => {
-        this.addChild(element);
-      });
-      this.createButtons(buttonTextures);
-      this.updateElements();
-    }
-    createButtons(buttonTextures) {
-      this.leftButton = new Button({ textures: buttonTextures, onClick: this.moveLeft.bind(this) });
-      const midIndex = Math.floor(this.elements.length / 2);
-      this.leftButton.x = -(this.elementWidth * midIndex + this.elementWidth);
-      this.leftButton.y = -this.leftButton.height / 2;
-      this.addChild(this.leftButton);
-      this.rightButton = new Button({ textures: buttonTextures, onClick: this.moveRight.bind(this) });
-      this.rightButton.x = this.elementWidth * midIndex + this.elementWidth;
-      this.rightButton.y = -this.rightButton.height / 2;
-      this.rightButton.scale.x = -1;
-      this.addChild(this.rightButton);
-    }
-    updateElements() {
-      const midIndex = Math.floor(this.elements.length / 2);
-      for (let i2 = 0; i2 < this.elements.length; i2++) {
-        const element = this.elements[i2];
-        const positionIndex = (i2 - this.currentIndex + this.elements.length) % this.elements.length;
-        const offset = positionIndex - midIndex;
-        element.x = offset * this.elementWidth;
-      }
-    }
-    moveLeft() {
-      if (!this.isAnimating) {
-        this.currentIndex = (this.currentIndex - 1 + this.elements.length) % this.elements.length;
-        this.emit("selected", this.getMiddleIndex());
-        this.animateElements(-1);
-      }
-    }
-    getMiddleIndex() {
-      const midIndex = Math.floor(this.elements.length / 2);
-      return (this.currentIndex + midIndex) % this.elements.length;
-    }
-    moveRight() {
-      if (!this.isAnimating) {
-        this.currentIndex = (this.currentIndex + 1) % this.elements.length;
-        const midIndex = Math.floor(this.elements.length / 2);
-        this.emit("selected", this.getMiddleIndex());
-        this.animateElements(1);
-      }
-    }
-    animateElements(direction) {
-      this.isAnimating = true;
-      const midIndex = Math.floor(this.elements.length / 2);
-      let animationsCompleted = 0;
-      const checkAnimationComplete = () => {
-        animationsCompleted++;
-        if (animationsCompleted === this.elements.length) {
-          this.isAnimating = false;
-          this.updateElements();
-        }
-      };
-      for (let i2 = 0; i2 < this.elements.length; i2++) {
-        const element = this.elements[i2];
-        const positionIndex = (i2 - this.currentIndex + this.elements.length) % this.elements.length;
-        const offset = positionIndex - midIndex;
-        const targetX = offset * this.elementWidth;
-        const targetAlpha = Math.abs(offset) === midIndex ? 0 : 1;
-        if (Math.abs(offset) === midIndex && (direction === 1 ? offset > 0 : offset < 0)) {
-          this.addChildAt(element, 0);
-          ValueTween_default.to(element, {
-            key: "alpha",
-            to: 0,
-            easing: "easeInOutQuad",
-            setter: (v2) => {
-              element.scale.set(v2);
-              element.alpha = v2;
-            }
-          }, 1).then(() => Timer.wait(time * 0.8)).then(() => {
-            ValueTween_default.to(element, {
-              key: "alpha",
-              to: 1,
-              easing: "easeInOutQuad",
-              setter: (v2) => {
-                element.scale.set(v2);
-                element.alpha = v2;
-              }
-            }, 1);
-          });
-        }
-        ValueTween_default.to(element, {
-          key: "x",
-          to: targetX,
-          easing: "easeInOutQuad"
-        }, time).then(() => {
-          this.addChildAt(element, this.children.length - 1);
-          checkAnimationComplete();
-        });
-      }
-    }
-  };
-
   // src/js/objects/SliceButton.js
   var SliceButton = class extends Container {
     constructor({ textures, onClick, text = "", bgScale = 1, textStyle = ButtonTextStyle, nineSlicePlaneParameters, width }) {
@@ -50441,6 +50334,105 @@ void main(void)\r
     setSelect(value) {
       this.isSelected = value;
       this.sprite.texture = this.getDefaultTexture();
+    }
+  };
+
+  // src/js/objects/CarouselSlider.js
+  var time = 500;
+  var CarouselSlider = class extends Container {
+    constructor(elements, buttonTextures, elementWidth, elementHeight) {
+      super();
+      this.elements = elements;
+      this.elementWidth = elementWidth || elements[0].width;
+      this.elementHeight = elementHeight || elements[0].height;
+      this.isAnimating = false;
+      this.elements.forEach((element) => {
+        this.addChild(element);
+      });
+      this.createButtons(buttonTextures);
+      this.updateElements();
+    }
+    createButtons(buttonTextures) {
+      this.leftButton = new Button({ textures: buttonTextures, onClick: this.moveLeft.bind(this) });
+      const midIndex = Math.floor(this.elements.length / 2);
+      this.leftButton.x = -(this.elementWidth * midIndex + this.elementWidth);
+      this.leftButton.y = -this.leftButton.height / 2;
+      this.addChild(this.leftButton);
+      this.rightButton = new Button({ textures: buttonTextures, onClick: this.moveRight.bind(this) });
+      this.rightButton.x = this.elementWidth * midIndex + this.elementWidth;
+      this.rightButton.y = -this.rightButton.height / 2;
+      this.rightButton.scale.x = -1;
+      this.addChild(this.rightButton);
+    }
+    updateElements() {
+      const midIndex = Math.floor(this.elements.length / 2);
+      for (let i2 = 0; i2 < this.elements.length; i2++) {
+        const element = this.elements[i2];
+        const positionIndex = (i2 + this.elements.length) % this.elements.length;
+        const offset = positionIndex - midIndex;
+        element.x = offset * this.elementWidth;
+      }
+    }
+    moveLeft() {
+      if (!this.isAnimating) {
+        this.animateElements(-1);
+      }
+    }
+    moveRight() {
+      if (!this.isAnimating) {
+        this.animateElements(1);
+      }
+    }
+    animateElements(direction) {
+      this.isAnimating = true;
+      const midIndex = Math.floor(this.elements.length / 2);
+      let animationsCompleted = 0;
+      const checkAnimationComplete = () => {
+        animationsCompleted++;
+        if (animationsCompleted === this.elements.length) {
+          this.isAnimating = false;
+          this.emit("selected", this.getCurrentIndex());
+        }
+      };
+      for (let i2 = 0; i2 < this.elements.length; i2++) {
+        const element = this.elements[i2];
+        const offset = this.elementWidth * direction;
+        const targetX = element.x + offset;
+        const isLeftBounds = targetX < -this.elementWidth * midIndex;
+        const isRightBounds = targetX > this.elementWidth * midIndex;
+        if (isLeftBounds || isRightBounds) {
+          const nexX = isLeftBounds ? this.rightBounds() : this.leftBounds();
+          Promise.resolve().then(() => {
+            return ValueTween_default.to(element, {
+              key: "x",
+              to: element.x + offset / 2,
+              easing: "easeInOutQuad"
+            }, time / 2);
+          }).then(() => {
+            element.x = nexX;
+            return ValueTween_default.to(element, {
+              key: "x",
+              to: nexX + offset / 2,
+              easing: "easeInOutQuad"
+            }, time / 2);
+          }).then(() => checkAnimationComplete());
+        } else {
+          ValueTween_default.to(element, {
+            key: "x",
+            to: targetX,
+            easing: "easeInOutQuad"
+          }, time).then(() => checkAnimationComplete());
+        }
+      }
+    }
+    rightBounds() {
+      return this.elements.length * this.elementWidth / 2;
+    }
+    leftBounds() {
+      return -this.elements.length * this.elementWidth / 2;
+    }
+    getCurrentIndex() {
+      return this.elements.findIndex((element) => element.x === 0);
     }
   };
 
@@ -50690,7 +50682,7 @@ void main(void)\r
       return new Slider(textures.lineTexture, textures.knobTexture, textures.bgTexture);
     }
     static createCarousel({ elements, width, height }) {
-      return new Carousel(
+      return new CarouselSlider(
         elements,
         {
           default: _ObjectFactory.getTextureFromSpriteSheet("ArrowButtonDefault.png"),
@@ -51622,7 +51614,7 @@ void main(void)\r
       this.label.y = -(this.carousel.height / 2 + 20);
     }
     getCurrentIndex() {
-      return this.carousel.getMiddleIndex();
+      return this.carousel.getCurrentIndex();
     }
     onSelect(index) {
       this.emit("selected", index);
@@ -51660,7 +51652,7 @@ void main(void)\r
       this.label.y = -(this.carousel.height / 2 + 20);
     }
     getCurrentIndex() {
-      return this.carousel.getMiddleIndex();
+      return this.carousel.getCurrentIndex();
     }
     onSelect(index, element) {
       this.emit("selectLevel", index);
