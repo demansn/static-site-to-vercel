@@ -5765,8 +5765,8 @@ else `), i2 < maxIfs - 1 && (src += `if(test == ${i2}.0){}`);
      * @param {PIXI.BaseTexture} baseTexture - The BaseTexture to add to the cache.
      * @param {string} id - The id that the BaseTexture will be stored against.
      */
-    static addToCache(baseTexture, id) {
-      id && (baseTexture.textureCacheIds.includes(id) || baseTexture.textureCacheIds.push(id), BaseTextureCache[id] && BaseTextureCache[id] !== baseTexture && console.warn(`BaseTexture added to the cache with an id [${id}] that already had an entry`), BaseTextureCache[id] = baseTexture);
+    static addToCache(baseTexture, id3) {
+      id3 && (baseTexture.textureCacheIds.includes(id3) || baseTexture.textureCacheIds.push(id3), BaseTextureCache[id3] && BaseTextureCache[id3] !== baseTexture && console.warn(`BaseTexture added to the cache with an id [${id3}] that already had an entry`), BaseTextureCache[id3] = baseTexture);
     }
     /**
      * Remove a BaseTexture from the global BaseTextureCache.
@@ -5907,8 +5907,8 @@ else `), i2 < maxIfs - 1 && (src += `if(test == ${i2}.0){}`);
      * @param [instance=false] - Whether the geometry is instanced.
      * @param [divisor=1] - Divisor to use when doing instanced rendering
      */
-    constructor(buffer, size = 0, normalized = false, type = TYPES.FLOAT, stride, start, instance, divisor = 1) {
-      this.buffer = buffer, this.size = size, this.normalized = normalized, this.type = type, this.stride = stride, this.start = start, this.instance = instance, this.divisor = divisor;
+    constructor(buffer, size = 0, normalized = false, type = TYPES.FLOAT, stride, start, instance2, divisor = 1) {
+      this.buffer = buffer, this.size = size, this.normalized = normalized, this.type = type, this.stride = stride, this.start = start, this.instance = instance2, this.divisor = divisor;
     }
     /** Destroys the Attribute. */
     destroy() {
@@ -5986,34 +5986,34 @@ else `), i2 < maxIfs - 1 && (src += `if(test == ${i2}.0){}`);
      * @param instance - Instancing flag
      * @returns - Returns self, useful for chaining.
      */
-    addAttribute(id, buffer, size = 0, normalized = false, type, stride, start, instance = false) {
+    addAttribute(id3, buffer, size = 0, normalized = false, type, stride, start, instance2 = false) {
       if (!buffer)
         throw new Error("You must pass a buffer when creating an attribute");
       buffer instanceof Buffer2 || (buffer instanceof Array && (buffer = new Float32Array(buffer)), buffer = new Buffer2(buffer));
-      const ids = id.split("|");
+      const ids = id3.split("|");
       if (ids.length > 1) {
         for (let i2 = 0; i2 < ids.length; i2++)
           this.addAttribute(ids[i2], buffer, size, normalized, type);
         return this;
       }
       let bufferIndex = this.buffers.indexOf(buffer);
-      return bufferIndex === -1 && (this.buffers.push(buffer), bufferIndex = this.buffers.length - 1), this.attributes[id] = new Attribute(bufferIndex, size, normalized, type, stride, start, instance), this.instanced = this.instanced || instance, this;
+      return bufferIndex === -1 && (this.buffers.push(buffer), bufferIndex = this.buffers.length - 1), this.attributes[id3] = new Attribute(bufferIndex, size, normalized, type, stride, start, instance2), this.instanced = this.instanced || instance2, this;
     }
     /**
      * Returns the requested attribute.
      * @param id - The name of the attribute required
      * @returns - The attribute requested.
      */
-    getAttribute(id) {
-      return this.attributes[id];
+    getAttribute(id3) {
+      return this.attributes[id3];
     }
     /**
      * Returns the requested buffer.
      * @param id - The name of the buffer required.
      * @returns - The buffer requested.
      */
-    getBuffer(id) {
-      return this.buffers[this.getAttribute(id).buffer];
+    getBuffer(id3) {
+      return this.buffers[this.getAttribute(id3).buffer];
     }
     /**
      *
@@ -6592,8 +6592,8 @@ else `), i2 < maxIfs - 1 && (src += `if(test == ${i2}.0){}`);
      */
     applyInverse(pos, newPos) {
       newPos = newPos || new Point();
-      const id = 1 / (this.a * this.d + this.c * -this.b), x2 = pos.x, y2 = pos.y;
-      return newPos.x = this.d * id * x2 + -this.c * id * y2 + (this.ty * this.c - this.tx * this.d) * id, newPos.y = this.a * id * y2 + -this.b * id * x2 + (-this.ty * this.a + this.tx * this.b) * id, newPos;
+      const id3 = 1 / (this.a * this.d + this.c * -this.b), x2 = pos.x, y2 = pos.y;
+      return newPos.x = this.d * id3 * x2 + -this.c * id3 * y2 + (this.ty * this.c - this.tx * this.d) * id3, newPos.y = this.a * id3 * y2 + -this.b * id3 * x2 + (-this.ty * this.a + this.tx * this.b) * id3, newPos;
     }
     /**
      * Translates the matrix on the x and y.
@@ -9206,8 +9206,8 @@ void main(void)
      * @param texture - The Texture to add to the cache.
      * @param id - The id that the Texture will be stored against.
      */
-    static addToCache(texture, id) {
-      id && (texture.textureCacheIds.includes(id) || texture.textureCacheIds.push(id), TextureCache[id] && TextureCache[id] !== texture && console.warn(`Texture added to the cache with an id [${id}] that already had an entry`), TextureCache[id] = texture);
+    static addToCache(texture, id3) {
+      id3 && (texture.textureCacheIds.includes(id3) || texture.textureCacheIds.push(id3), TextureCache[id3] && TextureCache[id3] !== texture && console.warn(`Texture added to the cache with an id [${id3}] that already had an entry`), TextureCache[id3] = texture);
     }
     /**
      * Remove a Texture from the global TextureCache.
@@ -11273,8 +11273,8 @@ void main(void)
       (group.syncUniforms[this.shader.program.id] || this.createSyncGroups(group))(glProgram.uniformData, group.uniforms, this.renderer, syncData);
     }
     createSyncGroups(group) {
-      const id = this.getSignature(group, this.shader.program.uniformData, "u");
-      return this.cache[id] || (this.cache[id] = generateUniformsSync(group, this.shader.program.uniformData)), group.syncUniforms[this.shader.program.id] = this.cache[id], group.syncUniforms[this.shader.program.id];
+      const id3 = this.getSignature(group, this.shader.program.uniformData, "u");
+      return this.cache[id3] || (this.cache[id3] = generateUniformsSync(group, this.shader.program.uniformData)), group.syncUniforms[this.shader.program.id] = this.cache[id3], group.syncUniforms[this.shader.program.id];
     }
     /**
      * Syncs uniform buffers
@@ -11309,9 +11309,9 @@ void main(void)
       this.renderer.buffer.bind(group.buffer);
       const uniformBlockIndex = this.gl.getUniformBlockIndex(glProgram.program, name);
       glProgram.uniformBufferBindings[name] = this.shader.uniformBindCount, gl.uniformBlockBinding(glProgram.program, uniformBlockIndex, this.shader.uniformBindCount), this.shader.uniformBindCount++;
-      const id = this.getSignature(group, this.shader.program.uniformData, "ubo");
-      let uboData = this._uboCache[id];
-      if (uboData || (uboData = this._uboCache[id] = generateUniformBufferSync(group, this.shader.program.uniformData)), group.autoManage) {
+      const id3 = this.getSignature(group, this.shader.program.uniformData, "ubo");
+      let uboData = this._uboCache[id3];
+      if (uboData || (uboData = this._uboCache[id3] = generateUniformBufferSync(group, this.shader.program.uniformData)), group.autoManage) {
         const data = new Float32Array(uboData.size / 4);
         group.buffer.update(data);
       }
@@ -17424,12 +17424,12 @@ void main()
      * @returns The tracking data stored for the given pointer. If no data exists, a blank
      *  state will be created.
      */
-    trackingData(id) {
-      return this.mappingState.trackingData[id] || (this.mappingState.trackingData[id] = {
+    trackingData(id3) {
+      return this.mappingState.trackingData[id3] || (this.mappingState.trackingData[id3] = {
         pressTargetsByButton: {},
         clicksByButton: {},
         overTarget: null
-      }), this.mappingState.trackingData[id];
+      }), this.mappingState.trackingData[id3];
     }
     /**
      * Allocate a specific type of event from {@link PIXI.EventBoundary#eventPool this.eventPool}.
@@ -18700,14 +18700,14 @@ void main()
   };
 
   // node_modules/@pixi/assets/lib/utils/checkDataUrl.mjs
-  function checkDataUrl(url2, mimes) {
-    if (Array.isArray(mimes)) {
-      for (const mime of mimes)
+  function checkDataUrl(url2, mimes2) {
+    if (Array.isArray(mimes2)) {
+      for (const mime of mimes2)
         if (url2.startsWith(`data:${mime}`))
           return true;
       return false;
     }
-    return url2.startsWith(`data:${mimes}`);
+    return url2.startsWith(`data:${mimes2}`);
   }
 
   // node_modules/@pixi/assets/lib/utils/checkExtension.mjs
@@ -18727,9 +18727,9 @@ void main()
 
   // node_modules/@pixi/assets/lib/utils/createStringVariations.mjs
   function processX(base, ids, depth, result, tags) {
-    const id = ids[depth];
-    for (let i2 = 0; i2 < id.length; i2++) {
-      const value = id[i2];
+    const id3 = ids[depth];
+    for (let i2 = 0; i2 < id3.length; i2++) {
+      const value = id3[i2];
       depth < ids.length - 1 ? processX(base.replace(result[depth], value), ids, depth + 1, result, tags) : tags.push(base.replace(result[depth], value));
     }
   }
@@ -19130,10 +19130,10 @@ ${e2}`);
     complete(data) {
       data.error !== void 0 ? this.resolveHash[data.uuid].reject(data.error) : this.resolveHash[data.uuid].resolve(data.data), this.resolveHash[data.uuid] = null;
     }
-    async _run(id, args) {
+    async _run(id3, args) {
       await this._initWorkers();
       const promise2 = new Promise((resolve2, reject) => {
-        this.queue.push({ id, arguments: args, resolve: resolve2, reject });
+        this.queue.push({ id: id3, arguments: args, resolve: resolve2, reject });
       });
       return this.next(), promise2;
     }
@@ -19143,11 +19143,11 @@ ${e2}`);
       const worker = this.getWorker();
       if (!worker)
         return;
-      const toDo = this.queue.pop(), id = toDo.id;
+      const toDo = this.queue.pop(), id3 = toDo.id;
       this.resolveHash[UUID] = { resolve: toDo.resolve, reject: toDo.reject }, worker.postMessage({
         data: toDo.arguments,
         uuid: UUID++,
-        id
+        id: id3
       });
     }
   };
@@ -21833,10 +21833,10 @@ Please use Assets.add({ alias, src, data, format, loadParser }) instead.`), asse
      * @param size
      * @param offset
      */
-    addTextureIds(textureIds, id, size, offset = 0) {
+    addTextureIds(textureIds, id3, size, offset = 0) {
       textureIds.length = Math.max(textureIds.length, offset + size);
       for (let i2 = 0; i2 < size; i2++)
-        textureIds[offset + i2] = id;
+        textureIds[offset + i2] = id3;
     }
     /**
      * Generates the UVs for a shape.
@@ -25478,11 +25478,11 @@ void main(void)
       const [info] = data.info, [common] = data.common, [page] = data.page, [distanceField] = data.distanceField, res = lib_exports.getResolutionOfUrl(page.file), pageTextures = {};
       this._ownsTextures = ownsTextures, this.font = info.face, this.size = info.size, this.lineHeight = common.lineHeight / res, this.chars = {}, this.pageTextures = pageTextures;
       for (let i2 = 0; i2 < data.page.length; i2++) {
-        const { id, file } = data.page[i2];
-        pageTextures[id] = textures instanceof Array ? textures[i2] : textures[file], distanceField?.fieldType && distanceField.fieldType !== "none" && (pageTextures[id].baseTexture.alphaMode = ALPHA_MODES.NO_PREMULTIPLIED_ALPHA, pageTextures[id].baseTexture.mipmap = MIPMAP_MODES.OFF);
+        const { id: id3, file } = data.page[i2];
+        pageTextures[id3] = textures instanceof Array ? textures[i2] : textures[file], distanceField?.fieldType && distanceField.fieldType !== "none" && (pageTextures[id3].baseTexture.alphaMode = ALPHA_MODES.NO_PREMULTIPLIED_ALPHA, pageTextures[id3].baseTexture.mipmap = MIPMAP_MODES.OFF);
       }
       for (let i2 = 0; i2 < data.char.length; i2++) {
-        const { id, page: page2 } = data.char[i2];
+        const { id: id3, page: page2 } = data.char[i2];
         let { x: x2, y: y2, width, height, xoffset, yoffset, xadvance } = data.char[i2];
         x2 /= res, y2 /= res, width /= res, height /= res, xoffset /= res, yoffset /= res, xadvance /= res;
         const rect = new Rectangle(
@@ -25491,7 +25491,7 @@ void main(void)
           width,
           height
         );
-        this.chars[id] = {
+        this.chars[id3] = {
           xOffset: xoffset,
           yOffset: yoffset,
           xAdvance: xadvance,
@@ -25511,10 +25511,10 @@ void main(void)
     }
     /** Remove references to created glyph textures. */
     destroy() {
-      for (const id in this.chars)
-        this.chars[id].texture.destroy(), this.chars[id].texture = null;
-      for (const id in this.pageTextures)
-        this._ownsTextures && this.pageTextures[id].destroy(true), this.pageTextures[id] = null;
+      for (const id3 in this.chars)
+        this.chars[id3].texture.destroy(), this.chars[id3].texture = null;
+      for (const id3 in this.pageTextures)
+        this._ownsTextures && this.pageTextures[id3].destroy(true), this.pageTextures[id3] = null;
       this.chars = null, this.pageTextures = null;
     }
     /**
@@ -25627,9 +25627,9 @@ void main(void)
           continue;
         }
         drawGlyph(canvas, context2, metrics, positionX, positionY, resolution, style);
-        const id = extractCharCode(metrics.text);
+        const id3 = extractCharCode(metrics.text);
         fontData.char.push({
-          id,
+          id: id3,
           page: textures.length - 1,
           x: positionX / resolution,
           y: positionY / resolution,
@@ -26052,8 +26052,8 @@ void main(void)\r
       this._activePagesMeshData = [], pageMeshDataPool.filter((page) => _textureCache[page.mesh.texture.baseTexture.uid]).forEach((page) => {
         page.mesh.texture = Texture.EMPTY;
       });
-      for (const id in _textureCache)
-        _textureCache[id].destroy(), delete _textureCache[id];
+      for (const id3 in _textureCache)
+        _textureCache[id3].destroy(), delete _textureCache[id3];
       this._font = null, this._tintColor = null, this._textureCache = null, super.destroy(options);
     }
   };
@@ -27927,9 +27927,9 @@ void main(void)\r
               }
               break;
             }
-            const id = attachment.id;
-            if (slot.currentMeshId === void 0 || slot.currentMeshId !== id) {
-              const meshId = id;
+            const id3 = attachment.id;
+            if (slot.currentMeshId === void 0 || slot.currentMeshId !== id3) {
+              const meshId = id3;
               if (slot.currentMesh) {
                 slot.currentMesh.visible = false;
               }
@@ -28851,8 +28851,8 @@ void main(void)\r
         this.timelineIds[timelines[i2].getPropertyId()] = true;
       this.duration = duration;
     }
-    hasTimeline(id) {
-      return this.timelineIds[id] == true;
+    hasTimeline(id3) {
+      return this.timelineIds[id3] == true;
     }
     /** Applies all the animation's timelines to the specified skeleton.
      *
@@ -30792,14 +30792,14 @@ void main(void)\r
       outer:
         for (let i2 = 0; i2 < timelinesCount; i2++) {
           const timeline = timelines[i2];
-          const id = timeline.getPropertyId();
-          if (!propertyIDs.add(id))
+          const id3 = timeline.getPropertyId();
+          if (!propertyIDs.add(id3))
             timelineMode[i2] = _AnimationState.SUBSEQUENT;
-          else if (to == null || timeline instanceof AttachmentTimeline || timeline instanceof DrawOrderTimeline || timeline instanceof EventTimeline || !to.animation.hasTimeline(id)) {
+          else if (to == null || timeline instanceof AttachmentTimeline || timeline instanceof DrawOrderTimeline || timeline instanceof EventTimeline || !to.animation.hasTimeline(id3)) {
             timelineMode[i2] = _AnimationState.FIRST;
           } else {
             for (let next = to.mixingTo; next != null; next = next.mixingTo) {
-              if (next.animation.hasTimeline(id))
+              if (next.animation.hasTimeline(id3))
                 continue;
               if (entry.mixDuration > 0) {
                 timelineMode[i2] = _AnimationState.HOLD_MIX;
@@ -31392,13 +31392,13 @@ void main(void)\r
       this.ax = dx * pm.d * pid - dy * pm.c * pid;
       this.ay = dy * pm.a * pid - dx * pm.b * pid;
       const ia = pid * pm.d;
-      const id = pid * pm.a;
+      const id3 = pid * pm.a;
       const ib = pid * pm.c;
       const ic = pid * pm.b;
       const ra = ia * m2.a - ib * m2.b;
       const rb = ia * m2.c - ib * m2.d;
-      const rc = id * m2.b - ic * m2.a;
-      const rd = id * m2.d - ic * m2.c;
+      const rc = id3 * m2.b - ic * m2.a;
+      const rd = id3 * m2.d - ic * m2.c;
       this.ashearX = 0;
       this.ascaleX = Math.sqrt(ra * ra + rc * rc);
       if (this.ascaleX > 1e-4) {
@@ -31674,11 +31674,11 @@ void main(void)\r
       b2 = pp.c;
       c2 = pp.b;
       d2 = pp.d;
-      const id = 1 / (a2 * d2 - b2 * c2);
+      const id3 = 1 / (a2 * d2 - b2 * c2);
       let x2 = cwx - pp.tx;
       let y2 = cwy - pp.ty;
-      const dx = (x2 * d2 - y2 * b2) * id - px;
-      const dy = (y2 * a2 - x2 * c2) * id - py;
+      const dx = (x2 * d2 - y2 * b2) * id3 - px;
+      const dy = (y2 * a2 - x2 * c2) * id3 - py;
       const l1 = Math.sqrt(dx * dx + dy * dy);
       let l2 = child.data.length * csx;
       let a1;
@@ -31690,8 +31690,8 @@ void main(void)\r
       }
       x2 = targetX - pp.tx;
       y2 = targetY - pp.ty;
-      let tx = (x2 * d2 - y2 * b2) * id - px;
-      let ty = (y2 * a2 - x2 * c2) * id - py;
+      let tx = (x2 * d2 - y2 * b2) * id3 - px;
+      let ty = (y2 * a2 - x2 * c2) * id3 - py;
       let dd = tx * tx + ty * ty;
       if (softness != 0) {
         softness *= psx * (csx + 1) / 2;
@@ -35388,12 +35388,14 @@ void main(void)\r
     decrease() {
       if (this.currentIndex > 0) {
         this.currentIndex--;
+        this.emit("change", this.currentIndex);
         this.updateUI();
       }
     }
     increase() {
       if (this.currentIndex < this.values.length - 1) {
         this.currentIndex++;
+        this.emit("change", this.currentIndex);
         this.updateUI();
       }
     }
@@ -38008,14 +38010,14 @@ void main(void)\r
       }
       outer:
         for (let i2 = 0; i2 < timelinesCount; i2++) {
-          const id = timelines[i2].getPropertyId();
-          if (!propertyIDs.add(id))
+          const id3 = timelines[i2].getPropertyId();
+          if (!propertyIDs.add(id3))
             timelineMode[i2] = _AnimationState2.SUBSEQUENT;
-          else if (to == null || !this.hasTimeline(to, id))
+          else if (to == null || !this.hasTimeline(to, id3))
             timelineMode[i2] = _AnimationState2.FIRST;
           else {
             for (let next = to.mixingTo; next != null; next = next.mixingTo) {
-              if (this.hasTimeline(next, id))
+              if (this.hasTimeline(next, id3))
                 continue;
               if (entry.mixDuration > 0) {
                 timelineMode[i2] = _AnimationState2.HOLD_MIX;
@@ -38028,10 +38030,10 @@ void main(void)\r
           }
         }
     }
-    hasTimeline(entry, id) {
+    hasTimeline(entry, id3) {
       const timelines = entry.animation.timelines;
       for (let i2 = 0, n2 = timelines.length; i2 < n2; i2++)
-        if (timelines[i2].getPropertyId() == id)
+        if (timelines[i2].getPropertyId() == id3)
           return true;
       return false;
     }
@@ -38588,13 +38590,13 @@ void main(void)\r
       this.ax = dx * pm.d * pid - dy * pm.c * pid;
       this.ay = dy * pm.a * pid - dx * pm.b * pid;
       const ia = pid * pm.d;
-      const id = pid * pm.a;
+      const id3 = pid * pm.a;
       const ib = pid * pm.c;
       const ic = pid * pm.b;
       const ra = ia * m2.a - ib * m2.b;
       const rb = ia * m2.c - ib * m2.d;
-      const rc = id * m2.b - ic * m2.a;
-      const rd = id * m2.d - ic * m2.c;
+      const rc = id3 * m2.b - ic * m2.a;
+      const rd = id3 * m2.d - ic * m2.c;
       this.ashearX = 0;
       this.ascaleX = Math.sqrt(ra * ra + rc * rc);
       if (this.ascaleX > 1e-4) {
@@ -38741,11 +38743,11 @@ void main(void)\r
       if (!bone.appliedValid)
         bone.updateAppliedTransform();
       const p2 = bone.parent.matrix;
-      const id = 1 / (p2.a * p2.d - p2.b * p2.c);
+      const id3 = 1 / (p2.a * p2.d - p2.b * p2.c);
       const x2 = targetX - p2.tx;
       const y2 = targetY - p2.ty;
-      const tx = (x2 * p2.d - y2 * p2.c) * id - bone.ax;
-      const ty = (y2 * p2.a - x2 * p2.b) * id - bone.ay;
+      const tx = (x2 * p2.d - y2 * p2.c) * id3 - bone.ax;
+      const ty = (y2 * p2.a - x2 * p2.b) * id3 - bone.ay;
       let rotationIK = Math.atan2(ty, tx) * MathUtils.radDeg - bone.ashearX - bone.arotation;
       if (bone.ascaleX < 0)
         rotationIK += 180;
@@ -38829,16 +38831,16 @@ void main(void)\r
       b2 = pp.c;
       c2 = pp.b;
       d2 = pp.d;
-      const id = 1 / (a2 * d2 - b2 * c2);
+      const id3 = 1 / (a2 * d2 - b2 * c2);
       let x2 = targetX - pp.tx;
       let y2 = targetY - pp.ty;
-      const tx = (x2 * d2 - y2 * b2) * id - px;
-      const ty = (y2 * a2 - x2 * c2) * id - py;
+      const tx = (x2 * d2 - y2 * b2) * id3 - px;
+      const ty = (y2 * a2 - x2 * c2) * id3 - py;
       const dd = tx * tx + ty * ty;
       x2 = cwx - pp.tx;
       y2 = cwy - pp.ty;
-      const dx = (x2 * d2 - y2 * b2) * id - px;
-      const dy = (y2 * a2 - x2 * c2) * id - py;
+      const dx = (x2 * d2 - y2 * b2) * id3 - px;
+      const dy = (y2 * a2 - x2 * c2) * id3 - py;
       const l1 = Math.sqrt(dx * dx + dy * dy);
       let l2 = child.data.length * csx;
       let a1 = 0;
@@ -45716,13 +45718,13 @@ void main(void)\r
       this.ax = dx * pm.d * pid - dy * pm.c * pid;
       this.ay = dy * pm.a * pid - dx * pm.b * pid;
       const ia = pid * pm.d;
-      const id = pid * pm.a;
+      const id3 = pid * pm.a;
       const ib = pid * pm.c;
       const ic = pid * pm.b;
       const ra = ia * m2.a - ib * m2.b;
       const rb = ia * m2.c - ib * m2.d;
-      const rc = id * m2.b - ic * m2.a;
-      const rd = id * m2.d - ic * m2.c;
+      const rc = id3 * m2.b - ic * m2.a;
+      const rd = id3 * m2.d - ic * m2.c;
       this.ashearX = 0;
       this.ascaleX = Math.sqrt(ra * ra + rc * rc);
       if (this.ascaleX > 1e-4) {
@@ -46025,11 +46027,11 @@ void main(void)\r
       b2 = pp.c;
       c2 = pp.b;
       d2 = pp.d;
-      const id = 1 / (a2 * d2 - b2 * c2);
+      const id3 = 1 / (a2 * d2 - b2 * c2);
       let x2 = cwx - pp.tx;
       let y2 = cwy - pp.ty;
-      const dx = (x2 * d2 - y2 * b2) * id - px;
-      const dy = (y2 * a2 - x2 * c2) * id - py;
+      const dx = (x2 * d2 - y2 * b2) * id3 - px;
+      const dy = (y2 * a2 - x2 * c2) * id3 - py;
       const l1 = Math.sqrt(dx * dx + dy * dy);
       let l2 = child.data.length * csx;
       let a1;
@@ -46041,8 +46043,8 @@ void main(void)\r
       }
       x2 = targetX - pp.tx;
       y2 = targetY - pp.ty;
-      let tx = (x2 * d2 - y2 * b2) * id - px;
-      let ty = (y2 * a2 - x2 * c2) * id - py;
+      let tx = (x2 * d2 - y2 * b2) * id3 - px;
+      let ty = (y2 * a2 - x2 * c2) * id3 - py;
       let dd = tx * tx + ty * ty;
       if (softness != 0) {
         softness *= psx * (csx + 1) * 0.5;
@@ -50841,9 +50843,9 @@ void main(void)\r
 
   // src/js/objects/Target.js
   var Target = class extends Container {
-    constructor(id) {
+    constructor(id3) {
       super();
-      this.id = id;
+      this.id = id3;
       this.animation = ObjectFactory.createAnimation("3_1/3_1");
       this.animation.loop = false;
       this.addChild(this.animation);
@@ -51184,7 +51186,11 @@ void main(void)\r
           pressed: "SpinButtonPressed.png",
           disabled: "SpinButtonDisabled.png"
         },
-        () => this.placeBetButtonHandler()
+        () => {
+          this.placeBetButtonHandler();
+          this.game.soundPlayer.playSWX("playButtonSound");
+          this.game.soundPlayer.playSWX("placeBetSound");
+        }
       );
       this.placeBetButton.x = this.game.config.screenSize.width / 2 - this.placeBetButton.width / 2;
       this.placeBetButton.y = 612;
@@ -51202,7 +51208,10 @@ void main(void)\r
           pressed: "SettingsButtonPressed.png",
           disabled: "SettingsButtonDisabled.png"
         },
-        () => this.game.fms.goTo("settingGameSettings")
+        () => {
+          this.game.fms.goTo("settingGameSettings");
+          this.game.soundPlayer.playSWX("buttonClickSound");
+        }
       );
       this.settingsButton.x = 1138;
       this.settingsButton.y = 42;
@@ -51214,11 +51223,13 @@ void main(void)\r
           pressed: "SoundButtonPressed.png",
           disabled: "SoundButtonDisabled.png"
         },
-        () => this.collectButtonHandler()
+        () => {
+          this.game.soundPlayer.playSWX("buttonClickSound");
+          this.game.soundPlayer.toggleMute();
+        }
       );
       this.soundButton.x = 1138;
       this.soundButton.y = 90;
-      this.soundButton.disable();
       this.addChild(this.soundButton);
       this.infoButton = this.game.objectFactory.createButton(
         {
@@ -51227,7 +51238,10 @@ void main(void)\r
           pressed: "InfoButtonPressed.png",
           disabled: "InfoButtonDisabled.png"
         },
-        () => this.game.fms.goTo("showInfo")
+        () => {
+          this.game.fms.goTo("showInfo");
+          this.game.soundPlayer.playSWX("buttonClickSound");
+        }
       );
       this.infoButton.x = 1138;
       this.infoButton.y = 137;
@@ -51243,7 +51257,10 @@ void main(void)\r
           pressed: "CollectButtonPressed.png",
           disabled: "CollectButtonDisabled.png"
         },
-        () => this.collectButtonHandler()
+        () => {
+          this.collectButtonHandler();
+          this.game.soundPlayer.playSWX("buttonClickSound");
+        }
       );
       this.collectButton.disable();
       collectButtonContainer.addChild(this.collectButton);
@@ -51263,7 +51280,10 @@ void main(void)\r
           pressed: "BetButtonPressed.png",
           disabled: "BetButtonDisabled.png"
         },
-        () => this.game.fms.goTo("selectBet")
+        () => {
+          this.game.fms.goTo("selectBet");
+          this.game.soundPlayer.playSWX("buttonClickSound");
+        }
       );
       betButtonContainer.addChild(this.betButton);
       const betText = ObjectFactory.createText("Bet", BottomPanelTextStyle);
@@ -51291,7 +51311,10 @@ void main(void)\r
           disabled: "ball.png"
         },
         "2_random_kick/2_random_kick",
-        () => this.kickButtonHandler()
+        () => {
+          this.kickButtonHandler();
+          this.game.soundPlayer.playSWX("kickBallSound");
+        }
       );
       this.kickButton.x = 550;
       this.kickButton.y = 619;
@@ -51300,10 +51323,14 @@ void main(void)\r
       this.autoplayButton = new AutoplayButton();
       this.autoplayButton.x = 1038;
       this.autoplayButton.y = 512;
-      this.autoplayButton.on("onClickStart", () => this.game.fms.goTo("autoplaySettings"));
+      this.autoplayButton.on("onClickStart", () => {
+        this.game.fms.goTo("autoplaySettings");
+        this.game.soundPlayer.playSWX("buttonClickSound");
+      });
       this.autoplayButton.on("onClickStop", () => {
         this.autoplayButton.disable();
         this.stopAutoplay();
+        this.game.soundPlayer.playSWX("buttonClickSound");
       });
       this.addChild(this.autoplayButton);
       this.targets = new GateTargets((targetNumber) => this.targetHandler(targetNumber));
@@ -51323,6 +51350,7 @@ void main(void)\r
     }
     onChangeBet(betIndex) {
       this.game.server.setBetIndex(betIndex);
+      this.game.soundPlayer.playSWX("buttonClickSound");
     }
     placeBetButtonHandler() {
     }
@@ -51348,8 +51376,12 @@ void main(void)\r
         new Promise((resolve2) => {
           this.ballAnimations.onComplete = () => {
             this.ballAnimations.destroy();
+            this.game.soundPlayer.playSWX("scoredGoalSound");
             this.showTargetsResultNumber(targetNumber, isWin, currentMultiplier);
-            !isWin && this.ballFlightFromTarget(targetNumber);
+            if (!isWin) {
+              this.ballFlightFromTarget(targetNumber);
+              this.game.soundPlayer.playSWX("kickBallSound");
+            }
             resolve2();
           };
         }),
@@ -51504,6 +51536,50 @@ void main(void)\r
           {
             alias: "goalkeeperSkeleton",
             src: "assets/spine/goalkeeper/goalkeeper.json"
+          },
+          {
+            alias: "mainThemeP1",
+            src: "assets/audio/1.0_part_3.mp3"
+          },
+          {
+            alias: "mainThemeP2",
+            src: "assets/audio/1.0_part_6.mp3"
+          },
+          {
+            alias: "scoredGoalSound",
+            src: "assets/audio/2.0_ver_4.mp3"
+          },
+          {
+            alias: "backgroundSound",
+            src: "assets/audio/4.0_ver_1.mp3"
+          },
+          {
+            alias: "swipeSliderSound",
+            src: "assets/audio/6.0_ver_3.mp3"
+          },
+          {
+            alias: "placeBetSound",
+            src: "assets/audio/7.0_ver_2.mp3"
+          },
+          {
+            alias: "playButtonSound",
+            src: "assets/audio/9.0_ver_1.mp3"
+          },
+          {
+            alias: "buttonClickSound",
+            src: "assets/audio/9.1_ver_2.mp3"
+          },
+          {
+            alias: "kickBallSound",
+            src: "assets/audio/14.0.mp3"
+          },
+          {
+            alias: "winSound",
+            src: "assets/audio/15.0.mp3"
+          },
+          {
+            alias: "loseSound",
+            src: "assets/audio/16.0.mp3"
           }
         ]
       }
@@ -51597,6 +51673,2333 @@ void main(void)\r
     }
   };
 
+  // node_modules/@pixi/sound/lib/instance.mjs
+  var instance;
+  function setInstance(sound2) {
+    instance = sound2;
+    return sound2;
+  }
+  function getInstance() {
+    return instance;
+  }
+
+  // node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioInstance.mjs
+  var id = 0;
+  var _HTMLAudioInstance = class extends lib_exports.EventEmitter {
+    /** @param parent - Parent element */
+    constructor(parent) {
+      super();
+      this.id = id++;
+      this.init(parent);
+    }
+    /**
+     * Set a property by name, this makes it easy to chain values
+     * @param name - Name of the property to set
+     * @param value - Value to set property to
+     */
+    set(name, value) {
+      if (this[name] === void 0) {
+        throw new Error(`Property with name ${name} does not exist.`);
+      } else {
+        switch (name) {
+          case "speed":
+            this.speed = value;
+            break;
+          case "volume":
+            this.volume = value;
+            break;
+          case "paused":
+            this.paused = value;
+            break;
+          case "loop":
+            this.loop = value;
+            break;
+          case "muted":
+            this.muted = value;
+            break;
+        }
+      }
+      return this;
+    }
+    /** The current playback progress from 0 to 1. */
+    get progress() {
+      const { currentTime } = this._source;
+      return currentTime / this._duration;
+    }
+    /** Pauses the sound. */
+    get paused() {
+      return this._paused;
+    }
+    set paused(paused) {
+      this._paused = paused;
+      this.refreshPaused();
+    }
+    /**
+     * Reference: http://stackoverflow.com/a/40370077
+     * @private
+     */
+    _onPlay() {
+      this._playing = true;
+    }
+    /**
+     * Reference: http://stackoverflow.com/a/40370077
+     * @private
+     */
+    _onPause() {
+      this._playing = false;
+    }
+    /**
+     * Initialize the instance.
+     * @param {htmlaudio.HTMLAudioMedia} media - Same as constructor
+     */
+    init(media) {
+      this._playing = false;
+      this._duration = media.source.duration;
+      const source = this._source = media.source.cloneNode(false);
+      source.src = media.parent.url;
+      source.onplay = this._onPlay.bind(this);
+      source.onpause = this._onPause.bind(this);
+      media.context.on("refresh", this.refresh, this);
+      media.context.on("refreshPaused", this.refreshPaused, this);
+      this._media = media;
+    }
+    /**
+     * Stop the sound playing
+     * @private
+     */
+    _internalStop() {
+      if (this._source && this._playing) {
+        this._source.onended = null;
+        this._source.pause();
+      }
+    }
+    /** Stop the sound playing */
+    stop() {
+      this._internalStop();
+      if (this._source) {
+        this.emit("stop");
+      }
+    }
+    /** Set the instance speed from 0 to 1 */
+    get speed() {
+      return this._speed;
+    }
+    set speed(speed) {
+      this._speed = speed;
+      this.refresh();
+    }
+    /** Get the set the volume for this instance from 0 to 1 */
+    get volume() {
+      return this._volume;
+    }
+    set volume(volume) {
+      this._volume = volume;
+      this.refresh();
+    }
+    /** If the sound instance should loop playback */
+    get loop() {
+      return this._loop;
+    }
+    set loop(loop) {
+      this._loop = loop;
+      this.refresh();
+    }
+    /** `true` if the sound is muted */
+    get muted() {
+      return this._muted;
+    }
+    set muted(muted) {
+      this._muted = muted;
+      this.refresh();
+    }
+    /**
+     * HTML Audio does not support filters, this is non-functional API.
+     */
+    get filters() {
+      console.warn("HTML Audio does not support filters");
+      return null;
+    }
+    set filters(_filters) {
+      console.warn("HTML Audio does not support filters");
+    }
+    /** Call whenever the loop, speed or volume changes */
+    refresh() {
+      const global2 = this._media.context;
+      const sound2 = this._media.parent;
+      this._source.loop = this._loop || sound2.loop;
+      const globalVolume = global2.volume * (global2.muted ? 0 : 1);
+      const soundVolume = sound2.volume * (sound2.muted ? 0 : 1);
+      const instanceVolume = this._volume * (this._muted ? 0 : 1);
+      this._source.volume = instanceVolume * globalVolume * soundVolume;
+      this._source.playbackRate = this._speed * global2.speed * sound2.speed;
+    }
+    /** Handle changes in paused state, either globally or sound or instance */
+    refreshPaused() {
+      const global2 = this._media.context;
+      const sound2 = this._media.parent;
+      const pausedReal = this._paused || sound2.paused || global2.paused;
+      if (pausedReal !== this._pausedReal) {
+        this._pausedReal = pausedReal;
+        if (pausedReal) {
+          this._internalStop();
+          this.emit("paused");
+        } else {
+          this.emit("resumed");
+          this.play({
+            start: this._source.currentTime,
+            end: this._end,
+            volume: this._volume,
+            speed: this._speed,
+            loop: this._loop
+          });
+        }
+        this.emit("pause", pausedReal);
+      }
+    }
+    /** Start playing the sound/ */
+    play(options) {
+      const { start, end, speed, loop, volume, muted } = options;
+      if (end) {
+        console.assert(end > start, "End time is before start time");
+      }
+      this._speed = speed;
+      this._volume = volume;
+      this._loop = !!loop;
+      this._muted = muted;
+      this.refresh();
+      if (this.loop && end !== null) {
+        console.warn('Looping not support when specifying an "end" time');
+        this.loop = false;
+      }
+      this._start = start;
+      this._end = end || this._duration;
+      this._start = Math.max(0, this._start - _HTMLAudioInstance.PADDING);
+      this._end = Math.min(this._end + _HTMLAudioInstance.PADDING, this._duration);
+      this._source.onloadedmetadata = () => {
+        if (this._source) {
+          this._source.currentTime = start;
+          this._source.onloadedmetadata = null;
+          this.emit("progress", start, this._duration);
+          Ticker.shared.add(this._onUpdate, this);
+        }
+      };
+      this._source.onended = this._onComplete.bind(this);
+      this._source.play();
+      this.emit("start");
+    }
+    /**
+     * Handle time update on sound.
+     * @private
+     */
+    _onUpdate() {
+      this.emit("progress", this.progress, this._duration);
+      if (this._source.currentTime >= this._end && !this._source.loop) {
+        this._onComplete();
+      }
+    }
+    /**
+     * Callback when completed.
+     * @private
+     */
+    _onComplete() {
+      Ticker.shared.remove(this._onUpdate, this);
+      this._internalStop();
+      this.emit("progress", 1, this._duration);
+      this.emit("end", this);
+    }
+    /** Don't use after this. */
+    destroy() {
+      Ticker.shared.remove(this._onUpdate, this);
+      this.removeAllListeners();
+      const source = this._source;
+      if (source) {
+        source.onended = null;
+        source.onplay = null;
+        source.onpause = null;
+        this._internalStop();
+      }
+      this._source = null;
+      this._speed = 1;
+      this._volume = 1;
+      this._loop = false;
+      this._end = null;
+      this._start = 0;
+      this._duration = 0;
+      this._playing = false;
+      this._pausedReal = false;
+      this._paused = false;
+      this._muted = false;
+      if (this._media) {
+        this._media.context.off("refresh", this.refresh, this);
+        this._media.context.off("refreshPaused", this.refreshPaused, this);
+        this._media = null;
+      }
+    }
+    /**
+     * To string method for instance.
+     * @return The string representation of instance.
+     */
+    toString() {
+      return `[HTMLAudioInstance id=${this.id}]`;
+    }
+  };
+  var HTMLAudioInstance = _HTMLAudioInstance;
+  HTMLAudioInstance.PADDING = 0.1;
+
+  // node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioMedia.mjs
+  var HTMLAudioMedia = class extends lib_exports.EventEmitter {
+    init(parent) {
+      this.parent = parent;
+      this._source = parent.options.source || new Audio();
+      if (parent.url) {
+        this._source.src = parent.url;
+      }
+    }
+    // Implement create
+    create() {
+      return new HTMLAudioInstance(this);
+    }
+    /**
+     * If the audio media is playable (ready).
+     * @readonly
+     */
+    get isPlayable() {
+      return !!this._source && this._source.readyState === 4;
+    }
+    /**
+     * THe duration of the media in seconds.
+     * @readonly
+     */
+    get duration() {
+      return this._source.duration;
+    }
+    /**
+     * Reference to the context.
+     * @readonly
+     */
+    get context() {
+      return this.parent.context;
+    }
+    /** The collection of filters, does not apply to HTML Audio. */
+    get filters() {
+      return null;
+    }
+    set filters(_filters) {
+      console.warn("HTML Audio does not support filters");
+    }
+    // Override the destroy
+    destroy() {
+      this.removeAllListeners();
+      this.parent = null;
+      if (this._source) {
+        this._source.src = "";
+        this._source.load();
+        this._source = null;
+      }
+    }
+    /**
+     * Get the audio source element.
+     * @type {HTMLAudioElement}
+     * @readonly
+     */
+    get source() {
+      return this._source;
+    }
+    // Implement the method to being preloading
+    load(callback) {
+      const source = this._source;
+      const sound2 = this.parent;
+      if (source.readyState === 4) {
+        sound2.isLoaded = true;
+        const instance2 = sound2.autoPlayStart();
+        if (callback) {
+          setTimeout(() => {
+            callback(null, sound2, instance2);
+          }, 0);
+        }
+        return;
+      }
+      if (!sound2.url) {
+        callback(new Error("sound.url or sound.source must be set"));
+        return;
+      }
+      source.src = sound2.url;
+      const onLoad = () => {
+        removeListeners();
+        sound2.isLoaded = true;
+        const instance2 = sound2.autoPlayStart();
+        if (callback) {
+          callback(null, sound2, instance2);
+        }
+      };
+      const onAbort = () => {
+        removeListeners();
+        if (callback) {
+          callback(new Error("Sound loading has been aborted"));
+        }
+      };
+      const onError = () => {
+        removeListeners();
+        const message = `Failed to load audio element (code: ${source.error.code})`;
+        if (callback) {
+          callback(new Error(message));
+        } else {
+          console.error(message);
+        }
+      };
+      const removeListeners = () => {
+        source.removeEventListener("canplaythrough", onLoad);
+        source.removeEventListener("load", onLoad);
+        source.removeEventListener("abort", onAbort);
+        source.removeEventListener("error", onError);
+      };
+      source.addEventListener("canplaythrough", onLoad, false);
+      source.addEventListener("load", onLoad, false);
+      source.addEventListener("abort", onAbort, false);
+      source.addEventListener("error", onError, false);
+      source.load();
+    }
+  };
+
+  // node_modules/@pixi/sound/lib/SoundSprite.mjs
+  var SoundSprite = class {
+    /**
+     * @param parent - The parent sound
+     * @param options - Data associated with object.
+     */
+    constructor(parent, options) {
+      this.parent = parent;
+      Object.assign(this, options);
+      this.duration = this.end - this.start;
+      console.assert(this.duration > 0, "End time must be after start time");
+    }
+    /**
+     * Play the sound sprite.
+     * @param {Function} [complete] - Function call when complete
+     * @return Sound instance being played.
+     */
+    play(complete) {
+      return this.parent.play({
+        complete,
+        speed: this.speed || this.parent.speed,
+        end: this.end,
+        start: this.start,
+        loop: this.loop
+      });
+    }
+    /** Destroy and don't use after this */
+    destroy() {
+      this.parent = null;
+    }
+  };
+
+  // node_modules/@pixi/sound/lib/utils/supported.mjs
+  var extensions3 = [
+    "ogg",
+    "oga",
+    "opus",
+    "m4a",
+    "mp3",
+    "mpeg",
+    "wav",
+    "aiff",
+    "wma",
+    "mid",
+    "caf"
+  ];
+  var mimes = [
+    "audio/mpeg",
+    "audio/ogg"
+  ];
+  var supported2 = {};
+  function validateFormats(typeOverrides) {
+    const overrides = {
+      m4a: "audio/mp4",
+      oga: "audio/ogg",
+      opus: 'audio/ogg; codecs="opus"',
+      caf: 'audio/x-caf; codecs="opus"',
+      ...typeOverrides || {}
+    };
+    const audio = document.createElement("audio");
+    const formats2 = {};
+    const no = /^no$/;
+    extensions3.forEach((ext) => {
+      const canByExt = audio.canPlayType(`audio/${ext}`).replace(no, "");
+      const canByType = overrides[ext] ? audio.canPlayType(overrides[ext]).replace(no, "") : "";
+      formats2[ext] = !!canByExt || !!canByType;
+    });
+    Object.assign(supported2, formats2);
+  }
+  validateFormats();
+
+  // node_modules/@pixi/sound/lib/webaudio/WebAudioUtils.mjs
+  var WebAudioUtils = class {
+    /**
+     * Dezippering is removed in the future Web Audio API, instead
+     * we use the `setValueAtTime` method, however, this is not available
+     * in all environments (e.g., Android webview), so we fallback to the `value` setter.
+     * @param param - AudioNode parameter object
+     * @param value - Value to set
+     * @return The value set
+     */
+    static setParamValue(param, value) {
+      if (param.setValueAtTime) {
+        const context2 = getInstance().context;
+        param.setValueAtTime(value, context2.audioContext.currentTime);
+      } else {
+        param.value = value;
+      }
+      return value;
+    }
+  };
+
+  // node_modules/@pixi/sound/lib/webaudio/WebAudioInstance.mjs
+  var id2 = 0;
+  var WebAudioInstance = class extends lib_exports.EventEmitter {
+    constructor(media) {
+      super();
+      this.id = id2++;
+      this._media = null;
+      this._paused = false;
+      this._muted = false;
+      this._elapsed = 0;
+      this.init(media);
+    }
+    /**
+     * Set a property by name, this makes it easy to chain values
+     * @param name - Name of the property to set.
+     * @param value - Value to set property to.
+     */
+    set(name, value) {
+      if (this[name] === void 0) {
+        throw new Error(`Property with name ${name} does not exist.`);
+      } else {
+        switch (name) {
+          case "speed":
+            this.speed = value;
+            break;
+          case "volume":
+            this.volume = value;
+            break;
+          case "muted":
+            this.muted = value;
+            break;
+          case "loop":
+            this.loop = value;
+            break;
+          case "paused":
+            this.paused = value;
+            break;
+        }
+      }
+      return this;
+    }
+    /** Stops the instance, don't use after this. */
+    stop() {
+      if (this._source) {
+        this._internalStop();
+        this.emit("stop");
+      }
+    }
+    /** Set the instance speed from 0 to 1 */
+    get speed() {
+      return this._speed;
+    }
+    set speed(speed) {
+      this._speed = speed;
+      this.refresh();
+      this._update(true);
+    }
+    /** Get the set the volume for this instance from 0 to 1 */
+    get volume() {
+      return this._volume;
+    }
+    set volume(volume) {
+      this._volume = volume;
+      this.refresh();
+    }
+    /** `true` if the sound is muted */
+    get muted() {
+      return this._muted;
+    }
+    set muted(muted) {
+      this._muted = muted;
+      this.refresh();
+    }
+    /** If the sound instance should loop playback */
+    get loop() {
+      return this._loop;
+    }
+    set loop(loop) {
+      this._loop = loop;
+      this.refresh();
+    }
+    /** The collection of filters. */
+    get filters() {
+      return this._filters;
+    }
+    set filters(filters2) {
+      if (this._filters) {
+        this._filters?.filter((filter) => filter).forEach((filter) => filter.disconnect());
+        this._filters = null;
+        this._source.connect(this._gain);
+      }
+      this._filters = filters2?.length ? filters2.slice(0) : null;
+      this.refresh();
+    }
+    /** Refresh loop, volume and speed based on changes to parent */
+    refresh() {
+      if (!this._source) {
+        return;
+      }
+      const global2 = this._media.context;
+      const sound2 = this._media.parent;
+      this._source.loop = this._loop || sound2.loop;
+      const globalVolume = global2.volume * (global2.muted ? 0 : 1);
+      const soundVolume = sound2.volume * (sound2.muted ? 0 : 1);
+      const instanceVolume = this._volume * (this._muted ? 0 : 1);
+      WebAudioUtils.setParamValue(this._gain.gain, instanceVolume * soundVolume * globalVolume);
+      WebAudioUtils.setParamValue(this._source.playbackRate, this._speed * sound2.speed * global2.speed);
+      this.applyFilters();
+    }
+    /** Connect filters nodes to audio context */
+    applyFilters() {
+      if (this._filters?.length) {
+        this._source.disconnect();
+        let source = this._source;
+        this._filters.forEach((filter) => {
+          source.connect(filter.destination);
+          source = filter;
+        });
+        source.connect(this._gain);
+      }
+    }
+    /** Handle changes in paused state, either globally or sound or instance */
+    refreshPaused() {
+      const global2 = this._media.context;
+      const sound2 = this._media.parent;
+      const pausedReal = this._paused || sound2.paused || global2.paused;
+      if (pausedReal !== this._pausedReal) {
+        this._pausedReal = pausedReal;
+        if (pausedReal) {
+          this._internalStop();
+          this.emit("paused");
+        } else {
+          this.emit("resumed");
+          this.play({
+            start: this._elapsed % this._duration,
+            end: this._end,
+            speed: this._speed,
+            loop: this._loop,
+            volume: this._volume
+          });
+        }
+        this.emit("pause", pausedReal);
+      }
+    }
+    /**
+     * Plays the sound.
+     * @param options - Play options.
+     */
+    play(options) {
+      const { start, end, speed, loop, volume, muted, filters: filters2 } = options;
+      if (end) {
+        console.assert(end > start, "End time is before start time");
+      }
+      this._paused = false;
+      const { source, gain } = this._media.nodes.cloneBufferSource();
+      this._source = source;
+      this._gain = gain;
+      this._speed = speed;
+      this._volume = volume;
+      this._loop = !!loop;
+      this._muted = muted;
+      this._filters = filters2;
+      this.refresh();
+      const duration = this._source.buffer.duration;
+      this._duration = duration;
+      this._end = end;
+      this._lastUpdate = this._now();
+      this._elapsed = start;
+      this._source.onended = this._onComplete.bind(this);
+      if (this._loop) {
+        this._source.loopEnd = end;
+        this._source.loopStart = start;
+        this._source.start(0, start);
+      } else if (end) {
+        this._source.start(0, start, end - start);
+      } else {
+        this._source.start(0, start);
+      }
+      this.emit("start");
+      this._update(true);
+      this.enableTicker(true);
+    }
+    /** Start the update progress. */
+    enableTicker(enabled) {
+      Ticker.shared.remove(this._updateListener, this);
+      if (enabled) {
+        Ticker.shared.add(this._updateListener, this);
+      }
+    }
+    /** The current playback progress from 0 to 1. */
+    get progress() {
+      return this._progress;
+    }
+    /** Pauses the sound. */
+    get paused() {
+      return this._paused;
+    }
+    set paused(paused) {
+      this._paused = paused;
+      this.refreshPaused();
+    }
+    /** Don't use after this. */
+    destroy() {
+      this.removeAllListeners();
+      this._internalStop();
+      if (this._gain) {
+        this._gain.disconnect();
+        this._gain = null;
+      }
+      if (this._media) {
+        this._media.context.events.off("refresh", this.refresh, this);
+        this._media.context.events.off("refreshPaused", this.refreshPaused, this);
+        this._media = null;
+      }
+      this._filters?.forEach((filter) => filter.disconnect());
+      this._filters = null;
+      this._end = null;
+      this._speed = 1;
+      this._volume = 1;
+      this._loop = false;
+      this._elapsed = 0;
+      this._duration = 0;
+      this._paused = false;
+      this._muted = false;
+      this._pausedReal = false;
+    }
+    /**
+     * To string method for instance.
+     * @return The string representation of instance.
+     */
+    toString() {
+      return `[WebAudioInstance id=${this.id}]`;
+    }
+    /**
+     * Get the current time in seconds.
+     * @return Seconds since start of context
+     */
+    _now() {
+      return this._media.context.audioContext.currentTime;
+    }
+    /** Callback for update listener */
+    _updateListener() {
+      this._update();
+    }
+    /** Internal update the progress. */
+    _update(force = false) {
+      if (this._source) {
+        const now = this._now();
+        const delta = now - this._lastUpdate;
+        if (delta > 0 || force) {
+          const speed = this._source.playbackRate.value;
+          this._elapsed += delta * speed;
+          this._lastUpdate = now;
+          const duration = this._duration;
+          let progress;
+          if (this._source.loopStart) {
+            const soundLength = this._source.loopEnd - this._source.loopStart;
+            progress = (this._source.loopStart + this._elapsed % soundLength) / duration;
+          } else {
+            progress = this._elapsed % duration / duration;
+          }
+          this._progress = progress;
+          this.emit("progress", this._progress, duration);
+        }
+      }
+    }
+    /** Initializes the instance. */
+    init(media) {
+      this._media = media;
+      media.context.events.on("refresh", this.refresh, this);
+      media.context.events.on("refreshPaused", this.refreshPaused, this);
+    }
+    /** Stops the instance. */
+    _internalStop() {
+      if (this._source) {
+        this.enableTicker(false);
+        this._source.onended = null;
+        this._source.stop(0);
+        this._source.disconnect();
+        try {
+          this._source.buffer = null;
+        } catch (err) {
+          console.warn("Failed to set AudioBufferSourceNode.buffer to null:", err);
+        }
+        this._source = null;
+      }
+    }
+    /** Callback when completed. */
+    _onComplete() {
+      if (this._source) {
+        this.enableTicker(false);
+        this._source.onended = null;
+        this._source.disconnect();
+        try {
+          this._source.buffer = null;
+        } catch (err) {
+          console.warn("Failed to set AudioBufferSourceNode.buffer to null:", err);
+        }
+      }
+      this._source = null;
+      this._progress = 1;
+      this.emit("progress", 1, this._duration);
+      this.emit("end", this);
+    }
+  };
+
+  // node_modules/@pixi/sound/lib/Filterable.mjs
+  var Filterable = class {
+    /**
+     * @param input - The source audio node
+     * @param output - The output audio node
+     */
+    constructor(input, output) {
+      this._output = output;
+      this._input = input;
+    }
+    /** The destination output audio node */
+    get destination() {
+      return this._input;
+    }
+    /** The collection of filters. */
+    get filters() {
+      return this._filters;
+    }
+    set filters(filters2) {
+      if (this._filters) {
+        this._filters.forEach((filter) => {
+          if (filter) {
+            filter.disconnect();
+          }
+        });
+        this._filters = null;
+        this._input.connect(this._output);
+      }
+      if (filters2 && filters2.length) {
+        this._filters = filters2.slice(0);
+        this._input.disconnect();
+        let prevFilter = null;
+        filters2.forEach((filter) => {
+          if (prevFilter === null) {
+            this._input.connect(filter.destination);
+          } else {
+            prevFilter.connect(filter.destination);
+          }
+          prevFilter = filter;
+        });
+        prevFilter.connect(this._output);
+      }
+    }
+    /** Cleans up. */
+    destroy() {
+      this.filters = null;
+      this._input = null;
+      this._output = null;
+    }
+  };
+
+  // node_modules/@pixi/sound/lib/webaudio/WebAudioNodes.mjs
+  var _WebAudioNodes = class extends Filterable {
+    /**
+     * @param context - The audio context.
+     */
+    constructor(context2) {
+      const audioContext = context2.audioContext;
+      const bufferSource = audioContext.createBufferSource();
+      const gain = audioContext.createGain();
+      const analyser = audioContext.createAnalyser();
+      bufferSource.connect(analyser);
+      analyser.connect(gain);
+      gain.connect(context2.destination);
+      super(analyser, gain);
+      this.context = context2;
+      this.bufferSource = bufferSource;
+      this.gain = gain;
+      this.analyser = analyser;
+    }
+    /**
+     * Get the script processor node.
+     * @readonly
+     */
+    get script() {
+      if (!this._script) {
+        this._script = this.context.audioContext.createScriptProcessor(_WebAudioNodes.BUFFER_SIZE);
+        this._script.connect(this.context.destination);
+      }
+      return this._script;
+    }
+    /** Cleans up. */
+    destroy() {
+      super.destroy();
+      this.bufferSource.disconnect();
+      if (this._script) {
+        this._script.disconnect();
+      }
+      this.gain.disconnect();
+      this.analyser.disconnect();
+      this.bufferSource = null;
+      this._script = null;
+      this.gain = null;
+      this.analyser = null;
+      this.context = null;
+    }
+    /**
+     * Clones the bufferSource. Used just before playing a sound.
+     * @returns {SourceClone} The clone AudioBufferSourceNode.
+     */
+    cloneBufferSource() {
+      const orig = this.bufferSource;
+      const source = this.context.audioContext.createBufferSource();
+      source.buffer = orig.buffer;
+      WebAudioUtils.setParamValue(source.playbackRate, orig.playbackRate.value);
+      source.loop = orig.loop;
+      const gain = this.context.audioContext.createGain();
+      source.connect(gain);
+      gain.connect(this.destination);
+      return { source, gain };
+    }
+    /**
+     * Get buffer size of `ScriptProcessorNode`.
+     * @readonly
+     */
+    get bufferSize() {
+      return this.script.bufferSize;
+    }
+  };
+  var WebAudioNodes = _WebAudioNodes;
+  WebAudioNodes.BUFFER_SIZE = 0;
+
+  // node_modules/@pixi/sound/lib/webaudio/WebAudioMedia.mjs
+  var WebAudioMedia = class {
+    /**
+     * Re-initialize without constructing.
+     * @param parent - - Instance of parent Sound container
+     */
+    init(parent) {
+      this.parent = parent;
+      this._nodes = new WebAudioNodes(this.context);
+      this._source = this._nodes.bufferSource;
+      this.source = parent.options.source;
+    }
+    /** Destructor, safer to use `SoundLibrary.remove(alias)` to remove this sound. */
+    destroy() {
+      this.parent = null;
+      this._nodes.destroy();
+      this._nodes = null;
+      try {
+        this._source.buffer = null;
+      } catch (err) {
+        console.warn("Failed to set AudioBufferSourceNode.buffer to null:", err);
+      }
+      this._source = null;
+      this.source = null;
+    }
+    // Implement create
+    create() {
+      return new WebAudioInstance(this);
+    }
+    // Implement context
+    get context() {
+      return this.parent.context;
+    }
+    // Implement isPlayable
+    get isPlayable() {
+      return !!this._source && !!this._source.buffer;
+    }
+    // Implement filters
+    get filters() {
+      return this._nodes.filters;
+    }
+    set filters(filters2) {
+      this._nodes.filters = filters2;
+    }
+    // Implements duration
+    get duration() {
+      console.assert(this.isPlayable, "Sound not yet playable, no duration");
+      return this._source.buffer.duration;
+    }
+    /** Gets and sets the buffer. */
+    get buffer() {
+      return this._source.buffer;
+    }
+    set buffer(buffer) {
+      this._source.buffer = buffer;
+    }
+    /** Get the current chained nodes object */
+    get nodes() {
+      return this._nodes;
+    }
+    // Implements load
+    load(callback) {
+      if (this.source) {
+        this._decode(this.source, callback);
+      } else if (this.parent.url) {
+        this._loadUrl(callback);
+      } else if (callback) {
+        callback(new Error("sound.url or sound.source must be set"));
+      } else {
+        console.error("sound.url or sound.source must be set");
+      }
+    }
+    /** Loads a sound using XHMLHttpRequest object. */
+    async _loadUrl(callback) {
+      const url2 = this.parent.url;
+      const response = await settings.ADAPTER.fetch(url2);
+      this._decode(await response.arrayBuffer(), callback);
+    }
+    /**
+     * Decodes the array buffer.
+     * @param arrayBuffer - From load.
+     * @param {Function} callback - Callback optional
+     */
+    _decode(arrayBuffer, callback) {
+      const audioBufferReadyFn = (err, buffer) => {
+        if (err) {
+          if (callback) {
+            callback(err);
+          }
+        } else {
+          this.parent.isLoaded = true;
+          this.buffer = buffer;
+          const instance2 = this.parent.autoPlayStart();
+          if (callback) {
+            callback(null, this.parent, instance2);
+          }
+        }
+      };
+      if (arrayBuffer instanceof AudioBuffer) {
+        audioBufferReadyFn(null, arrayBuffer);
+      } else {
+        const context2 = this.parent.context;
+        context2.decode(arrayBuffer, audioBufferReadyFn);
+      }
+    }
+  };
+
+  // node_modules/@pixi/sound/lib/Sound.mjs
+  var _Sound = class {
+    /**
+     * Create a new sound instance from source.
+     * @param source - Either the path or url to the source file.
+     *        or the object of options to use.
+     * @return Created sound instance.
+     */
+    static from(source) {
+      let options = {};
+      if (typeof source === "string") {
+        options.url = source;
+      } else if (source instanceof ArrayBuffer || source instanceof AudioBuffer || source instanceof HTMLAudioElement) {
+        options.source = source;
+      } else if (Array.isArray(source)) {
+        options.url = source;
+      } else {
+        options = source;
+      }
+      options = {
+        autoPlay: false,
+        singleInstance: false,
+        url: null,
+        source: null,
+        preload: false,
+        volume: 1,
+        speed: 1,
+        complete: null,
+        loaded: null,
+        loop: false,
+        ...options
+      };
+      Object.freeze(options);
+      const media = getInstance().useLegacy ? new HTMLAudioMedia() : new WebAudioMedia();
+      return new _Sound(media, options);
+    }
+    /**
+     * Use `Sound.from`
+     * @ignore
+     */
+    constructor(media, options) {
+      this.media = media;
+      this.options = options;
+      this._instances = [];
+      this._sprites = {};
+      this.media.init(this);
+      const complete = options.complete;
+      this._autoPlayOptions = complete ? { complete } : null;
+      this.isLoaded = false;
+      this._preloadQueue = null;
+      this.isPlaying = false;
+      this.autoPlay = options.autoPlay;
+      this.singleInstance = options.singleInstance;
+      this.preload = options.preload || this.autoPlay;
+      this.url = Array.isArray(options.url) ? this.preferUrl(options.url) : options.url;
+      this.speed = options.speed;
+      this.volume = options.volume;
+      this.loop = options.loop;
+      if (options.sprites) {
+        this.addSprites(options.sprites);
+      }
+      if (this.preload) {
+        this._preload(options.loaded);
+      }
+    }
+    /**
+     * Internal help for resolving which file to use if there are multiple provide
+     * this is especially helpful for working with bundlers (non Assets loading).
+     */
+    preferUrl(urls) {
+      const [file] = urls.map((url2) => ({ url: url2, ext: lib_exports.path.extname(url2).slice(1) })).filter(({ ext }) => supported2[ext]).sort((a2, b2) => extensions3.indexOf(a2.ext) - extensions3.indexOf(b2.ext));
+      if (!file) {
+        throw new Error("No supported file type found");
+      }
+      return file.url;
+    }
+    /** Instance of the media context. */
+    get context() {
+      return getInstance().context;
+    }
+    /** Stops all the instances of this sound from playing. */
+    pause() {
+      this.isPlaying = false;
+      this.paused = true;
+      return this;
+    }
+    /** Resuming all the instances of this sound from playing */
+    resume() {
+      this.isPlaying = this._instances.length > 0;
+      this.paused = false;
+      return this;
+    }
+    /** Stops all the instances of this sound from playing. */
+    get paused() {
+      return this._paused;
+    }
+    set paused(paused) {
+      this._paused = paused;
+      this.refreshPaused();
+    }
+    /** The playback rate. */
+    get speed() {
+      return this._speed;
+    }
+    set speed(speed) {
+      this._speed = speed;
+      this.refresh();
+    }
+    /** Set the filters. Only supported with WebAudio. */
+    get filters() {
+      return this.media.filters;
+    }
+    set filters(filters2) {
+      this.media.filters = filters2;
+    }
+    /**
+     * @ignore
+     */
+    addSprites(source, data) {
+      if (typeof source === "object") {
+        const results = {};
+        for (const alias in source) {
+          results[alias] = this.addSprites(alias, source[alias]);
+        }
+        return results;
+      }
+      console.assert(!this._sprites[source], `Alias ${source} is already taken`);
+      const sprite = new SoundSprite(this, data);
+      this._sprites[source] = sprite;
+      return sprite;
+    }
+    /** Destructor, safer to use `SoundLibrary.remove(alias)` to remove this sound. */
+    destroy() {
+      this._removeInstances();
+      this.removeSprites();
+      this.media.destroy();
+      this.media = null;
+      this._sprites = null;
+      this._instances = null;
+    }
+    /**
+     * Remove a sound sprite.
+     * @param alias - The unique name of the sound sprite, if alias is omitted, removes all sprites.
+     */
+    removeSprites(alias) {
+      if (!alias) {
+        for (const name in this._sprites) {
+          this.removeSprites(name);
+        }
+      } else {
+        const sprite = this._sprites[alias];
+        if (sprite !== void 0) {
+          sprite.destroy();
+          delete this._sprites[alias];
+        }
+      }
+      return this;
+    }
+    /** If the current sound is playable (loaded). */
+    get isPlayable() {
+      return this.isLoaded && this.media && this.media.isPlayable;
+    }
+    /** Stops all the instances of this sound from playing. */
+    stop() {
+      if (!this.isPlayable) {
+        this.autoPlay = false;
+        this._autoPlayOptions = null;
+        return this;
+      }
+      this.isPlaying = false;
+      for (let i2 = this._instances.length - 1; i2 >= 0; i2--) {
+        this._instances[i2].stop();
+      }
+      return this;
+    }
+    // Overloaded function
+    play(source, complete) {
+      let options;
+      if (typeof source === "string") {
+        const sprite = source;
+        options = { sprite, loop: this.loop, complete };
+      } else if (typeof source === "function") {
+        options = {};
+        options.complete = source;
+      } else {
+        options = source;
+      }
+      options = {
+        complete: null,
+        loaded: null,
+        sprite: null,
+        end: null,
+        start: 0,
+        volume: 1,
+        speed: 1,
+        muted: false,
+        loop: false,
+        ...options || {}
+      };
+      if (options.sprite) {
+        const alias = options.sprite;
+        console.assert(!!this._sprites[alias], `Alias ${alias} is not available`);
+        const sprite = this._sprites[alias];
+        options.start = sprite.start + (options.start || 0);
+        options.end = sprite.end;
+        options.speed = sprite.speed || 1;
+        options.loop = sprite.loop || options.loop;
+        delete options.sprite;
+      }
+      if (options.offset) {
+        options.start = options.offset;
+      }
+      if (!this.isLoaded) {
+        if (this._preloadQueue) {
+          return new Promise((resolve2) => {
+            this._preloadQueue.push(() => {
+              resolve2(this.play(options));
+            });
+          });
+        }
+        this._preloadQueue = [];
+        this.autoPlay = true;
+        this._autoPlayOptions = options;
+        return new Promise((resolve2, reject) => {
+          this._preload((err, sound2, media) => {
+            this._preloadQueue.forEach((resolve22) => resolve22());
+            this._preloadQueue = null;
+            if (err) {
+              reject(err);
+            } else {
+              if (options.loaded) {
+                options.loaded(err, sound2, media);
+              }
+              resolve2(media);
+            }
+          });
+        });
+      }
+      if (this.singleInstance || options.singleInstance) {
+        this._removeInstances();
+      }
+      const instance2 = this._createInstance();
+      this._instances.push(instance2);
+      this.isPlaying = true;
+      instance2.once("end", () => {
+        if (options.complete) {
+          options.complete(this);
+        }
+        this._onComplete(instance2);
+      });
+      instance2.once("stop", () => {
+        this._onComplete(instance2);
+      });
+      instance2.play(options);
+      return instance2;
+    }
+    /** Internal only, speed, loop, volume change occured. */
+    refresh() {
+      const len = this._instances.length;
+      for (let i2 = 0; i2 < len; i2++) {
+        this._instances[i2].refresh();
+      }
+    }
+    /** Handle changes in paused state. Internal only. */
+    refreshPaused() {
+      const len = this._instances.length;
+      for (let i2 = 0; i2 < len; i2++) {
+        this._instances[i2].refreshPaused();
+      }
+    }
+    /** Gets and sets the volume. */
+    get volume() {
+      return this._volume;
+    }
+    set volume(volume) {
+      this._volume = volume;
+      this.refresh();
+    }
+    /** Gets and sets the muted flag. */
+    get muted() {
+      return this._muted;
+    }
+    set muted(muted) {
+      this._muted = muted;
+      this.refresh();
+    }
+    /** Gets and sets the looping. */
+    get loop() {
+      return this._loop;
+    }
+    set loop(loop) {
+      this._loop = loop;
+      this.refresh();
+    }
+    /** Starts the preloading of sound. */
+    _preload(callback) {
+      this.media.load(callback);
+    }
+    /** Gets the list of instances that are currently being played of this sound. */
+    get instances() {
+      return this._instances;
+    }
+    /** Get the map of sprites. */
+    get sprites() {
+      return this._sprites;
+    }
+    /** Get the duration of the audio in seconds. */
+    get duration() {
+      return this.media.duration;
+    }
+    /** Auto play the first instance. */
+    autoPlayStart() {
+      let instance2;
+      if (this.autoPlay) {
+        instance2 = this.play(this._autoPlayOptions);
+      }
+      return instance2;
+    }
+    /** Removes all instances. */
+    _removeInstances() {
+      for (let i2 = this._instances.length - 1; i2 >= 0; i2--) {
+        this._poolInstance(this._instances[i2]);
+      }
+      this._instances.length = 0;
+    }
+    /**
+     * Sound instance completed.
+     * @param instance
+     */
+    _onComplete(instance2) {
+      if (this._instances) {
+        const index = this._instances.indexOf(instance2);
+        if (index > -1) {
+          this._instances.splice(index, 1);
+        }
+        this.isPlaying = this._instances.length > 0;
+      }
+      this._poolInstance(instance2);
+    }
+    /** Create a new instance. */
+    _createInstance() {
+      if (_Sound._pool.length > 0) {
+        const instance2 = _Sound._pool.pop();
+        instance2.init(this.media);
+        return instance2;
+      }
+      return this.media.create();
+    }
+    /**
+     * Destroy/recycling the instance object.
+     * @param instance - Instance to recycle
+     */
+    _poolInstance(instance2) {
+      instance2.destroy();
+      if (_Sound._pool.indexOf(instance2) < 0) {
+        _Sound._pool.push(instance2);
+      }
+    }
+  };
+  var Sound = _Sound;
+  Sound._pool = [];
+
+  // node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioContext.mjs
+  var HTMLAudioContext = class extends lib_exports.EventEmitter {
+    constructor() {
+      super(...arguments);
+      this.speed = 1;
+      this.muted = false;
+      this.volume = 1;
+      this.paused = false;
+    }
+    /** Internal trigger when volume, mute or speed changes */
+    refresh() {
+      this.emit("refresh");
+    }
+    /** Internal trigger paused changes */
+    refreshPaused() {
+      this.emit("refreshPaused");
+    }
+    /**
+     * HTML Audio does not support filters, this is non-functional API.
+     */
+    get filters() {
+      console.warn("HTML Audio does not support filters");
+      return null;
+    }
+    set filters(_filters) {
+      console.warn("HTML Audio does not support filters");
+    }
+    /**
+     * HTML Audio does not support `audioContext`
+     * @readonly
+     * @type {AudioContext}
+     */
+    get audioContext() {
+      console.warn("HTML Audio does not support audioContext");
+      return null;
+    }
+    /**
+     * Toggles the muted state.
+     * @return The current muted state.
+     */
+    toggleMute() {
+      this.muted = !this.muted;
+      this.refresh();
+      return this.muted;
+    }
+    /**
+     * Toggles the paused state.
+     * @return The current paused state.
+     */
+    togglePause() {
+      this.paused = !this.paused;
+      this.refreshPaused();
+      return this.paused;
+    }
+    /** Destroy and don't use after this */
+    destroy() {
+      this.removeAllListeners();
+    }
+  };
+
+  // node_modules/@pixi/sound/lib/webaudio/WebAudioContext.mjs
+  var WebAudioContext = class _WebAudioContext extends Filterable {
+    constructor() {
+      const win = window;
+      const ctx = new _WebAudioContext.AudioContext();
+      const compressor = ctx.createDynamicsCompressor();
+      const analyser = ctx.createAnalyser();
+      analyser.connect(compressor);
+      compressor.connect(ctx.destination);
+      super(analyser, compressor);
+      this.autoPause = true;
+      this._ctx = ctx;
+      this._offlineCtx = new _WebAudioContext.OfflineAudioContext(
+        1,
+        2,
+        win.OfflineAudioContext ? Math.max(8e3, Math.min(96e3, ctx.sampleRate)) : 44100
+      );
+      this.compressor = compressor;
+      this.analyser = analyser;
+      this.events = new lib_exports.EventEmitter();
+      this.volume = 1;
+      this.speed = 1;
+      this.muted = false;
+      this.paused = false;
+      this._locked = ctx.state === "suspended" && ("ontouchstart" in globalThis || "onclick" in globalThis);
+      if (this._locked) {
+        this._unlock();
+        this._unlock = this._unlock.bind(this);
+        document.addEventListener("mousedown", this._unlock, true);
+        document.addEventListener("touchstart", this._unlock, true);
+        document.addEventListener("touchend", this._unlock, true);
+      }
+      this.onFocus = this.onFocus.bind(this);
+      this.onBlur = this.onBlur.bind(this);
+      globalThis.addEventListener("focus", this.onFocus);
+      globalThis.addEventListener("blur", this.onBlur);
+    }
+    /** Handle mobile WebAudio context resume */
+    onFocus() {
+      if (!this.autoPause) {
+        return;
+      }
+      const state = this._ctx.state;
+      if (state === "suspended" || state === "interrupted" || !this._locked) {
+        this.paused = this._pausedOnBlur;
+        this.refreshPaused();
+      }
+    }
+    /** Handle mobile WebAudio context suspend */
+    onBlur() {
+      if (!this.autoPause) {
+        return;
+      }
+      if (!this._locked) {
+        this._pausedOnBlur = this._paused;
+        this.paused = true;
+        this.refreshPaused();
+      }
+    }
+    /**
+     * Try to unlock audio on iOS. This is triggered from either WebAudio plugin setup (which will work if inside of
+     * a `mousedown` or `touchend` event stack), or the first document touchend/mousedown event. If it fails (touchend
+     * will fail if the user presses for too long, indicating a scroll event instead of a click event.
+     *
+     * Note that earlier versions of iOS supported `touchstart` for this, but iOS9 removed this functionality. Adding
+     * a `touchstart` event to support older platforms may preclude a `mousedown` even from getting fired on iOS9, so we
+     * stick with `mousedown` and `touchend`.
+     */
+    _unlock() {
+      if (!this._locked) {
+        return;
+      }
+      this.playEmptySound();
+      if (this._ctx.state === "running") {
+        document.removeEventListener("mousedown", this._unlock, true);
+        document.removeEventListener("touchend", this._unlock, true);
+        document.removeEventListener("touchstart", this._unlock, true);
+        this._locked = false;
+      }
+    }
+    /**
+     * Plays an empty sound in the web audio context.  This is used to enable web audio on iOS devices, as they
+     * require the first sound to be played inside of a user initiated event (touch/click).
+     */
+    playEmptySound() {
+      const source = this._ctx.createBufferSource();
+      source.buffer = this._ctx.createBuffer(1, 1, 22050);
+      source.connect(this._ctx.destination);
+      source.start(0, 0, 0);
+      if (source.context.state === "suspended") {
+        source.context.resume();
+      }
+    }
+    /**
+     * Get AudioContext class, if not supported returns `null`
+     * @type {AudioContext}
+     * @readonly
+     */
+    static get AudioContext() {
+      const win = window;
+      return win.AudioContext || win.webkitAudioContext || null;
+    }
+    /**
+     * Get OfflineAudioContext class, if not supported returns `null`
+     * @type {OfflineAudioContext}
+     * @readonly
+     */
+    static get OfflineAudioContext() {
+      const win = window;
+      return win.OfflineAudioContext || win.webkitOfflineAudioContext || null;
+    }
+    /** Destroy this context. */
+    destroy() {
+      super.destroy();
+      const ctx = this._ctx;
+      if (typeof ctx.close !== "undefined") {
+        ctx.close();
+      }
+      globalThis.removeEventListener("focus", this.onFocus);
+      globalThis.removeEventListener("blur", this.onBlur);
+      this.events.removeAllListeners();
+      this.analyser.disconnect();
+      this.compressor.disconnect();
+      this.analyser = null;
+      this.compressor = null;
+      this.events = null;
+      this._offlineCtx = null;
+      this._ctx = null;
+    }
+    /**
+     * The WebAudio API AudioContext object.
+     * @readonly
+     * @type {AudioContext}
+     */
+    get audioContext() {
+      return this._ctx;
+    }
+    /**
+     * The WebAudio API OfflineAudioContext object.
+     * @readonly
+     * @type {OfflineAudioContext}
+     */
+    get offlineContext() {
+      return this._offlineCtx;
+    }
+    /**
+     * Pauses all sounds, even though we handle this at the instance
+     * level, we'll also pause the audioContext so that the
+     * time used to compute progress isn't messed up.
+     * @default false
+     */
+    set paused(paused) {
+      if (paused && this._ctx.state === "running") {
+        this._ctx.suspend();
+      } else if (!paused && this._ctx.state === "suspended") {
+        this._ctx.resume();
+      }
+      this._paused = paused;
+    }
+    get paused() {
+      return this._paused;
+    }
+    /** Emit event when muted, volume or speed changes */
+    refresh() {
+      this.events.emit("refresh");
+    }
+    /** Emit event when muted, volume or speed changes */
+    refreshPaused() {
+      this.events.emit("refreshPaused");
+    }
+    /**
+     * Toggles the muted state.
+     * @return The current muted state.
+     */
+    toggleMute() {
+      this.muted = !this.muted;
+      this.refresh();
+      return this.muted;
+    }
+    /**
+     * Toggles the paused state.
+     * @return The current muted state.
+     */
+    togglePause() {
+      this.paused = !this.paused;
+      this.refreshPaused();
+      return this._paused;
+    }
+    /**
+     * Decode the audio data
+     * @param arrayBuffer - Buffer from loader
+     * @param callback - When completed, error and audioBuffer are parameters.
+     */
+    decode(arrayBuffer, callback) {
+      const handleError = (err) => {
+        callback(new Error(err?.message || "Unable to decode file"));
+      };
+      const result = this._offlineCtx.decodeAudioData(
+        arrayBuffer,
+        (buffer) => {
+          callback(null, buffer);
+        },
+        handleError
+      );
+      if (result) {
+        result.catch(handleError);
+      }
+    }
+  };
+
+  // node_modules/@pixi/sound/lib/SoundLibrary.mjs
+  var SoundLibrary = class {
+    constructor() {
+      this.init();
+    }
+    /**
+     * Re-initialize the sound library, this will
+     * recreate the AudioContext. If there's a hardware-failure
+     * call `close` and then `init`.
+     * @return Sound instance
+     */
+    init() {
+      if (this.supported) {
+        this._webAudioContext = new WebAudioContext();
+      }
+      this._htmlAudioContext = new HTMLAudioContext();
+      this._sounds = {};
+      this.useLegacy = !this.supported;
+      return this;
+    }
+    /**
+     * The global context to use.
+     * @readonly
+     */
+    get context() {
+      return this._context;
+    }
+    /**
+     * Apply filters to all sounds. Can be useful
+     * for setting global planning or global effects.
+     * **Only supported with WebAudio.**
+     * @example
+     * import { sound, filters } from '@pixi/sound';
+     * // Adds a filter to pan all output left
+     * sound.filtersAll = [
+     *     new filters.StereoFilter(-1)
+     * ];
+     */
+    get filtersAll() {
+      if (!this.useLegacy) {
+        return this._context.filters;
+      }
+      return [];
+    }
+    set filtersAll(filtersAll) {
+      if (!this.useLegacy) {
+        this._context.filters = filtersAll;
+      }
+    }
+    /**
+     * `true` if WebAudio is supported on the current browser.
+     */
+    get supported() {
+      return WebAudioContext.AudioContext !== null;
+    }
+    /**
+     * @ignore
+     */
+    add(source, sourceOptions) {
+      if (typeof source === "object") {
+        const results = {};
+        for (const alias in source) {
+          const options2 = this._getOptions(
+            source[alias],
+            sourceOptions
+          );
+          results[alias] = this.add(alias, options2);
+        }
+        return results;
+      }
+      console.assert(!this._sounds[source], `Sound with alias ${source} already exists.`);
+      if (sourceOptions instanceof Sound) {
+        this._sounds[source] = sourceOptions;
+        return sourceOptions;
+      }
+      const options = this._getOptions(sourceOptions);
+      const sound2 = Sound.from(options);
+      this._sounds[source] = sound2;
+      return sound2;
+    }
+    /**
+     * Internal methods for getting the options object
+     * @private
+     * @param source - The source options
+     * @param overrides - Override default options
+     * @return The construction options
+     */
+    _getOptions(source, overrides) {
+      let options;
+      if (typeof source === "string") {
+        options = { url: source };
+      } else if (Array.isArray(source)) {
+        options = { url: source };
+      } else if (source instanceof ArrayBuffer || source instanceof AudioBuffer || source instanceof HTMLAudioElement) {
+        options = { source };
+      } else {
+        options = source;
+      }
+      options = { ...options, ...overrides || {} };
+      return options;
+    }
+    /**
+     * Do not use WebAudio, force the use of legacy. This **must** be called before loading any files.
+     */
+    get useLegacy() {
+      return this._useLegacy;
+    }
+    set useLegacy(legacy) {
+      this._useLegacy = legacy;
+      this._context = !legacy && this.supported ? this._webAudioContext : this._htmlAudioContext;
+    }
+    /**
+     * This disables auto-pause all playback when the window blurs (WebAudio only).
+     * This is helpful to keep from playing sounds when the user switches tabs.
+     * However, if you're running content within an iframe, this may be undesirable
+     * and you should disable (set to `true`) this behavior.
+     * @default false
+     */
+    get disableAutoPause() {
+      return !this._webAudioContext.autoPause;
+    }
+    set disableAutoPause(autoPause) {
+      this._webAudioContext.autoPause = !autoPause;
+    }
+    /**
+     * Removes a sound by alias.
+     * @param alias - The sound alias reference.
+     * @return Instance for chaining.
+     */
+    remove(alias) {
+      this.exists(alias, true);
+      this._sounds[alias].destroy();
+      delete this._sounds[alias];
+      return this;
+    }
+    /**
+     * Set the global volume for all sounds. To set per-sound volume see {@link SoundLibrary#volume}.
+     */
+    get volumeAll() {
+      return this._context.volume;
+    }
+    set volumeAll(volume) {
+      this._context.volume = volume;
+      this._context.refresh();
+    }
+    /**
+     * Set the global speed for all sounds. To set per-sound speed see {@link SoundLibrary#speed}.
+     */
+    get speedAll() {
+      return this._context.speed;
+    }
+    set speedAll(speed) {
+      this._context.speed = speed;
+      this._context.refresh();
+    }
+    /**
+     * Toggle paused property for all sounds.
+     * @return `true` if all sounds are paused.
+     */
+    togglePauseAll() {
+      return this._context.togglePause();
+    }
+    /**
+     * Pauses any playing sounds.
+     * @return Instance for chaining.
+     */
+    pauseAll() {
+      this._context.paused = true;
+      this._context.refreshPaused();
+      return this;
+    }
+    /**
+     * Resumes any sounds.
+     * @return Instance for chaining.
+     */
+    resumeAll() {
+      this._context.paused = false;
+      this._context.refreshPaused();
+      return this;
+    }
+    /**
+     * Toggle muted property for all sounds.
+     * @return `true` if all sounds are muted.
+     */
+    toggleMuteAll() {
+      return this._context.toggleMute();
+    }
+    /**
+     * Mutes all playing sounds.
+     * @return Instance for chaining.
+     */
+    muteAll() {
+      this._context.muted = true;
+      this._context.refresh();
+      return this;
+    }
+    /**
+     * Unmutes all playing sounds.
+     * @return Instance for chaining.
+     */
+    unmuteAll() {
+      this._context.muted = false;
+      this._context.refresh();
+      return this;
+    }
+    /**
+     * Stops and removes all sounds. They cannot be used after this.
+     * @return Instance for chaining.
+     */
+    removeAll() {
+      for (const alias in this._sounds) {
+        this._sounds[alias].destroy();
+        delete this._sounds[alias];
+      }
+      return this;
+    }
+    /**
+     * Stops all sounds.
+     * @return Instance for chaining.
+     */
+    stopAll() {
+      for (const alias in this._sounds) {
+        this._sounds[alias].stop();
+      }
+      return this;
+    }
+    /**
+     * Checks if a sound by alias exists.
+     * @param alias - Check for alias.
+     * @param assert - Whether enable console.assert.
+     * @return true if the sound exists.
+     */
+    exists(alias, assert = false) {
+      const exists = !!this._sounds[alias];
+      if (assert) {
+        console.assert(exists, `No sound matching alias '${alias}'.`);
+      }
+      return exists;
+    }
+    /**
+     * Convenience function to check to see if any sound is playing.
+     * @returns `true` if any sound is currently playing.
+     */
+    isPlaying() {
+      for (const alias in this._sounds) {
+        if (this._sounds[alias].isPlaying) {
+          return true;
+        }
+      }
+      return false;
+    }
+    /**
+     * Find a sound by alias.
+     * @param alias - The sound alias reference.
+     * @return Sound object.
+     */
+    find(alias) {
+      this.exists(alias, true);
+      return this._sounds[alias];
+    }
+    /**
+     * Plays a sound.
+     * @method play
+     * @instance
+     * @param {string} alias - The sound alias reference.
+     * @param {string} sprite - The alias of the sprite to play.
+     * @return {IMediaInstance|null} The sound instance, this cannot be reused
+     *         after it is done playing. Returns `null` if the sound has not yet loaded.
+     */
+    /**
+     * Plays a sound.
+     * @param alias - The sound alias reference.
+     * @param {PlayOptions|Function} options - The options or callback when done.
+     * @return The sound instance,
+     *        this cannot be reused after it is done playing. Returns a Promise if the sound
+     *        has not yet loaded.
+     */
+    play(alias, options) {
+      return this.find(alias).play(options);
+    }
+    /**
+     * Stops a sound.
+     * @param alias - The sound alias reference.
+     * @return Sound object.
+     */
+    stop(alias) {
+      return this.find(alias).stop();
+    }
+    /**
+     * Pauses a sound.
+     * @param alias - The sound alias reference.
+     * @return Sound object.
+     */
+    pause(alias) {
+      return this.find(alias).pause();
+    }
+    /**
+     * Resumes a sound.
+     * @param alias - The sound alias reference.
+     * @return Instance for chaining.
+     */
+    resume(alias) {
+      return this.find(alias).resume();
+    }
+    /**
+     * Get or set the volume for a sound.
+     * @param alias - The sound alias reference.
+     * @param volume - Optional current volume to set.
+     * @return The current volume.
+     */
+    volume(alias, volume) {
+      const sound2 = this.find(alias);
+      if (volume !== void 0) {
+        sound2.volume = volume;
+      }
+      return sound2.volume;
+    }
+    /**
+     * Get or set the speed for a sound.
+     * @param alias - The sound alias reference.
+     * @param speed - Optional current speed to set.
+     * @return The current speed.
+     */
+    speed(alias, speed) {
+      const sound2 = this.find(alias);
+      if (speed !== void 0) {
+        sound2.speed = speed;
+      }
+      return sound2.speed;
+    }
+    /**
+     * Get the length of a sound in seconds.
+     * @param alias - The sound alias reference.
+     * @return The current duration in seconds.
+     */
+    duration(alias) {
+      return this.find(alias).duration;
+    }
+    /**
+     * Closes the sound library. This will release/destroy
+     * the AudioContext(s). Can be used safely if you want to
+     * initialize the sound library later. Use `init` method.
+     */
+    close() {
+      this.removeAll();
+      this._sounds = null;
+      if (this._webAudioContext) {
+        this._webAudioContext.destroy();
+        this._webAudioContext = null;
+      }
+      if (this._htmlAudioContext) {
+        this._htmlAudioContext.destroy();
+        this._htmlAudioContext = null;
+      }
+      this._context = null;
+      return this;
+    }
+  };
+
+  // node_modules/@pixi/sound/lib/filters/Filter.mjs
+  var Filter2 = class {
+    /**
+     * @param {AudioNode} destination - The audio node to use as the destination for the input AudioNode
+     * @param {AudioNode} [source] - Optional output node, defaults to destination node. This is useful
+     *        when creating filters which contains multiple AudioNode elements chained together.
+     */
+    constructor(destination, source) {
+      this.init(destination, source);
+    }
+    /** Reinitialize */
+    init(destination, source) {
+      this.destination = destination;
+      this.source = source || destination;
+    }
+    /**
+     * Connect to the destination.
+     * @param {AudioNode} destination - The destination node to connect the output to
+     */
+    connect(destination) {
+      this.source?.connect(destination);
+    }
+    /** Completely disconnect filter from destination and source nodes. */
+    disconnect() {
+      this.source?.disconnect();
+    }
+    /** Destroy the filter and don't use after this. */
+    destroy() {
+      this.disconnect();
+      this.destination = null;
+      this.source = null;
+    }
+  };
+
+  // node_modules/@pixi/sound/lib/filters/EqualizerFilter.mjs
+  var _EqualizerFilter = class extends Filter2 {
+    /**
+     * @param f32 - Default gain for 32 Hz
+     * @param f64 - Default gain for 64 Hz
+     * @param f125 - Default gain for 125 Hz
+     * @param f250 - Default gain for 250 Hz
+     * @param f500 - Default gain for 500 Hz
+     * @param f1k - Default gain for 1000 Hz
+     * @param f2k - Default gain for 2000 Hz
+     * @param f4k - Default gain for 4000 Hz
+     * @param f8k - Default gain for 8000 Hz
+     * @param f16k - Default gain for 16000 Hz
+     */
+    constructor(f32 = 0, f64 = 0, f125 = 0, f250 = 0, f500 = 0, f1k = 0, f2k = 0, f4k = 0, f8k = 0, f16k = 0) {
+      let bands = [];
+      const equalizerBands = [
+        {
+          f: _EqualizerFilter.F32,
+          type: "lowshelf",
+          gain: f32
+        },
+        {
+          f: _EqualizerFilter.F64,
+          type: "peaking",
+          gain: f64
+        },
+        {
+          f: _EqualizerFilter.F125,
+          type: "peaking",
+          gain: f125
+        },
+        {
+          f: _EqualizerFilter.F250,
+          type: "peaking",
+          gain: f250
+        },
+        {
+          f: _EqualizerFilter.F500,
+          type: "peaking",
+          gain: f500
+        },
+        {
+          f: _EqualizerFilter.F1K,
+          type: "peaking",
+          gain: f1k
+        },
+        {
+          f: _EqualizerFilter.F2K,
+          type: "peaking",
+          gain: f2k
+        },
+        {
+          f: _EqualizerFilter.F4K,
+          type: "peaking",
+          gain: f4k
+        },
+        {
+          f: _EqualizerFilter.F8K,
+          type: "peaking",
+          gain: f8k
+        },
+        {
+          f: _EqualizerFilter.F16K,
+          type: "highshelf",
+          gain: f16k
+        }
+      ];
+      if (!getInstance().useLegacy) {
+        bands = equalizerBands.map((band) => {
+          const node = getInstance().context.audioContext.createBiquadFilter();
+          node.type = band.type;
+          WebAudioUtils.setParamValue(node.Q, 1);
+          node.frequency.value = band.f;
+          WebAudioUtils.setParamValue(node.gain, band.gain);
+          return node;
+        });
+      }
+      super(bands[0], bands[bands.length - 1]);
+      this.bands = bands;
+      this.bandsMap = {};
+      for (let i2 = 0; i2 < this.bands.length; i2++) {
+        const node = this.bands[i2];
+        if (i2 > 0) {
+          this.bands[i2 - 1].connect(node);
+        }
+        this.bandsMap[node.frequency.value] = node;
+      }
+    }
+    /**
+     * Set gain on a specific frequency.
+     * @param frequency - The frequency, see EqualizerFilter.F* for bands
+     * @param gain - Recommended -40 to 40.
+     */
+    setGain(frequency, gain = 0) {
+      if (!this.bandsMap[frequency]) {
+        throw new Error(`No band found for frequency ${frequency}`);
+      }
+      WebAudioUtils.setParamValue(this.bandsMap[frequency].gain, gain);
+    }
+    /**
+     * Get gain amount on a specific frequency.
+     * @return The amount of gain set.
+     */
+    getGain(frequency) {
+      if (!this.bandsMap[frequency]) {
+        throw new Error(`No band found for frequency ${frequency}`);
+      }
+      return this.bandsMap[frequency].gain.value;
+    }
+    /**
+     * Gain at 32 Hz frequencey.
+     * @default 0
+     */
+    set f32(value) {
+      this.setGain(_EqualizerFilter.F32, value);
+    }
+    get f32() {
+      return this.getGain(_EqualizerFilter.F32);
+    }
+    /**
+     * Gain at 64 Hz frequencey.
+     * @default 0
+     */
+    set f64(value) {
+      this.setGain(_EqualizerFilter.F64, value);
+    }
+    get f64() {
+      return this.getGain(_EqualizerFilter.F64);
+    }
+    /**
+     * Gain at 125 Hz frequencey.
+     * @default 0
+     */
+    set f125(value) {
+      this.setGain(_EqualizerFilter.F125, value);
+    }
+    get f125() {
+      return this.getGain(_EqualizerFilter.F125);
+    }
+    /**
+     * Gain at 250 Hz frequencey.
+     * @default 0
+     */
+    set f250(value) {
+      this.setGain(_EqualizerFilter.F250, value);
+    }
+    get f250() {
+      return this.getGain(_EqualizerFilter.F250);
+    }
+    /**
+     * Gain at 500 Hz frequencey.
+     * @default 0
+     */
+    set f500(value) {
+      this.setGain(_EqualizerFilter.F500, value);
+    }
+    get f500() {
+      return this.getGain(_EqualizerFilter.F500);
+    }
+    /**
+     * Gain at 1 KHz frequencey.
+     * @default 0
+     */
+    set f1k(value) {
+      this.setGain(_EqualizerFilter.F1K, value);
+    }
+    get f1k() {
+      return this.getGain(_EqualizerFilter.F1K);
+    }
+    /**
+     * Gain at 2 KHz frequencey.
+     * @default 0
+     */
+    set f2k(value) {
+      this.setGain(_EqualizerFilter.F2K, value);
+    }
+    get f2k() {
+      return this.getGain(_EqualizerFilter.F2K);
+    }
+    /**
+     * Gain at 4 KHz frequencey.
+     * @default 0
+     */
+    set f4k(value) {
+      this.setGain(_EqualizerFilter.F4K, value);
+    }
+    get f4k() {
+      return this.getGain(_EqualizerFilter.F4K);
+    }
+    /**
+     * Gain at 8 KHz frequencey.
+     * @default 0
+     */
+    set f8k(value) {
+      this.setGain(_EqualizerFilter.F8K, value);
+    }
+    get f8k() {
+      return this.getGain(_EqualizerFilter.F8K);
+    }
+    /**
+     * Gain at 16 KHz frequencey.
+     * @default 0
+     */
+    set f16k(value) {
+      this.setGain(_EqualizerFilter.F16K, value);
+    }
+    get f16k() {
+      return this.getGain(_EqualizerFilter.F16K);
+    }
+    /** Reset all frequency bands to have gain of 0 */
+    reset() {
+      this.bands.forEach((band) => {
+        WebAudioUtils.setParamValue(band.gain, 0);
+      });
+    }
+    destroy() {
+      this.bands.forEach((band) => {
+        band.disconnect();
+      });
+      this.bands = null;
+      this.bandsMap = null;
+    }
+  };
+  var EqualizerFilter = _EqualizerFilter;
+  EqualizerFilter.F32 = 32;
+  EqualizerFilter.F64 = 64;
+  EqualizerFilter.F125 = 125;
+  EqualizerFilter.F250 = 250;
+  EqualizerFilter.F500 = 500;
+  EqualizerFilter.F1K = 1e3;
+  EqualizerFilter.F2K = 2e3;
+  EqualizerFilter.F4K = 4e3;
+  EqualizerFilter.F8K = 8e3;
+  EqualizerFilter.F16K = 16e3;
+
+  // node_modules/@pixi/sound/lib/soundAsset.mjs
+  var getAlias = (asset) => {
+    const url2 = asset.src;
+    return asset?.alias?.[0] ?? lib_exports.path.basename(url2, lib_exports.path.extname(url2));
+  };
+  var soundAsset = {
+    extension: ExtensionType.Asset,
+    detection: {
+      test: async () => true,
+      add: async (formats2) => [...formats2, ...extensions3.filter((ext) => supported2[ext])],
+      remove: async (formats2) => formats2.filter((ext) => formats2.includes(ext))
+    },
+    loader: {
+      extension: {
+        type: [ExtensionType.LoadParser],
+        priority: LoaderParserPriority.High
+      },
+      /** Should we attempt to load this file? */
+      test(url2) {
+        const ext = lib_exports.path.extname(url2).slice(1);
+        return !!supported2[ext] || mimes.some((mime) => url2.startsWith(`data:${mime}`));
+      },
+      /** Load the sound file, this is mostly handled by Sound.from() */
+      async load(url2, asset) {
+        const sound2 = await new Promise((resolve2, reject) => Sound.from({
+          ...asset.data,
+          url: url2,
+          preload: true,
+          loaded(err, sound22) {
+            if (err) {
+              reject(err);
+            } else {
+              resolve2(sound22);
+            }
+            asset.data?.loaded?.(err, sound22);
+          }
+        }));
+        getInstance().add(getAlias(asset), sound2);
+        return sound2;
+      },
+      /** Remove the sound from the library */
+      async unload(_sound, asset) {
+        getInstance().remove(getAlias(asset));
+      }
+    }
+  };
+  extensions.add(soundAsset);
+
+  // node_modules/@pixi/sound/lib/index.mjs
+  var sound = setInstance(new SoundLibrary());
+
   // src/js/objects/CountrySlider.js
   var CountrySlider = class extends Container {
     constructor(countries) {
@@ -51618,6 +54021,7 @@ void main(void)\r
     }
     onSelect(index) {
       this.emit("selected", index);
+      sound.play("swipeSliderSound");
     }
   };
   var Country = class extends Container {
@@ -51745,15 +54149,18 @@ void main(void)\r
     }
     selectCountry(index) {
       this.game.settings.country = this.game.config.counties[index];
+      this.game.soundPlayer.playSWX("swipeSliderSound");
     }
     selectLevel(levelIndex) {
       this.lock.visible = this.game.config.cups[levelIndex].locked;
       this.letsPlayButton.visible = !this.game.config.cups[levelIndex].locked;
       this.currentLevel = levelIndex;
+      this.game.soundPlayer.playSWX("swipeSliderSound");
     }
     letsPlay() {
       this.game.fms.goTo("waitingForBet");
       this.game.settings.level = this.currentLevel;
+      this.game.soundPlayer.playSWX("buttonClickSound");
     }
   };
 
@@ -51826,6 +54233,7 @@ void main(void)\r
   var LoseRound = class extends GameState {
     async onEnter() {
       if (this.game.settings.winAnimation) {
+        this.game.soundPlayer.playSWX("loseSound");
         await this.game.scene.playLoseAnimation();
       }
       this.game.scene.setWin("");
@@ -51929,6 +54337,7 @@ void main(void)\r
       this.game.scene.betsLis.disable();
       await this.game.server.collectWinnings();
       if (this.game.settings.winAnimation) {
+        this.game.soundPlayer.playSWX("winSound");
         await this.game.scene.playWinAnimation();
       }
       this.game.scene.setBalance(this.game.server.getBalanceText());
@@ -51972,7 +54381,10 @@ void main(void)\r
         hover: "ExitButtonHover.png",
         pressed: "ExitButtonPressed.png",
         disabled: "ExitButtonDisabled.png"
-      }, () => this.close());
+      }, () => {
+        this.close();
+        this.game.soundPlayer.playSWX("buttonClickSound");
+      });
       this.closeButton.x = this.bg.x + this.bg.width - this.closeButton.width - 20;
       this.closeButton.y = this.bg.y + 20;
       this.addChild(this.closeButton);
@@ -52083,6 +54495,7 @@ void main(void)\r
       for (let i2 = 0; i2 < this.pages.length; i2++) {
         this.pages[i2].visible = i2 === index;
       }
+      this.game.soundPlayer.playSWX("swipeSliderSound");
     }
     get currentPage() {
       for (let i2 = 0; i2 < this.pages.length; i2++) {
@@ -52118,6 +54531,7 @@ void main(void)\r
     }
     changeBetIndex(index) {
       this.currentBetIndex = index;
+      this.game.soundPlayer.playSWX("buttonClickSound");
     }
     confirm() {
       this.game.server.setBetIndex(this.currentBetIndex);
@@ -52372,28 +54786,34 @@ void main(void)\r
       this.winAnimationCheckBox = this.addChild(ObjectFactory.createCheckBox("Win", this.game.settings.winAnimation));
       this.winAnimationCheckBox.x = this.kickAnimationCheckBox.x + this.kickAnimationCheckBox.width + 20;
       this.winAnimationCheckBox.y = this.kickAnimationCheckBox.y;
-      this.musicSlider = this.addChild(new SliderGroup("Music volume", 0, () => {
-      }));
+      this.musicSlider = this.addChild(new SliderGroup("Music volume", this.game.soundPlayer.musicVolume * 100, this.onChangeMusicVolume.bind(this)));
       this.musicSlider.x = this.bg.x + 60;
       this.musicSlider.y = this.bg.y + 100;
-      this.soundSlider = this.addChild(new SliderGroup("Sound volume", 0, () => {
-      }));
+      this.soundSlider = this.addChild(new SliderGroup("Sound volume", this.game.soundPlayer.swxVolume * 100, this.onChangeSFXVolume.bind(this)));
       this.soundSlider.x = this.animationsText.x;
       this.soundSlider.y = this.bg.y + 100;
       this.kickAnimationCheckBox.on("change", this.changeKickAnimation.bind(this));
       this.winAnimationCheckBox.on("change", this.changeWinAnimation.bind(this));
     }
+    onChangeSFXVolume(value) {
+      this.game.soundPlayer.setSFXVolume(value / 100);
+    }
+    onChangeMusicVolume(value) {
+      this.game.soundPlayer.setMusicVolume(value / 100);
+    }
     changeKickAnimation(state) {
       this.game.settings.kickAnimation = state;
+      this.game.soundPlayer.playSWX("buttonClickSound");
     }
     changeWinAnimation(state) {
       this.game.settings.winAnimation = state;
+      this.game.soundPlayer.playSWX("buttonClickSound");
     }
     changeAnimationSpeed(index) {
       this.currentAnimationSpeed = AnimationSpeedByIndex[index];
       this.game.settings.gamePlayAnimationSpeed = this.currentAnimationSpeed;
-      ;
       this.game.scene.setAnimationSpeed(this.currentAnimationSpeed);
+      this.game.soundPlayer.playSWX("buttonClickSound");
     }
     getIndexByAnimationSpeed() {
       return AnimationSpeedByIndex.indexOf(this.currentAnimationSpeed);
@@ -52485,6 +54905,7 @@ void main(void)\r
       super.onEnter();
       this.game.setResizeType("cover");
       this.game.scene = this.game.scenes.showScene("lobby");
+      this.game.soundPlayer.playMainMusic();
     }
     async onExit() {
       super.onExit();
@@ -52531,6 +54952,9 @@ void main(void)\r
       this.betsList.y = 356;
       this.betsList.leftButton.x -= 6;
       this.betsList.rightButton.x += 6;
+      this.betsList.on("change", (value2) => {
+        this.game.soundPlayer.playSWX("buttonClickSound");
+      });
       this.addChild(this.betsList);
       this.multiplesBetsButtons = this.addChild(new Container());
       let buttonWidth = 53;
@@ -52548,6 +54972,9 @@ void main(void)\r
       this.roundsList.y = 356;
       this.roundsList.leftButton.x -= 6;
       this.roundsList.rightButton.x += 6;
+      this.roundsList.on("change", (value2) => {
+        this.game.soundPlayer.playSWX("buttonClickSound");
+      });
       this.addChild(this.roundsList);
       this.roundsButtons = this.addChild(new Container());
       this.rounds.forEach((v2, index) => {
@@ -52569,6 +54996,9 @@ void main(void)\r
       this.mutiplierList.disable();
       this.mutiplierList.leftButton.x -= 6;
       this.mutiplierList.rightButton.x += 6;
+      this.mutiplierList.on("change", (value2) => {
+        this.game.soundPlayer.playSWX("buttonClickSound");
+      });
       row.addChild(this.mutiplierList);
       this.addChild(row);
       this.startButton = this.addChild(ObjectFactory.createSliceButton({
@@ -52601,9 +55031,11 @@ void main(void)\r
       this.game.server.setBetIndex(0);
       this.game.scene.setAutoBetMode();
       this.close();
+      this.game.soundPlayer.playSWX("buttonClickSound");
     }
     onChangeCashOut(value) {
       value ? this.mutiplierList.enable() : this.mutiplierList.disable();
+      this.game.soundPlayer.playSWX("buttonClickSound");
     }
     createVariantButton(index, text, onClick, buttonWidth) {
       return ObjectFactory.createSliceButton({
@@ -52629,10 +55061,12 @@ void main(void)\r
         const nextIndex = multiplyAndFindClosest(this.bets, this.betsList.getCurrent(), this.multiplesBet[index]);
         this.betsList.setIndex(nextIndex);
       }
+      this.game.soundPlayer.playSWX("buttonClickSound");
     }
     onClickRound(index) {
       const targetIndex = this.roundsValues.indexOf(this.rounds[index]);
       this.roundsList.setIndex(targetIndex);
+      this.game.soundPlayer.playSWX("buttonClickSound");
     }
     close() {
       super.close();
@@ -53003,6 +55437,61 @@ void main(void)\r
     }
   };
 
+  // src/js/SoundPlayer.js
+  var SoundPlayer = class {
+    constructor() {
+      this._swxVolume = localStorage.getItem("swxVolume") ? Number(localStorage.getItem("swxVolume")) : 1;
+      this._musicVolume = localStorage.getItem("musicVolume") ? Number(localStorage.getItem("musicVolume")) : 1;
+      this._isMuted = localStorage.getItem("isMuted") === "true" || false;
+      if (this._isMuted) {
+        sound.muteAll();
+      }
+    }
+    playMainMusic() {
+      this.playMainThemeP1();
+      this.backgroundSound = sound.play("backgroundSound", { loop: true, volume: this.musicVolume * 0.5 });
+    }
+    playMainThemeP1() {
+      this.mainTheme = sound.play("mainThemeP1", { complete: this.playMainThemeP2.bind(this), volume: this.musicVolume });
+    }
+    playMainThemeP2() {
+      this.mainTheme = sound.play("mainThemeP2", { complete: this.playMainThemeP1.bind(this), volume: this.musicVolume });
+    }
+    playSWX(name) {
+      sound.play(name, { loop: false, volume: this.swxVolume });
+    }
+    setSFXVolume(volume) {
+      this.swxVolume = volume;
+    }
+    setMusicVolume(volume) {
+      this.musicVolume = volume;
+    }
+    set swxVolume(volume) {
+      this._swxVolume = volume;
+      localStorage.setItem("swxVolume", volume);
+    }
+    get swxVolume() {
+      return this._swxVolume;
+    }
+    set musicVolume(volume) {
+      this._musicVolume = volume;
+      this.mainTheme.volume = volume;
+      this.backgroundSound.volume = volume * 0.5;
+      localStorage.setItem("musicVolume", volume);
+    }
+    get musicVolume() {
+      return this._musicVolume;
+    }
+    toggleMute() {
+      sound.toggleMuteAll();
+      this._isMuted = !this._isMuted;
+      localStorage.setItem("isMuted", this._isMuted);
+    }
+    get isMuted() {
+      return this._isMuted;
+    }
+  };
+
   // src/js/GameApplication.js
   var WIDTH = 1220;
   var HEIGHT = 820;
@@ -53015,6 +55504,7 @@ void main(void)\r
       this.server = gameOptions.offline ? new OfflineMode({ balance: gameOptions.balance, bets: gameOptions.bets }) : new OnlineMode();
       this.fms = new FMS(this, gameOptions.states);
       this.popupManager = new PopupManager(gameOptions.popups, this);
+      this.soundPlayer = new SoundPlayer();
       this.config = gameOptions;
       this.stage.addChild(this.scenes, this.popupManager);
       this.settings = {
