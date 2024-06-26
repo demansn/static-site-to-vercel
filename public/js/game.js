@@ -55385,7 +55385,7 @@ void main(void)\r
       this.balance -= betAmount;
     }
     async playRound(targetNumber) {
-      if (this.winStreak >= 5) {
+      if (this.winStreak >= 6) {
         throw new Error("Maximum win streak reached. Collect your winnings.");
       }
       const { kick } = await this.postRequest(this.kickURL, {
