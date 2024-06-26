@@ -55417,7 +55417,6 @@ void main(void)\r
       return this.roundResult;
     }
     async collectWinnings() {
-      this.reset();
       const { balance } = await this.postRequest(this.collectWinningsURL, {
         session_uuid: this.session_uuid,
         game_session: this.gameSession
