@@ -51223,14 +51223,25 @@ void main(void)\r
           pressed: "SoundButtonPressed.png",
           disabled: "SoundButtonDisabled.png"
         },
-        () => {
-          this.game.soundPlayer.playSWX("buttonClickSound");
-          this.game.soundPlayer.toggleMute();
-        }
+        this.toggleSound.bind(this)
       );
       this.soundButton.x = 1138;
       this.soundButton.y = 90;
       this.addChild(this.soundButton);
+      this.soundButtonOff = this.game.objectFactory.createButton(
+        {
+          default: "SoundButtonDisabled.png",
+          hover: "SoundButtonDisabled.png",
+          pressed: "SoundButtonDisabled.png",
+          disabled: "SoundButtonDisabled.png"
+        },
+        this.toggleSound.bind(this)
+      );
+      this.soundButtonOff.x = 1138;
+      this.soundButtonOff.y = 90;
+      this.addChild(this.soundButtonOff);
+      this.soundButton.visible = !this.game.soundPlayer.isMuted;
+      this.soundButtonOff.visible = this.game.soundPlayer.isMuted;
       this.infoButton = this.game.objectFactory.createButton(
         {
           default: "InfoButtonDefault.png",
@@ -51339,6 +51350,12 @@ void main(void)\r
       this.addChild(this.loseAnimation);
       this.winAnimation = this.game.objectFactory.createWinAnimation(this.game.config.screenSize);
       this.addChild(this.winAnimation);
+    }
+    toggleSound() {
+      this.game.soundPlayer.playSWX("buttonClickSound");
+      this.game.soundPlayer.toggleMute();
+      this.soundButton.visible = !this.game.soundPlayer.isMuted;
+      this.soundButtonOff.visible = this.game.soundPlayer.isMuted;
     }
     stopAutoplay() {
       this.autoplayButton.toStartButton();
@@ -54123,7 +54140,7 @@ void main(void)\r
       this.levels.x = this.game.config.screenSize.width / 2;
       this.levels.y = this.game.config.screenSize.height / 2;
       this.levels.scale.set(0.8);
-      this.levels.on("selectLevel", this.selectLevel.bind(this));
+      this.levels.on("selectLevel", this.onSelectLevel.bind(this));
       this.letsPlayButton.scale.set(0.7);
       this.letsPlayButton.x = this.game.config.screenSize.width / 2 - this.letsPlayButton.width / 2;
       this.letsPlayButton.y = this.game.config.screenSize.height / 2 + 150;
@@ -54131,7 +54148,7 @@ void main(void)\r
       this.counties.x = this.game.config.screenSize.width / 2;
       this.counties.y = this.game.config.screenSize.height / 2 - gap;
       this.counties.scale.set(0.8);
-      this.counties.on("selected", this.selectCountry.bind(this));
+      this.counties.on("selected", this.onSelectCountry.bind(this));
       this.lock = this.addChild(new Container());
       this.lockIcon = this.lock.addChild(ObjectFactory.createSpriteFromSheet("LockIcon.png"));
       this.lockIcon.anchor.set(0.5);
@@ -54147,15 +54164,21 @@ void main(void)\r
       this.selectLevel(this.levels.getCurrentIndex());
       this.selectCountry(this.counties.getCurrentIndex());
     }
-    selectCountry(index) {
-      this.game.settings.country = this.game.config.counties[index];
+    onSelectCountry(index) {
+      this.selectLevel(index);
+      this.game.soundPlayer.playSWX("swipeSliderSound");
+    }
+    onSelectLevel(index) {
+      this.selectLevel(index);
       this.game.soundPlayer.playSWX("swipeSliderSound");
     }
     selectLevel(levelIndex) {
       this.lock.visible = this.game.config.cups[levelIndex].locked;
       this.letsPlayButton.visible = !this.game.config.cups[levelIndex].locked;
       this.currentLevel = levelIndex;
-      this.game.soundPlayer.playSWX("swipeSliderSound");
+    }
+    selectCountry(index) {
+      this.game.settings.country = this.game.config.counties[index];
     }
     letsPlay() {
       this.game.fms.goTo("waitingForBet");
@@ -54614,6 +54637,7 @@ void main(void)\r
   var WaitingForBet = class extends GameState {
     async onEnter() {
       this.game.scene.reset();
+      this.game.server.reset();
       this.game.scene.placeBetButton.enable();
       this.game.scene.betsLis.enable();
       this.game.scene.placeBetButton.visible = true;
@@ -55193,6 +55217,47 @@ void main(void)\r
 
   // src/js/Connection.js
   var Connection = class {
+    constructor({ balance }) {
+      this.balance = balance;
+      this.currentMultiplier = 1;
+      this.winStreak = 1;
+      this.roundTarget = -1;
+      this.bet = 0;
+      this.roundResult = null;
+      this.defaultBetsList = [0.05, 0.25, 0.5, 1, 2, 2.5, 5, 7.5, 10, 25, 50, 100];
+      this.betsList = this.defaultBetsList;
+      this.currentBetIndex = 0;
+      this.roundWin = 0;
+    }
+    setBetIndex(index) {
+      if (index >= 0 && index < this.betsList.length) {
+        this.currentBetIndex = index;
+      }
+    }
+    getBet() {
+      return this.betsList[this.currentBetIndex];
+    }
+    getBalance() {
+      return this.balance;
+    }
+    getBalanceText() {
+      return `$${this.balance.toFixed(2)}`;
+    }
+    getCurrentMultiplier() {
+      return this.currentMultiplier;
+    }
+    getCurrentWinStreak() {
+      return this.winStreak;
+    }
+    isFirstRound() {
+      return this.winStreak === 1;
+    }
+    isLastRound() {
+      return this.winStreak > 5;
+    }
+    setBet(bet) {
+      this.bet = bet;
+    }
     /**
      *
      * @returns {Promise<Awaited<{balance: number}>>}
@@ -55233,46 +55298,8 @@ void main(void)\r
   // src/js/OfflineMode.js
   var OfflineMode = class extends Connection {
     constructor({ balance = 1e3 }) {
-      super();
-      this.balance = balance;
+      super({ balance });
       this.gameMath = new GameMath();
-      this.currentMultiplier = 1;
-      this.winStreak = 0;
-      this.roundTarget = -1;
-      this.bet = 0;
-      this.roundResult = null;
-      this.defaultBetsList = [0.05, 0.25, 0.5, 1, 2, 2.5, 5, 7.5, 10, 25, 50, 100];
-      this.betsList = this.defaultBetsList;
-      this.currentBetIndex = 0;
-    }
-    setBetIndex(index) {
-      if (index >= 0 && index < this.betsList.length) {
-        this.currentBetIndex = index;
-      }
-    }
-    getBet() {
-      return this.betsList[this.currentBetIndex];
-    }
-    getBalance() {
-      return this.balance;
-    }
-    getBalanceText() {
-      return `$${this.balance.toFixed(2)}`;
-    }
-    getCurrentMultiplier() {
-      return this.currentMultiplier;
-    }
-    getCurrentWinStreak() {
-      return this.winStreak;
-    }
-    isFirstRound() {
-      return this.winStreak === 0;
-    }
-    isLastRound() {
-      return this.winStreak === 5;
-    }
-    setBet(bet) {
-      this.bet = bet;
     }
     async placeBet() {
       const betAmount = this.getBet();
@@ -55330,10 +55357,99 @@ void main(void)\r
   };
 
   // src/js/OnlineMode.js
+  var SERVER_URL = "https://api.lucky-kick.crazymonkey.club/api/v1";
   var OnlineMode = class extends Connection {
-    constructor() {
-      super();
-      throw new Error("Not implemented yet");
+    constructor({ balance, session_uuid }) {
+      super({ balance });
+      this.session_uuid = session_uuid;
+      this.gameSession = null;
+      this.placeBetURL = `${SERVER_URL}/game`;
+      this.kickURL = `${SERVER_URL}/kick`;
+      this.collectWinningsURL = `${SERVER_URL}/cash-out`;
+      this.betResult = null;
+      this.currentMultiplier = 1;
+      this.roundWin = 0;
+    }
+    async placeBet() {
+      const betAmount = this.getBet();
+      if (betAmount > this.balance) {
+        throw new Error("Insufficient balance to place the bet");
+      }
+      this.reset();
+      const result = await this.postRequest(this.placeBetURL, {
+        balance: this.balance,
+        bet: this.getBet(),
+        session_uuid: this.session_uuid
+      });
+      this.gameSession = result.game_session;
+      this.balance -= betAmount;
+    }
+    async playRound(targetNumber) {
+      if (this.winStreak >= 5) {
+        throw new Error("Maximum win streak reached. Collect your winnings.");
+      }
+      const { kick } = await this.postRequest(this.kickURL, {
+        kick_level: this.winStreak,
+        session_uuid: this.session_uuid,
+        game_session: this.gameSession
+      });
+      if (kick && kick.is_win) {
+        this.winStreak += 1;
+        this.currentMultiplier = roundToTwo(this.currentMultiplier + kick.multi);
+        this.roundTarget = targetNumber;
+        this.roundWin += kick.win;
+        this.roundResult = {
+          win: true,
+          multiplier: this.currentMultiplier,
+          winnings: this.roundWin,
+          winStreak: this.winStreak,
+          target: targetNumber
+        };
+      } else {
+        this.roundResult = {
+          win: false,
+          multiplier: 0,
+          winnings: 0,
+          winStreak: this.winStreak,
+          target: targetNumber
+        };
+      }
+      return this.roundResult;
+    }
+    async collectWinnings() {
+      this.reset();
+      const { balance } = await this.postRequest(this.collectWinningsURL, {
+        session_uuid: this.session_uuid,
+        game_session: this.gameSession
+      });
+      const winnings = balance - this.balance;
+      this.balance = balance;
+      return winnings;
+    }
+    async postRequest(url2, urlArguments) {
+      url2 += "?";
+      for (const key in urlArguments) {
+        url2 += `&${key}=${urlArguments[key]}`;
+      }
+      const response = await fetch(url2, {
+        method: "POST"
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const result = await response.json();
+      if (result.status === "success" || result.game_session || result.balance !== void 0) {
+        return result;
+      } else {
+        throw new Error(result.message);
+      }
+    }
+    reset() {
+      this.currentMultiplier = 0;
+      this.winStreak = 1;
+      this.roundTarget = -1;
+      this.roundResult = null;
+      this.roundWin = 0;
     }
   };
 
@@ -55501,7 +55617,7 @@ void main(void)\r
       this.gameContainer = document.getElementById("game-container");
       this.objectFactory = new ObjectFactory();
       this.scenes = new GameSceneManager(this, gameOptions.scenes);
-      this.server = gameOptions.offline ? new OfflineMode({ balance: gameOptions.balance, bets: gameOptions.bets }) : new OnlineMode();
+      this.server = gameOptions.offline ? new OfflineMode({ balance: gameOptions.balance, bets: gameOptions.bets }) : new OnlineMode({ balance: gameOptions.balance, session_uuid: gameOptions.session_uuid, bets: gameOptions.bets });
       this.fms = new FMS(this, gameOptions.states);
       this.popupManager = new PopupManager(gameOptions.popups, this);
       this.soundPlayer = new SoundPlayer();
@@ -55616,6 +55732,7 @@ void main(void)\r
     }, {
       offline: urlParser.has("offline"),
       balance: urlParser.has("balance") ? Number(urlParser.get("balance")) : gameConfig.default.balance,
+      session_uuid: urlParser.has("session") ? urlParser.get("session") : null,
       bets: gameConfig.default.betsList,
       ...gameConfig
     });
