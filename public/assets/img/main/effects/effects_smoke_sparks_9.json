@@ -1,0 +1,101 @@
+{"frames": {
+
+"effects/smoke/42.png":
+{
+	"frame": {"x":1,"y":1,"w":438,"h":1092},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/43.png":
+{
+	"frame": {"x":441,"y":1,"w":438,"h":1092},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/44.png":
+{
+	"frame": {"x":883,"y":370,"w":438,"h":1092},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/45.png":
+{
+	"frame": {"x":883,"y":810,"w":438,"h":1092},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/46.png":
+{
+	"frame": {"x":883,"y":1250,"w":438,"h":1092},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/sparks/20.png":
+{
+	"frame": {"x":1066,"y":1,"w":367,"h":957},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":135,"y":36,"w":367,"h":957},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/42.png":
+{
+	"frame": {"x":1372,"y":1690,"w":313,"h":296},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":100,"w":313,"h":296},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/43.png":
+{
+	"frame": {"x":1066,"y":1690,"w":324,"h":304},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":116,"w":324,"h":304},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/48.png":
+{
+	"frame": {"x":445,"y":1095,"w":436,"h":554},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":26,"w":436,"h":554},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/49.png":
+{
+	"frame": {"x":1,"y":1095,"w":442,"h":598},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":68,"y":35,"w":442,"h":598},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/63.png":
+{
+	"frame": {"x":1,"y":1695,"w":352,"h":1063},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":34,"w":352,"h":1063},
+	"sourceSize": {"w":578,"h":1097}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "effects_smoke_sparks_9.basis",
+	"format": "BASISU_ETC1S",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"related_multi_packs": [ "effects_smoke_sparks_0.json", "effects_smoke_sparks_1.json", "effects_smoke_sparks_2.json", "effects_smoke_sparks_3.json", "effects_smoke_sparks_4.json", "effects_smoke_sparks_5.json", "effects_smoke_sparks_6.json", "effects_smoke_sparks_7.json", "effects_smoke_sparks_8.json", "effects_smoke_sparks_10.json", "effects_smoke_sparks_11.json", "effects_smoke_sparks_12.json", "effects_smoke_sparks_13.json", "effects_smoke_sparks_14.json", "effects_smoke_sparks_15.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:3b099d4c55d69ba3966bd37cc28bcb40:25486b32942ea4b51a6d402fbf1718c3:34c20961b5d17f91805f3a4a1943a9ae$"
+}
+}

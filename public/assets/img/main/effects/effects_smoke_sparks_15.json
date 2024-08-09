@@ -1,0 +1,61 @@
+{"frames": {
+
+"effects/sparks/21.png":
+{
+	"frame": {"x":1,"y":1087,"w":391,"h":1009},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":133,"y":40,"w":391,"h":1009},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/59.png":
+{
+	"frame": {"x":1012,"y":373,"w":353,"h":1024},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":57,"w":353,"h":1024},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/62.png":
+{
+	"frame": {"x":1,"y":1,"w":343,"h":1084},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":3,"w":343,"h":1084},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/64.png":
+{
+	"frame": {"x":1012,"y":1,"w":370,"h":1035},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":24,"w":370,"h":1035},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/65.png":
+{
+	"frame": {"x":1,"y":1480,"w":387,"h":1057},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":40,"w":387,"h":1057},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/80.png":
+{
+	"frame": {"x":346,"y":1,"w":312,"h":1064},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":55,"y":0,"w":312,"h":1064},
+	"sourceSize": {"w":578,"h":1097}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "effects_smoke_sparks_15.basis",
+	"format": "BASISU_ETC1S",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"related_multi_packs": [ "effects_smoke_sparks_0.json", "effects_smoke_sparks_1.json", "effects_smoke_sparks_2.json", "effects_smoke_sparks_3.json", "effects_smoke_sparks_4.json", "effects_smoke_sparks_5.json", "effects_smoke_sparks_6.json", "effects_smoke_sparks_7.json", "effects_smoke_sparks_8.json", "effects_smoke_sparks_9.json", "effects_smoke_sparks_10.json", "effects_smoke_sparks_11.json", "effects_smoke_sparks_12.json", "effects_smoke_sparks_13.json", "effects_smoke_sparks_14.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:3b099d4c55d69ba3966bd37cc28bcb40:25486b32942ea4b51a6d402fbf1718c3:34c20961b5d17f91805f3a4a1943a9ae$"
+}
+}

@@ -1,0 +1,69 @@
+
+Surt Giant (1).png
+size: 1471,424
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arm1
+  rotate: false
+  xy: 1132, 175
+  size: 337, 247
+  orig: 340, 263
+  offset: 1, 15
+  index: -1
+Arm2
+  rotate: true
+  xy: 547, 7
+  size: 183, 308
+  orig: 183, 308
+  offset: 0, 0
+  index: -1
+Arm3
+  rotate: false
+  xy: 982, 31
+  size: 117, 159
+  orig: 117, 163
+  offset: 0, 4
+  index: -1
+body
+  rotate: true
+  xy: 547, 192
+  size: 230, 583
+  orig: 464, 583
+  offset: 234, 0
+  index: -1
+chin
+  rotate: false
+  xy: 857, 23
+  size: 123, 167
+  orig: 129, 169
+  offset: 0, 1
+  index: -1
+eye
+  rotate: false
+  xy: 1224, 73
+  size: 38, 31
+  orig: 38, 31
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 1101, 31
+  size: 121, 142
+  orig: 121, 142
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 2, 2
+  size: 420, 543
+  orig: 420, 578
+  offset: 0, 35
+  index: -1
+nose
+  rotate: false
+  xy: 1224, 106
+  size: 47, 67
+  orig: 48, 68
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,147 @@
+Girls.png
+size:1970,1798
+filter:Linear,Linear
+pma:true
+scale:0.9
+G1/Blue Frame
+bounds:2,1423,373,373
+G1/Blue Frame2
+bounds:2,1048,373,373
+G1/Blue Girl1
+bounds:1447,51,128,84
+G1/Blue Girl2
+bounds:1255,301,166,257
+offsets:0,0,166,259
+rotate:90
+G1/Blue Girl3
+bounds:839,138,109,184
+G1/Blue Girl4
+bounds:432,116,221,222
+G1/Blue Girl5
+bounds:1229,70,216,90
+G1/Blue Girl6
+bounds:432,39,75,245
+rotate:90
+G1/Card Background 1
+bounds:752,1090,331,331
+G1/Rectangle 649
+bounds:1127,1465,331,331
+G2/Card Background 3
+bounds:377,340,331,331
+G2/Gg1
+bounds:1591,119,144,73
+G2/Gg2
+bounds:950,111,136,174
+offsets:0,0,137,174
+G2/Gg3
+bounds:1441,193,59,106
+G2/Gg4
+bounds:333,8,57,60
+offsets:1,1,59,61
+G2/Gg5
+bounds:1612,448,188,225
+G2/Gg6
+bounds:710,324,98,241
+rotate:90
+G2/Gg7
+bounds:655,133,182,189
+G2/Gg8
+bounds:832,38,202,71
+G2/Green Frame
+bounds:377,1423,373,373
+G2/Green Frame2
+bounds:2,673,373,373
+G2/Rectangle 649
+bounds:752,757,331,331
+G3/Card Background 2
+bounds:1460,1465,331,331
+G3/Gr1
+bounds:1599,194,113,203
+rotate:90
+G3/Gr2
+bounds:1811,309,168,155
+rotate:90
+G3/Gr3
+bounds:1577,49,68,72
+rotate:90
+G3/Gr4
+bounds:2,2,294,256
+rotate:90
+G3/Gr5
+bounds:953,287,130,135
+G3/Gr6
+bounds:1502,137,87,132
+G3/Gr7
+bounds:1036,54,174,48
+G3/Pink Frame
+bounds:377,1048,373,373
+G3/Pink Frame2
+bounds:752,1423,373,373
+G3/Rectangle 649
+bounds:752,424,331,331
+G4/Card Background 4
+bounds:1273,1132,331,331
+G4/G10
+bounds:1118,5,141,47
+G4/Gp1
+bounds:1804,229,164,78
+G4/Gp2
+bounds:260,2,66,71
+offsets:0,2,68,73
+rotate:90
+G4/Gp3
+bounds:1804,68,160,159
+offsets:2,0,162,159
+G4/Gp4
+bounds:1737,132,47,60
+G4/Gp5
+bounds:1036,2,80,50
+G4/Gp6
+bounds:260,70,170,226
+G4/Gp7
+bounds:1514,271,83,196
+G4/Gp8
+bounds:1600,675,74,174
+rotate:90
+G4/Gp9
+bounds:679,27,104,151
+rotate:90
+G4/Purple Frame
+bounds:2,298,373,373
+G4/Purple Frame2
+bounds:377,673,373,373
+G4/Rectangle 649
+bounds:1273,799,331,331
+G5/Card Background 5
+bounds:1793,1441,168,355
+G5/Golden Frame
+bounds:1085,1048,186,373
+G5/Golden Frame2
+bounds:1085,673,186,373
+G5/Golden Girl
+bounds:1273,639,158,325
+offsets:0,0,158,355
+rotate:90
+G5/Rectangle 650
+bounds:1606,1108,168,355
+G5/Wild
+bounds:1229,162,210,137
+G5/Wild2
+bounds:1599,309,210,137
+G6/Card Background 6
+bounds:1606,751,168,355
+G6/Rectangle 650
+bounds:1085,316,168,355
+G6/Scatter
+bounds:1802,479,210,139
+rotate:90
+G6/Scatter Frame
+bounds:1776,1066,186,373
+G6/Scatter Frame2
+bounds:1776,691,186,373
+G6/Scatter Girl
+bounds:1255,469,168,355
+rotate:90
+G6/Scatter2
+bounds:1088,104,210,139
+rotate:90

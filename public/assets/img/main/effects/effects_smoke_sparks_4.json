@@ -1,0 +1,85 @@
+{"frames": {
+
+"effects/smoke/13.png":
+{
+	"frame": {"x":1,"y":1,"w":438,"h":1092},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/14.png":
+{
+	"frame": {"x":441,"y":1,"w":438,"h":1092},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/15.png":
+{
+	"frame": {"x":881,"y":1,"w":438,"h":1092},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/16.png":
+{
+	"frame": {"x":881,"y":441,"w":438,"h":1092},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/17.png":
+{
+	"frame": {"x":881,"y":881,"w":438,"h":1092},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/18.png":
+{
+	"frame": {"x":1321,"y":881,"w":438,"h":1092},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/sparks/9.png":
+{
+	"frame": {"x":680,"y":1095,"w":153,"h":357},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":85,"w":153,"h":357},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/71.png":
+{
+	"frame": {"x":324,"y":1095,"w":354,"h":821},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":174,"y":160,"w":354,"h":821},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/82.png":
+{
+	"frame": {"x":1,"y":1095,"w":321,"h":828},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":73,"y":6,"w":321,"h":828},
+	"sourceSize": {"w":578,"h":1097}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "effects_smoke_sparks_4.basis",
+	"format": "BASISU_ETC1S",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"related_multi_packs": [ "effects_smoke_sparks_0.json", "effects_smoke_sparks_1.json", "effects_smoke_sparks_2.json", "effects_smoke_sparks_3.json", "effects_smoke_sparks_5.json", "effects_smoke_sparks_6.json", "effects_smoke_sparks_7.json", "effects_smoke_sparks_8.json", "effects_smoke_sparks_9.json", "effects_smoke_sparks_10.json", "effects_smoke_sparks_11.json", "effects_smoke_sparks_12.json", "effects_smoke_sparks_13.json", "effects_smoke_sparks_14.json", "effects_smoke_sparks_15.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:3b099d4c55d69ba3966bd37cc28bcb40:25486b32942ea4b51a6d402fbf1718c3:34c20961b5d17f91805f3a4a1943a9ae$"
+}
+}

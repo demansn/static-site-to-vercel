@@ -1,0 +1,241 @@
+{"frames": {
+
+"effects/smoke/0.png":
+{
+	"frame": {"x":1,"y":2041,"w":3,"h":3},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/6.png":
+{
+	"frame": {"x":898,"y":1,"w":439,"h":1092},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":439,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/19.png":
+{
+	"frame": {"x":1339,"y":1,"w":439,"h":1092},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":439,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/80.png":
+{
+	"frame": {"x":1,"y":2041,"w":3,"h":3},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/81.png":
+{
+	"frame": {"x":1,"y":2041,"w":3,"h":3},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/sparks/0.png":
+{
+	"frame": {"x":1,"y":2041,"w":3,"h":3},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/1.png":
+{
+	"frame": {"x":1,"y":2041,"w":3,"h":3},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/2.png":
+{
+	"frame": {"x":1,"y":2041,"w":3,"h":3},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/3.png":
+{
+	"frame": {"x":1,"y":2041,"w":3,"h":3},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/5.png":
+{
+	"frame": {"x":1921,"y":792,"w":125,"h":244},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":57,"y":25,"w":125,"h":244},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/6.png":
+{
+	"frame": {"x":1776,"y":1833,"w":133,"h":271},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":71,"y":40,"w":133,"h":271},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/7.png":
+{
+	"frame": {"x":1780,"y":792,"w":139,"h":299},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":54,"w":139,"h":299},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/12.png":
+{
+	"frame": {"x":1334,"y":1833,"w":173,"h":440},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":159,"y":141,"w":173,"h":440},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/13.png":
+{
+	"frame": {"x":1152,"y":1576,"w":180,"h":470},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":173,"y":160,"w":180,"h":470},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/15.png":
+{
+	"frame": {"x":1334,"y":1576,"w":255,"h":709},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":140,"y":21,"w":255,"h":709},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/25.png":
+{
+	"frame": {"x":2008,"y":1038,"w":39,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":129,"y":43,"w":39,"h":51},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/26.png":
+{
+	"frame": {"x":1832,"y":1968,"w":53,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":129,"y":51,"w":53,"h":54},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/27.png":
+{
+	"frame": {"x":1776,"y":1968,"w":69,"h":54},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":127,"y":62,"w":69,"h":54},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/28.png":
+{
+	"frame": {"x":1921,"y":1038,"w":85,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":126,"y":73,"w":85,"h":54},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/36.png":
+{
+	"frame": {"x":1780,"y":541,"w":249,"h":259},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":118,"y":0,"w":249,"h":259},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/37.png":
+{
+	"frame": {"x":1780,"y":283,"w":260,"h":256},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":116,"y":24,"w":260,"h":256},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/39.png":
+{
+	"frame": {"x":1780,"y":1,"w":280,"h":266},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":56,"w":280,"h":266},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/54.png":
+{
+	"frame": {"x":1152,"y":1095,"w":479,"h":887},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":99,"y":25,"w":479,"h":887},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/56.png":
+{
+	"frame": {"x":427,"y":1100,"w":458,"h":922},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":97,"y":86,"w":458,"h":922},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/57.png":
+{
+	"frame": {"x":887,"y":1098,"w":263,"h":949},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":0,"w":263,"h":949},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/67.png":
+{
+	"frame": {"x":1,"y":1100,"w":424,"h":939},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":77,"w":424,"h":939},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/74.png":
+{
+	"frame": {"x":1,"y":1,"w":577,"h":1097},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":577,"h":1097},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/81.png":
+{
+	"frame": {"x":580,"y":1,"w":316,"h":1095},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":65,"y":2,"w":316,"h":1095},
+	"sourceSize": {"w":578,"h":1097}
+}},
+"animations": {
+	"effects/smoke": ["effects/smoke/0.png","effects/smoke/1.png","effects/smoke/2.png","effects/smoke/3.png","effects/smoke/4.png","effects/smoke/5.png","effects/smoke/6.png","effects/smoke/7.png","effects/smoke/8.png","effects/smoke/9.png","effects/smoke/10.png","effects/smoke/11.png","effects/smoke/12.png","effects/smoke/13.png","effects/smoke/14.png","effects/smoke/15.png","effects/smoke/16.png","effects/smoke/17.png","effects/smoke/18.png","effects/smoke/19.png","effects/smoke/20.png","effects/smoke/21.png","effects/smoke/22.png","effects/smoke/23.png","effects/smoke/24.png","effects/smoke/25.png","effects/smoke/26.png","effects/smoke/27.png","effects/smoke/28.png","effects/smoke/29.png","effects/smoke/30.png","effects/smoke/31.png","effects/smoke/32.png","effects/smoke/33.png","effects/smoke/34.png","effects/smoke/35.png","effects/smoke/36.png","effects/smoke/37.png","effects/smoke/38.png","effects/smoke/39.png","effects/smoke/40.png","effects/smoke/41.png","effects/smoke/42.png","effects/smoke/43.png","effects/smoke/44.png","effects/smoke/45.png","effects/smoke/46.png","effects/smoke/47.png","effects/smoke/48.png","effects/smoke/49.png","effects/smoke/50.png","effects/smoke/51.png","effects/smoke/52.png","effects/smoke/53.png","effects/smoke/54.png","effects/smoke/55.png","effects/smoke/56.png","effects/smoke/57.png","effects/smoke/58.png","effects/smoke/59.png","effects/smoke/60.png","effects/smoke/61.png","effects/smoke/62.png","effects/smoke/63.png","effects/smoke/64.png","effects/smoke/65.png","effects/smoke/66.png","effects/smoke/67.png","effects/smoke/68.png","effects/smoke/69.png","effects/smoke/70.png","effects/smoke/71.png","effects/smoke/72.png","effects/smoke/73.png","effects/smoke/74.png","effects/smoke/75.png","effects/smoke/76.png","effects/smoke/77.png","effects/smoke/78.png","effects/smoke/79.png","effects/smoke/80.png","effects/smoke/81.png"],
+	"effects/sparks": ["effects/sparks/0.png","effects/sparks/1.png","effects/sparks/2.png","effects/sparks/3.png","effects/sparks/4.png","effects/sparks/5.png","effects/sparks/6.png","effects/sparks/7.png","effects/sparks/8.png","effects/sparks/9.png","effects/sparks/10.png","effects/sparks/11.png","effects/sparks/12.png","effects/sparks/13.png","effects/sparks/14.png","effects/sparks/15.png","effects/sparks/16.png","effects/sparks/17.png","effects/sparks/18.png","effects/sparks/19.png","effects/sparks/20.png","effects/sparks/21.png","effects/sparks/22.png","effects/sparks/23.png","effects/sparks/24.png","effects/sparks/25.png","effects/sparks/26.png","effects/sparks/27.png","effects/sparks/28.png","effects/sparks/29.png","effects/sparks/30.png","effects/sparks/31.png","effects/sparks/32.png","effects/sparks/33.png","effects/sparks/34.png","effects/sparks/35.png","effects/sparks/36.png","effects/sparks/37.png","effects/sparks/38.png","effects/sparks/39.png","effects/sparks/40.png","effects/sparks/41.png","effects/sparks/42.png","effects/sparks/43.png","effects/sparks/44.png","effects/sparks/45.png","effects/sparks/46.png","effects/sparks/47.png","effects/sparks/48.png","effects/sparks/49.png","effects/sparks/50.png","effects/sparks/51.png","effects/sparks/52.png","effects/sparks/53.png","effects/sparks/54.png","effects/sparks/55.png","effects/sparks/56.png","effects/sparks/57.png","effects/sparks/58.png","effects/sparks/59.png","effects/sparks/60.png","effects/sparks/61.png","effects/sparks/62.png","effects/sparks/63.png","effects/sparks/64.png","effects/sparks/65.png","effects/sparks/66.png","effects/sparks/67.png","effects/sparks/68.png","effects/sparks/69.png","effects/sparks/70.png","effects/sparks/71.png","effects/sparks/72.png","effects/sparks/73.png","effects/sparks/74.png","effects/sparks/75.png","effects/sparks/76.png","effects/sparks/77.png","effects/sparks/78.png","effects/sparks/79.png","effects/sparks/80.png","effects/sparks/81.png","effects/sparks/82.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "effects_smoke_sparks_0.basis",
+	"format": "BASISU_ETC1S",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"related_multi_packs": [ "effects_smoke_sparks_1.json", "effects_smoke_sparks_2.json", "effects_smoke_sparks_3.json", "effects_smoke_sparks_4.json", "effects_smoke_sparks_5.json", "effects_smoke_sparks_6.json", "effects_smoke_sparks_7.json", "effects_smoke_sparks_8.json", "effects_smoke_sparks_9.json", "effects_smoke_sparks_10.json", "effects_smoke_sparks_11.json", "effects_smoke_sparks_12.json", "effects_smoke_sparks_13.json", "effects_smoke_sparks_14.json", "effects_smoke_sparks_15.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:3b099d4c55d69ba3966bd37cc28bcb40:25486b32942ea4b51a6d402fbf1718c3:34c20961b5d17f91805f3a4a1943a9ae$"
+}
+}

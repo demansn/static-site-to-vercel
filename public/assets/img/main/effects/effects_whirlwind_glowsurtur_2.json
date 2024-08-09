@@ -1,0 +1,109 @@
+{"frames": {
+
+"effects/glow_surtur/2/15.png":
+{
+	"frame": {"x":865,"y":1776,"w":232,"h":531},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":56,"y":31,"w":232,"h":531},
+	"sourceSize": {"w":288,"h":571}
+},
+"effects/whirlwind/blue/4.png":
+{
+	"frame": {"x":280,"y":1776,"w":583,"h":263},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1337,"y":501,"w":583,"h":263},
+	"sourceSize": {"w":1920,"h":764}
+},
+"effects/whirlwind/blue/19.png":
+{
+	"frame": {"x":704,"y":621,"w":701,"h":550},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":712,"y":0,"w":701,"h":550},
+	"sourceSize": {"w":1920,"h":764}
+},
+"effects/whirlwind/blue/25.png":
+{
+	"frame": {"x":700,"y":1173,"w":696,"h":601},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":881,"y":149,"w":696,"h":601},
+	"sourceSize": {"w":1920,"h":764}
+},
+"effects/whirlwind/blue/26.png":
+{
+	"frame": {"x":1398,"y":1261,"w":649,"h":600},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":962,"y":58,"w":649,"h":600},
+	"sourceSize": {"w":1920,"h":764}
+},
+"effects/whirlwind/blue/31.png":
+{
+	"frame": {"x":1,"y":569,"w":701,"h":561},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":560,"y":0,"w":701,"h":561},
+	"sourceSize": {"w":1920,"h":764}
+},
+"effects/whirlwind/blue/35.png":
+{
+	"frame": {"x":1407,"y":657,"w":640,"h":602},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":226,"y":80,"w":640,"h":602},
+	"sourceSize": {"w":1920,"h":764}
+},
+"effects/whirlwind/orange/15.png":
+{
+	"frame": {"x":1427,"y":1,"w":654,"h":619},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":751,"y":141,"w":654,"h":619},
+	"sourceSize": {"w":1920,"h":936}
+},
+"effects/whirlwind/orange/27.png":
+{
+	"frame": {"x":715,"y":1,"w":710,"h":618},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":717,"y":192,"w":710,"h":618},
+	"sourceSize": {"w":1920,"h":936}
+},
+"effects/whirlwind/orange/35.png":
+{
+	"frame": {"x":1,"y":1,"w":712,"h":566},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":295,"y":0,"w":712,"h":566},
+	"sourceSize": {"w":1920,"h":936}
+},
+"effects/whirlwind/orange/36.png":
+{
+	"frame": {"x":1,"y":1132,"w":697,"h":591},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":209,"y":0,"w":697,"h":591},
+	"sourceSize": {"w":1920,"h":936}
+},
+"effects/whirlwind/orange/57.png":
+{
+	"frame": {"x":1,"y":1776,"w":277,"h":266},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":144,"y":125,"w":277,"h":266},
+	"sourceSize": {"w":1920,"h":936}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "effects_whirlwind_glowsurtur_2.basis",
+	"format": "BASISU_ETC1S",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"related_multi_packs": [ "effects_whirlwind_glowsurtur_0.json", "effects_whirlwind_glowsurtur_1.json", "effects_whirlwind_glowsurtur_3.json", "effects_whirlwind_glowsurtur_4.json", "effects_whirlwind_glowsurtur_5.json", "effects_whirlwind_glowsurtur_6.json", "effects_whirlwind_glowsurtur_7.json", "effects_whirlwind_glowsurtur_8.json", "effects_whirlwind_glowsurtur_9.json", "effects_whirlwind_glowsurtur_10.json", "effects_whirlwind_glowsurtur_11.json", "effects_whirlwind_glowsurtur_12.json", "effects_whirlwind_glowsurtur_13.json", "effects_whirlwind_glowsurtur_14.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:6232b127611f0b4ff4265bde92536a07:efbc64e2e05201a6ce21f6864ffebd62:8d02a8567d73751016eb6bd5f26eb645$"
+}
+}

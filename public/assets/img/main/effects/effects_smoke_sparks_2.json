@@ -1,0 +1,117 @@
+{"frames": {
+
+"effects/smoke/3.png":
+{
+	"frame": {"x":1,"y":1,"w":438,"h":1092},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/4.png":
+{
+	"frame": {"x":441,"y":1,"w":438,"h":1092},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/5.png":
+{
+	"frame": {"x":881,"y":1,"w":438,"h":1092},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/smoke/7.png":
+{
+	"frame": {"x":1321,"y":1,"w":438,"h":1092},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":5,"w":438,"h":1092},
+	"sourceSize": {"w":478,"h":1097}
+},
+"effects/sparks/19.png":
+{
+	"frame": {"x":409,"y":1095,"w":346,"h":906},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":135,"y":32,"w":346,"h":906},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/35.png":
+{
+	"frame": {"x":1761,"y":858,"w":247,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":119,"y":10,"w":247,"h":230},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/38.png":
+{
+	"frame": {"x":1761,"y":599,"w":270,"h":257},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":116,"y":43,"w":270,"h":257},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/40.png":
+{
+	"frame": {"x":1761,"y":305,"w":292,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":113,"y":70,"w":292,"h":275},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/41.png":
+{
+	"frame": {"x":1761,"y":1,"w":302,"h":286},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":113,"y":85,"w":302,"h":286},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/66.png":
+{
+	"frame": {"x":1,"y":1095,"w":406,"h":908},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":58,"w":406,"h":908},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/68.png":
+{
+	"frame": {"x":1059,"y":1557,"w":443,"h":970},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":96,"w":443,"h":970},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/69.png":
+{
+	"frame": {"x":1059,"y":1095,"w":460,"h":979},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":118,"w":460,"h":979},
+	"sourceSize": {"w":578,"h":1097}
+},
+"effects/sparks/77.png":
+{
+	"frame": {"x":757,"y":1095,"w":300,"h":900},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":0,"w":300,"h":900},
+	"sourceSize": {"w":578,"h":1097}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "effects_smoke_sparks_2.basis",
+	"format": "BASISU_ETC1S",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"related_multi_packs": [ "effects_smoke_sparks_0.json", "effects_smoke_sparks_1.json", "effects_smoke_sparks_3.json", "effects_smoke_sparks_4.json", "effects_smoke_sparks_5.json", "effects_smoke_sparks_6.json", "effects_smoke_sparks_7.json", "effects_smoke_sparks_8.json", "effects_smoke_sparks_9.json", "effects_smoke_sparks_10.json", "effects_smoke_sparks_11.json", "effects_smoke_sparks_12.json", "effects_smoke_sparks_13.json", "effects_smoke_sparks_14.json", "effects_smoke_sparks_15.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:3b099d4c55d69ba3966bd37cc28bcb40:25486b32942ea4b51a6d402fbf1718c3:34c20961b5d17f91805f3a4a1943a9ae$"
+}
+}
